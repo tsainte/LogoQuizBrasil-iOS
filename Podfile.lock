@@ -2,6 +2,7 @@ PODS:
   - FlurrySDK (5.2.0):
     - FlurrySDK/FlurrySDK
   - FlurrySDK/FlurrySDK (5.2.0)
+  - Google-AdMob-Ads-SDK (6.8.0)
   - Slash (0.1.2):
     - Slash/arc
     - Slash/no-arc
@@ -11,11 +12,13 @@ PODS:
 
 DEPENDENCIES:
   - FlurrySDK (~> 5.2.0)
+  - Google-AdMob-Ads-SDK (= 6.8.0)
   - Slash (~> 0.1.2)
   - TestFlightSDK (~> 3.0.2)
 
 SPEC CHECKSUMS:
   FlurrySDK: 5322b9eb0d0b538f1a1983a6717f3a2e2ba03047
+  Google-AdMob-Ads-SDK: ec4a2941cc0aabaf06bf4a709216d3e94ad7b46b
   Slash: d98d6ff27ece4297d8d65fb49fc1ce4307a75f46
   TestFlightSDK: 0c24c533748d0d84bfe7a3cb6036fa79124d84ee
 

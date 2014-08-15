@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FlurrySDK" "${PODS_ROOT}/Headers/Slash" "${PODS_ROOT}/Headers/TestFlightSDK"
-LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/FlurrySDK/Flurry" "$(PODS_ROOT)/TestFlightSDK"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/FlurrySDK" -isystem "${PODS_ROOT}/Headers/Slash" -isystem "${PODS_ROOT}/Headers/TestFlightSDK"
-OTHER_LDFLAGS = -ObjC -lFlurry_5.2.0 -lTestFlight -lz -framework CoreGraphics -framework CoreText -framework Foundation -framework MediaPlayer -framework Security -framework SystemConfiguration -framework UIKit -weak_framework AdSupport -weak_framework StoreKit
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FlurrySDK" "${PODS_ROOT}/Headers/Google-AdMob-Ads-SDK" "${PODS_ROOT}/Headers/Slash" "${PODS_ROOT}/Headers/TestFlightSDK"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/FlurrySDK/Flurry" "$(PODS_ROOT)/Google-AdMob-Ads-SDK/GoogleAdMobAdsSdkiOS-6.8.0" "$(PODS_ROOT)/TestFlightSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/FlurrySDK" -isystem "${PODS_ROOT}/Headers/Google-AdMob-Ads-SDK" -isystem "${PODS_ROOT}/Headers/Slash" -isystem "${PODS_ROOT}/Headers/TestFlightSDK"
+OTHER_LDFLAGS = -ObjC -lFlurry_5.2.0 -lGoogleAdMobAds -lTestFlight -lz -framework AVFoundation -framework AdSupport -framework AudioToolbox -framework CoreGraphics -framework CoreTelephony -framework CoreText -framework Foundation -framework MediaPlayer -framework MessageUI -framework Security -framework StoreKit -framework SystemConfiguration -framework UIKit -weak_framework AdSupport -weak_framework StoreKit
 PODS_ROOT = ${SRCROOT}/Pods
