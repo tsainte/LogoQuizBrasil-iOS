@@ -8,6 +8,7 @@
 
 #import "BLAppDelegate.h"
 #import <TestFlightSDK/TestFlight.h>
+#import <FlurrySDK/Flurry.h>
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,10 +20,19 @@
       splitViewController.delegate = (id)navigationController.topViewController;
   }
   
-  [TestFlight takeOff:@"3b94d0d3-7d4c-4b6d-b669-4952ca79a191"];
+#ifndef DEBUG
+    [self loadServices];
+#endif
+
   return YES;
 }
-							
+
+- (void)loadServices {
+  
+  [TestFlight takeOff:@"3b94d0d3-7d4c-4b6d-b669-4952ca79a191"];
+  [Flurry startSession:@"YOUR_FLURRY_ID"];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
   // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
