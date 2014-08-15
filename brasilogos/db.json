@@ -1,0 +1,2365 @@
+[
+ {
+ "id": 1,
+ "nome": "Petrobrás",
+ "alternativo": "br",
+
+
+ "wikipedia": "Petrobras",
+ "slogan": "O desafio é a nossa energia",
+ "dica1": "Atua no ramo de petróleo e energia",
+ "dica2": "Segunda maior empresa de energia do mundo"
+ },
+ {
+ "id": 2,
+ "nome": "Pão de Açúcar",
+
+
+ "wikipedia": "Pão_de_Açúcar_(supermercado)",
+ "slogan": "O que faz você feliz?",
+ "dica1": "Rede de supermercados",
+ "dica2": "Instalado normalmente em bairros nobres"
+ },
+ {
+ "id": 3,
+ "nome": "Rede Globo",
+ "alternativo": "globo",
+
+
+ "wikipedia": "Rede_globo",
+ "slogan": "A gente se liga em você",
+ "dica1": "Rede de televisão carioca",
+ "dica2": "Fundada por Roberto Marinho"
+ },
+ {
+ "id": 4,
+ "nome": "Jovem Pan",
+ "alternativo": "jovem pam",
+
+
+ "wikipedia": "lca",
+ "slogan": "A rádio número 1 do Brasil",
+ "dica1": "Rede de rádios voltada para o público jovem",
+ "dica2": "Famosa pelo programa \"Pânico\""
+ },
+ {
+ "id": 5,
+ "nome": "Vivo",
+ "alternativo": "telefonica",
+
+
+ "wikipedia": "Vivo",
+ "slogan": "Conectados vivemos melhor",
+ "dica1": "Empresa de telefonia",
+ "dica2": "Patrocinadora da Seleção Brasileira"
+ },
+ {
+ "id": 6,
+ "nome": "Banco do Brasil",
+ "alternativo": "bb",
+
+
+ "wikipedia": "Banco_do_Brasil",
+ "slogan": "Bom pra Todos",
+ "dica1": "Atua no sistema financeira",
+ "dica2": "Uma das maiores empresas de capital misto do Brasil"
+ },
+ {
+ "id": 7,
+ "nome": "Havaianas",
+
+
+ "wikipedia": "Havaianas",
+ "slogan": "Todo mundo usa. Recuse imitações",
+ "dica1": "Marca de sandálias de borracha",
+ "dica2": "Famosa pelas propagandas"
+ },
+ {
+ "id": 8,
+ "nome": "Elma Chips",
+ "alternativo": "elma chip",
+
+
+ "wikipedia": "Elma_Chips",
+ "slogan": "É impossível comer um só",
+ "dica1": "Empresa de biscoitos e salgadinhos",
+ "dica2": "Os produtos são encontrados em padarias supermercados bares e mercearias"
+ },
+ {
+ "id": 9,
+ "nome": "Gol Linhas Aéreas",
+ "alternativo": "gol",
+
+
+ "wikipedia": "Gol_Linhas_Aéreas_Inteligentes",
+ "slogan": "Linhas aéreas inteligentes",
+ "dica1": "Opera vôos da Varig",
+ "dica2": "Famosa por adotar o estilo low-cost na sua fundação"
+ },
+ {
+ "id": 10,
+ "nome": "Riachuelo",
+
+
+ "wikipedia": "Lojas_Riachuelo",
+ "slogan": "Passar na Riachuelo faz toda a diferença",
+ "dica1": "Loja de departamento",
+ "dica2": "Maior empresa de moda do Brasil"
+ },
+ {
+ "id": 11,
+ "nome": "Lojas Americanas",
+ "alternativo": "americanas",
+
+
+ "wikipedia": "Americanas",
+ "slogan": "Todo mundo vai",
+ "dica1": "Atua no segmento de varejo",
+ "dica2": "Associada a Blockbuster do Brasil"
+ },
+ {
+ "id": 12,
+ "nome": "Unimed",
+
+
+ "wikipedia": "Unimed",
+ "slogan": "O melhor plano de saúde é viver o segundo melhor é Unimed”",
+ "dica1": "Cooperativa de médicos",
+ "dica2": "Patrocinadora de times de basquete"
+ },
+ {
+ "id": 13,
+ "nome": "Três Corações",
+ "alternativo": "café três corações",
+
+
+ "wikipedia": "Café_Santa_Clara",
+ "slogan": "O café que apaixona\"",
+ "dica1": "Marca de café",
+ "dica2": "Joint-Venture com outra marca de café"
+ },
+ {
+ "id": 14,
+ "nome": "Bob's",
+ "alternativo": "bobs",
+
+
+ "wikipedia": "Bob’s",
+ "slogan": "Gostoso é no Bob's",
+ "dica1": "Rede de fast food",
+ "dica2": "Famoso pelo Ovomaltine"
+ },
+ {
+ "id": 15,
+ "nome": "Brahma",
+ "alternativo": "brama",
+
+
+ "wikipedia": "Brahma_(cerveja)",
+ "slogan": "Refresca até pensamento",
+ "dica1": "Marca de cerveja",
+ "dica2": "Pertencente a Ambev"
+ },
+ {
+ "id": 16,
+ "nome": "Ponto Frio",
+
+
+ "wikipedia": "Ponto_Frio",
+ "slogan": "Viva a inovação",
+ "dica1": "Loja de varejo",
+ "dica2": "Famosa pela venda de eletrodomésticos da linha branca"
+ },
+ {
+ "id": 17,
+ "nome": "Rede Bandeirantes",
+ "alternativo": "bandeirantes, band",
+
+
+ "wikipedia": "Rede_Bandeirantes",
+ "slogan": "Olho na tela olho na Band",
+ "dica1": "Rede de televisão brasileira",
+ "dica2": "Famosa pela cobertura de eventos esportivos"
+ },
+ {
+ "id": 18,
+ "nome": "Tigre",
+
+
+ "slogan": "Com TIGRE só tem TIGRE",
+ "dica1": "Produz linhas de tubo e conexões PVC",
+ "dica2": "Fabrica também pincéis e esquadrias"
+ },
+ {
+ "id": 19,
+ "nome": "Ri Happy",
+ "alternativo": "hi happy, hihappy, rihappy",
+
+
+ "wikipedia": "Ri_Happy_Brinquedos",
+ "slogan": "Orgulho de brincar",
+ "dica1": "Rede varejista de brinquedos",
+ "dica2": "A loja conta com espaços para as crianças brincarem decoração temática e até palco de ações lúdicas"
+ },
+ {
+ "id": 20,
+ "nome": "O Boticário",
+ "alternativo": "boticario",
+
+
+ "wikipedia": "O_Boticário",
+ "slogan": "A vida é bonita mas pode ser linda",
+ "dica1": "Franchising de cosméticos e perfumaria",
+ "dica2": "Possui diversas franquias pelo país"
+ },
+ {
+ "id": 21,
+ "nome": "Caixa Econômica Federal",
+ "alternativo": "caixa, cef",
+
+
+ "wikipedia": "Caixa_Econômica_Federal",
+ "slogan": "Vem pra caixa você também vem!",
+ "dica1": "Atua no sistema financeiro",
+ "dica2": "Empresa pública"
+ },
+ {
+ "id": 22,
+ "nome": "Lojas Renner",
+ "alternativo": "renner",
+
+
+ "wikipedia": "Lojas_Renner",
+ "slogan": "Você tem seu estilo e a Renner tem todos",
+ "dica1": "Atua no varejo",
+ "dica2": "Focada na venda de vestuários e calcçados"
+ },
+ {
+ "id": 23,
+ "nome": "Bohemia",
+ "alternativo": "boemia",
+
+
+ "wikipedia": "Bohemia",
+ "slogan": "A primeira cerveja do Brasil",
+ "dica1": "Empresa fabricante de cerveja",
+ "dica2": "Considerada a primeira cervejaria do país"
+ },
+ {
+ "id": 24,
+ "nome": "TAM Airlines",
+ "alternativo": "tam",
+
+
+ "wikipedia": "TAM_Linhas_Aéreas",
+ "slogan": "Paixão por voar e servir",
+ "dica1": "Empresa de transporte aéreo",
+ "dica2": "Empresa fundida com a LAN"
+ },
+ {
+ "id": 25,
+ "nome": "Oi",
+
+
+ "wikipedia": "Oi_(telecomunicações)",
+ "slogan": "Simples assim",
+ "dica1": "Rede de telecomunicações brasileira",
+ "dica2": "Possui concessões através da Telemar"
+ },
+ {
+ "id": 26,
+ "nome": "Grupo Abril",
+ "alternativo": "abril",
+
+
+ "wikipedia": "Grupo_Abril",
+ "slogan": "Faz parte da sua vida",
+ "dica1": "grupo de comunicação",
+ "dica2": "Produtora da revista Veja"
+ },
+ {
+ "id": 27,
+ "nome": "Giraffas",
+ "alternativo": "girafas",
+
+
+ "wikipedia": "Giraffas",
+ "slogan": "Sabor e alegria",
+ "dica1": "Rede de fast-food",
+ "dica2": "Pratos que incluem ovos fritos e grelhados"
+ },
+ {
+ "id": 28,
+ "nome": "Submarino",
+
+
+ "wikipedia": "Submarino_(empresa)",
+ "slogan": "Pode imaginar. Aqui tem",
+ "dica1": "Site de comércio eletrônico",
+ "dica2": "Fundido com americanas.com"
+ },
+ {
+ "id": 29,
+ "nome": "CNA",
+
+
+ "wikipedia": "CNA_Idiomas",
+ "slogan": "Inglês definitivo",
+ "dica1": "Escola de idiomas",
+ "dica2": "Responsável pela aplicação do ELSA"
+ },
+ {
+ "id": 30,
+ "nome": "Azaléia",
+ "alternativo": "azalea, asaleia",
+
+
+ "wikipedia": "Calçados_Azaleia",
+ "slogan": "Mulher brasileira. A grande inspiração da Azaléia",
+ "dica1": "Empresa de calçados",
+ "dica2": "Atua no segmento feminino"
+ },
+ {
+ "id": 31,
+ "nome": "Perdigão",
+
+
+ "wikipedia": "Perdigão_(empresa)",
+ "slogan": "Vem do coração do Brasil",
+ "dica1": "Empresa de alimentos frigoríficos",
+ "dica2": "Famosa pela produção do \"Chester\""
+ },
+ {
+ "id": 32,
+ "nome": "Bradesco",
+ "alternativo": "bradesco",
+
+
+ "wikipedia": "Bradesco",
+ "slogan": "Colocando você sempre a frente",
+ "dica1": "Atua no mercado financeiro",
+ "dica2": "Segundo maior banco privado do Brasil"
+ },
+ {
+ "id": 33,
+ "nome": "Bombril",
+ "alternativo": "bom bril",
+
+
+ "wikipedia": "Bombril",
+ "slogan": "1001 utilidades",
+ "dica1": "empresa do setor de higiene e limpeza",
+ "dica2": "Famosa por uma lã de aço"
+ },
+ {
+ "id": 34,
+ "nome": "Britânia Eletrodomésticos",
+ "alternativo": "britânia",
+
+
+ "wikipedia": "Britânia_Eletrodomésticos",
+ "slogan": "Faz com qualidade total",
+ "dica1": "Especializada em eletrodomésticos",
+ "dica2": "Forte no segmento de eletroportáteis (e.g. chapinhas)"
+ },
+ {
+ "id": 35,
+ "nome": "Fisk",
+
+
+ "wikipedia": "Escolas_Fisk",
+ "slogan": "O mundo reconhece quem faz",
+ "dica1": "Escola de idiomas",
+ "dica2": "Especializada em ingles e espanhol"
+ },
+ {
+ "id": 36,
+ "nome": "Cielo",
+
+
+ "wikipedia": "Cielo",
+ "slogan": "Nada supera essa máquina",
+ "dica1": "Credenciadora de cartões de crédito",
+ "dica2": "Primordialmente conhecida por Visanet"
+ },
+ {
+ "id": 37,
+ "nome": "Dotz",
+
+
+ "wikipedia": "dotz",
+ "slogan": "“A sua segunda moeda”",
+ "dica1": "Moeda virtual",
+ "dica2": "Programa de fidelidade"
+ },
+ {
+ "id": 38,
+ "nome": "Rádio Mix",
+ "alternativo": "mix",
+
+
+ "wikipedia": "Mix_FM",
+ "slogan": "A rádio diferente",
+ "dica1": "Radio de música jovem",
+ "dica2": "Toca música pop"
+ },
+ {
+ "id": 39,
+ "nome": "Casa do pão de queijo",
+ "alternativo": "pao de queijo",
+
+
+ "wikipedia": "Casa_do_Pão_de_Queijo",
+ "slogan": "“Pão de queijo sempre quentinho”",
+ "dica1": "Rede de fast food",
+ "dica2": "Especializada em pães de queijo"
+ },
+ {
+ "id": 40,
+ "nome": "Veja",
+
+
+ "wikipedia": "Veja",
+ "slogan": "Indispensável para o país que queremos ser",
+ "dica1": "Revista semanal",
+ "dica2": "Publicada pela editora Abril"
+ },
+ {
+ "id": 41,
+ "nome": "Estrela",
+
+
+ "wikipedia": "Estrela_(empresa)",
+ "slogan": "Toda criança tem uma estrela dentro do coração",
+ "dica1": "Fabricante de brinquedos",
+ "dica2": "Possuia um museu chamado \"casa dos sonhos\""
+ },
+ {
+ "id": 42,
+ "nome": "Itambé",
+
+
+ "wikipedia": "Itambé_Laticínios",
+ "slogan": "O melhor do leite",
+ "dica1": "Fabrica de laticínios",
+ "dica2": "Fundada em Minas Gerais em 1944"
+ },
+ {
+ "id": 43,
+ "nome": "Porto Seguro",
+
+
+ "wikipedia": "Porto_Seguro_Seguros",
+ "slogan": "Sempre ao seu lado",
+ "dica1": "Empresa de seguros",
+ "dica2": "Nome de uma cidade Baiana"
+ },
+ {
+ "id": 44,
+ "nome": "Natura",
+
+
+ "wikipedia": "Natura",
+ "slogan": "Bem estar bem",
+ "dica1": "Atua no setor de cosméticos e perfumaria",
+ "dica2": "Comprometida históricamente com o meio ambiente"
+ },
+ {
+ "id": 45,
+ "nome": "Rede Record",
+ "alternativo": "record",
+
+
+ "wikipedia": "Rede_Record",
+ "slogan": "Do jeito que o povo gosta",
+ "dica1": "Rede de televisão",
+ "dica2": "Pertecente ao bispo Edir Macedo"
+ },
+ {
+ "id": 46,
+ "nome": "GVT",
+ "alternativo": "Global Village Telecom",
+
+
+ "wikipedia": "Global Village Telecom",
+ "slogan": "Você no futuro. Hoje.",
+ "dica1": "Atua no ramo de telecomunicações",
+ "dica2": "Atua com telefonia fixa, internet e TV"
+ },
+ {
+ "id": 47,
+ "nome": "Hering",
+
+
+ "wikipedia": "Companhia_Hering",
+ "slogan": "“Desde sempre”",
+ "dica1": "Fabricação de roupas",
+ "dica2": "Possui franquias pelo Brasil"
+ },
+ {
+ "id": 48,
+ "nome": "Itaú",
+ "alternativo": "itau",
+
+
+ "wikipedia": "Itaú_(banco)",
+ "slogan": "Feito pra você",
+ "dica1": "Atua no sistema financeiro",
+ "dica2": "Foi fundido com o Unibanco"
+ },
+ {
+ "id": 49,
+ "nome": "Olympikus",
+ "alternativo": "olimpicus, olimpikus, olympicus",
+
+
+ "wikipedia": "Olympikus",
+ "slogan": "Inspire-se",
+ "dica1": "Marca de calçados e produtos esportivos",
+ "dica2": "Patrocinadora de diversos times atletas e eventos esportivos"
+ },
+ {
+ "id": 50,
+ "nome": "Localiza",
+
+
+ "wikipedia": "Localiza",
+ "slogan": "Vai com você",
+ "dica1": "Empresa de aluguel de carros",
+ "dica2": "Atuante nas principais cidades e aeroportos da América Latina"
+ },
+ {
+ "id": 51,
+ "nome": "Pirassununga 51",
+ "alternativo": "caninha 51, cachaça 51, 51, pirassununga, caninha",
+ "imagem": "51.png",
+
+ "wikipedia": "Caninha_51",
+ "slogan": "Uma boa ideia",
+ "dica1": "Marca de cachaça",
+ "dica2": "Original de Pirassununga"
+ },
+ {
+ "id": 52,
+ "nome": "Batavo",
+
+
+ "wikipedia": "Batavo_S.A.",
+ "slogan": "Pensado para sua natureza",
+ "dica1": "Empresa que atua no ramo alimentício",
+ "dica2": "Uma das maiores marcas na indústria de laticínios do país"
+ },
+ {
+ "id": 53,
+ "nome": "Net",
+
+
+ "wikipedia": "Net_Serviços_de_Comunicação",
+ "slogan": "O mundo é dos nets",
+ "dica1": "Empresa de tv por assinatura",
+ "dica2": "Oferece banda larga e voip"
+ },
+ {
+ "id": 54,
+ "nome": "Positivo",
+
+
+ "wikipedia": "Positivo_Informática",
+ "slogan": "Viva melhor com Positivo",
+ "dica1": "Empresa de TI",
+ "dica2": "Produz computadores e softwares educacionais"
+ },
+ {
+ "id": 55,
+ "nome": "Beach park",
+
+
+ "wikipedia": "Beach_park",
+ "slogan": "“A onda é ser feliz agora”",
+ "dica1": "Complexo turístico no Ceará",
+ "dica2": "Famoso pelo toboágua Insano"
+ },
+ {
+ "id": 56,
+ "nome": "Petróleo Ipiranga",
+ "alternativo": "ipiranga",
+
+
+ "wikipedia": "Petróleo_Ipiranga",
+ "slogan": "Apaixonada por carro como todo brasileiro",
+ "dica1": "Empresa de distribuição de combustível",
+ "dica2": "Famosa pelo programa de fidelidade \"km de vantagens\""
+ },
+ {
+ "id": 57,
+ "nome": "Habib's",
+ "alternativo": "habibs",
+
+
+ "wikipedia": "Habib%27s",
+ "slogan": "É muito mais",
+ "dica1": "Rede de fast-food árabe",
+ "dica2": "Famosa pelos baixos preços"
+ },
+ {
+ "id": 58,
+ "nome": "Shoptime",
+
+
+ "wikipedia": "Shoptime",
+ "slogan": "Na TV na Internet e no catálogo 24 horas com você",
+ "dica1": "Empresa de varejo",
+ "dica2": "Vende seus produtos pelo site e pelo canal de  televisão"
+ },
+ {
+ "id": 59,
+ "nome": "Universo Online",
+ "alternativo": "uol",
+
+
+ "wikipedia": "Uol",
+ "slogan": "O melhor conteúdo",
+ "dica1": "Provedor de serviços de internet",
+ "dica2": "Pertencente ao grupo Folha"
+ },
+ {
+ "id": 60,
+ "nome": "Vale",
+ "alternativo": "vale do rio doce",
+
+
+ "wikipedia": "Vale_S.A.",
+ "slogan": "Não existe futuro sem mineração. Não existe mineração sem pensar no futuro das pessoas.",
+ "dica1": "Empresa de mineiração",
+ "dica2": "Associada ao rio doce"
+ },
+ {
+ "id": 61,
+ "nome": "Amil",
+
+
+ "wikipedia": "Amil",
+ "slogan": "Sua vida é a nossa vida",
+ "dica1": "Plano de saude",
+ "dica2": "Vendida em 2012 para UnitedHealth Group"
+ },
+ {
+ "id": 62,
+ "nome": "Sadia",
+
+
+ "wikipedia": "Sadia_S._A.",
+ "slogan": "A vida com S é mais gostosa",
+ "dica1": "Produz alimentos frigoríficos",
+ "dica2": "Seu mascote é um frango com capacete"
+ },
+ {
+ "id": 63,
+ "nome": "Chilli Beans",
+ "alternativo": "chili bean, chilli bean, chili beans",
+
+
+ "wikipedia": "Chilli_Beans",
+ "slogan": "E se colocar pimenta?",
+ "dica1": "Especializada na venda de óculos escuros",
+ "dica2": "Marca ligada ao público jovem"
+ },
+ {
+ "id": 64,
+ "nome": "SBT",
+
+
+ "wikipedia": "Sbt",
+ "slogan": "A TV mais feliz do Brasil",
+ "dica1": "Fundada pelo apresentador Silvio Santos",
+ "dica2": "Famosa pelas séries e novelas mexicanas da Televisa"
+ },
+ {
+ "id": 65,
+ "nome": "Guaraná Antartica",
+ "alternativo": "antarctica, antartica, guaraná",
+
+
+ "wikipedia": "Guaraná_Antarctica",
+ "slogan": "“Energia que contagia”",
+ "dica1": "Refrigerante brasileiro",
+ "dica2": "Pertencente a AmBev"
+ },
+ {
+ "id": 66,
+ "nome": "Bauducco",
+ "alternativo": "bauduco",
+
+
+ "wikipedia": "Pandurata_Alimentos#Bauducco",
+ "slogan": "Da família Bauducco para sua família",
+ "dica1": "Uma das maiores docerias e panificadoras",
+ "dica2": "Famosa pelos panettones"
+ },
+ {
+ "id": 67,
+ "nome": "Grendene",
+
+
+ "wikipedia": "Grendene",
+ "slogan": "“Eu faço eu uso”",
+ "dica1": "Fabricação de calçados",
+ "dica2": "Responsável pela marca Grendha"
+ },
+ {
+ "id": 68,
+ "nome": "CCAA",
+
+
+ "wikipedia": "CCAA",
+ "slogan": "O Inglês e o Espanhol que você aprende e nunca mais esquece.",
+ "dica1": "Escola de idiomas",
+ "dica2": "Possui uma faculdade no Rio de Janeiro"
+ },
+ {
+ "id": 69,
+ "nome": "Brastemp",
+
+
+ "wikipedia": "Brastemp",
+ "slogan": "Seja autêntico",
+ "dica1": "Fabricante de eletrodomésticos",
+ "dica2": "Famosa pela campanha publicitária 'Não é uma Brastemp\""
+ },
+ {
+ "id": 70,
+ "nome": "Saraiva",
+
+
+ "wikipedia": "Saraiva",
+ "slogan": "Entretenimento cultura conveniência e você!",
+ "dica1": "Rede de livrarias",
+ "dica2": "Possui megastores no país"
+ },
+ {
+ "id": 71,
+ "nome": "Hopi Hari",
+ "alternativo": "hopihari",
+
+
+ "wikipedia": "Hopi_hari",
+ "slogan": "“O país mais divertido do mundo”",
+ "dica1": "parque temático brasileiro",
+ "dica2": "Localizado em São Paulo"
+ },
+ {
+ "id": 72,
+ "nome": "Imaginarium",
+ "alternativo": "imaginario",
+
+
+ "wikipedia": "Imaginarium",
+ "slogan": "Ideias legais feitas pra você",
+ "dica1": "Rede de lojas de presentes e decoração",
+ "dica2": "Possui produtos criativos e diferentes e bem humorados"
+ },
+ {
+ "id": 73,
+ "nome": "Spoleto",
+
+
+ "wikipedia": "Spoleto_(restaurante)",
+ "slogan": "Crie bons momentos aqui",
+ "dica1": "Rede de restaurante fast-food com comida italiana",
+ "dica2": "Conhecido pela rapidez e brincadeira feita pelos cozinheiros"
+ },
+ {
+ "id": 74,
+ "nome": "Peixe Urbano",
+
+
+ "wikipedia": "Peixe_Urbano",
+ "slogan": "Explore a cidade",
+ "dica1": "Site compras coletivas",
+ "dica2": "Presente em quase todas as capitais do Brasil"
+ },
+ {
+ "id": 75,
+ "nome": "Azul",
+
+
+ "wikipedia": "Azul_Linhas_Aéreas_Brasileiras",
+ "slogan": "Unida com você",
+ "dica1": "Empresa de transporte aéreo",
+ "dica2": "Fundida com a TRIP linhas aéreas em 2013"
+ },
+ {
+ "id": 76,
+ "nome": "AleSat",
+ "alternativo": "ale, ale combustíveis",
+
+
+ "wikipedia": "AleSat_Combustíveis",
+ "slogan": "Perto para você ir longe",
+ "dica1": "Empresa de distribuição de combustível",
+ "dica2": "Realizou fusão com a distribuidora nordestina Satélite"
+ },
+ {
+ "id": 77,
+ "nome": "Casas Bahia",
+ "alternativo": "casa bahia, bahia",
+
+
+ "wikipedia": "Casas_bahia",
+ "slogan": "Dedicação total a você",
+ "dica1": "Popular rede de varejo de móveis e eletrodomésticos",
+ "dica2": "Tem o nome associado a um estado brasileiro"
+ },
+ {
+ "id": 78,
+ "nome": "Transamérica",
+ "alternativo": "trans américa",
+
+
+ "wikipedia": "Rede_Transamérica",
+ "slogan": "sua rádio onde você estiver",
+ "dica1": "Rede de rádio",
+ "dica2": "Seu nome é derivado de um continente"
+ },
+ {
+ "id": 79,
+ "nome": "SKY",
+
+
+ "wikipedia": "SKY_Brasil",
+ "slogan": "HDTV é isso",
+ "dica1": "TV por assinatura via satélite",
+ "dica2": "Realizou fusão com a DirecTV"
+ },
+ {
+ "id": 80,
+ "nome": "Clone",
+
+
+ "wikipedia": "Clone_(empresa)",
+ "slogan": "Conectada com você",
+ "dica1": "Empresa de TI",
+ "dica2": "Famosa pela produção de periféricos, como mouses e teclados"
+ },
+ {
+ "id": 81,
+ "nome": "Moura",
+
+
+ "wikipedia": "baterias_moura",
+ "slogan": "Moura é moura",
+ "dica1": "Fabricante de baterias automotivas",
+ "dica2": "Possui o piloto Emerson Fittipaldi como garoto-propaganda"
+ },
+ {
+ "id": 82,
+ "nome": "Café do Ponto",
+ "alternativo": "ponto",
+
+
+ "wikipedia": "Café_do_Ponto",
+ "slogan": "Paixão por café",
+ "dica1": "Marca de café",
+ "dica2": "Possui lojas espalhadas pelo Brasil"
+ },
+ {
+ "id": 83,
+ "nome": "Matte Leão",
+ "alternativo": "mate, mate leao",
+
+
+ "wikipedia": "Matte_Leão",
+ "slogan": "Pura harmonia",
+ "dica1": "Marca de chá erva mate",
+ "dica2": "Grande participação no segmento de chás prontos para beber"
+ },
+ {
+ "id": 84,
+ "nome": "Buscapé",
+ "alternativo": "busca pe",
+
+
+ "wikipedia": "Buscape",
+ "slogan": "“Comparação de preços, produtos e serviços”",
+ "dica1": "Atua no comércio eletrônico",
+ "dica2": "Ferramenta de busca de preços"
+ },
+ {
+ "id": 85,
+ "nome": "Polishop",
+
+
+ "wikipedia": "Polishop",
+ "slogan": "Novas idéias facilitam sua vida",
+ "dica1": "Empresa de vendas de mercadorias",
+ "dica2": "Possui um canal de TV para venda de produtos"
+ },
+ {
+ "id": 86,
+ "nome": "Kopenhagen",
+ "alternativo": "copenhagem, copenhagen",
+
+
+ "wikipedia": "Kopenhagen",
+ "slogan": "Marca para sempre",
+ "dica1": "Fábrica de chocolate balas e confeitos",
+ "dica2": "Um dos produdos mais famosos são a Nhá Benta e a Língua de Gato"
+ },
+ {
+ "id": 87,
+ "nome": "CVC",
+
+
+ "wikipedia": "CVC_(turismo)",
+ "slogan": "Onde os sonhos viram conquistas",
+ "dica1": "Maior empresa brasileira de turismo",
+ "dica2": "Grande pela venda de pacotes turísticos"
+ },
+ {
+ "id": 88,
+ "nome": "Marisa",
+
+
+ "wikipedia": "Lojas_Marisa",
+ "slogan": "De mulher pra mulher",
+ "dica1": "Loja varejista",
+ "dica2": "Venda de roupas para mercado feminino"
+ },
+ {
+ "id": 89,
+ "nome": "Devassa",
+
+
+ "wikipedia": "Devassa_(cerveja)",
+ "slogan": "“Todo mundo tem um lado...”",
+ "dica1": "Cerveja brasileira",
+ "dica2": "pertencente ao grupo Schincariol"
+ },
+ {
+ "id": 90,
+ "nome": "Grow",
+ "alternativo": "grou",
+
+
+ "wikipedia": "Grow",
+ "slogan": "Jogo é Grow",
+ "dica1": "Empresa de fabricação de jogos de tabuleiro e brinquedos",
+ "dica2": "O primeiro jogo de tabuleiro lançado foi o War"
+ },
+ {
+ "id": 91,
+ "nome": "S.O.S. Educação Profissional",
+ "alternativo": "sos, S.O.S., S.O.S",
+
+
+ "wikipedia": "S.O.S_Educação_Profissional",
+ "slogan": "Cursos Profissionalizantes",
+ "dica1": "Empresa de cursos na área de TI",
+ "dica2": "Presente fisicamente em quase todo o Brasil"
+ },
+ {
+ "id": 92,
+ "nome": "Pague Menos",
+
+
+ "wikipedia": "Pague_Menos",
+ "slogan": "É de coração. É do Brasil.",
+ "dica1": "Empresa varejista de produtos farmaceuticos",
+ "dica2": "Rede de farmácias que enfatiza o preço baixo no nome"
+ },
+ {
+ "id": 93,
+ "nome": "Ricardo Eletro",
+
+
+ "wikipedia": "Ricardo_Eletro",
+ "slogan": "Aqui tem dono!",
+ "dica1": "Atua no ramo varejista",
+ "dica2": "Sede em Belo Horizonte"
+ },
+ {
+ "id": 94,
+ "nome": "Arezzo",
+
+
+ "wikipedia": "arezzo_(empresa)",
+ "slogan": "Totalmente demais",
+ "dica1": "Fabricante de acessórios femininos",
+ "dica2": "Lojas especializadas em sandálias, bolsas e carteiras"
+ },
+ {
+ "id": 95,
+ "nome": "Cachaça Ypióca",
+ "alternativo": "ypioca",
+
+
+ "wikipedia": "Ypioca",
+ "slogan": "Paixão Brasileira",
+ "dica1": "Produtora de cachaça",
+ "dica2": "Feita no Ceará"
+ },
+ {
+ "id": 96,
+ "nome": "Netshoes",
+
+
+ "wikipedia": "Netshoes",
+ "slogan": "Sem limites entre você e o esporte",
+ "dica1": "Loja virtual de esporte",
+ "dica2": "Patrocinadora de clubes de futebol como Bahia e Santos"
+ },
+ {
+ "id": 97,
+ "nome": "Embratel",
+
+
+ "wikipedia": "Embratel",
+ "slogan": "Faz um 21",
+ "dica1": "Empresa de telecomunicações",
+ "dica2": "Foi privatizada em 1998"
+ },
+ {
+ "id": 98,
+ "nome": "Yázigi",
+
+
+ "wikipedia": "Yazigi",
+ "slogan": "Você cidadão do mundo",
+ "dica1": "Escola de idiomas",
+ "dica2": "Associou-se a empresa 'Internexus'"
+ },
+ {
+ "id": 99,
+ "nome": "Centauro",
+
+
+ "wikipedia": "Centauro_(loja)",
+ "slogan": "Seu esporte nossa paixão",
+ "dica1": "Rede de lojas de artigos esportivos",
+ "dica2": "Os corredores da loja reproduzem uma pista de atletismo"
+ },
+ {
+ "id": 100,
+ "nome": "China in Box",
+
+
+ "wikipedia": "China_in_Box",
+ "slogan": "Tudo pede um china in box",
+ "dica1": "Rede de fast-food de comida chinesa",
+ "dica2": "Um biscoito da sorte vem junto com a refeição"
+ },
+ {
+ "id": 101,
+ "nome": "Ortobom",
+
+
+ "wikipedia": "Ortobom",
+ "slogan": "1/3 da sua vida você passa sobre ele",
+ "dica1": "Marca de colchões",
+ "dica2": "Origem da palavra deriva de um ramo da medicina"
+ },
+ {
+ "id": 102,
+ "nome": "Canal Futura",
+ "alternativo": "futura",
+
+
+ "wikipedia": "Canal_futura",
+ "slogan": "“O canal do conhecimento”",
+ "dica1": "Canal de televisão",
+ "dica2": "Foco em TV educativa"
+ },
+ {
+ "id": 103,
+ "nome": "Cacau Show",
+ "alternativo": "cacal show",
+
+
+ "wikipedia": "Cacau_Show",
+ "slogan": "Um show de chocolate",
+ "dica1": "Empresa alimentícia brasileira",
+ "dica2": "Loja especializada em chocolates finos"
+ },
+ {
+ "id": 104,
+ "nome": "Arno",
+
+
+ "wikipedia": "Arno",
+ "slogan": "Você imagina clic a Arno faz.",
+ "dica1": "Empresa de eletrodomésticos",
+ "dica2": "Seu nome vem de um rio italiano"
+ },
+ {
+ "id": 105,
+ "nome": "Banco BMG",
+ "alternativo": "bmg",
+
+
+ "wikipedia": "Banco_BMG",
+ "slogan": "O banco de última e muitas gerações”",
+ "dica1": "Banco de varejo de Minas Gerais",
+ "dica2": "Marca conhecida por patrocínios esportivos                                                                        "
+ },
+ {
+ "id": 106,
+ "nome": "IG",
+
+
+ "wikipedia": "Internet_Group",
+ "slogan": "\"O melhor para você\"",
+ "dica1": "Provedor de acesso à internet",
+ "dica2": "Notabilizou-se por prover acesso discado à internet de forma gratuita"
+ },
+ {
+ "id": 107,
+ "nome": "Tramontina",
+
+
+ "wikipedia": "Tramontina",
+ "slogan": "\"Brasileira assim como você\"",
+ "dica1": "Empresa metalúrgica",
+ "dica2": "Produz panelas facas talheres e utensílios domésticos em aço inóx"
+ },
+ {
+ "id": 108,
+ "nome": "Sukita",
+
+
+ "wikipedia": "Sukita",
+ "slogan": "Quem bebe Sukita não engole qualquer coisa",
+ "dica1": "Marca de refrigerantes",
+ "dica2": "Famosa campanha publicitária do \"Tio\""
+ },
+ {
+ "id": 109,
+ "nome": "Dafiti",
+
+
+ "wikipedia": "Dafiti",
+ "slogan": "A sua loja de moda online!",
+ "dica1": "Loja varejista online",
+ "dica2": "Começou com venda de calçados"
+ },
+ {
+ "id": 110,
+ "nome": "Suvinil",
+
+
+ "wikipedia": "Suvinil",
+ "slogan": "Sua casa seu orgulho",
+ "dica1": "Marca de tintas imobiliárias",
+ "dica2": "Possui  cores texturas e acabamentos diferenciados"
+ },
+ {
+ "id": 111,
+ "nome": "CBN",
+
+
+ "wikipedia": "Central_Brasileira_de_Notícias",
+ "slogan": "“A rádio que toca notícia”",
+ "dica1": "Radio brasileira",
+ "dica2": "Programação exclusivamente jornalística"
+ },
+ {
+ "id": 112,
+ "nome": "Beto Carrero World",
+ "alternativo": "Beto Carrero, Beto carreiro",
+
+
+ "wikipedia": "Beto_Carrero_World",
+ "slogan": "“Um mundo do tamanho dos seus sonhos!”",
+ "dica1": "Maior parque temático da América Latina",
+ "dica2": "Localizado em Santa Catarina"
+ },
+ {
+ "id": 113,
+ "nome": "Placar",
+
+
+ "wikipedia": "Placar",
+ "slogan": "Muito além das quatro linhas",
+ "dica1": "Revista mensal de esportes",
+ "dica2": "O foco principal da revista é o futebol"
+ },
+ {
+ "id": 114,
+ "nome": "Nobel",
+
+
+ "wikipedia": "Livraria_Nobel",
+ "slogan": "A maior rede de livrarias do Brasil",
+ "dica1": "Empresa varejista de livros",
+ "dica2": "Posui lojas pequenas e megastores"
+ },
+ {
+ "id": 115,
+ "nome": "Fast Shop",
+
+
+ "wikipedia": "Fast_Shop",
+ "slogan": "“Os melhores lançamentos e novidades em tecnologia”",
+ "dica1": "Eletrodomésticos e eletroeletrônicos de luxo",
+ "dica2": "Atua como apple shop em algumas lojas"
+ },
+ {
+ "id": 116,
+ "nome": "Ipanema",
+
+
+ "wikipedia": "Ipanema_(sandália)",
+ "slogan": "Só ipanema tem",
+ "dica1": "Empresa de calçados",
+ "dica2": "Seu nome remete a uma das praias mais famosas do Brasil"
+ },
+ {
+ "id": 117,
+ "nome": "BandNews FM",
+ "alternativo": "band news, band",
+
+
+ "wikipedia": "BandNews_FM",
+ "slogan": "“Em 20 minutos tudo pode mudar”",
+ "dica1": "Rede de rádios",
+ "dica2": "Programação jornalística"
+ },
+ {
+ "id": 118,
+ "nome": "Café Pelé",
+ "alternativo": "pelé",
+
+
+ "wikipedia": "Café_Pelé",
+ "slogan": "Tome Café Pelé e fique com o Rei na barriga",
+ "dica1": "Marca de Café",
+ "dica2": "Leva o nome de um jogador de futebol"
+ },
+ {
+ "id": 119,
+ "nome": "Castor",
+
+
+ "slogan": "Um sonho de colchões",
+ "dica1": "Atua com colchões e móveis estofados",
+ "dica2": "Seu nome é referência a um animal"
+ },
+ {
+ "id": 120,
+ "nome": "Guaraná Kuat",
+ "alternativo": "kuat",
+
+
+ "wikipedia": "Kuat",
+ "slogan": "O sabor marcante do guaraná",
+ "dica1": "Marca de refrigerante",
+ "dica2": "O nome da marca vem do Tupi-Guarani que significa “Irmão Gêmeo da Lua\""
+ },
+ {
+ "id": 121,
+ "nome": "Martins",
+
+
+ "wikipedia": "Martins_(empresa)",
+ "slogan": "Juntos cada um vale mais",
+ "dica1": "Empresa atacadista",
+ "dica2": "Maior empresa atacadista do Brasil"
+ },
+ {
+ "id": 122,
+ "nome": "Toddynho",
+ "alternativo": "toddy",
+
+
+ "wikipedia": "Toddynho",
+ "slogan": "O seu companheiro de aventuras",
+ "dica1": "Marca de achocolatados",
+ "dica2": "Distribuido em caixinhas de 200ml"
+ },
+ {
+ "id": 123,
+ "nome": "Arisco",
+
+
+ "slogan": "“Comida com jeitinho brasileiro”",
+ "dica1": "Marca brasileira de produtos alimentícios",
+ "dica2": "Famosa pela produção de temperos e molhos"
+ },
+ {
+ "id": 124,
+ "nome": "Lupo",
+
+
+ "wikipedia": "Lupo",
+ "slogan": "A meia da loba",
+ "dica1": "Fabricante de brasielira de roupas",
+ "dica2": "Famosa pela produção de moda íntima e meias"
+ },
+ {
+ "id": 125,
+ "nome": "MercadoLivre",
+ "alternativo": "Mercado livre",
+
+
+ "wikipedia": "MercadoLivre",
+ "slogan": "Onde comprar e vender de tudo",
+ "dica1": "Empresa de comércio eletrônico",
+ "dica2": "Leilões"
+ },
+ {
+ "id": 126,
+ "nome": "BondFaro",
+ "alternativo": "bond faro",
+
+
+ "slogan": "“Os melhores produtos em lojas de confiança”",
+ "dica1": "Atua no comércio eletrônico",
+ "dica2": "Ferramenta de busca de preços"
+ },
+ {
+ "id": 127,
+ "nome": "Consul",
+
+
+ "wikipedia": "Consul_(empresa)",
+ "slogan": "Bem pensado",
+ "dica1": "Fabricante de eletrodomésticos",
+ "dica2": "Uma das mais lembradas marcas de refrigeradores"
+ },
+ {
+ "id": 128,
+ "nome": "Marcopolo",
+ "alternativo": "marco polo",
+
+
+ "wikipedia": "Marcopolo",
+ "slogan": "Aproximando pessoas",
+ "dica1": "Montadora de carroceria",
+ "dica2": "Maior montadora de ônibus do país"
+ },
+ {
+ "id": 129,
+ "nome": "Lancenet",
+ "alternativo": "lance.net, lance",
+
+
+ "wikipedia": "Lance!",
+ "slogan": "O diário dos esportes",
+ "dica1": "Jornal esportivo",
+ "dica2": "Formato de tablóide"
+ },
+ {
+ "id": 130,
+ "nome": "Melissa",
+
+
+ "wikipedia": "Melissa_(calçados)",
+ "slogan": "Plastic dreams",
+ "dica1": "Linha de calçados de plástico",
+ "dica2": "O modelo mais famoso de calçado é chamada de Aranha"
+ },
+ {
+ "id": 131,
+ "nome": "Esmaltec",
+
+
+ "wikipedia": "Esmaltec",
+ "slogan": "“Você pode contar”",
+ "dica1": "Fabricante de eletrodomésticos",
+ "dica2": "Pertencente ao grupo Edson Queiroz"
+ },
+ {
+ "id": 132,
+ "nome": "Embraer",
+
+
+ "wikipedia": "Embraer",
+ "slogan": "For the Journey",
+ "dica1": "Empresa fabricante de aeronaves",
+ "dica2": "Possui imagem atrelada ao ITA"
+ },
+ {
+ "id": 133,
+ "nome": "Viação itapemirim",
+ "alternativo": "itapemirim",
+
+
+ "wikipedia": "Viação_Itapemirim",
+ "slogan": "O Brasil viaja com a gente!",
+ "dica1": "Empresa de transporte rodoviário",
+ "dica2": "Seu nome deriva de uma famosa cidade do Espirito Santo"
+ },
+ {
+ "id": 134,
+ "nome": "Correios",
+ "alternativo": "ect",
+
+
+ "wikipedia": "Empresa_Brasileira_de_Correios_e_Telégrafos",
+ "slogan": "“Soluções que aproximam”",
+ "dica1": "Empresa pública",
+ "dica2": "Responsável por envio e entrega de correspondências"
+ },
+ {
+ "id": 135,
+ "nome": "CCE",
+
+
+ "wikipedia": "CCE",
+ "slogan": "“Do jeito que você quer”",
+ "dica1": "Fabricante de eletrônicos",
+ "dica2": "Desde 2012 faz parte do grupo Lenovo"
+ },
+ {
+ "id": 136,
+ "nome": "Bavária",
+
+
+ "wikipedia": "Bavária_(cerveja)",
+ "slogan": "“A cerveja dos amigos”",
+ "dica1": "Marca de cerveja brasileira",
+ "dica2": "Famosa pela propaganda com cantores sertanejos"
+ },
+ {
+ "id": 137,
+ "nome": "Wizard",
+
+
+ "wikipedia": "Wizard_(escola_de_idiomas)",
+ "slogan": "Inglês com liderança.",
+ "dica1": "Escola de idiomas",
+ "dica2": "Seu nome é uma palavra inglesa"
+ },
+ {
+ "id": 138,
+ "nome": "Banco Safra",
+ "alternativo": "safra",
+
+
+ "wikipedia": "Banco_Safra",
+ "slogan": "Tradição secular de segurança",
+ "dica1": "Atua no sistema financeiro",
+ "dica2": "Focado em empresas e pessoas de alto poder aquisitivo"
+ },
+ {
+ "id": 139,
+ "nome": "Microlins",
+
+
+ "wikipedia": "Microlins",
+ "slogan": "Seja o escolhido para o mercado de trabalho",
+ "dica1": "Franquia de escolas profissionalizantes",
+ "dica2": "Foi fundada como escola profissionalizante na cidade paulista de Lins"
+ },
+ {
+ "id": 140,
+ "nome": "Caio",
+
+
+ "wikipedia": "CAIO_Induscar",
+ "slogan": "Com você aonde for",
+ "dica1": "Montadora de carroceria",
+ "dica2": "Líder no encarroçamento de ônibus urbano"
+ },
+ {
+ "id": 141,
+ "nome": "GNT",
+
+
+ "wikipedia": "Gnt",
+ "slogan": "“Com você”",
+ "dica1": "Canal de TV por assinatura",
+ "dica2": "Pertencente as organizações Globo"
+ },
+ {
+ "id": 142,
+ "nome": "Pagseguro",
+ "alternativo": "pag seguro",
+
+
+ "wikipedia": "Pagseguro",
+ "slogan": "A forma mais segura de comprar",
+ "dica1": "Pagamentos eletrônicos",
+ "dica2": "Propriedade do UOL"
+ },
+ {
+ "id": 143,
+ "nome": "Santa Clara",
+ "alternativo": "café santa clara",
+
+
+ "wikipedia": "Café_Santa_Clara",
+ "slogan": "O sabor do encontro",
+ "dica1": "Marca de café",
+ "dica2": "Famosa no Norte/Nordeste"
+ },
+ {
+ "id": 144,
+ "nome": "TV Cultura",
+ "alternativo": "cultura",
+
+
+ "wikipedia": "TV_Cultura",
+ "slogan": "Uma TV diferente",
+ "dica1": "Atua no ramo de televisão",
+ "dica2": "Tem caráter educativo e cultural"
+ },
+ {
+ "id": 145,
+ "nome": "Café Pilão",
+ "alternativo": "pilao",
+
+
+ "wikipedia": "Café_Pilão",
+ "slogan": "O café forte do Brasil",
+ "dica1": "Marca de café",
+ "dica2": "Nome de um objeto usado na fabricação de café"
+ },
+ {
+ "id": 146,
+ "nome": "Gradiente",
+
+
+ "wikipedia": "Gradiente_(empresa)",
+ "slogan": "“A melhor imagem do melhor som”",
+ "dica1": "Fabricante de eletroeletrônicos",
+ "dica2": "Detentora do nome 'iphone' no Brasil"
+ },
+ {
+ "id": 147,
+ "nome": "Coral",
+
+
+ "slogan": "Tudo de cor para você",
+ "dica1": "Marca de tinta imobiliária",
+ "dica2": "Possui o Projeto Tudo de Cor para Você onde viaja pelo Brasil renovando imóveis"
+ },
+ {
+ "id": 148,
+ "nome": "Rela Gina",
+ "alternativo": "gina",
+
+
+ "wikipedia": "Rela_Gina",
+ "slogan": "Desde 1947 fazendo parte da sua família.",
+ "dica1": "Produtora de palitos de madeira",
+ "dica2": "Famosa por uma página 'indelicada' no Facebook"
+ },
+ {
+ "id": 149,
+ "nome": "União",
+
+
+ "wikipedia": "Açúcar_União",
+ "slogan": "Fazendo sua vida mais doce",
+ "dica1": "Marca de açucar",
+ "dica2": "Mais de 100 anos de mercado"
+ },
+ {
+ "id": 150,
+ "nome": "Uniodonto",
+
+
+ "slogan": "Cuidando dos sorrisos do Brasil",
+ "dica1": "Cooperativa de saúde",
+ "dica2": "Especializada em odontologia"
+ },
+ {
+ "id": 151,
+ "nome": "Dako",
+
+
+ "wikipedia": "Dako",
+ "slogan": "Faça mais por você",
+ "dica1": "Fabricante de eletrodomésticos",
+ "dica2": "Famosa por fogões"
+ },
+ {
+ "id": 152,
+ "nome": "Indaiá",
+
+
+ "wikipedia": "Indaiá_(empresa)",
+ "slogan": "Quanto maior é a sede maior é o prazer em satisfazê-la",
+ "dica1": "Empresa fabricante de água mineral",
+ "dica2": "Pertencente ao grupo Edson Queiroz"
+ },
+ {
+ "id": 153,
+ "nome": "HotelUrbano",
+ "alternativo": "hotel urbano",
+
+
+ "wikipedia": "Hotel_Urbano",
+ "slogan": "Viajar é possível",
+ "dica1": "Site de compras coletivas",
+ "dica2": "Especializado em viagens"
+ },
+ {
+ "id": 154,
+ "nome": "Lacta",
+ "alternativo": "lakta",
+
+
+ "wikipedia": "Lacta",
+ "slogan": "Entregue-se Sinta-se vivo com a Lacta",
+ "dica1": "Empresa de chocolates",
+ "dica2": "Famosa pelos chocolates Sonho de Valsa e Bis"
+ },
+ {
+ "id": 155,
+ "nome": "Caloi",
+
+
+ "slogan": "Movimentando a vida",
+ "dica1": "Fabricante de bicicletas e equipamentos",
+ "dica2": "Ficou famosa devido as bicicletas dobráveis"
+ },
+ {
+ "id": 156,
+ "nome": "Quatro Rodas",
+ "alternativo": "quatrorodas, guia quatro rodas",
+
+
+ "wikipedia": "Quatro_Rodas",
+ "slogan": "A gente vai antes para você ir melhor",
+ "dica1": "Revista de carros",
+ "dica2": "Fabricante de um dos guias de viagens mais popular do país"
+ },
+ {
+ "id": 157,
+ "nome": "Topper",
+ "alternativo": "toper",
+
+
+ "wikipedia": "Topper",
+ "slogan": "Coração manda",
+ "dica1": "Empresa fornecedora de materiais esportivos",
+ "dica2": "Patrocina diversos eventos esportivos"
+ },
+ {
+ "id": 158,
+ "nome": "Seara",
+
+
+ "wikipedia": "Seara_Alimentos",
+ "slogan": "O sabor que a vida tem",
+ "dica1": "Empresa do ramo alimentício",
+ "dica2": "Patrocina times de futebol brasileiro"
+ },
+ {
+ "id": 159,
+ "nome": "Baked Potato",
+
+
+ "wikipedia": "Baked_Potato",
+ "slogan": "A batata de bom gosto",
+ "dica1": "Rede de restaurante fast-food",
+ "dica2": "O principal ingrediente utilizado é batata"
+ },
+ {
+ "id": 160,
+ "nome": "Bubbaloo",
+ "alternativo": "babalu, bubalu, bubbalu, bubalo, bubbaluu, bubaluu",
+
+
+ "wikipedia": "Bubbaloo",
+ "slogan": "A nova geração do chiclé de bola",
+ "dica1": "Marca de chiclete",
+ "dica2": "Tem como mascote um gato preto de óculos escuros e gravata"
+ },
+ {
+ "id": 161,
+ "nome": "Votorantim",
+
+
+ "wikipedia": "Grupo_Votorantim",
+ "slogan": "Criando rotas para o futuro",
+ "dica1": "Conglomerado industrial",
+ "dica2": "Seu nome pertence a uma cidade"
+ },
+ {
+ "id": 162,
+ "nome": "Canal Rural",
+ "alternativo": "rural",
+
+
+ "wikipedia": "Canal_Rural",
+ "slogan": "A TV do Agronegócio. A força do campo",
+ "dica1": "Emissora de televisão brasileira",
+ "dica2": "Foca em técnicas de agricultura, pecuária e transmite leilões ao vivo"
+ },
+ {
+ "id": 163,
+ "nome": "Le postiche",
+
+
+ "wikipedia": "Le_Postiche",
+ "slogan": "Fica ótima em você",
+ "dica1": "Uma das maiores empresas de bolsas malas e acessórios de viagens",
+ "dica2": "Considerada como uma marca \"top of mind\" em artigos de couro"
+ },
+ {
+ "id": 164,
+ "nome": "Finep",
+
+
+ "wikipedia": "Finep",
+ "slogan": "“Projetos inovadores merecem crédito”",
+ "dica1": "Empresa pública brasileira",
+ "dica2": "Financiamneto de projetos de ciência, tecnologia e inovação"
+ },
+ {
+ "id": 165,
+ "nome": "Tilibra",
+
+
+ "wikipedia": "Tilibra",
+ "slogan": "Do jeito que você pensa",
+ "dica1": "Fabricante de materiais escolares",
+ "dica2": "Famosa pela produção de cadernos"
+ },
+ {
+ "id": 166,
+ "nome": "Biscoito Globo",
+ "alternativo": "globo",
+
+
+ "slogan": "Biscoito Globo salgado ou doce",
+ "dica1": "Biscoito de polvilho",
+ "dica2": "Famoso no Rio de Janeiro vendido nas praias e nas ruas da cidade"
+ },
+ {
+ "id": 167,
+ "nome": "Embrapa",
+
+
+ "wikipedia": "Empresa_Brasileira_de_Pesquisa_Agropecuária",
+ "slogan": "“O melhor da pesquisa agropecuária”",
+ "dica1": "Empresa pública",
+ "dica2": "Desenvolvimento de tecnologias e conhecimentos agropecuários"
+ },
+ {
+ "id": 168,
+ "nome": "Multilaser",
+
+
+ "wikipedia": "Multilaser",
+ "slogan": "Tecnologia e transformação",
+ "dica1": "Fabricante de produtos e acessorios multimidia",
+ "dica2": "Atualmente fabrica celulares e tablets"
+ },
+ {
+ "id": 169,
+ "nome": "Copag",
+
+
+ "wikipedia": "Copag",
+ "slogan": "Tenha sempre à mão",
+ "dica1": "Empresa de fabricação de baralho",
+ "dica2": "Fabrica jogos de cartas como Jogo da Memória e Sudoku."
+ },
+ {
+ "id": 170,
+ "nome": "Telemar",
+
+
+ "wikipedia": "Telemar",
+ "slogan": "Soluções para você",
+ "dica1": "Empresa de telecomunicações",
+ "dica2": "Utiliza a marca 'Oi'"
+ },
+ {
+ "id": 171,
+ "nome": "Hiper Bompreço",
+ "alternativo": "hiper bom preco, bompreco, hiper",
+
+
+ "wikipedia": "Bompreço",
+ "slogan": "Cada vez mais barato cada vez mais perto de você!",
+ "dica1": "Rede de supermercados",
+ "dica2": "Pertencente ao grupo Wal-Mart."
+ },
+ {
+ "id": 172,
+ "nome": "Proibida",
+
+
+ "slogan": "Beba com moderação. Viva sem moderação.",
+ "dica1": "Fabricante de cerveja",
+ "dica2": "Famosa pela promoção realizada por duas modelos \"Tchecas\""
+ },
+ {
+ "id": 173,
+ "nome": "Insinuante",
+
+
+ "wikipedia": "Lojas_Insinuante",
+ "slogan": "Aqui você manda",
+ "dica1": "Rede de varejo de móveis e eletrodomésticos",
+ "dica2": "Forte no nordeste brasileiro"
+ },
+ {
+ "id": 174,
+ "nome": "RedeTV!",
+ "alternativo": "redetv, rede tv",
+
+
+ "wikipedia": "Redetv",
+ "slogan": "Em rede com você",
+ "dica1": "Rede de televisão",
+ "dica2": "Famosa pelo lançamento do \"Pânico na TV\""
+ },
+ {
+ "id": 175,
+ "nome": "Droga Raia",
+ "alternativo": "raia",
+
+
+ "wikipedia": "RaiaDrogasil",
+ "slogan": "Prazer em cuidar",
+ "dica1": "Empresa farmacêutica",
+ "dica2": "Mais antiga rede de farmácias do Brasi"
+ },
+ {
+ "id": 176,
+ "nome": "Itautec",
+
+
+ "wikipedia": "Itautec",
+ "slogan": "De frente para o futuro",
+ "dica1": "Fabricante de equipamentos de TI",
+ "dica2": "Forte nos segmentos de automação comercial e automação bancária"
+ },
+ {
+ "id": 177,
+ "nome": "Suco Jandaia",
+ "alternativo": "jandaia",
+
+
+ "wikipedia": "Sucos_do_Brasil",
+ "slogan": "Faz sua vida mais gostosa",
+ "dica1": "Fabricante de sucos",
+ "dica2": "Seu nome é o mesmo do pássaro símbolo da empresa"
+ },
+ {
+ "id": 178,
+ "nome": "Drogasil",
+
+
+ "wikipedia": "Drogasil",
+ "slogan": "Serve confiança!",
+ "dica1": "Empresa farmacêutica",
+ "dica2": "Consiste no comércio varejista de produtos farmacêuticos e cosméticos"
+ },
+ {
+ "id": 179,
+ "nome": "Deca",
+
+
+ "wikipedia": "Deca_(empresa)",
+ "slogan": "Deca e você felizes para sempre",
+ "dica1": "Empresa de louças e metais sanitários",
+ "dica2": "Fornece materias de acamento como torneiras chuveiros e cubas de pia"
+ },
+ {
+ "id": 180,
+ "nome": "Itaipava",
+
+
+ "wikipedia": "Itaipava_(cerveja)",
+ "slogan": "Feita especialmente para você",
+ "dica1": "Empresa de cerveja",
+ "dica2": "Patrocina evento mobilísticos dentro do Brasil"
+ },
+ {
+ "id": 181,
+ "nome": "Etna",
+
+
+ "wikipedia": "Etna_Home_Store",
+ "slogan": "Design ao seu alcance",
+ "dica1": "Rede varejista de móveis",
+ "dica2": "Comercializa artigo para decoração cama mesa e banho"
+ },
+ {
+ "id": 182,
+ "nome": "Locaweb",
+
+
+ "wikipedia": "LocaWeb",
+ "slogan": "Keep IT simple",
+ "dica1": "Empresa brasileira de hospedagem de sites",
+ "dica2": "Hospeda grande parte dos sites existentes no Brasil"
+ },
+ {
+ "id": 183,
+ "nome": "Garoto",
+
+
+ "wikipedia": "Chocolates_Garoto",
+ "slogan": "Sempre Garoto",
+ "dica1": "Fabrcante de chocolates",
+ "dica2": "Famosa pelo Baton e Serenata de Amor"
+ },
+ {
+ "id": 184,
+ "nome": "YES",
+
+
+ "wikipedia": "Yes_(escola_de_idiomas)",
+ "slogan": "O inglês que evolui com vocês",
+ "dica1": "Escola de idiomas",
+ "dica2": "\"Sim\""
+ },
+ {
+ "id": 185,
+ "nome": "SEBRAE",
+
+
+ "wikipedia": "Serviço_Brasileiro_de_Apoio_às_Micro_e_Pequenas_Empresas",
+ "slogan": "O Negócio é Acreditar",
+ "dica1": "Órgao púbico",
+ "dica2": "Apioador de micro e pequenas empresas"
+ },
+ {
+ "id": 186,
+ "nome": "Forno de Minas",
+
+
+ "slogan": "Bom demais",
+ "dica1": "Empresa alimentícia",
+ "dica2": "Famosa pelo pão de queijo"
+ },
+ {
+ "id": 187,
+ "nome": "Fran's Café",
+ "alternativo": "frans cafe, fran cafe",
+
+
+ "wikipedia": "Frans_Café",
+ "slogan": "Estilo e arte de servir café",
+ "dica1": "Franquia de coffee-shop",
+ "dica2": "Possui um cardápio especial de café com bebidas quentes e geladas"
+ },
+ {
+ "id": 188,
+ "nome": "AACD",
+
+
+ "wikipedia": "Associação_de_Assistência_à_Criança_Deficiente",
+ "slogan": "Você faz parte dessa história",
+ "dica1": "Trabalha pelo bem-estar de pessoas com deficiência física",
+ "dica2": "Associação sem fins lucrativos"
+ },
+ {
+ "id": 189,
+ "nome": "Gendai",
+
+
+ "slogan": "Comida japonesa de verdade",
+ "dica1": "Rede de restaurante de culinária japonesa",
+ "dica2": "Atua com lojas de fast-food quiosque e restaurante casual"
+ },
+ {
+ "id": 190,
+ "nome": "Gerdau",
+
+
+ "wikipedia": "Gerdau",
+ "slogan": "Nosso produto é aço Nosso forte é você",
+ "dica1": "Empresa siderúrgica",
+ "dica2": "Uma das maiores reclicadoras transformando sucata em aço"
+ },
+ {
+ "id": 191,
+ "nome": "Gomes da Costa",
+
+
+ "slogan": "O melhor do mar para você",
+ "dica1": "Empresa de pescados em conserva",
+ "dica2": "Principais produtos são o atum e sardinhas"
+ },
+ {
+ "id": 192,
+ "nome": "Richester",
+
+
+ "wikipedia": "Richester",
+ "slogan": "Feito com amor para você",
+ "dica1": "Marca de biscoitos",
+ "dica2": "Famoso pelo biscoito amori"
+ },
+ {
+ "id": 193,
+ "nome": "Hipoglós",
+
+
+ "wikipedia": "Procter_%26_Gamble",
+ "slogan": "Um mundo de suavidade para seu bebê",
+ "dica1": "Medicamento de prevenção de assaduras",
+ "dica2": "Conhecida pela maioria das mamães brasileiras"
+ },
+ {
+ "id": 194,
+ "nome": "Hope",
+
+
+ "slogan": "A calcinha que mexe com a cabeça dos homens",
+ "dica1": "Empresa de lingerie",
+ "dica2": "Tem como modelo da marca a top Gisele Bündchen"
+ },
+ {
+ "id": 195,
+ "nome": "Avanço",
+
+
+ "wikipedia": "Avanço_(desodorante)",
+ "slogan": "Com avanço elas avançam",
+ "dica1": "Marca de desodorante",
+ "dica2": "Famoso pelo baixo preço"
+ },
+ {
+ "id": 196,
+ "nome": "Assaí Atacadista",
+ "alternativo": "assai",
+
+
+ "slogan": "“Sempre o melhor negócio”",
+ "dica1": "Rede de atacado",
+ "dica2": "Pertencente ao grupo Pão de Açucar"
+ },
+ {
+ "id": 197,
+ "nome": "Tok&Stok",
+ "alternativo": "tok e stok, tok stok",
+
+
+ "wikipedia": "Tok%26Stok",
+ "slogan": "Renove sua casa. Renove sua vida",
+ "dica1": "Empresa varejista de móveis e eletrodomésticos",
+ "dica2": "São lançados diariamente oito produtos novos"
+ },
+ {
+ "id": 198,
+ "nome": "Totvs",
+ "alternativo": "totus",
+
+
+ "wikipedia": "Totvs",
+ "slogan": "Igual sendo sempre diferente",
+ "dica1": "Empresa multinacional de software",
+ "dica2": "Oferece soluções administrativas  de desempenho e de infra-estrutura"
+ },
+ {
+ "id": 199,
+ "nome": "Veja Multi-uso",
+ "alternativo": "veja",
+
+
+ "wikipedia": "Veja_(produto_de_limpeza)",
+ "slogan": "Veja + sua vida",
+ "dica1": "Produto de limpeza",
+ "dica2": "Tem o mesmo nome de uma marca de revista brasileira"
+ },
+ {
+ "id": 200,
+ "nome": "Kasinski",
+
+
+ "wikipedia": "Kasinski",
+ "slogan": "Valoriza sua vida",
+ "dica1": "Empresa de veículos de duas e três rodas",
+ "dica2": "Produz motocicletas desde populares até modelos de grande porte"
+ },
+ {
+ "id": 201,
+ "nome": "Aladdin",
+ "alternativo": "alladin",
+
+
+ "slogan": "Sempre presente",
+ "dica1": "Fabricante de garrafas térmicas",
+ "dica2": "Mesmo nome de um famoso filme da Disney"
+ },
+ {
+ "id": 202,
+ "nome": "Água de Cheiro",
+
+
+ "wikipedia": "Agua_de_cheiro_(Empresa)",
+ "slogan": "Bonito é ser feliz",
+ "dica1": "Franquia de perfume",
+ "dica2": "Possui mais de 600 lojas pelo Brasil"
+ },
+ {
+ "id": 203,
+ "nome": "Infraero",
+
+
+ "wikipedia": "Infraero",
+ "slogan": "Todos trabalham juntos por você",
+ "dica1": "Empresa estatal",
+ "dica2": "Responsável pelos aeroportos brasileiros"
+ },
+ {
+ "id": 204,
+ "nome": "Playcenter",
+ "alternativo": "play center",
+
+
+ "wikipedia": "Playcenter",
+ "slogan": "Sempre jovem! Sempre playcenter!",
+ "dica1": "Parque de diversão em São Paulo",
+ "dica2": "Possui brinquedos como carrossel montanhas russas e a noite do terror"
+ },
+ {
+ "id": 205,
+ "nome": "Troller",
+ "alternativo": "troler",
+
+
+ "wikipedia": "Troller",
+ "slogan": "Nascido na trilha criado no asfalto",
+ "dica1": "Montadora de veículos",
+ "dica2": "Famosa pela produção de jipes"
+ },
+ {
+ "id": 206,
+ "nome": "Mabel",
+
+
+ "wikipedia": "Grupo_Mabel",
+ "slogan": "Mabel todo mundo ama",
+ "dica1": "Empresa de biscoitos doces e salgados",
+ "dica2": "Famosa pelas rosquinhas de coco que levam o nome da marca"
+ },
+ {
+ "id": 207,
+ "nome": "Papaiz",
+
+
+ "wikipedia": "Papaiz",
+ "slogan": "O seu mundo bem guardado",
+ "dica1": "Empresa de cadeados e fechaduras",
+ "dica2": "O carro chefe da marca é o cadeado que possui a linha tradicional e fun com desenhos e time de futebol"
+ },
+ {
+ "id": 208,
+ "nome": "Mundo Verde",
+
+
+ "slogan": "Sua loja do bem-estar",
+ "dica1": "Empresa de varejo que trabalha com produtos ligados à saúde",
+ "dica2": "Tem como produtos alimentos naturais orgânicos dietéticos e produtos para terapia"
+ },
+ {
+ "id": 209,
+ "nome": "Neve",
+
+
+ "slogan": "Suave para sua pele",
+ "dica1": "Fabricante de papel higiênico",
+ "dica2": "Famosa pela propaganda com o mordomo Alfredo"
+ },
+ {
+ "id": 210,
+ "nome": "Pado",
+
+
+ "slogan": "Mais que produtos: tranquilidade!",
+ "dica1": "Fabricante de fechaduras e cadeados",
+ "dica2": "Criada em sociedade por Paioletti e Dorner"
+ },
+ {
+ "id": 211,
+ "nome": "Nutrella",
+
+
+ "slogan": "A gente ama o que faz",
+ "dica1": "Empresa de produtos alimenticios",
+ "dica2": "Pioneira em investir em produtos integrais"
+ },
+ {
+ "id": 212,
+ "nome": "BOL",
+ "alternativo": "Brasil Online",
+
+
+ "wikipedia": "Bol",
+ "slogan": "O email grátis do Brasil",
+ "dica1": "Portal de internet",
+ "dica2": "Absorvido pelo UOL"
+ },
+ {
+ "id": 213,
+ "nome": "Penalty",
+
+
+ "wikipedia": "Penalty",
+ "slogan": "Ginga Brasil",
+ "dica1": "Marca de artigos esportivos",
+ "dica2": "Fabrica calçados bolas e acessórios para esportes coletivos"
+ },
+ {
+ "id": 214,
+ "nome": "Expresso guanabara",
+ "alternativo": "guanabara",
+
+
+ "wikipedia": "Expresso_Guanabara",
+ "slogan": "Satisfação em todos os sentidos",
+ "dica1": "Empresa de transporte rodoviário",
+ "dica2": "Maior empresa de transporte terrestre do norte/nordeste"
+ },
+ {
+ "id": 215,
+ "nome": "Phebo",
+ "alternativo": "febo",
+
+
+ "wikipedia": "Phebo",
+ "slogan": "O bem estar fica",
+ "dica1": "Tradicional marca de sabonetes",
+ "dica2": "Famosa pelos sabonetes de glicerina escuros ovais e de odor característico"
+ },
+ {
+ "id": 216,
+ "nome": "Fogo de Chão",
+
+
+ "wikipedia": "Fogo_de_Chão",
+ "slogan": "O jeito gaúcho de fazer churrasco",
+ "dica1": "Rede de churrascaria",
+ "dica2": "Possui restaurantes no Brasil e Estados Unidos"
+ },
+ {
+ "id": 217,
+ "nome": "Polenghi",
+ "alternativo": "polenguinho",
+
+
+ "slogan": "O queijo em seu melhor momento",
+ "dica1": "Empresa de produção de queijo",
+ "dica2": "O queijo mais famoso da marca é o polenguinho"
+ },
+ {
+ "id": 218,
+ "nome": "Puket",
+
+
+ "slogan": "Isso é Happywear",
+ "dica1": "Loja de lingeries pijamas e meias",
+ "dica2": "Famosa pelas meias coloridas e divertidas"
+ },
+ {
+ "id": 219,
+ "nome": "Rei do Mate",
+
+
+ "wikipedia": "Rei_do_Mate",
+ "slogan": "É gostoso. É natural. É Rei do Mate",
+ "dica1": "Rede de casas de chás",
+ "dica2": "Produz bebidas como chás gelados mates sucos naturais e vitaminas"
+ },
+ {
+ "id": 220,
+ "nome": "Redecard",
+ "alternativo": "rede card",
+
+
+ "wikipedia": "Redecard",
+ "slogan": "Amigo do lojista",
+ "dica1": "Empresa do ramo financeiro",
+ "dica2": "Operações com cartões de crédito"
+ },
+ {
+ "id": 221,
+ "nome": "Leite de Rosas",
+
+
+ "wikipedia": "Leite_de_Rosas",
+ "slogan": "Vai bem com todo mundo",
+ "dica1": "Produto de higiene pessoal",
+ "dica2": "É utilizado como desodorante removedor de maquiagem e perfume"
+ },
+ {
+ "id": 222,
+ "nome": "Sagatiba",
+
+
+ "wikipedia": "Sagatiba",
+ "slogan": "Academia Sagatiba de Caipirinha: em prol da caipirinha perfeita",
+ "dica1": "Marca de cachaça",
+ "dica2": "Cachaça reconhecida internacionalmente"
+ },
+ {
+ "id": 223,
+ "nome": "Salton",
+
+
+ "slogan": "Uma grande descoberta",
+ "dica1": "Empresa do mercado de vinhos",
+ "dica2": "Elabora vinhos e espumantes de alta qualidade"
+ },
+ {
+ "id": 224,
+ "nome": "Sempre Livre",
+
+
+ "wikipedia": "Sempre_Livre_(absorvente)",
+ "slogan": "É de sensibilidade que o mundo precisa",
+ "dica1": "Marca de absorventes",
+ "dica2": "Famosa pela tecnologia utilizada para desenvolver seus absorventes"
+ },
+ {
+ "id": 225,
+ "nome": "Seven Boys"
+ },
+ {
+ "id": 227,
+ "nome": "Gulliver",
+ "wikipedia": "Gulliver_(empresa)"
+ },
+ {
+ "id": 228,
+ "nome": "Coqueiro",
+
+
+ "wikipedia": "Coqueiro_(marca)"
+ },
+ {
+ "id": 236,
+ "nome": "Caras"
+ },
+ {
+ "id": 237,
+ "nome": "Zero Cal",
+
+
+ "wikipedia": "Hypermarcas",
+ "slogan": "Quem experimenta nunca mais quer saber de outro adoçante",
+ "dica1": "Marca de adoçante",
+ "dica2": "Famosa pelas propagandas com Carolina Ferraz"
+ },
+ {
+ "nome": "tititi"
+ },
+ {
+ "nome": "sexy"
+ },
+ {
+ "nome": "quem"
+ },
+ {
+ "nome": "istoe"
+ },
+ {
+ "nome": "info"
+ },
+ {
+ "nome": "exame"
+ },
+ {
+ "nome": "contigo"
+ }
+ ]

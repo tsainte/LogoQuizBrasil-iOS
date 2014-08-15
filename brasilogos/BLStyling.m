@@ -10,4 +10,14 @@
 
 @implementation BLStyling
 
++ (void)roundView:(UIView*)view {
+  
+  [[view layer] setCornerRadius:[view frame].size.height / 2];
+}
+
++ (void)roundView:(UIView*)view corner:(CGFloat)corner {
+  
+  [[view layer] setCornerRadius:corner];
+}
+
 @end
