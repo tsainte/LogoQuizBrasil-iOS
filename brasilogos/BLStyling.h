@@ -10,4 +10,7 @@
 
 @interface BLStyling : NSObject
 
++ (void)roundView:(UIView*)view;
++ (void)roundView:(UIView*)view corner:(CGFloat)corner;
+
 @end
