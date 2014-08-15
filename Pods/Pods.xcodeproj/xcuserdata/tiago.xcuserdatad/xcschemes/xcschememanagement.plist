@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Google-AdMob-Ads-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Slash.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1ED0C992597843B894A68648</key>
+		<key>89693A5831E2452387204005</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F888F4A5731478981866B61</key>
+		<key>CD12B7FAC30D4F7D9E104C7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC2A0FD45BE5407DAD016DB4</key>
+		<key>E348E1DE7C454931BD2121E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF435EEC05DF4BE5B5D45272</key>
+		<key>F7ABC337A2F4427DAB99C6BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEB7D1F286A4408087A2039E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
