@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLLevelViewController : UIViewController
+@interface BLLevelViewController : UIViewController <UICollectionViewDataSource>
+
+@property NSArray* logos;
+@property NSInteger levelID;
 
 @end

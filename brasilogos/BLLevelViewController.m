@@ -25,8 +25,10 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  
+  [super viewDidLoad];
+  self.title = [NSString stringWithFormat:@"Nível %d",self.levelID];
+//  self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,6 +37,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+  
+  return self.logos.count;
+}
+
+- (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+  
+  UICollectionViewCell *cell = [collectionView
+                                  dequeueReusableCellWithReuseIdentifier:@"cell"
+                                  forIndexPath:indexPath];
+  
+  UIView* border = (UIView*)[cell viewWithTag:2];
+  [BLStyling roundView:border corner:6];
+  UIView* border2 = (UIView*)[cell viewWithTag:3];
+  [BLStyling roundView:border2 corner:6];
+  UIImageView *imageView = (UIImageView*)[cell viewWithTag:1];
+  imageView.image = [UIImage imageNamed:self.logos[indexPath.row][@"imagemModificada"]];
+  
+
+  
+  return cell;
+}
 /*
 #pragma mark - Navigation
 
