@@ -10,6 +10,16 @@
 
 @implementation BLStyling
 
++ (void)appearances {
+  
+  //paint textfield tint color
+  [[UITextField appearance] setTintColor:kColorLightGreen];
+}
++ (BOOL)isIphone5 {
+  
+  return ([[UIScreen mainScreen] bounds].size.height == 568);
+}
+
 + (void)roundView:(UIView*)view {
   
   [[view layer] setCornerRadius:[view frame].size.height / 2];

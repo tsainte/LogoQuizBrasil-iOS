@@ -26,11 +26,25 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
+  self.gameManager = [[BLGameManager alloc] initWithLogo:self.logo delegate:self];
+  
   [self roundThings];
-  self.logoImage.image = [UIImage imageNamed:self.logo[@"imagemModificada"]];
+  [self updateImage];
+  
   UIView* dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
   self.answerTextField.inputView = dummyView; // Hide keyboard, but show blinking cursor
-  self.answerTextField.text = @"asdfadsf";
+}
+
+- (void)updateImage {
+  
+  
+  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,[self.logo[@"id"] longValue]];
+  BLLogoStatus* status = (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
+  
+  NSString* imageName = status.hasHitTheAnswer ? self.logo[@"imagem"] : self.logo[@"imagemModificada"];
+  
+  self.logoImage.image = [UIImage imageNamed:imageName];
 }
 
 - (void)roundThings {
@@ -49,12 +63,14 @@
     [BLStyling roundView:key corner:6];
   }
 }
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
+- (void)viewWillAppear:(BOOL)animated {
+  
+  [super viewWillAppear:YES];
+  NSLog(@"constraint: %f", self.heightPanelConstraint.constant);
+  self.heightPanelConstraint.constant = [BLStyling isIphone5] ? 210.0f : 160.0f;
+  [self.view setNeedsUpdateConstraints];
+}
 
 /*
 #pragma mark - Navigation
@@ -66,5 +82,62 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Keyboard methods
+- (IBAction)keyPressed:(UIButton *)key {
+  
+  switch (key.tag) {
+    case 0:
+      [self putKey:key.titleLabel.text];
+      break;
+    case 100:
+      [self removeLastKey];
+      break;
+    case 101:
+      [self putKey:@" "];
+      break;
+    case 102:
+      [self tryAnswer];
+      break;
+    default:
+      break;
+  }
+}
+
+- (void)putKey:(NSString*)letter {
+  
+  [self.answerTextField becomeFirstResponder];
+  NSString* text = self.answerTextField.text;
+  text = [NSString stringWithFormat:@"%@%@",text, [letter lowercaseString]];
+  self.answerTextField.text = text;
+}
+
+- (void)removeLastKey {
+  
+  [self.answerTextField becomeFirstResponder];
+  NSString* text = self.answerTextField.text;
+  NSInteger lastIndex = text.length;
+  if (lastIndex) {
+    text = [text substringToIndex:lastIndex-1];
+  }
+  self.answerTextField.text = text;
+}
+
+- (void)tryAnswer {
+  
+  [self.answerTextField resignFirstResponder];
+  [self.gameManager tryAnswer:self.answerTextField.text];
+}
+
+#pragma mark - BLGameManagerDelegate
+
+- (void)isCorrectAnswer {
+ 
+  [self updateImage];
+}
+
+- (void)isWrongAnswer {
+  
+}
 
 @end
