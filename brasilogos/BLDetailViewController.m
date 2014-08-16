@@ -24,7 +24,6 @@
 }
 
 
-
 - (IBAction)soma:(id)sender {
   
   self.bigTrailingConstraint.constant = self.smallHorizontalConstraint.constant;

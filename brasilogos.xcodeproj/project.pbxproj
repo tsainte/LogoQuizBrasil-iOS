@@ -20,7 +20,7 @@
 		F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63BE199EB88D005328B2 /* BLLevelViewController.m */; };
 		F10C63C2199EB8A0005328B2 /* BLLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63C1199EB8A0005328B2 /* BLLogoViewController.m */; };
 		F10C63C5199EB8B8005328B2 /* BLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */; };
-		F10C63C8199EC812005328B2 /* BLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63C7199EC812005328B2 /* BLDatabase.m */; };
+		F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63C7199EC812005328B2 /* BLJSONDatabase.m */; };
 		F10C6950199EDF2D005328B2 /* 51.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C6789199EDF29005328B2 /* 51.png */; };
 		F10C6951199EDF2D005328B2 /* 51_mod.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C678A199EDF29005328B2 /* 51_mod.png */; };
 		F10C6952199EDF2D005328B2 /* aacd.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C678B199EDF29005328B2 /* aacd.png */; };
@@ -478,6 +478,12 @@
 		F10C6B16199EDF2D005328B2 /* zero_cal_mod.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C694F199EDF2D005328B2 /* zero_cal_mod.png */; };
 		F19505F11995CBED00A94FD1 /* logoquiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F19505F01995CBED00A94FD1 /* logoquiz.png */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
+		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
+		F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */; };
+		F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9062199FBCFA0071E256 /* BLScore.m */; };
+		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
+		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
+		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
 		F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B807198E5D9300578D91 /* UIKit.framework */; };
@@ -525,8 +531,8 @@
 		F10C63C1199EB8A0005328B2 /* BLLogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogoViewController.m; sourceTree = "<group>"; };
 		F10C63C3199EB8B8005328B2 /* BLAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAboutViewController.h; sourceTree = "<group>"; };
 		F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAboutViewController.m; sourceTree = "<group>"; };
-		F10C63C6199EC812005328B2 /* BLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDatabase.h; sourceTree = "<group>"; };
-		F10C63C7199EC812005328B2 /* BLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDatabase.m; sourceTree = "<group>"; };
+		F10C63C6199EC812005328B2 /* BLJSONDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLJSONDatabase.h; sourceTree = "<group>"; };
+		F10C63C7199EC812005328B2 /* BLJSONDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLJSONDatabase.m; sourceTree = "<group>"; };
 		F10C6789199EDF29005328B2 /* 51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 51.png; sourceTree = "<group>"; };
 		F10C678A199EDF29005328B2 /* 51_mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 51_mod.png; sourceTree = "<group>"; };
 		F10C678B199EDF29005328B2 /* aacd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aacd.png; sourceTree = "<group>"; };
@@ -986,6 +992,18 @@
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
 		F19505F61995CDB800A94FD1 /* BLStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLStyling.m; sourceTree = "<group>"; };
+		F1AD905B199FB6EA0071E256 /* BLLogoStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogoStatus.h; sourceTree = "<group>"; };
+		F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogoStatus.m; sourceTree = "<group>"; };
+		F1AD905E199FB7BD0071E256 /* BLDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDatabaseManager.h; sourceTree = "<group>"; };
+		F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDatabaseManager.m; sourceTree = "<group>"; };
+		F1AD9061199FBCFA0071E256 /* BLScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLScore.h; sourceTree = "<group>"; };
+		F1AD9062199FBCFA0071E256 /* BLScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLScore.m; sourceTree = "<group>"; };
+		F1AD9064199FBD530071E256 /* BLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLUser.h; sourceTree = "<group>"; };
+		F1AD9065199FBD530071E256 /* BLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLUser.m; sourceTree = "<group>"; };
+		F1AD9067199FCBD20071E256 /* BLWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLWallet.h; sourceTree = "<group>"; };
+		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
+		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
+		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8B803198E5D9300578D91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1F8B805198E5D9300578D91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1036,6 +1054,18 @@
 		F10C63C9199ECA0E005328B2 /* database */ = {
 			isa = PBXGroup;
 			children = (
+				F10C63C6199EC812005328B2 /* BLJSONDatabase.h */,
+				F10C63C7199EC812005328B2 /* BLJSONDatabase.m */,
+				F1AD905B199FB6EA0071E256 /* BLLogoStatus.h */,
+				F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */,
+				F1AD905E199FB7BD0071E256 /* BLDatabaseManager.h */,
+				F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */,
+				F1AD9061199FBCFA0071E256 /* BLScore.h */,
+				F1AD9062199FBCFA0071E256 /* BLScore.m */,
+				F1AD9064199FBD530071E256 /* BLUser.h */,
+				F1AD9065199FBD530071E256 /* BLUser.m */,
+				F1AD9067199FCBD20071E256 /* BLWallet.h */,
+				F1AD9068199FCBD20071E256 /* BLWallet.m */,
 			);
 			name = database;
 			sourceTree = "<group>";
@@ -1576,8 +1606,8 @@
 				F10C63BE199EB88D005328B2 /* BLLevelViewController.m */,
 				F10C63C3199EB8B8005328B2 /* BLAboutViewController.h */,
 				F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */,
-				F10C63C6199EC812005328B2 /* BLDatabase.h */,
-				F10C63C7199EC812005328B2 /* BLDatabase.m */,
+				F1AD906A199FD35D0071E256 /* BLGameManager.h */,
+				F1AD906B199FD35D0071E256 /* BLGameManager.m */,
 			);
 			path = brasilogos;
 			sourceTree = "<group>";
@@ -2215,11 +2245,17 @@
 				F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */,
 				F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */,
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
-				F10C63C8199EC812005328B2 /* BLDatabase.m in Sources */,
+				F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */,
+				F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */,
+				F1AD9066199FBD530071E256 /* BLUser.m in Sources */,
 				F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */,
 				F1F8B810198E5D9300578D91 /* main.m in Sources */,
 				F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */,
+				F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */,
 				F1F8B820198E5D9300578D91 /* BLDetailViewController.m in Sources */,
+				F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */,
+				F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */,
+				F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */,
 				F10C63C2199EB8A0005328B2 /* BLLogoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

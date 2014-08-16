@@ -32,6 +32,10 @@
 //  self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+  
+  [self.collectionView reloadData];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -49,18 +53,28 @@
                                   dequeueReusableCellWithReuseIdentifier:@"cell"
                                   forIndexPath:indexPath];
   
-  UIView* border = (UIView*)[cell viewWithTag:2];
-  [BLStyling roundView:border corner:6];
-  UIView* border2 = (UIView*)[cell viewWithTag:3];
-  [BLStyling roundView:border2 corner:6];
+  NSDictionary* logo = self.logos[indexPath.row];
+  [BLStyling roundView:[cell viewWithTag:2] corner:6];
+  [BLStyling roundView:[cell viewWithTag:3] corner:6];
   UIImageView *imageView = (UIImageView*)[cell viewWithTag:1];
-  imageView.image = [UIImage imageNamed:self.logos[indexPath.row][@"imagemModificada"]];
-  
-
+  [self configureImage:imageView logo:logo];
   
   return cell;
 }
 
+- (void)configureImage:(UIImageView*)imageView logo:(NSDictionary*)logo {
+  
+  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,[logo[@"id"] longValue]];
+  BLLogoStatus* status = (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
+  
+  if (status.hasHitTheAnswer) {
+    imageView.image = [UIImage imageNamed:logo[@"imagem"]];
+    [[imageView superview] setAlpha:0.5];
+  } else {
+    imageView.image = [UIImage imageNamed:logo[@"imagemModificada"]];
+    [[imageView superview] setAlpha:1.0];
+  }
+}
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

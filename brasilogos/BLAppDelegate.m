@@ -23,8 +23,8 @@
 #ifndef DEBUG
     [self loadServices];
 #endif
-  UIColor* color = [UIColor colorWithRed:73.0f/255.0f green:134.0f/255.0f blue:96.0f/255.0f alpha:1.0f];
-  [[UITextField appearance] setTintColor:color];
+  [BLStyling appearances];
+  [BLDatabaseManager startDatabase];
   return YES;
 }
 

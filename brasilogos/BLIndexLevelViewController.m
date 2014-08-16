@@ -7,7 +7,7 @@
 //
 
 #import "BLIndexLevelViewController.h"
-#import "BLDatabase.h"
+#import "BLJSONDatabase.h"
 #import "BLLevelViewController.h"
 
 @interface BLIndexLevelViewController ()
@@ -31,7 +31,7 @@
 {
   
   [super viewDidLoad];
-  self.levels = [BLDatabase shared].levels;
+  self.levels = [BLJSONDatabase shared].levels;
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BLDatabase : NSObject
+@interface BLJSONDatabase : NSObject
 
 @property NSArray* levels;
-+ (BLDatabase*)shared;
++ (BLJSONDatabase*)shared;
 
 @end

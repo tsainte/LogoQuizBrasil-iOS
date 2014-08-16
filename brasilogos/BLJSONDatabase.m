@@ -6,16 +6,17 @@
 //  Copyright (c) 2014 MobWiz. All rights reserved.
 //
 
-#import "BLDatabase.h"
+#import "BLJSONDatabase.h"
+#import "BLDatabaseManager.h"
 
-@implementation BLDatabase
+@implementation BLJSONDatabase
 
-static BLDatabase* singleton;
+static BLJSONDatabase* singleton;
 
-+ (BLDatabase*)shared {
++ (BLJSONDatabase*)shared {
   
   if (!singleton) {
-    singleton = [[BLDatabase alloc] init];
+    singleton = [[BLJSONDatabase alloc] init];
     [singleton parse];
   }
   return singleton;
@@ -54,7 +55,20 @@ static BLDatabase* singleton;
       anchor++;
     }
     [logos addObject:logo];
+    [self createLogoStatusIfNeeded:logo[@"id"]];
   }
   self.levels = levels;
+}
+
+- (void)createLogoStatusIfNeeded:(NSNumber*)identifier {
+  
+  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID, [identifier longValue]];
+  BLLogoStatus* status = (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
+  if (!status) {
+    status = [[BLLogoStatus alloc] init];
+    status.identifier = [identifier integerValue];
+    [BLDatabaseManager saveData:status forEntity:entity];
+  }
+  
 }
 @end
