@@ -10,4 +10,9 @@
 
 @interface BLLogoViewController : UIViewController
 
+@property NSDictionary* logo;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImage;
+
+@property (weak, nonatomic) IBOutlet UIView *keyboard;
+@property (weak, nonatomic) IBOutlet UITextField *answerTextField;
 @end
