@@ -7,6 +7,8 @@
 //
 
 #import "BLIndexLevelViewController.h"
+#import "BLDatabase.h"
+#import "BLLevelViewController.h"
 
 @interface BLIndexLevelViewController ()
 
@@ -27,8 +29,9 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-  self.levels = @[@1,@2,@3,@2,@3,@2,@3,@2,@3];
+  
+  [super viewDidLoad];
+  self.levels = [BLDatabase shared].levels;
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,17 +59,24 @@
     
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
   }
+  
+  UILabel* level = (UILabel*)[cell viewWithTag:1];
+  level.text = [NSString stringWithFormat:@"Nível %d", indexPath.row+1];
+  
   return cell;
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+  NSInteger index = [[self.tableView indexPathForSelectedRow] row];
+  BLLevelViewController* levelVC = [segue destinationViewController];
+  levelVC.levelID = index+1;
+  levelVC.logos = self.levels[index];
 }
-*/
+
 
 @end
