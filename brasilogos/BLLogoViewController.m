@@ -25,15 +25,36 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  [self roundThings];
+  self.logoImage.image = [UIImage imageNamed:self.logo[@"imagemModificada"]];
+  UIView* dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+  self.answerTextField.inputView = dummyView; // Hide keyboard, but show blinking cursor
+  self.answerTextField.text = @"asdfadsf";
 }
 
+- (void)roundThings {
+
+  [BLStyling roundView:[self.view viewWithTag:1] corner:12];
+  [BLStyling roundView:[self.view viewWithTag:2] corner:8];
+  [BLStyling roundView:[self.view viewWithTag:3] corner:12];
+  [BLStyling roundView:self.answerTextField corner:8];
+  [self roundKeys];
+}
+
+- (void)roundKeys {
+  
+  for (UIView* key in self.keyboard.subviews) {
+    
+    [BLStyling roundView:key corner:6];
+  }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

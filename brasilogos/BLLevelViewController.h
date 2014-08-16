@@ -12,5 +12,6 @@
 
 @property NSArray* logos;
 @property NSInteger levelID;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
