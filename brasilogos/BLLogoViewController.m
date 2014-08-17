@@ -96,6 +96,7 @@ typedef enum
 - (void)viewWillAppear:(BOOL)animated {
   
   [super viewWillAppear:YES];
+  [self loadBanner];
   NSLog(@"constraint: %f", self.heightPanelConstraint.constant);
   self.heightPanelConstraint.constant = [BLStyling isIphone5] ? 210.0f : 160.0f;
   [self.view setNeedsUpdateConstraints];
@@ -332,4 +333,22 @@ typedef enum
   }
 }
 
+#pragma mark - BLBannerManagerDelegate
+
+- (void)loadBanner {
+  
+  [[BLBannerManager shared] resetAdView:self];
+}
+
+- (void)bannerWillAppear:(UIView *)banner {
+  
+  if (![self.adBanner.subviews containsObject:banner]) {
+    [self.adBanner addSubview:banner];
+  }
+}
+
+- (void)bannerWillDisappear:(UIView *)banner {
+  
+  [banner removeFromSuperview];
+}
 @end

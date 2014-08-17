@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLLevelViewController : UIViewController <UICollectionViewDataSource>
+@interface BLLevelViewController : UIViewController <UICollectionViewDataSource, BLBannerManagerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *adBanner;
 @property NSArray* logos;
 @property NSInteger levelID;
 @property (weak, nonatomic) IBOutlet UILabel *coinsLabel;

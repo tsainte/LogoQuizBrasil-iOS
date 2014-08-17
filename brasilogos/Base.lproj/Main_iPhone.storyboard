@@ -263,6 +263,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="adBanner" destination="bBM-Gz-Tsu" id="Uk2-kC-Pee"/>
                         <outlet property="coinsLabel" destination="i2p-pO-D19" id="XUS-8S-Hhw"/>
                         <outlet property="tableView" destination="jgm-dz-Qvw" id="I3P-sK-RNs"/>
                     </connections>
@@ -887,6 +888,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="adBanner" destination="GW6-gL-rmv" id="0B2-pg-JZD"/>
                         <outlet property="answerTextField" destination="812-TI-pW3" id="vgI-kk-qF9"/>
                         <outlet property="bombButton" destination="IBg-Zf-p2v" id="XZ7-kb-VCc"/>
                         <outlet property="clueOneButton" destination="UvH-sa-PVh" id="nV5-9K-oO2"/>
@@ -1434,6 +1436,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="adBanner" destination="1Yx-aF-fVL" id="WZb-NG-Rs0"/>
                         <outlet property="coinsLabel" destination="rAY-io-vIJ" id="4Ah-3v-DlB"/>
                         <outlet property="collectionView" destination="9W8-Dr-FrI" id="JFW-1d-kma"/>
                     </connections>

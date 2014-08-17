@@ -18,11 +18,11 @@
 #define COCOAPODS_VERSION_MINOR_FlurrySDK_FlurrySDK 2
 #define COCOAPODS_VERSION_PATCH_FlurrySDK_FlurrySDK 0
 
-// Google-AdMob-Ads-SDK
-#define COCOAPODS_POD_AVAILABLE_Google_AdMob_Ads_SDK
-#define COCOAPODS_VERSION_MAJOR_Google_AdMob_Ads_SDK 6
-#define COCOAPODS_VERSION_MINOR_Google_AdMob_Ads_SDK 8
-#define COCOAPODS_VERSION_PATCH_Google_AdMob_Ads_SDK 0
+// Google-Mobile-Ads-SDK
+#define COCOAPODS_POD_AVAILABLE_Google_Mobile_Ads_SDK
+#define COCOAPODS_VERSION_MAJOR_Google_Mobile_Ads_SDK 6
+#define COCOAPODS_VERSION_MINOR_Google_Mobile_Ads_SDK 11
+#define COCOAPODS_VERSION_PATCH_Google_Mobile_Ads_SDK 1
 
 // Slash
 #define COCOAPODS_POD_AVAILABLE_Slash

@@ -29,13 +29,14 @@
 {
   
   [super viewDidLoad];
-  self.title = [NSString stringWithFormat:@"Nível %d",self.levelID];
+  self.title = [NSString stringWithFormat:@"Nível %ld",self.levelID];
 //  self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   
   [self.collectionView reloadData];
+  [self loadBanner];
   [self updateCoins];
 }
 
@@ -98,5 +99,23 @@
   UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
   rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
   [self presentViewController:shopVC animated:NO completion:nil];
+}
+
+#pragma mark - BLBannerManagerDelegate
+- (void)loadBanner {
+  
+  [[BLBannerManager shared] resetAdView:self];
+}
+
+- (void)bannerWillAppear:(UIView *)banner {
+  
+  if (![self.adBanner.subviews containsObject:banner]) {
+    [self.adBanner addSubview:banner];
+  }
+}
+
+- (void)bannerWillDisappear:(UIView *)banner {
+  
+  [banner removeFromSuperview];
 }
 @end

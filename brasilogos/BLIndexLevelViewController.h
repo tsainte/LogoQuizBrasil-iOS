@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLIndexLevelViewController : UIViewController <UITableViewDataSource>
+@interface BLIndexLevelViewController : UIViewController <UITableViewDataSource, BLBannerManagerDelegate>
 
 
+@property (weak, nonatomic) IBOutlet UIView *adBanner;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
 

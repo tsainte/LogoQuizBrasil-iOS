@@ -23,10 +23,9 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2009 - 2012 Google, Inc. All rights reserved.
-</string>
+			<string>Copyright 2011 Google Inc. All Rights Reserved.</string>
 			<key>Title</key>
-			<string>Google-AdMob-Ads-SDK</string>
+			<string>Google-Mobile-Ads-SDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
