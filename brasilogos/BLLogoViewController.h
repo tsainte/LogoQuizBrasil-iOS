@@ -18,8 +18,22 @@
 @property (weak, nonatomic) IBOutlet UIView *keyboard;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightPanelConstraint;
+@property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *clueOneButton;
+@property (weak, nonatomic) IBOutlet UIButton *clueTwoButton;
+@property (weak, nonatomic) IBOutlet UIButton *sloganButton;
+@property (weak, nonatomic) IBOutlet UIButton *bombButton;
+@property (weak, nonatomic) IBOutlet UIButton *magicButton;
+
+- (IBAction)clueOneTapped:(id)sender;
+- (IBAction)clueTwoTapped:(id)sender;
+- (IBAction)sloganTapped:(id)sender;
+- (IBAction)bombTapped:(id)sender;
+- (IBAction)magicTapped:(id)sender;
 
 
 - (IBAction)keyPressed:(UIButton *)sender;
+- (IBAction)shopTapped:(id)sender;
 
 @end

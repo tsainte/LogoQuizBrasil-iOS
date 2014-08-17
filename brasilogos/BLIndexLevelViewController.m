@@ -9,6 +9,7 @@
 #import "BLIndexLevelViewController.h"
 #import "BLJSONDatabase.h"
 #import "BLLevelViewController.h"
+#import "BLShoppingOverlayViewController.h"
 
 @interface BLIndexLevelViewController ()
 
@@ -32,6 +33,17 @@
   
   [super viewDidLoad];
   self.levels = [BLJSONDatabase shared].levels;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  
+  [super viewWillAppear:YES];
+  [self updateCoins];
+}
+
+- (void)updateCoins {
+  
+  self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,5 +90,11 @@
   levelVC.logos = self.levels[index];
 }
 
-
+- (IBAction)shopTapped:(id)sender {
+  
+  BLShoppingOverlayViewController* shopVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
+  UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+  rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
+  [self presentViewController:shopVC animated:NO completion:nil];
+}
 @end

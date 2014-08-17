@@ -23,5 +23,10 @@
 + (void)saveData:(NSObject*)rootObject forEntity:(NSString*)entity;
 + (NSObject*)loadDataFromEntity:(NSString*)entity;
 
-+ (void)startDatabase;
++ (void)saveLogoStatus:(BLLogoStatus*)logoStatus;
++ (BLLogoStatus*)logoStatus:(long)logoId;
++ (BLWallet*)wallet;
++ (BLScore*)score;
++ (BLUser*)user;
+
 @end

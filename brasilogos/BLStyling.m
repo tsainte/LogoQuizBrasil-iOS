@@ -7,13 +7,14 @@
 //
 
 #import "BLStyling.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation BLStyling
 
 + (void)appearances {
   
   //paint textfield tint color
-  [[UITextField appearance] setTintColor:kColorLightGreen];
+  [[UITextField appearance] setTintColor:kColorDarkGreen];
 }
 + (BOOL)isIphone5 {
   
@@ -30,4 +31,11 @@
   [[view layer] setCornerRadius:corner];
 }
 
++ (void)playSound:(NSString*)name type:(NSString*)type {
+  
+  NSString *soundPath = [[NSBundle mainBundle] pathForResource:name ofType:type];
+  SystemSoundID soundID;
+  AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+  AudioServicesPlaySystemSound (soundID);
+}
 @end

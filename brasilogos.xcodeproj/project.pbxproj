@@ -14,6 +14,10 @@
 		F1049302199329FE00605454 /* coin_nostar_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FC199329FE00605454 /* coin_nostar_big.png */; };
 		F1049303199329FE00605454 /* coin_nostar_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FD199329FE00605454 /* coin_nostar_small.png */; };
 		F1049304199329FE00605454 /* coin_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FE199329FE00605454 /* coin_small.png */; };
+		F10932EE19A0224E0038A636 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932ED19A0224E0038A636 /* bomb.png */; };
+		F10932F019A025C90038A636 /* magic.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932EF19A025C90038A636 /* magic.png */; };
+		F10932F319A0340B0038A636 /* bulb_special.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932F119A0340B0038A636 /* bulb_special.png */; };
+		F10932F419A0340B0038A636 /* bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932F219A0340B0038A636 /* bulb.png */; };
 		F10C63B6199EA825005328B2 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = F10C63B5199EA825005328B2 /* db.json */; };
 		F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63B8199EB863005328B2 /* BLMainViewController.m */; };
 		F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63BB199EB878005328B2 /* BLIndexLevelViewController.m */; };
@@ -476,6 +480,15 @@
 		F10C6B14199EDF2D005328B2 /* ypioca_mod.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C694D199EDF2D005328B2 /* ypioca_mod.png */; };
 		F10C6B15199EDF2D005328B2 /* zero_cal.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C694E199EDF2D005328B2 /* zero_cal.png */; };
 		F10C6B16199EDF2D005328B2 /* zero_cal_mod.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C694F199EDF2D005328B2 /* zero_cal_mod.png */; };
+		F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */; };
+		F112978719A0F53C00ACE7A2 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978119A0F53C00ACE7A2 /* correct.mp3 */; };
+		F112978819A0F53C00ACE7A2 /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978219A0F53C00ACE7A2 /* fail.mp3 */; };
+		F112978919A0F53C00ACE7A2 /* fbbutton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978319A0F53C00ACE7A2 /* fbbutton.mp3 */; };
+		F112978A19A0F53C00ACE7A2 /* fbsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978419A0F53C00ACE7A2 /* fbsound.mp3 */; };
+		F112978B19A0F53C00ACE7A2 /* pointbutton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978519A0F53C00ACE7A2 /* pointbutton.mp3 */; };
+		F112978C19A0F53C00ACE7A2 /* RVBCLICK.WAV in Resources */ = {isa = PBXBuildFile; fileRef = F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */; };
+		F112978E19A0F63900ACE7A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F112978D19A0F63900ACE7A2 /* AVFoundation.framework */; };
+		F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */; };
 		F19505F11995CBED00A94FD1 /* logoquiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F19505F01995CBED00A94FD1 /* logoquiz.png */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
@@ -484,6 +497,8 @@
 		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
 		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
 		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
+		F1AD906F19A003740071E256 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD906D19A003740071E256 /* lamp_off.png */; };
+		F1AD907019A003740071E256 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD906E19A003740071E256 /* lamp_on.png */; };
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
 		F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B807198E5D9300578D91 /* UIKit.framework */; };
@@ -520,6 +535,10 @@
 		F10492FC199329FE00605454 /* coin_nostar_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_nostar_big.png; path = arts/coin_nostar_big.png; sourceTree = SOURCE_ROOT; };
 		F10492FD199329FE00605454 /* coin_nostar_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_nostar_small.png; path = arts/coin_nostar_small.png; sourceTree = SOURCE_ROOT; };
 		F10492FE199329FE00605454 /* coin_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_small.png; path = arts/coin_small.png; sourceTree = SOURCE_ROOT; };
+		F10932ED19A0224E0038A636 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb.png; path = arts/bomb.png; sourceTree = SOURCE_ROOT; };
+		F10932EF19A025C90038A636 /* magic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magic.png; path = arts/magic.png; sourceTree = SOURCE_ROOT; };
+		F10932F119A0340B0038A636 /* bulb_special.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bulb_special.png; path = arts/bulb_special.png; sourceTree = SOURCE_ROOT; };
+		F10932F219A0340B0038A636 /* bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bulb.png; path = arts/bulb.png; sourceTree = SOURCE_ROOT; };
 		F10C63B5199EA825005328B2 /* db.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = db.json; path = brasilogos/db.json; sourceTree = "<group>"; };
 		F10C63B7199EB863005328B2 /* BLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainViewController.h; sourceTree = "<group>"; };
 		F10C63B8199EB863005328B2 /* BLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainViewController.m; sourceTree = "<group>"; };
@@ -988,6 +1007,17 @@
 		F10C694D199EDF2D005328B2 /* ypioca_mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ypioca_mod.png; sourceTree = "<group>"; };
 		F10C694E199EDF2D005328B2 /* zero_cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zero_cal.png; sourceTree = "<group>"; };
 		F10C694F199EDF2D005328B2 /* zero_cal_mod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zero_cal_mod.png; sourceTree = "<group>"; };
+		F112977D19A0DB4100ACE7A2 /* Toast+UIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		F112978119A0F53C00ACE7A2 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = correct.mp3; path = sound/correct.mp3; sourceTree = SOURCE_ROOT; };
+		F112978219A0F53C00ACE7A2 /* fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fail.mp3; path = sound/fail.mp3; sourceTree = SOURCE_ROOT; };
+		F112978319A0F53C00ACE7A2 /* fbbutton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fbbutton.mp3; path = sound/fbbutton.mp3; sourceTree = SOURCE_ROOT; };
+		F112978419A0F53C00ACE7A2 /* fbsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fbsound.mp3; path = sound/fbsound.mp3; sourceTree = SOURCE_ROOT; };
+		F112978519A0F53C00ACE7A2 /* pointbutton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pointbutton.mp3; path = sound/pointbutton.mp3; sourceTree = SOURCE_ROOT; };
+		F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = RVBCLICK.WAV; path = sound/RVBCLICK.WAV; sourceTree = SOURCE_ROOT; };
+		F112978D19A0F63900ACE7A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLShoppingOverlayViewController.h; sourceTree = "<group>"; };
+		F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLShoppingOverlayViewController.m; sourceTree = "<group>"; };
 		F19505F01995CBED00A94FD1 /* logoquiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoquiz.png; path = arts/logoquiz.png; sourceTree = SOURCE_ROOT; };
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
@@ -1004,6 +1034,8 @@
 		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
 		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
 		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
+		F1AD906D19A003740071E256 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_off.png; path = arts/lamp_off.png; sourceTree = SOURCE_ROOT; };
+		F1AD906E19A003740071E256 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_on.png; path = arts/lamp_on.png; sourceTree = SOURCE_ROOT; };
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8B803198E5D9300578D91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1F8B805198E5D9300578D91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1031,6 +1063,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F112978E19A0F63900ACE7A2 /* AVFoundation.framework in Frameworks */,
 				F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */,
 				F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */,
 				F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */,
@@ -1532,9 +1565,28 @@
 			path = final_images;
 			sourceTree = "<group>";
 		};
+		F112978019A0F47100ACE7A2 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				F112978119A0F53C00ACE7A2 /* correct.mp3 */,
+				F112978219A0F53C00ACE7A2 /* fail.mp3 */,
+				F112978319A0F53C00ACE7A2 /* fbbutton.mp3 */,
+				F112978419A0F53C00ACE7A2 /* fbsound.mp3 */,
+				F112978519A0F53C00ACE7A2 /* pointbutton.mp3 */,
+				F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
 		F19505EF1995CBD300A94FD1 /* arts */ = {
 			isa = PBXGroup;
 			children = (
+				F10932F119A0340B0038A636 /* bulb_special.png */,
+				F10932F219A0340B0038A636 /* bulb.png */,
+				F10932EF19A025C90038A636 /* magic.png */,
+				F10932ED19A0224E0038A636 /* bomb.png */,
+				F1AD906D19A003740071E256 /* lamp_off.png */,
+				F1AD906E19A003740071E256 /* lamp_on.png */,
 				F19505F01995CBED00A94FD1 /* logoquiz.png */,
 				F10492F9199329FE00605454 /* coin_big.png */,
 				F10492FA199329FE00605454 /* coin_nonumber_big.png */,
@@ -1570,6 +1622,7 @@
 		F1F8B802198E5D9300578D91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F112978D19A0F63900ACE7A2 /* AVFoundation.framework */,
 				F1F8B803198E5D9300578D91 /* Foundation.framework */,
 				F1F8B805198E5D9300578D91 /* CoreGraphics.framework */,
 				F1F8B807198E5D9300578D91 /* UIKit.framework */,
@@ -1582,6 +1635,7 @@
 		F1F8B809198E5D9300578D91 /* brasilogos */ = {
 			isa = PBXGroup;
 			children = (
+				F112978019A0F47100ACE7A2 /* sound */,
 				F10C6788199EDF29005328B2 /* final_images */,
 				F10C63C9199ECA0E005328B2 /* database */,
 				F19505EF1995CBD300A94FD1 /* arts */,
@@ -1608,6 +1662,10 @@
 				F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */,
 				F1AD906A199FD35D0071E256 /* BLGameManager.h */,
 				F1AD906B199FD35D0071E256 /* BLGameManager.m */,
+				F112977D19A0DB4100ACE7A2 /* Toast+UIView.h */,
+				F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */,
+				F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */,
+				F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */,
 			);
 			path = brasilogos;
 			sourceTree = "<group>";
@@ -1774,6 +1832,7 @@
 				F10C6A05199EDF2D005328B2 /* gol_mod.png in Resources */,
 				F10C6AF9199EDF2D005328B2 /* uniao.png in Resources */,
 				F10C69E3199EDF2D005328B2 /* embratel_mod.png in Resources */,
+				F10932EE19A0224E0038A636 /* bomb.png in Resources */,
 				F10C6AF6199EDF2D005328B2 /* tres_coracoes_mod.png in Resources */,
 				F10C6AFD199EDF2D005328B2 /* uniodonto.png in Resources */,
 				F10C69F6199EDF2D005328B2 /* frans_cafe.png in Resources */,
@@ -1799,6 +1858,7 @@
 				F10C6A24199EDF2D005328B2 /* ig.png in Resources */,
 				F1049304199329FE00605454 /* coin_small.png in Resources */,
 				F10C6B12199EDF2D005328B2 /* yes_mod.png in Resources */,
+				F1AD907019A003740071E256 /* lamp_on.png in Resources */,
 				F10C69AA199EDF2D005328B2 /* casa_do_pao_de_queijo.png in Resources */,
 				F10C6984199EDF2D005328B2 /* bohemia.png in Resources */,
 				F10C6A41199EDF2D005328B2 /* kopenhagen.png in Resources */,
@@ -1875,6 +1935,7 @@
 				F10C6AB8199EDF2D005328B2 /* riachuelo_mod.png in Resources */,
 				F10C6AF5199EDF2D005328B2 /* tres_coracoes.png in Resources */,
 				F10C6A55199EDF2D005328B2 /* mabel.png in Resources */,
+				F112978C19A0F53C00ACE7A2 /* RVBCLICK.WAV in Resources */,
 				F10C696B199EDF2D005328B2 /* azul_mod.png in Resources */,
 				F10C6AB2199EDF2D005328B2 /* redetv_mod.png in Resources */,
 				F10C699D199EDF2D005328B2 /* cafe_do_ponto_mod.png in Resources */,
@@ -1889,10 +1950,12 @@
 				F10C6960199EDF2D005328B2 /* arisco.png in Resources */,
 				F10C69FF199EDF2D005328B2 /* gina_mod.png in Resources */,
 				F10C6A23199EDF2D005328B2 /* hotel_urbano_mod.png in Resources */,
+				F10932F319A0340B0038A636 /* bulb_special.png in Resources */,
 				F10C6968199EDF2D005328B2 /* azaleia.png in Resources */,
 				F10C6A07199EDF2D005328B2 /* gomes_da_costa_mod.png in Resources */,
 				F10C6A58199EDF2D005328B2 /* marcopolo_mod.png in Resources */,
 				F10C6962199EDF2D005328B2 /* arno.png in Resources */,
+				F112978719A0F53C00ACE7A2 /* correct.mp3 in Resources */,
 				F10C697B199EDF2D005328B2 /* beach_park_mod.png in Resources */,
 				F10C6A97199EDF2D005328B2 /* polenghi.png in Resources */,
 				F10C6A02199EDF2D005328B2 /* gnt.png in Resources */,
@@ -1918,9 +1981,11 @@
 				F10C6ABC199EDF2D005328B2 /* richester_mod.png in Resources */,
 				F10C6AA5199EDF2D005328B2 /* quatro_rodas.png in Resources */,
 				F10C6A4E199EDF2D005328B2 /* localiza_mod.png in Resources */,
+				F1AD906F19A003740071E256 /* lamp_off.png in Resources */,
 				F10C69FB199EDF2D005328B2 /* gendai_mod.png in Resources */,
 				F10C6ACD199EDF2D005328B2 /* sebrae.png in Resources */,
 				F10C6A3E199EDF2D005328B2 /* jovem_pan_mod.png in Resources */,
+				F10932F019A025C90038A636 /* magic.png in Resources */,
 				F10C6AA9199EDF2D005328B2 /* raia.png in Resources */,
 				F10C6A4B199EDF2D005328B2 /* leite_de_rosas.png in Resources */,
 				F10C69C2199EDF2D005328B2 /* consul.png in Resources */,
@@ -1976,6 +2041,7 @@
 				F1049300199329FE00605454 /* coin_nonumber_big.png in Resources */,
 				F10C6AAE199EDF2D005328B2 /* redecard_mod.png in Resources */,
 				F10C6AB0199EDF2D005328B2 /* redeglobo_mod.png in Resources */,
+				F10932F419A0340B0038A636 /* bulb.png in Resources */,
 				F10C6AD7199EDF2D005328B2 /* spoleto.png in Resources */,
 				F10C69A0199EDF2D005328B2 /* caio.png in Resources */,
 				F10C6A78199EDF2D005328B2 /* oi_mod.png in Resources */,
@@ -2055,6 +2121,7 @@
 				F10C696A199EDF2D005328B2 /* azul.png in Resources */,
 				F10C6A35199EDF2D005328B2 /* itambe.png in Resources */,
 				F10C6AC9199EDF2D005328B2 /* sbt.png in Resources */,
+				F112978A19A0F53C00ACE7A2 /* fbsound.mp3 in Resources */,
 				F10C6A79199EDF2D005328B2 /* olympikus.png in Resources */,
 				F10C63B6199EA825005328B2 /* db.json in Resources */,
 				F10C6AA7199EDF2D005328B2 /* radio_mix.png in Resources */,
@@ -2104,6 +2171,7 @@
 				F10C6A64199EDF2D005328B2 /* microlins_mod.png in Resources */,
 				F10C6AC4199EDF2D005328B2 /* salton_mod.png in Resources */,
 				F10C6AC7199EDF2D005328B2 /* saraiva.png in Resources */,
+				F112978B19A0F53C00ACE7A2 /* pointbutton.mp3 in Resources */,
 				F10C69EB199EDF2D005328B2 /* expresso_guanabara_mod.png in Resources */,
 				F10C6ACC199EDF2D005328B2 /* seara_mod.png in Resources */,
 				F10C6A7C199EDF2D005328B2 /* ortobom_mod.png in Resources */,
@@ -2132,6 +2200,7 @@
 				F10C6A77199EDF2D005328B2 /* oi.png in Resources */,
 				F10C6A71199EDF2D005328B2 /* neve.png in Resources */,
 				F10C69DD199EDF2D005328B2 /* elma_chips_mod.png in Resources */,
+				F112978819A0F53C00ACE7A2 /* fail.mp3 in Resources */,
 				F10C6AE7199EDF2D005328B2 /* tilibra.png in Resources */,
 				F10C6AE6199EDF2D005328B2 /* tigre_mod.png in Resources */,
 				F10C6985199EDF2D005328B2 /* bohemia_mod.png in Resources */,
@@ -2181,6 +2250,7 @@
 				F10C69BE199EDF2D005328B2 /* clone.png in Resources */,
 				F10C69A9199EDF2D005328B2 /* canal_rural_mod.png in Resources */,
 				F10C6A7B199EDF2D005328B2 /* ortobom.png in Resources */,
+				F112978919A0F53C00ACE7A2 /* fbbutton.mp3 in Resources */,
 				F10C6989199EDF2D005328B2 /* bombril_mod.png in Resources */,
 				F10C69AD199EDF2D005328B2 /* casasbahia_mod.png in Resources */,
 				F10C6A6A199EDF2D005328B2 /* mundo_verde_mod.png in Resources */,
@@ -2247,6 +2317,8 @@
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
 				F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */,
 				F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */,
+				F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */,
+				F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */,
 				F1AD9066199FBD530071E256 /* BLUser.m in Sources */,
 				F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */,
 				F1F8B810198E5D9300578D91 /* main.m in Sources */,

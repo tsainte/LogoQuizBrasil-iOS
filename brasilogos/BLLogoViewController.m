@@ -7,13 +7,27 @@
 //
 
 #import "BLLogoViewController.h"
-
+#import "Toast+UIView.h"
+#import "BLShoppingOverlayViewController.h"
 @interface BLLogoViewController ()
+
+@property BOOL isCorrect;
 
 @end
 
 @implementation BLLogoViewController
 
+#define kKeyLetter 0
+#define kKeyBackspace 100
+#define kKeySpace 101
+#define kKeyEnter 102
+
+typedef enum
+{
+	BLTextFieldIdle,
+  BLTextFieldCorrect,
+  BLTextFieldWrong
+} BLTextFieldState;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,22 +43,17 @@
   
   self.gameManager = [[BLGameManager alloc] initWithLogo:self.logo delegate:self];
   
+  [self updateIsCorrect];
   [self roundThings];
   [self updateImage];
-  
-  UIView* dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
-  self.answerTextField.inputView = dummyView; // Hide keyboard, but show blinking cursor
+  [self updateCoins];
+  [self configureTextView];
 }
 
-- (void)updateImage {
+- (void)updateIsCorrect {
   
-  
-  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,[self.logo[@"id"] longValue]];
-  BLLogoStatus* status = (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
-  
-  NSString* imageName = status.hasHitTheAnswer ? self.logo[@"imagem"] : self.logo[@"imagemModificada"];
-  
-  self.logoImage.image = [UIImage imageNamed:imageName];
+  BLLogoStatus* status = [BLDatabaseManager logoStatus:[self.logo[@"id"] longValue]];
+  self.isCorrect = status.hasHitTheAnswer;
 }
 
 - (void)roundThings {
@@ -64,6 +73,26 @@
   }
 }
 
+- (void)updateImage {
+  
+  NSString* imageName = self.isCorrect ? self.logo[@"imagem"] : self.logo[@"imagemModificada"];
+  
+  self.logoImage.image = [UIImage imageNamed:imageName];
+}
+
+- (void)updateCoins {
+  
+  self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
+}
+
+- (void)configureTextView {
+  
+  // Hide keyboard, but show blinking cursor
+  UIView* dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+  self.answerTextField.inputView = dummyView;
+  BLTextFieldState state = self.isCorrect ? BLTextFieldCorrect : BLTextFieldIdle;
+  [self configureTextFieldForState:state];
+}
 - (void)viewWillAppear:(BOOL)animated {
   
   [super viewWillAppear:YES];
@@ -82,27 +111,39 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)shopTapped:(id)sender {
+  
+  BLShoppingOverlayViewController* shopVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
+  UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+  rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
+  [self presentViewController:shopVC animated:NO completion:nil];
+}
 
 #pragma mark - Keyboard methods
+
 - (IBAction)keyPressed:(UIButton *)key {
   
+  if (self.isCorrect) return;
+  [self configureTextFieldForState:BLTextFieldIdle];
+  
   switch (key.tag) {
-    case 0:
+    case kKeyLetter:
       [self putKey:key.titleLabel.text];
       break;
-    case 100:
+    case kKeyBackspace:
       [self removeLastKey];
       break;
-    case 101:
+    case kKeySpace:
       [self putKey:@" "];
       break;
-    case 102:
+    case kKeyEnter:
       [self tryAnswer];
       break;
     default:
       break;
   }
 }
+
 
 - (void)putKey:(NSString*)letter {
   
@@ -129,15 +170,166 @@
   [self.gameManager tryAnswer:self.answerTextField.text];
 }
 
+- (void)updateElements {
+  
+  [self updateIsCorrect];
+  [self updateImage];
+  [self updateCoins];
+}
+#pragma mark - actions
+
+- (IBAction)clueOneTapped:(id)sender {
+  
+  [self authorizeClue:BLGameHelpClueOne];
+}
+
+- (IBAction)clueTwoTapped:(id)sender {
+  
+  [self authorizeClue:BLGameHelpClueTwo];
+}
+
+- (IBAction)sloganTapped:(id)sender {
+  
+  [self authorizeClue:BLGameHelpSlogan];
+}
+
+- (IBAction)bombTapped:(id)sender {
+  
+  [self bomb];
+}
+
+- (IBAction)magicTapped:(id)sender {
+  
+  [self medicine];
+}
+
+#pragma mark - clues
+- (void)authorizeClue:(BLGameHelp)type {
+  
+  BOOL success = [self.gameManager authorizeHelp:type];
+  if (success) {
+    [self updateElements];
+    [self showClue:type];
+  }
+}
+
+
+
+- (void)showClue:(BLGameHelp)type {
+  
+  NSString* clue = [self getClue:type];
+  [self.view makeToast:clue position:[self getPoint] color:kColorDarkGreen];
+}
+
+- (NSValue*)getPoint {
+  
+  CGSize size = self.view.bounds.size;
+  CGFloat height = (size.height / 100) * 65;
+  CGPoint point = CGPointMake(size.width / 2,  height);
+  NSValue* value = [NSValue valueWithCGPoint:point];
+  return value;
+}
+
+- (NSString*)getClue:(BLGameHelp)type {
+
+  NSString* clue;
+  switch (type) {
+    case BLGameHelpClueOne:
+      clue = self.logo[@"dica1"];
+      break;
+    case BLGameHelpClueTwo:
+      clue = self.logo[@"dica2"];
+      break;
+    case BLGameHelpSlogan:
+      clue = self.logo[@"slogan"];
+      break;
+    default:
+      break;
+  }
+  return clue;
+}
+#pragma mark - Bomb
+
+- (void)bomb {
+  
+  BOOL authorized = [self.gameManager authorizeHelp:BLGameHelpBomb];
+  if (authorized) {
+    [self hideLetters];
+    [self updateElements];
+  }
+}
+
+- (void)hideLetters {
+  
+  NSString* answer = [self.logo[@"nome"] lowercaseString];
+  for (UIButton* key in self.keyboard.subviews) {
+    if (key.tag == kKeyLetter) {
+      NSString* letter = [key.titleLabel.text lowercaseString];
+      BOOL hasLetter = [answer rangeOfString:letter].location != NSNotFound;
+      if (!hasLetter) {
+        [self hideLetter:key];
+      }
+    }
+  }
+}
+
+- (void)hideLetter:(UIButton*)letter {
+  
+  [UIView animateWithDuration:0.5 animations:^{
+    letter.alpha = 0;
+  }];
+}
+
+#pragma mark - Medicine
+
+- (void)medicine {
+  
+  BOOL authorized = [self.gameManager authorizeHelp:BLGameHelpMedicine];
+  if (authorized) {
+    [self updateElements];
+    [self configureTextFieldForState:BLTextFieldCorrect];
+  }
+}
 #pragma mark - BLGameManagerDelegate
 
 - (void)isCorrectAnswer {
  
-  [self updateImage];
+  [BLStyling playSound:@"correct" type:@"mp3"];
+  [self updateElements];
+  [self configureTextFieldForState:BLTextFieldCorrect];
 }
 
 - (void)isWrongAnswer {
   
+  [self configureTextFieldForState:BLTextFieldWrong];
+  [BLStyling playSound:@"fail" type:@"mp3"];
+}
+
+
+
+- (void)configureTextFieldForState:(BLTextFieldState)state {
+  
+  switch (state) {
+    case BLTextFieldIdle:
+      self.answerTextField.superview.backgroundColor = kColorDarkGreen;
+      self.answerTextField.alpha = 1.0;
+      self.answerTextField.enabled = YES;
+      break;
+    case BLTextFieldCorrect:
+      self.answerTextField.text = self.logo[@"nome"];
+      self.answerTextField.enabled = NO;
+      self.answerTextField.alpha = 0.6;
+      self.answerTextField.superview.backgroundColor = kColorDarkGreen;
+      break;
+    case BLTextFieldWrong:
+      self.answerTextField.superview.backgroundColor = kColorRed;
+      self.answerTextField.alpha = 0.6;
+      self.answerTextField.enabled = YES;
+      break;
+      
+    default:
+      break;
+  }
 }
 
 @end

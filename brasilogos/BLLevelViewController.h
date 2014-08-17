@@ -12,6 +12,7 @@
 
 @property NSArray* logos;
 @property NSInteger levelID;
+@property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

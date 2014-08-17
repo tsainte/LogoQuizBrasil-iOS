@@ -8,6 +8,7 @@
 
 #import "BLLevelViewController.h"
 #import "BLLogoViewController.h"
+#import "BLShoppingOverlayViewController.h"
 
 @interface BLLevelViewController ()
 
@@ -35,6 +36,12 @@
 - (void)viewWillAppear:(BOOL)animated {
   
   [self.collectionView reloadData];
+  [self updateCoins];
+}
+
+- (void)updateCoins {
+  
+  self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -85,5 +92,11 @@
   logoVC.logo = self.logos[indexPath.row];
 }
 
-
+- (IBAction)shopTapped:(id)sender {
+  
+  BLShoppingOverlayViewController* shopVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
+  UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+  rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
+  [self presentViewController:shopVC animated:NO completion:nil];
+}
 @end

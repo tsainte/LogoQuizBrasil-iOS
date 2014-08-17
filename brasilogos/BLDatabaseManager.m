@@ -37,14 +37,7 @@
   return filePath;
 }
 
-+ (void)startDatabase {
-  
-  BLScore* score = (BLScore*)[BLDatabaseManager loadDataFromEntity:kEntityScore];
-  if (!score) {
-    score = [BLScore new];
-    score.correctLogos = [BLDatabaseManager migrateCorrectLogosFromDefaults];
-    [BLDatabaseManager saveData:score forEntity:kEntityScore];
-  }
++ (BLWallet*)wallet {
   
   BLWallet* wallet = (BLWallet*)[BLDatabaseManager loadDataFromEntity:kEntityWallet];
   if (!wallet) {
@@ -52,12 +45,41 @@
     wallet.coins = [BLDatabaseManager migrateCoinsFromDefaults];
     [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
   }
+  return wallet;
+}
+
++ (BLScore*)score {
+  
+  BLScore* score = (BLScore*)[BLDatabaseManager loadDataFromEntity:kEntityScore];
+  if (!score) {
+    score = [BLScore new];
+    score.correctLogos = [BLDatabaseManager migrateCorrectLogosFromDefaults];
+    [BLDatabaseManager saveData:score forEntity:kEntityScore];
+  }
+  return score;
+}
+
++ (BLUser*)user {
   
   id user = [BLDatabaseManager loadDataFromEntity:kEntityUser];
   if (!user) {
     user = [BLUser new];
     [BLDatabaseManager saveData:user forEntity:kEntityUser];
   }
+  return user;
+}
+
++ (BLLogoStatus*)logoStatus:(long)logoId {
+  
+  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,logoId];
+  BLLogoStatus* status = (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
+  return status;
+}
+
++ (void)saveLogoStatus:(BLLogoStatus*)logoStatus {
+  
+  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,(long)logoStatus.identifier];
+  [BLDatabaseManager saveData:logoStatus forEntity:entity];
 }
 
 + (NSInteger)migrateCorrectLogosFromDefaults {
