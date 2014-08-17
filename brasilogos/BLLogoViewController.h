@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BLGameManager.h"
 
-@interface BLLogoViewController : UIViewController <BLGameManagerDelegate>
+@interface BLLogoViewController : UIViewController <BLGameManagerDelegate, BLBannerManagerDelegate>
 
 @property NSDictionary* logo;
 @property BLGameManager* gameManager;
@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *sloganButton;
 @property (weak, nonatomic) IBOutlet UIButton *bombButton;
 @property (weak, nonatomic) IBOutlet UIButton *magicButton;
+@property (weak, nonatomic) IBOutlet UIView *adBanner;
 
 - (IBAction)clueOneTapped:(id)sender;
 - (IBAction)clueTwoTapped:(id)sender;

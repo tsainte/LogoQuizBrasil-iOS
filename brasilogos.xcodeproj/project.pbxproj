@@ -489,6 +489,7 @@
 		F112978C19A0F53C00ACE7A2 /* RVBCLICK.WAV in Resources */ = {isa = PBXBuildFile; fileRef = F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */; };
 		F112978E19A0F63900ACE7A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F112978D19A0F63900ACE7A2 /* AVFoundation.framework */; };
 		F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */; };
+		F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112979319A11E6600ACE7A2 /* BLBannerManager.m */; };
 		F19505F11995CBED00A94FD1 /* logoquiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F19505F01995CBED00A94FD1 /* logoquiz.png */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
@@ -1018,6 +1019,8 @@
 		F112978D19A0F63900ACE7A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLShoppingOverlayViewController.h; sourceTree = "<group>"; };
 		F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLShoppingOverlayViewController.m; sourceTree = "<group>"; };
+		F112979219A11E6600ACE7A2 /* BLBannerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBannerManager.h; sourceTree = "<group>"; };
+		F112979319A11E6600ACE7A2 /* BLBannerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBannerManager.m; sourceTree = "<group>"; };
 		F19505F01995CBED00A94FD1 /* logoquiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoquiz.png; path = arts/logoquiz.png; sourceTree = SOURCE_ROOT; };
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
@@ -1666,6 +1669,8 @@
 				F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */,
 				F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */,
 				F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */,
+				F112979219A11E6600ACE7A2 /* BLBannerManager.h */,
+				F112979319A11E6600ACE7A2 /* BLBannerManager.m */,
 			);
 			path = brasilogos;
 			sourceTree = "<group>";
@@ -2312,6 +2317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10C63C5199EB8B8005328B2 /* BLAboutViewController.m in Sources */,
+				F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */,
 				F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */,
 				F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */,
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,

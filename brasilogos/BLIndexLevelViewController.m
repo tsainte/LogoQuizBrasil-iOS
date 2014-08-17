@@ -38,6 +38,7 @@
 - (void)viewWillAppear:(BOOL)animated {
   
   [super viewWillAppear:YES];
+  [self loadBanner];
   [self updateCoins];
 }
 
@@ -73,7 +74,7 @@
   }
   
   UILabel* level = (UILabel*)[cell viewWithTag:1];
-  level.text = [NSString stringWithFormat:@"Nível %d", indexPath.row+1];
+  level.text = [NSString stringWithFormat:@"Nível %ld", indexPath.row+1];
   
   return cell;
 }
@@ -96,5 +97,24 @@
   UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
   rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
   [self presentViewController:shopVC animated:NO completion:nil];
+}
+
+#pragma mark - BLBannerManagerDelegate
+
+- (void)loadBanner {
+  
+  [[BLBannerManager shared] resetAdView:self];
+}
+
+- (void)bannerWillAppear:(UIView *)banner {
+  
+  if (![self.adBanner.subviews containsObject:banner]) {
+    [self.adBanner addSubview:banner];
+  }
+}
+
+- (void)bannerWillDisappear:(UIView *)banner {
+  
+  [banner removeFromSuperview];
 }
 @end
