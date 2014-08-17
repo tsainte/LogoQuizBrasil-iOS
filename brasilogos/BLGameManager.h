@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum
+{
+	BLGameHelpClueOne,
+	BLGameHelpClueTwo,
+	BLGameHelpSlogan,
+  BLGameHelpBomb,
+  BLGameHelpMedicine
+} BLGameHelp;
+
 @protocol BLGameManagerDelegate <NSObject>
 
 @required
@@ -26,5 +35,5 @@
 
 - (id)initWithLogo:(NSDictionary*)logo delegate:(id<BLGameManagerDelegate>)delegate;
 - (void)tryAnswer:(NSString*)playerAnswer;
-
+- (BOOL)authorizeHelp:(BLGameHelp)clueType;
 @end

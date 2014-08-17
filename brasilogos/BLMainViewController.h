@@ -10,4 +10,7 @@
 
 @interface BLMainViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *boardButton;
+@property (weak, nonatomic) IBOutlet UIButton *aboutButton;
 @end

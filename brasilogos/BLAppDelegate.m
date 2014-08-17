@@ -24,7 +24,7 @@
     [self loadServices];
 #endif
   [BLStyling appearances];
-  [BLDatabaseManager startDatabase];
+
   return YES;
 }
 

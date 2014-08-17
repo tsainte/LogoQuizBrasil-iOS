@@ -9,12 +9,16 @@
 #import <Foundation/Foundation.h>
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
-#define kColorLightGreen [UIColor colorWithRed:73.0f/255.0f green:134.0f/255.0f blue:96.0f/255.0f alpha:1.0f]
+#define kColorDarkGreen [UIColor colorWithRed:73.0f/255.0f green:134.0f/255.0f blue:96.0f/255.0f alpha:1.0f]
+#define kColorLightGreen [UIColor colorWithRed:171.0f/255.0f green:193.0f/255.0f blue:120.0f/255.0f alpha:1.0f]
+#define kColorYellow [UIColor colorWithRed:248.0f/255.0f green:219.0f/255.0f blue:148.0f/255.0f alpha:1.0f]
+#define kColorRed [UIColor colorWithRed:188.0f/255.0f green:139.0f/255.0f blue:121.0f/255.0f alpha:1.0f]
+
 @interface BLStyling : NSObject
 
 + (void)appearances;
 + (BOOL)isIphone5;
 + (void)roundView:(UIView*)view;
 + (void)roundView:(UIView*)view corner:(CGFloat)corner;
-
++ (void)playSound:(NSString*)name type:(NSString*)type;
 @end

@@ -14,6 +14,10 @@
 
 
 
+
+
+
+
 		F10C63B6199EA825005328B2 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = F10C63B5199EA825005328B2 /* db.json */; };
 		F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63B8199EB863005328B2 /* BLMainViewController.m */; };
 		F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63BB199EB878005328B2 /* BLIndexLevelViewController.m */; };
@@ -476,6 +480,15 @@
 
 
 
+		F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */; };
+		F112978719A0F53C00ACE7A2 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978119A0F53C00ACE7A2 /* correct.mp3 */; };
+		F112978819A0F53C00ACE7A2 /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978219A0F53C00ACE7A2 /* fail.mp3 */; };
+		F112978919A0F53C00ACE7A2 /* fbbutton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978319A0F53C00ACE7A2 /* fbbutton.mp3 */; };
+		F112978A19A0F53C00ACE7A2 /* fbsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978419A0F53C00ACE7A2 /* fbsound.mp3 */; };
+		F112978B19A0F53C00ACE7A2 /* pointbutton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F112978519A0F53C00ACE7A2 /* pointbutton.mp3 */; };
+		F112978C19A0F53C00ACE7A2 /* RVBCLICK.WAV in Resources */ = {isa = PBXBuildFile; fileRef = F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */; };
+		F112978E19A0F63900ACE7A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F112978D19A0F63900ACE7A2 /* AVFoundation.framework */; };
+		F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */; };
 
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
@@ -484,6 +497,8 @@
 		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
 		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
 		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
+
+
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
 		F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B807198E5D9300578D91 /* UIKit.framework */; };
@@ -514,6 +529,10 @@
 /* Begin PBXFileReference section */
 		37B2646C0043423E8093054B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A8360C6337441A8304F6C2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+
+
+
+
 
 
 
@@ -988,6 +1007,17 @@
 
 
 
+		F112977D19A0DB4100ACE7A2 /* Toast+UIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		F112978119A0F53C00ACE7A2 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = correct.mp3; path = sound/correct.mp3; sourceTree = SOURCE_ROOT; };
+		F112978219A0F53C00ACE7A2 /* fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fail.mp3; path = sound/fail.mp3; sourceTree = SOURCE_ROOT; };
+		F112978319A0F53C00ACE7A2 /* fbbutton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fbbutton.mp3; path = sound/fbbutton.mp3; sourceTree = SOURCE_ROOT; };
+		F112978419A0F53C00ACE7A2 /* fbsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fbsound.mp3; path = sound/fbsound.mp3; sourceTree = SOURCE_ROOT; };
+		F112978519A0F53C00ACE7A2 /* pointbutton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pointbutton.mp3; path = sound/pointbutton.mp3; sourceTree = SOURCE_ROOT; };
+		F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = RVBCLICK.WAV; path = sound/RVBCLICK.WAV; sourceTree = SOURCE_ROOT; };
+		F112978D19A0F63900ACE7A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLShoppingOverlayViewController.h; sourceTree = "<group>"; };
+		F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLShoppingOverlayViewController.m; sourceTree = "<group>"; };
 
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
@@ -1004,6 +1034,8 @@
 		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
 		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
 		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
+
+
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8B803198E5D9300578D91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1F8B805198E5D9300578D91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1031,6 +1063,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F112978E19A0F63900ACE7A2 /* AVFoundation.framework in Frameworks */,
 				F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */,
 				F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */,
 				F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */,
@@ -1532,9 +1565,28 @@
 			path = final_images;
 			sourceTree = "<group>";
 		};
+		F112978019A0F47100ACE7A2 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				F112978119A0F53C00ACE7A2 /* correct.mp3 */,
+				F112978219A0F53C00ACE7A2 /* fail.mp3 */,
+				F112978319A0F53C00ACE7A2 /* fbbutton.mp3 */,
+				F112978419A0F53C00ACE7A2 /* fbsound.mp3 */,
+				F112978519A0F53C00ACE7A2 /* pointbutton.mp3 */,
+				F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
 		F19505EF1995CBD300A94FD1 /* arts */ = {
 			isa = PBXGroup;
 			children = (
+
+
+
+
+
+
 
 
 
@@ -1570,6 +1622,7 @@
 		F1F8B802198E5D9300578D91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F112978D19A0F63900ACE7A2 /* AVFoundation.framework */,
 				F1F8B803198E5D9300578D91 /* Foundation.framework */,
 				F1F8B805198E5D9300578D91 /* CoreGraphics.framework */,
 				F1F8B807198E5D9300578D91 /* UIKit.framework */,
@@ -1582,6 +1635,7 @@
 		F1F8B809198E5D9300578D91 /* brasilogos */ = {
 			isa = PBXGroup;
 			children = (
+				F112978019A0F47100ACE7A2 /* sound */,
 				F10C6788199EDF29005328B2 /* final_images */,
 				F10C63C9199ECA0E005328B2 /* database */,
 				F19505EF1995CBD300A94FD1 /* arts */,
@@ -1608,6 +1662,10 @@
 				F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */,
 				F1AD906A199FD35D0071E256 /* BLGameManager.h */,
 				F1AD906B199FD35D0071E256 /* BLGameManager.m */,
+				F112977D19A0DB4100ACE7A2 /* Toast+UIView.h */,
+				F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */,
+				F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */,
+				F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */,
 			);
 			path = brasilogos;
 			sourceTree = "<group>";
@@ -1790,7 +1848,9 @@
 
 
 
+
 				F1F8B81A198E5D9300578D91 /* Main_iPad.storyboard in Resources */,
+
 
 
 
@@ -1875,6 +1935,7 @@
 
 
 
+				F112978C19A0F53C00ACE7A2 /* RVBCLICK.WAV in Resources */,
 
 
 
@@ -1890,6 +1951,11 @@
 
 
 
+
+
+
+
+				F112978719A0F53C00ACE7A2 /* correct.mp3 in Resources */,
 
 
 
@@ -2055,6 +2121,7 @@
 
 
 
+				F112978A19A0F53C00ACE7A2 /* fbsound.mp3 in Resources */,
 
 				F10C63B6199EA825005328B2 /* db.json in Resources */,
 
@@ -2104,6 +2171,7 @@
 
 
 
+				F112978B19A0F53C00ACE7A2 /* pointbutton.mp3 in Resources */,
 
 
 
@@ -2132,6 +2200,7 @@
 
 
 
+				F112978819A0F53C00ACE7A2 /* fail.mp3 in Resources */,
 
 
 
@@ -2181,6 +2250,7 @@
 
 
 
+				F112978919A0F53C00ACE7A2 /* fbbutton.mp3 in Resources */,
 
 
 
@@ -2247,6 +2317,8 @@
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
 				F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */,
 				F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */,
+				F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */,
+				F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */,
 				F1AD9066199FBD530071E256 /* BLUser.m in Sources */,
 				F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */,
 				F1F8B810198E5D9300578D91 /* main.m in Sources */,

@@ -13,7 +13,7 @@ PODS:
 DEPENDENCIES:
   - FlurrySDK (~> 5.2.0)
   - Google-AdMob-Ads-SDK (= 6.8.0)
-  - Slash (~> 0.1.2)
+  - Slash (= 0.1.2)
   - TestFlightSDK (~> 3.0.2)
 
 SPEC CHECKSUMS:

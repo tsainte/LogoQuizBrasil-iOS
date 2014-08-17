@@ -25,8 +25,9 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  
+  [super viewDidLoad];
+  [self roundButtons];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -41,6 +42,12 @@
   [self.navigationController setNavigationBarHidden:NO];    // it shows
 }
 
+- (void)roundButtons {
+  
+  [BLStyling roundView:self.playButton];
+  [BLStyling roundView:self.boardButton];
+  [BLStyling roundView:self.aboutButton];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

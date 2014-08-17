@@ -10,6 +10,12 @@
 
 @implementation BLGameManager
 
+#define COINS_FOR_RIGHT_ANSWER 5
+#define COINS_FOR_CLUE (-10)
+#define COINS_FOR_SLOGAN (-20)
+#define COINS_FOR_BOMB (-50)
+#define COINS_FOR_MEDICINE (-200)
+
 - (id)initWithLogo:(NSDictionary*)logo delegate:(id<BLGameManagerDelegate>)delegate {
   
   if (self = [super init]) {
@@ -52,6 +58,7 @@
   NSArray* alternatives = [alternativeString componentsSeparatedByString:@","];
   return alternatives;
 }
+
 - (NSString*)getDiacriticString:(NSString*)string {
   
   return [[string lowercaseString] stringByFoldingWithOptions:NSDiacriticInsensitiveSearch locale:[NSLocale currentLocale]];
@@ -66,9 +73,17 @@
 - (void)saveCorrectOnDatabase {
   
   //update wallet
+  BLWallet* wallet = [BLDatabaseManager wallet];
+  wallet.coins = wallet.coins + COINS_FOR_RIGHT_ANSWER;
+  [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
+  
   //update score
+  BLScore* score = [BLDatabaseManager score];
+  score.correctLogos = score.correctLogos + 1;
+  [BLDatabaseManager saveData:score forEntity:kEntityScore];
+  
   //update logostatus
-  BLLogoStatus* status = [self getLogoStatus];
+  BLLogoStatus* status = [BLDatabaseManager logoStatus:[self.logo[@"id"] longValue]];
   status.hasHitTheAnswer = YES;
   [self saveStatus:status];
 }
@@ -78,15 +93,110 @@
   [self.delegate isWrongAnswer];
 }
 
-- (BLLogoStatus*)getLogoStatus {
-  
-  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,[self.logo[@"id"] longValue]];
-  return (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
-}
-
 - (void)saveStatus:(BLLogoStatus*)status {
   
   NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,[self.logo[@"id"] longValue]];
   [BLDatabaseManager saveData:status forEntity:entity];
 }
+
+- (BOOL)authorizeHelp:(BLGameHelp)help {
+
+  BOOL alreadyPurchased = [self alreadyPurchased:help];
+  if (alreadyPurchased) return YES;
+  
+  NSInteger cost = [self costHelp:help];
+  NSInteger myMoney = [[BLDatabaseManager wallet] coins];
+  BOOL hasMoney = cost + myMoney >= 0;
+  if (hasMoney) {
+    [self buyHelp:help];
+  }
+  
+  return hasMoney;
+}
+
+- (BOOL)alreadyPurchased:(BLGameHelp)help {
+  
+  BLLogoStatus* status = [BLDatabaseManager logoStatus:[self.logo[@"id"] longValue]];
+  BOOL alreadyPurchased;
+  switch (help) {
+    case BLGameHelpClueOne:
+      alreadyPurchased = status.hasUsedFirstClue;
+      break;
+    case BLGameHelpClueTwo:
+      alreadyPurchased = status.hasUsedSecondClue;
+      break;
+    case BLGameHelpSlogan:
+      alreadyPurchased = status.hasUsedSlogan;
+      break;
+    case BLGameHelpBomb:
+      alreadyPurchased = status.hasUsedBomb;
+      break;
+    case BLGameHelpMedicine:
+      alreadyPurchased = status.hasUsedMedicine;
+      break;
+    default:
+      break;
+  }
+  return alreadyPurchased;
+}
+
+- (NSInteger)costHelp:(BLGameHelp)help {
+  
+  NSInteger cost;
+  switch (help) {
+    case BLGameHelpClueOne:
+      cost = COINS_FOR_CLUE;
+      break;
+    case BLGameHelpClueTwo:
+      cost = COINS_FOR_CLUE;
+      break;
+    case BLGameHelpSlogan:
+      cost = COINS_FOR_SLOGAN;
+      break;
+    case BLGameHelpBomb:
+      cost = COINS_FOR_BOMB;
+      break;
+    case BLGameHelpMedicine:
+      cost = COINS_FOR_MEDICINE;
+      break;
+    default:
+      break;
+  }
+  return cost;
+}
+
+- (void)buyHelp:(BLGameHelp)help {
+  
+  BLLogoStatus* status = [BLDatabaseManager logoStatus:[self.logo[@"id"] longValue]];
+  switch (help) {
+    case BLGameHelpClueOne:
+      status.hasUsedFirstClue = YES;
+      break;
+    case BLGameHelpClueTwo:
+      status.hasUsedSecondClue = YES;
+      break;
+    case BLGameHelpSlogan:
+      status.hasUsedSlogan = YES;
+      break;
+    case BLGameHelpBomb:
+      status.hasUsedBomb = YES;
+      break;
+    case BLGameHelpMedicine:
+      status.hasUsedMedicine = YES;
+      status.hasHitTheAnswer = YES;
+      break;
+    default:
+      break;
+  }
+  [BLDatabaseManager saveLogoStatus:status];
+  
+  NSInteger cost = [self costHelp:help];
+  BLWallet* wallet = [BLDatabaseManager wallet];
+  wallet.coins += cost;
+  [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
+  
+  //todo transaction
+  
+}
+
 @end
