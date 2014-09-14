@@ -908,6 +908,10 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="muG-AW-O93" appends="YES" id="wGT-mY-98J"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bnF-Lm-xGN" userLabel="250coins">
                                         <rect key="frame" x="20" y="104" width="220" height="50"/>
@@ -937,6 +941,10 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Rlp-6M-akS" appends="YES" id="wkR-wQ-0Wt"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpD-mF-f9J" userLabel="750coins">
                                         <rect key="frame" x="20" y="162" width="220" height="50"/>
@@ -966,6 +974,10 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Axm-5M-FUo" appends="YES" id="uEd-ar-DZn"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dD5-h0-fDi" userLabel="2000coins">
                                         <rect key="frame" x="20" y="220" width="220" height="50"/>
@@ -981,20 +993,24 @@
                                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2000 moedas por" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtG-Pj-gA8">
-                                                <rect key="frame" x="55" y="5" width="150" height="20"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                                <color key="textColor" red="0.95294117649999999" green="0.86666666670000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="U$ 9,99 (50% dsc)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1J-5B-fne">
                                                 <rect key="frame" x="55" y="25" width="150" height="20"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                 <color key="textColor" red="0.95294117649999999" green="0.86666666670000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2000 moedas por" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtG-Pj-gA8">
+                                                <rect key="frame" x="55" y="5" width="150" height="20"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.95294117649999999" green="0.86666666670000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="huh-rg-wf5" appends="YES" id="V5e-y4-eum"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNd-br-ItT" userLabel="removeAds">
                                         <rect key="frame" x="20" y="278" width="220" height="50"/>
@@ -1011,12 +1027,12 @@
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remover propaganda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2a-Vl-KGt">
-                                                <rect key="frame" x="55" y="5" width="150" height="20"/>
+                                                <rect key="frame" x="55" y="5" width="157" height="20"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                 <color key="textColor" red="0.95294117649999999" green="0.86666666670000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="U$ 0,99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unI-be-NPD">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="U$ 0,99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unI-be-NPD">
                                                 <rect key="frame" x="55" y="25" width="150" height="20"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                 <color key="textColor" red="0.95294117649999999" green="0.86666666670000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1024,6 +1040,10 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="P1P-rS-cDR" appends="YES" id="JQw-tG-zN7"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-Sk-3iL" userLabel="restore">
                                         <rect key="frame" x="20" y="336" width="220" height="50"/>
@@ -1036,6 +1056,10 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hMk-uM-lpv" appends="YES" id="0Z4-Ld-x4t"/>
+                                        </connections>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pn9-N6-GhB">
                                         <rect key="frame" x="93" y="10" width="75" height="21"/>
@@ -1062,6 +1086,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buy100coins" destination="muG-AW-O93" id="HKH-GO-yEM"/>
                         <outlet property="coins100" destination="axh-Wb-Gka" id="NZa-9L-8vX"/>
                         <outlet property="coins2000" destination="dD5-h0-fDi" id="333-ki-Pri"/>
                         <outlet property="coins250" destination="bnF-Lm-xGN" id="P3M-WE-Eao"/>
@@ -1076,6 +1101,36 @@
                 <tapGestureRecognizer id="hVm-ET-tuh" userLabel="OverlayGesture">
                     <connections>
                         <action selector="overlayTapped:" destination="i0h-Nt-JS4" id="Y4K-po-r0G"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="muG-AW-O93">
+                    <connections>
+                        <action selector="buy100coins:" destination="i0h-Nt-JS4" id="H08-vi-2N2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Rlp-6M-akS">
+                    <connections>
+                        <action selector="buy250coins:" destination="i0h-Nt-JS4" id="Xqu-j1-wme"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Axm-5M-FUo">
+                    <connections>
+                        <action selector="buy750coins:" destination="i0h-Nt-JS4" id="ngI-4L-qHw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="huh-rg-wf5">
+                    <connections>
+                        <action selector="buy2000coins:" destination="i0h-Nt-JS4" id="hf4-Bj-2D9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="P1P-rS-cDR">
+                    <connections>
+                        <action selector="buyRemoveAds:" destination="i0h-Nt-JS4" id="qtM-p5-unS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hMk-uM-lpv">
+                    <connections>
+                        <action selector="restoreBuys:" destination="i0h-Nt-JS4" id="Kpt-tO-aUe"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
