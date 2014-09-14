@@ -492,6 +492,7 @@
 		F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112979319A11E6600ACE7A2 /* BLBannerManager.m */; };
 		F112E88319A8C378009F70B4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F112E88219A8C378009F70B4 /* StoreKit.framework */; };
 		F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112E88519A8C3D7009F70B4 /* BLInAppManager.m */; };
+		F1269B8619C5F0B600A89099 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1269B8519C5F0B600A89099 /* BLController.m */; };
 		F19505F11995CBED00A94FD1 /* logoquiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F19505F01995CBED00A94FD1 /* logoquiz.png */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
@@ -1026,6 +1027,8 @@
 		F112E88219A8C378009F70B4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F112E88419A8C3D7009F70B4 /* BLInAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLInAppManager.h; sourceTree = "<group>"; };
 		F112E88519A8C3D7009F70B4 /* BLInAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLInAppManager.m; sourceTree = "<group>"; };
+		F1269B8419C5F0B600A89099 /* BLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLController.h; sourceTree = "<group>"; };
+		F1269B8519C5F0B600A89099 /* BLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
 		F19505F01995CBED00A94FD1 /* logoquiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoquiz.png; path = arts/logoquiz.png; sourceTree = SOURCE_ROOT; };
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
@@ -1653,6 +1656,8 @@
 				F1F8B813198E5D9300578D91 /* BLAppDelegate.m */,
 				F10C63B7199EB863005328B2 /* BLMainViewController.h */,
 				F10C63B8199EB863005328B2 /* BLMainViewController.m */,
+				F1269B8419C5F0B600A89099 /* BLController.h */,
+				F1269B8519C5F0B600A89099 /* BLController.m */,
 				F19505F51995CDB800A94FD1 /* BLStyling.h */,
 				F19505F61995CDB800A94FD1 /* BLStyling.m */,
 				F1F8B815198E5D9300578D91 /* Main_iPhone.storyboard */,
@@ -2332,6 +2337,7 @@
 			files = (
 				F10C63C5199EB8B8005328B2 /* BLAboutViewController.m in Sources */,
 				F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */,
+				F1269B8619C5F0B600A89099 /* BLController.m in Sources */,
 				F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */,
 				F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */,
 				F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */,

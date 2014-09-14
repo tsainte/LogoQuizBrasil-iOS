@@ -31,6 +31,7 @@
 {
   
   [super viewDidLoad];
+  self.view.backgroundColor = [UIColor clearColor];
   self.view.alpha = 0.0f;
   self.fiveProductButtons = @[self.coins100, self.coins250, self.coins750, self.coins2000, self.removeAds];
   [self roundViews];

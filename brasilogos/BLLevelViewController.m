@@ -95,10 +95,7 @@
 
 - (IBAction)shopTapped:(id)sender {
   
-  BLShoppingOverlayViewController* shopVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
-  UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-  rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-  [self presentViewController:shopVC animated:NO completion:nil];
+  [BLController showShoppingOnViewController:self];
 }
 
 #pragma mark - BLBannerManagerDelegate

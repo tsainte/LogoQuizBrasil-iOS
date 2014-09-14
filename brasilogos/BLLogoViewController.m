@@ -98,7 +98,7 @@ typedef enum
   [super viewWillAppear:YES];
   [self loadBanner];
   NSLog(@"constraint: %f", self.heightPanelConstraint.constant);
-  self.heightPanelConstraint.constant = [BLStyling isIphone5] ? 210.0f : 160.0f;
+  self.heightPanelConstraint.constant = [BLController isIphone5] ? 210.0f : 160.0f;
   [self.view setNeedsUpdateConstraints];
 }
 
@@ -114,10 +114,7 @@ typedef enum
 */
 - (IBAction)shopTapped:(id)sender {
   
-  BLShoppingOverlayViewController* shopVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
-  UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-  rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-  [self presentViewController:shopVC animated:NO completion:nil];
+  [BLController showShoppingOnViewController:self];
 }
 
 #pragma mark - Keyboard methods
@@ -295,7 +292,7 @@ typedef enum
 
 - (void)isCorrectAnswer {
  
-  [BLStyling playSound:@"correct" type:@"mp3"];
+  [BLController playSound:@"correct" type:@"mp3"];
   [self updateElements];
   [self configureTextFieldForState:BLTextFieldCorrect];
 }
@@ -303,7 +300,7 @@ typedef enum
 - (void)isWrongAnswer {
   
   [self configureTextFieldForState:BLTextFieldWrong];
-  [BLStyling playSound:@"fail" type:@"mp3"];
+  [BLController playSound:@"fail" type:@"mp3"];
 }
 
 

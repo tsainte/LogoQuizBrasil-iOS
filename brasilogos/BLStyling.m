@@ -16,10 +16,7 @@
   //paint textfield tint color
   [[UITextField appearance] setTintColor:kColorDarkGreen];
 }
-+ (BOOL)isIphone5 {
-  
-  return ([[UIScreen mainScreen] bounds].size.height == 568);
-}
+
 
 + (void)roundView:(UIView*)view {
   
@@ -31,11 +28,5 @@
   [[view layer] setCornerRadius:corner];
 }
 
-+ (void)playSound:(NSString*)name type:(NSString*)type {
-  
-  NSString *soundPath = [[NSBundle mainBundle] pathForResource:name ofType:type];
-  SystemSoundID soundID;
-  AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
-  AudioServicesPlaySystemSound (soundID);
-}
+
 @end

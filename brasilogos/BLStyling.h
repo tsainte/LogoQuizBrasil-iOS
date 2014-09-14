@@ -17,8 +17,7 @@
 @interface BLStyling : NSObject
 
 + (void)appearances;
-+ (BOOL)isIphone5;
 + (void)roundView:(UIView*)view;
 + (void)roundView:(UIView*)view corner:(CGFloat)corner;
-+ (void)playSound:(NSString*)name type:(NSString*)type;
+
 @end
