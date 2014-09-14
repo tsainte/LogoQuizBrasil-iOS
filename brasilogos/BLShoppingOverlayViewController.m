@@ -7,8 +7,12 @@
 //
 
 #import "BLShoppingOverlayViewController.h"
+#import "BLInAppManager.h"
 
 @interface BLShoppingOverlayViewController ()
+
+@property NSDictionary* products;
+@property NSArray* fiveProductButtons;
 
 @end
 
@@ -28,20 +32,33 @@
   
   [super viewDidLoad];
   self.view.alpha = 0.0f;
+  self.fiveProductButtons = @[self.coins100, self.coins250, self.coins750, self.coins2000, self.removeAds];
   [self roundViews];
+  
+  [self loadProductsFromAppStore];
 }
 
 - (void)roundViews {
 
   [BLStyling roundView:self.content corner:15];
-  [BLStyling roundView:self.coins100];
-  [BLStyling roundView:self.coins250];
-  [BLStyling roundView:self.coins750];
-  [BLStyling roundView:self.coins2000];
-  [BLStyling roundView:self.removeAds];
+  for (UIView* productView in self.fiveProductButtons) {
+    [BLStyling roundView:productView];
+  }
   [BLStyling roundView:self.restore];
 }
 
+- (void)loadProductsFromAppStore {
+  
+  self.products = nil;
+//start refreshing
+  [[BLInAppManager shared] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
+    if (success) {
+      [self mountProductDictionary:self.products];
+      [self reloadButtons];
+    }
+//    [self.refreshControl endRefreshing];
+  }];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -70,6 +87,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)mountProductDictionary:(NSArray*)products {
+  
+  NSMutableDictionary* productsDict = [NSMutableDictionary new];
+  for (SKProduct* product in products){
+    [productsDict setObject:product forKey:product.productIdentifier];
+  }
+  self.products = productsDict;
+}
+
+- (void)reloadButtons {
+  
+  
+  NSLog(@"products: %@",self.products);
+}
 
 - (IBAction)overlayTapped:(id)sender {
   
