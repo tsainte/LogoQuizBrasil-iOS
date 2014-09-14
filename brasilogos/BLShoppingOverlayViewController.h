@@ -21,5 +21,13 @@
 @property (weak, nonatomic) IBOutlet UIView *restore;
 
 - (IBAction)overlayTapped:(id)sender;
+- (IBAction)buy100coins:(id)sender;
+- (IBAction)buy250coins:(id)sender;
+- (IBAction)buy750coins:(id)sender;
+- (IBAction)buy2000coins:(id)sender;
+- (IBAction)buyRemoveAds:(id)sender;
+- (IBAction)restoreBuys:(id)sender;
+
+
 
 @end
