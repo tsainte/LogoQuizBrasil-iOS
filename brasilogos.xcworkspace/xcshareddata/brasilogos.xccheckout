@@ -10,29 +10,29 @@
 	<string>brasilogos</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>19665A3F-DBB4-48FB-830F-660394C3C084</key>
+		<key>E96709645718A9AB757F086BF359A89E0BC4A877</key>
 		<string>https://bitbucket.org/sainte/logo-quiz-brasil.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>brasilogos.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>19665A3F-DBB4-48FB-830F-660394C3C084</key>
+		<key>E96709645718A9AB757F086BF359A89E0BC4A877</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://bitbucket.org/sainte/logo-quiz-brasil.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>19665A3F-DBB4-48FB-830F-660394C3C084</string>
+	<string>E96709645718A9AB757F086BF359A89E0BC4A877</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>19665A3F-DBB4-48FB-830F-660394C3C084</string>
+			<string>E96709645718A9AB757F086BF359A89E0BC4A877</string>
 			<key>IDESourceControlWCCName</key>
 			<string>brasilogos</string>
 		</dict>
