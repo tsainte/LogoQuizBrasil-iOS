@@ -35,7 +35,7 @@
   self.view.backgroundColor = [UIColor clearColor];
   self.view.alpha = 0.0f;
   self.fiveProductButtons = @[self.coins100, self.coins250, self.coins750, self.coins2000, self.removeAds];
-  self.productKeys = @[@"br.com.mobwiz.brasilogos.100coins", @"br.com.mobwiz.brasilogos.250coins", @"br.com.mobwiz.brasilogos.750coins", @"br.com.mobwiz.brasilogos.2000coins", @"br.com.mobwiz.brasilogos.noads"];
+  self.productKeys = @[kInApp100Coins, kInApp250Coins, kInApp750Coins, kInApp2000Coins, kInAppNoAds];
   [self roundViews];
   
   [self loadProductsFromAppStore];

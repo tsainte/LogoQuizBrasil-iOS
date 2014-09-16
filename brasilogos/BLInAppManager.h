@@ -7,9 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#define kInApp100Coins @"br.com.mobwiz.brasilogos.100coins"
+#define kInApp250Coins @"br.com.mobwiz.brasilogos.250coins"
+#define kInApp750Coins @"br.com.mobwiz.brasilogos.750coins"
+#define kInApp2000Coins @"br.com.mobwiz.brasilogos.2000coins"
+#define kInAppNoAds @"br.com.mobwiz.brasilogos.noads"
+
 typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * products);
 
-@interface BLInAppManager : NSObject
+@interface BLInAppManager : NSObject <SKPaymentTransactionObserver>
 
 @property NSArray* productIdentifiers;
 + (BLInAppManager*)shared;

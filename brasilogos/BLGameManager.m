@@ -72,9 +72,14 @@
 
 - (void)saveCorrectOnDatabase {
   
+  //create transaction
+  BLTransaction* transaction = [BLTransaction new];
+  transaction.type = kTransacionGuessed;
+  transaction.value = COINS_FOR_RIGHT_ANSWER;
+  
   //update wallet
   BLWallet* wallet = [BLDatabaseManager wallet];
-  wallet.coins = wallet.coins + COINS_FOR_RIGHT_ANSWER;
+  [wallet addTransaction:transaction];
   [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
   
   //update score
@@ -190,13 +195,46 @@
   }
   [BLDatabaseManager saveLogoStatus:status];
   
-  NSInteger cost = [self costHelp:help];
+  BLTransaction* transaction = [self makeTransactionHelp:help];
   BLWallet* wallet = [BLDatabaseManager wallet];
-  wallet.coins += cost;
+  [wallet addTransaction:transaction];
   [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
-  
-  //todo transaction
-  
 }
 
+- (BLTransaction*)makeTransactionHelp:(BLGameHelp)help {
+  
+  BLTransaction* transaction = [BLTransaction new];
+
+  switch (help) {
+      
+    case BLGameHelpClueOne:
+      transaction.type = kTransactionBuyClue;
+      transaction.value = COINS_FOR_CLUE;
+      break;
+      
+    case BLGameHelpClueTwo:
+      transaction.type = kTransactionBuyClue;
+      transaction.value = COINS_FOR_CLUE;
+      break;
+    
+    case BLGameHelpSlogan:
+      transaction.type = kTransactionBuySlogan;
+      transaction.value = COINS_FOR_SLOGAN;
+      break;
+    
+    case BLGameHelpBomb:
+      transaction.type = kTransactionBuyBomb;
+      transaction.value = COINS_FOR_BOMB;
+      break;
+    
+    case BLGameHelpMedicine:
+      transaction.type = kTransactionBuyMedicine;
+      transaction.value = COINS_FOR_MEDICINE;
+      break;
+    
+    default:
+      break;
+  }
+  return transaction;
+}
 @end

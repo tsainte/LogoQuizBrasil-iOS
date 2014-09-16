@@ -26,13 +26,7 @@ NSMutableSet * _purchasedProductIdentifiers;
   static dispatch_once_t once;
   static BLInAppManager * sharedInstance;
   dispatch_once(&once, ^{
-    NSArray * productIdentifiers = @[
-                                  @"br.com.mobwiz.brasilogos.100coins",
-                                  @"br.com.mobwiz.brasilogos.250coins",
-                                  @"br.com.mobwiz.brasilogos.750coins",
-                                  @"br.com.mobwiz.brasilogos.2000coins",
-                                  @"br.com.mobwiz.brasilogos.noads",
-                                  ];
+    NSArray * productIdentifiers = @[ kInApp100Coins, kInApp250Coins, kInApp750Coins, kInApp2000Coins, kInAppNoAds];
     sharedInstance = [[self alloc] initWithProductIdentifiers:productIdentifiers];
   });
   return sharedInstance;
@@ -58,6 +52,7 @@ NSMutableSet * _purchasedProductIdentifiers;
     }
     
   }
+  [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
   return self;
 }
 
@@ -110,5 +105,88 @@ NSMutableSet * _purchasedProductIdentifiers;
   
   NSString *str = [formatter stringFromNumber:[product price]];
   return str;
+}
+
+#pragma mark - show me the money
+- (void)buyProduct:(SKProduct *)product {
+  
+  NSLog(@"Buying %@...", product.productIdentifier);
+  
+  SKPayment * payment = [SKPayment paymentWithProduct:product];
+  [[SKPaymentQueue defaultQueue] addPayment:payment];
+  
+}
+
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions
+{
+  for (SKPaymentTransaction * transaction in transactions) {
+    switch (transaction.transactionState)
+    {
+      case SKPaymentTransactionStatePurchased:
+        [self completeTransaction:transaction];
+        break;
+      case SKPaymentTransactionStateFailed:
+        [self failedTransaction:transaction];
+        break;
+      case SKPaymentTransactionStateRestored:
+        [self restoreTransaction:transaction];
+      default:
+        break;
+    }
+  };
+}
+
+- (void)completeTransaction:(SKPaymentTransaction *)transaction {
+  NSLog(@"completeTransaction...");
+  
+  [self provideContentForProductIdentifier:transaction.payment.productIdentifier];
+  [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+}
+
+- (void)restoreTransaction:(SKPaymentTransaction *)transaction {
+  NSLog(@"restoreTransaction...");
+  
+  [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
+  [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+}
+
+- (void)failedTransaction:(SKPaymentTransaction *)transaction {
+  
+  NSLog(@"failedTransaction...");
+  if (transaction.error.code != SKErrorPaymentCancelled)
+  {
+    NSLog(@"Transaction error: %@", transaction.error.localizedDescription);
+  }
+  
+  [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+}
+
+- (void)provideContentForProductIdentifier:(NSString*)productIdentifier {
+  
+  if ([productIdentifier isEqualToString:kInAppNoAds]) {
+    BLUser* user = [BLDatabaseManager user];
+    user.boughtRemoveAds = YES;
+    [BLDatabaseManager saveData:user forEntity:kEntityUser];
+    
+  } else {
+    BLTransaction* transaction = [BLTransaction new];
+    transaction.type = kTransactionInApp;
+    
+    if ([productIdentifier isEqualToString:kInApp100Coins]) {
+      transaction.value = 100;
+    } else if ([productIdentifier isEqualToString:kInApp250Coins]) {
+      transaction.value = 250;
+    } else if ([productIdentifier isEqualToString:kInApp750Coins]) {
+      transaction.value = 750;
+    } else if ([productIdentifier isEqualToString:kInApp2000Coins]) {
+      transaction.value = 2000;
+    } else {
+      return;
+    }
+    
+    BLWallet* wallet = [BLDatabaseManager wallet];
+    [wallet addTransaction:transaction];
+    [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
+  }
 }
 @end

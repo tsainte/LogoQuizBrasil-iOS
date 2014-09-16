@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BLTransaction.h"
 
 @interface BLWallet : NSObject
 
 @property NSInteger coins;
-@property NSArray* transactions;
+@property NSMutableArray* transactions;
+
+- (void)addTransaction:(BLTransaction*)transaction;
 
 @end

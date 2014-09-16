@@ -493,6 +493,7 @@
 		F112E88319A8C378009F70B4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F112E88219A8C378009F70B4 /* StoreKit.framework */; };
 		F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112E88519A8C3D7009F70B4 /* BLInAppManager.m */; };
 		F1269B8619C5F0B600A89099 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1269B8519C5F0B600A89099 /* BLController.m */; };
+		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
 		F19505F11995CBED00A94FD1 /* logoquiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F19505F01995CBED00A94FD1 /* logoquiz.png */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
@@ -1029,6 +1030,8 @@
 		F112E88519A8C3D7009F70B4 /* BLInAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLInAppManager.m; sourceTree = "<group>"; };
 		F1269B8419C5F0B600A89099 /* BLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLController.h; sourceTree = "<group>"; };
 		F1269B8519C5F0B600A89099 /* BLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
+		F16171D319C7B49400FA9A07 /* BLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransaction.h; sourceTree = "<group>"; };
+		F16171D419C7B49400FA9A07 /* BLTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTransaction.m; sourceTree = "<group>"; };
 		F19505F01995CBED00A94FD1 /* logoquiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoquiz.png; path = arts/logoquiz.png; sourceTree = SOURCE_ROOT; };
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
@@ -1111,6 +1114,8 @@
 				F1AD9065199FBD530071E256 /* BLUser.m */,
 				F1AD9067199FCBD20071E256 /* BLWallet.h */,
 				F1AD9068199FCBD20071E256 /* BLWallet.m */,
+				F16171D319C7B49400FA9A07 /* BLTransaction.h */,
+				F16171D419C7B49400FA9A07 /* BLTransaction.m */,
 			);
 			name = database;
 			sourceTree = "<group>";
@@ -2349,6 +2354,7 @@
 				F1AD9066199FBD530071E256 /* BLUser.m in Sources */,
 				F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */,
 				F1F8B810198E5D9300578D91 /* main.m in Sources */,
+				F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */,
 				F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */,
 				F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */,
 				F1F8B820198E5D9300578D91 /* BLDetailViewController.m in Sources */,

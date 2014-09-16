@@ -9,6 +9,7 @@
 #import "BLAppDelegate.h"
 #import <TestFlightSDK/TestFlight.h>
 #import <FlurrySDK/Flurry.h>
+#import "BLInAppManager.h"
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -24,7 +25,7 @@
     [self loadServices];
 #endif
   [BLStyling appearances];
-
+  [BLInAppManager shared]; // this is to, as soon as possible, activate goods to receive from app store 
   return YES;
 }
 

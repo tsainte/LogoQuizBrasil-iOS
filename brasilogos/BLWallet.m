@@ -27,4 +27,13 @@
   [aCoder encodeInteger:self.coins forKey:kCodeKeyCoins];
   [aCoder encodeObject:self.transactions forKey:kCodeKeyTransactions];
 }
+
+- (void)addTransaction:(BLTransaction*)transaction {
+  
+  if (!self.transactions) {
+    self.transactions = [NSMutableArray new];
+  }
+  self.coins = self.coins + transaction.value;
+  [self.transactions addObject:transaction];
+}
 @end

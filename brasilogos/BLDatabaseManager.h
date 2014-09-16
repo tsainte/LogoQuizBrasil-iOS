@@ -12,6 +12,7 @@
 #import "BLScore.h"
 #import "BLUser.h"
 #import "BLWallet.h"
+#import "BLTransaction.h"
 
 #define kEntityLogoStatusID @"logostatus_%ld"
 #define kEntityScore @"score"

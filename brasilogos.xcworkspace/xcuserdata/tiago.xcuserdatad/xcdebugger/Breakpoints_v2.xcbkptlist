@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "brasilogos/BLInAppManager.m"
-            timestampString = "430492214.635585"
+            timestampString = "432520216.505121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "-request:didFailWithError:"
             landmarkType = "5">
          </BreakpointContent>
