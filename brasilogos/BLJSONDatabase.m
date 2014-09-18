@@ -14,10 +14,11 @@
 static BLJSONDatabase* singleton;
 
 + (BLJSONDatabase*)shared {
-  
-  if (!singleton) {
-    singleton = [[BLJSONDatabase alloc] init];
-    [singleton parse];
+  @synchronized(self) {
+    if (!singleton) {
+      singleton = [[BLJSONDatabase alloc] init];
+      [singleton parse];
+    }
   }
   return singleton;
 }

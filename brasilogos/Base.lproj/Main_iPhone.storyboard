@@ -860,7 +860,7 @@
         <!--Shopping Overlay View Controller-->
         <scene sceneID="bEo-jk-mGP">
             <objects>
-                <viewController restorationIdentifier="BLShoppingOverlayViewController" storyboardIdentifier="BLShoppingOverlayViewController" id="i0h-Nt-JS4" customClass="BLShoppingOverlayViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BLShoppingOverlayViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i0h-Nt-JS4" customClass="BLShoppingOverlayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tl7-Ni-8lZ"/>
                         <viewControllerLayoutGuide type="bottom" id="6zU-Y7-ChK"/>
@@ -1086,7 +1086,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buy100coins" destination="muG-AW-O93" id="HKH-GO-yEM"/>
                         <outlet property="coins100" destination="axh-Wb-Gka" id="NZa-9L-8vX"/>
                         <outlet property="coins2000" destination="dD5-h0-fDi" id="333-ki-Pri"/>
                         <outlet property="coins250" destination="bnF-Lm-xGN" id="P3M-WE-Eao"/>
