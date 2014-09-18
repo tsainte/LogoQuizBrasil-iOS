@@ -10,6 +10,7 @@
 #import <TestFlightSDK/TestFlight.h>
 #import <FlurrySDK/Flurry.h>
 #import "BLInAppManager.h"
+#import "BLJSONDatabase.h"
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -25,7 +26,13 @@
     [self loadServices];
 #endif
   [BLStyling appearances];
-  [BLInAppManager shared]; // this is to, as soon as possible, activate goods to receive from app store 
+  [BLInAppManager shared]; // this is to, as soon as possible, activate goods to receive from app store
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    [BLJSONDatabase shared];
+  });
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [BLBannerManager shared];
+  });
   return YES;
 }
 
