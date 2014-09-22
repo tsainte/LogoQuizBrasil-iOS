@@ -1,1 +1,1 @@
-../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.11.1/GADAdMobExtras.h
+../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.0/GADAdMobExtras.h
