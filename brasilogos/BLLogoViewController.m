@@ -8,7 +8,8 @@
 
 #import "BLLogoViewController.h"
 #import "Toast+UIView.h"
-#import "BLShoppingOverlayViewController.h"
+#import "BLAlertOverlayViewController.h"
+
 @interface BLLogoViewController ()
 
 @property BOOL isCorrect;
@@ -178,27 +179,40 @@ typedef enum
 
 - (IBAction)clueOneTapped:(id)sender {
   
-  [self authorizeClue:BLGameHelpClueOne];
+  [self showAlertWithTitle:@"Dica 1" text:@"Você deseja revelar primeira dica por 10 moedas?" action:^{
+    [self authorizeClue:BLGameHelpClueOne];
+  }];
+  
 }
 
 - (IBAction)clueTwoTapped:(id)sender {
   
-  [self authorizeClue:BLGameHelpClueTwo];
+  [self showAlertWithTitle:@"Dica 2" text:@"Você deseja revelar segunda dica por 10 moedas?" action:^{
+    [self authorizeClue:BLGameHelpClueTwo];
+  }];
 }
 
 - (IBAction)sloganTapped:(id)sender {
   
-  [self authorizeClue:BLGameHelpSlogan];
+  [self showAlertWithTitle:@"Slogan" text:@"Você deseja revelar slogan por 20 moedas?" action:^{
+    [self authorizeClue:BLGameHelpSlogan];
+  }];
+
 }
 
 - (IBAction)bombTapped:(id)sender {
   
-  [self bomb];
+  [self showAlertWithTitle:@"Bomba" text:@"Você deseja usar bomba por 50 moedas?" action:^{
+    [self bomb];
+  }];
+  
 }
 
 - (IBAction)magicTapped:(id)sender {
   
-  [self medicine];
+  [self showAlertWithTitle:@"Mágica" text:@"Você deseja revelar logo por 200 moedas?" action:^{
+    [self medicine];
+  }];
 }
 
 #pragma mark - clues
@@ -303,6 +317,25 @@ typedef enum
   [BLController playSound:@"fail" type:@"mp3"];
 }
 
+
+#pragma mark - alert
+- (void)showAlertWithTitle:(NSString*)title text:(NSString*)text action:(void(^)(void))executeAction {
+  
+  BLAlertOverlayViewController* alert = [self.storyboard instantiateViewControllerWithIdentifier:@"BLAlertOverlayViewController"];
+  
+  alert.titleText = title;
+  alert.text = text;
+  alert.executeAction = executeAction;
+  
+  if (IS_OS_8_OR_LATER) {
+    alert.modalPresentationStyle = UIModalPresentationOverFullScreen;
+  } else {
+    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
+  }
+  
+  [self presentViewController:alert animated:NO completion:nil];
+}
 
 
 - (void)configureTextFieldForState:(BLTextFieldState)state {
