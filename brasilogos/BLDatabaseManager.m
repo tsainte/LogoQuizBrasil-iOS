@@ -7,6 +7,7 @@
 //
 
 #import "BLDatabaseManager.h"
+#import "BLJSONDatabase.h"
 
 @implementation BLDatabaseManager
 
@@ -90,5 +91,17 @@
 + (NSInteger)migrateCoinsFromDefaults {
   
   return 0;
+}
+
++ (NSInteger)correctLogosForLevel:(NSInteger)level {
+  
+  NSInteger countCorrectLogos = 0;
+  NSMutableArray* logos = [BLJSONDatabase shared].levels[level-1];
+  for (NSDictionary* logo in logos) {
+    NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,[logo[@"id"] longValue]];
+    BLLogoStatus* status = (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
+    if (status.hasHitTheAnswer) countCorrectLogos++;
+  }
+  return countCorrectLogos;
 }
 @end

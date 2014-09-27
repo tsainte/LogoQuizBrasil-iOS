@@ -10,6 +10,8 @@
 #import "BLJSONDatabase.h"
 #import "BLLevelViewController.h"
 #import "BLShoppingOverlayViewController.h"
+#import "BLGameManager.h"
+#import "Toast+UIView.h"
 
 @interface BLIndexLevelViewController ()
 
@@ -40,6 +42,7 @@
   [super viewWillAppear:YES];
   [self loadBanner];
   [self updateCoins];
+  [self.tableView reloadData];
 }
 
 - (void)updateCoins {
@@ -74,23 +77,74 @@
   }
   
   UILabel* level = (UILabel*)[cell viewWithTag:1];
-  level.text = [NSString stringWithFormat:@"Nível %ld", indexPath.row+1];
+  UIProgressView* progress = (UIProgressView*)[cell viewWithTag:2];
+  UILabel* score = (UILabel*)[cell viewWithTag:3];
+  UIImageView* locker = (UIImageView*)[cell viewWithTag:4];
   
+  NSInteger levelIndex = indexPath.row + 1;
+  level.text = [NSString stringWithFormat:@"Nível %ld", levelIndex];
+  
+  
+  if ([BLGameManager canPlayLevel:levelIndex]) {
+    
+    double correctLogos = [BLDatabaseManager correctLogosForLevel:levelIndex];
+    float progressn = correctLogos/kMaximumLogoPerLevel;
+    [progress setProgress:progressn animated:NO];
+    progress.hidden = NO;
+    
+    score.text = [NSString stringWithFormat:@"%d / %d", (int)correctLogos, kMaximumLogoPerLevel];
+    score.hidden = NO;
+    
+    locker.hidden = YES;
+  } else {
+    
+    progress.hidden = YES;
+    score.hidden = YES;
+    locker.hidden = NO;
+  }
   return cell;
+}
+
+- (double)progressForLevel:(NSInteger)levelIndex {
+  
+  NSInteger correctLogos = [BLDatabaseManager correctLogosForLevel:levelIndex];
+  return correctLogos/kMaximumLogoPerLevel;
 }
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+  
+   NSInteger index = [[self.tableView indexPathForSelectedRow] row];
+  if ([BLGameManager canPlayLevel:index+1]) {
+    return YES;
+  } else {
+    NSInteger logos = [BLGameManager logosToNextLevel:index+1];
+    NSString* message = [NSString stringWithFormat:@"Voce precisa acertar mais %ld %@ para jogar este nível.",logos, logos > 1 ? @"logos" : @"logo"];
+    [self.view makeToast:message position:[self getPoint] color:kColorDarkGreen];
+    return NO;
+  }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 
   NSInteger index = [[self.tableView indexPathForSelectedRow] row];
+
   BLLevelViewController* levelVC = [segue destinationViewController];
   levelVC.levelID = index+1;
   levelVC.logos = self.levels[index];
 }
 
+- (NSValue*)getPoint {
+  
+  CGSize size = self.view.bounds.size;
+  CGFloat height = (size.height / 100) * 65;
+  CGPoint point = CGPointMake(size.width / 2,  height);
+  NSValue* value = [NSValue valueWithCGPoint:point];
+  return value;
+}
 - (IBAction)shopTapped:(id)sender {
   
   [BLController showShoppingOnViewController:self];

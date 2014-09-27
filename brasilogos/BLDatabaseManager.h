@@ -30,4 +30,5 @@
 + (BLScore*)score;
 + (BLUser*)user;
 
++ (NSInteger)correctLogosForLevel:(NSInteger)level;
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLIndexLevelViewController : UIViewController <UITableViewDataSource, BLBannerManagerDelegate>
+@interface BLIndexLevelViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, BLBannerManagerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UIView *adBanner;

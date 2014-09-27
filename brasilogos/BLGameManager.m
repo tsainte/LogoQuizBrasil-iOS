@@ -237,4 +237,20 @@
   }
   return transaction;
 }
+
+#pragma mark - static methods for IndexLevel
+
++ (BOOL)canPlayLevel:(NSInteger)levelIndex {
+  
+  NSInteger correctLogos = [[BLDatabaseManager score] correctLogos];
+  NSInteger minimumLogosRequired = kMaximumLogoPerLevel*(levelIndex -1)*0.667;
+  return correctLogos >= minimumLogosRequired;
+}
+
++ (NSInteger)logosToNextLevel:(NSInteger)levelIndex {
+  
+  NSInteger correctLogos = [[BLDatabaseManager score] correctLogos];
+  NSInteger minimumLogosRequired = kMaximumLogoPerLevel*(levelIndex -1)*0.667;
+  return minimumLogosRequired - correctLogos;
+}
 @end

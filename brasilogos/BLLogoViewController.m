@@ -49,6 +49,7 @@ typedef enum
   [self updateImage];
   [self updateCoins];
   [self configureTextView];
+  
 }
 
 - (void)updateIsCorrect {
@@ -179,40 +180,60 @@ typedef enum
 
 - (IBAction)clueOneTapped:(id)sender {
   
-  [self showAlertWithTitle:@"Dica 1" text:@"Você deseja revelar primeira dica por 10 moedas?" action:^{
+  if (![self.gameManager alreadyPurchased:BLGameHelpClueOne]) {
+    [self showAlertWithTitle:@"Dica 1" text:@"Você deseja revelar primeira dica por 10 moedas?" action:^{
+      [self authorizeClue:BLGameHelpClueOne];
+    }];
+  } else {
     [self authorizeClue:BLGameHelpClueOne];
-  }];
+  }
   
 }
 
 - (IBAction)clueTwoTapped:(id)sender {
   
-  [self showAlertWithTitle:@"Dica 2" text:@"Você deseja revelar segunda dica por 10 moedas?" action:^{
+  if (![self.gameManager alreadyPurchased:BLGameHelpClueTwo]) {
+    [self showAlertWithTitle:@"Dica 2" text:@"Você deseja revelar segunda dica por 10 moedas?" action:^{
+      [self authorizeClue:BLGameHelpClueTwo];
+    }];
+  } else {
     [self authorizeClue:BLGameHelpClueTwo];
-  }];
+  }
 }
 
 - (IBAction)sloganTapped:(id)sender {
   
+  if (![self.gameManager alreadyPurchased:BLGameHelpSlogan]) {
   [self showAlertWithTitle:@"Slogan" text:@"Você deseja revelar slogan por 20 moedas?" action:^{
     [self authorizeClue:BLGameHelpSlogan];
   }];
+  } else {
+    [self authorizeClue:BLGameHelpSlogan];
+  }
 
 }
 
 - (IBAction)bombTapped:(id)sender {
   
+  if (![self.gameManager alreadyPurchased:BLGameHelpBomb]) {
   [self showAlertWithTitle:@"Bomba" text:@"Você deseja usar bomba por 50 moedas?" action:^{
     [self bomb];
   }];
+  } else {
+    [self bomb];
+  }
   
 }
 
 - (IBAction)magicTapped:(id)sender {
   
+  if (![self.gameManager alreadyPurchased:BLGameHelpMedicine]) {
   [self showAlertWithTitle:@"Mágica" text:@"Você deseja revelar logo por 200 moedas?" action:^{
     [self medicine];
   }];
+  } else {
+    [self medicine];
+  }
 }
 
 #pragma mark - clues
