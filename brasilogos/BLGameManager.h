@@ -36,4 +36,8 @@ typedef enum
 - (id)initWithLogo:(NSDictionary*)logo delegate:(id<BLGameManagerDelegate>)delegate;
 - (void)tryAnswer:(NSString*)playerAnswer;
 - (BOOL)authorizeHelp:(BLGameHelp)clueType;
+- (BOOL)alreadyPurchased:(BLGameHelp)help;
+
++ (BOOL)canPlayLevel:(NSInteger)levelIndex;
++ (NSInteger)logosToNextLevel:(NSInteger)levelIndex;
 @end

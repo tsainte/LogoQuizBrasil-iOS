@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define kMaximumLogoPerLevel 16
 @interface BLConstants : NSObject
+
 
 @end

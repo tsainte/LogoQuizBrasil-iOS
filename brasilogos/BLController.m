@@ -8,6 +8,8 @@
 
 #import "BLController.h"
 #import "BLShoppingOverlayViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
 @implementation BLController
 
 + (void)playSound:(NSString*)name type:(NSString*)type {

@@ -310,6 +310,7 @@ static const NSString * CSToastActivityViewKey  = @"CSToastActivityViewKey";
         messageLabel = [[UILabel alloc] init];
         messageLabel.numberOfLines = CSToastMaxMessageLines;
         messageLabel.font = [UIFont fontWithName:@"Futura-Medium" size:CSToastFontSize];//[UIFont systemFontOfSize:CSToastFontSize];
+        messageLabel.textAlignment = NSTextAlignmentCenter;
         messageLabel.lineBreakMode = NSLineBreakByWordWrapping;
         messageLabel.textColor = [UIColor whiteColor];
         messageLabel.backgroundColor = [UIColor clearColor];
