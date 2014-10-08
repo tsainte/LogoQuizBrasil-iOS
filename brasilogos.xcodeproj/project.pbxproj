@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D30482F8ADD24DFB9BAAAFC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B2646C0043423E8093054B /* libPods.a */; };
-
-
-
-
-
-
-
-
-
-
 		F10C63B6199EA825005328B2 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = F10C63B5199EA825005328B2 /* db.json */; };
 		F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63B8199EB863005328B2 /* BLMainViewController.m */; };
 		F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63BB199EB878005328B2 /* BLIndexLevelViewController.m */; };
@@ -494,7 +484,6 @@
 		F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112E88519A8C3D7009F70B4 /* BLInAppManager.m */; };
 		F1269B8619C5F0B600A89099 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1269B8519C5F0B600A89099 /* BLController.m */; };
 		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
-
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
 		F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */; };
@@ -502,8 +491,6 @@
 		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
 		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
 		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
-
-
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
@@ -535,16 +522,6 @@
 /* Begin PBXFileReference section */
 		37B2646C0043423E8093054B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A8360C6337441A8304F6C2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-
-
-
-
-
-
-
-
-
-
 		F10C63B5199EA825005328B2 /* db.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = db.json; path = brasilogos/db.json; sourceTree = "<group>"; };
 		F10C63B7199EB863005328B2 /* BLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainViewController.h; sourceTree = "<group>"; };
 		F10C63B8199EB863005328B2 /* BLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainViewController.m; sourceTree = "<group>"; };
@@ -1033,7 +1010,6 @@
 		F1269B8519C5F0B600A89099 /* BLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
 		F16171D319C7B49400FA9A07 /* BLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransaction.h; sourceTree = "<group>"; };
 		F16171D419C7B49400FA9A07 /* BLTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTransaction.m; sourceTree = "<group>"; };
-
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
 		F19505F61995CDB800A94FD1 /* BLStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLStyling.m; sourceTree = "<group>"; };
@@ -1049,8 +1025,6 @@
 		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
 		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
 		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
-
-
 		F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAlertOverlayViewController.h; sourceTree = "<group>"; };
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1601,19 +1575,6 @@
 		F19505EF1995CBD300A94FD1 /* arts */ = {
 			isa = PBXGroup;
 			children = (
-
-
-
-
-
-
-
-
-
-
-
-
-
 			);
 			name = arts;
 			sourceTree = "<group>";
@@ -1881,12 +1842,7 @@
 
 
 
-
-
 				F1F8B81A198E5D9300578D91 /* Main_iPad.storyboard in Resources */,
-
-
-
 
 
 
@@ -1987,13 +1943,7 @@
 
 
 
-
-
 				F112978719A0F53C00ACE7A2 /* correct.mp3 in Resources */,
-
-
-
-
 
 
 
@@ -2154,7 +2104,6 @@
 
 
 
-
 				F112978A19A0F53C00ACE7A2 /* fbsound.mp3 in Resources */,
 
 				F10C63B6199EA825005328B2 /* db.json in Resources */,
@@ -2235,7 +2184,6 @@
 
 
 				F112978819A0F53C00ACE7A2 /* fail.mp3 in Resources */,
-
 
 
 
