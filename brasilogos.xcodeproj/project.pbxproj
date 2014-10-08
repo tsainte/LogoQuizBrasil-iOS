@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D30482F8ADD24DFB9BAAAFC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B2646C0043423E8093054B /* libPods.a */; };
-		F10492FF199329FE00605454 /* coin_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492F9199329FE00605454 /* coin_big.png */; };
-		F1049300199329FE00605454 /* coin_nonumber_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FA199329FE00605454 /* coin_nonumber_big.png */; };
-		F1049301199329FE00605454 /* coin_nonumber_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FB199329FE00605454 /* coin_nonumber_small.png */; };
-		F1049302199329FE00605454 /* coin_nostar_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FC199329FE00605454 /* coin_nostar_big.png */; };
-		F1049303199329FE00605454 /* coin_nostar_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FD199329FE00605454 /* coin_nostar_small.png */; };
-		F1049304199329FE00605454 /* coin_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F10492FE199329FE00605454 /* coin_small.png */; };
-		F10932EE19A0224E0038A636 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932ED19A0224E0038A636 /* bomb.png */; };
-		F10932F019A025C90038A636 /* magic.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932EF19A025C90038A636 /* magic.png */; };
-		F10932F319A0340B0038A636 /* bulb_special.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932F119A0340B0038A636 /* bulb_special.png */; };
-		F10932F419A0340B0038A636 /* bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = F10932F219A0340B0038A636 /* bulb.png */; };
 		F10C63B6199EA825005328B2 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = F10C63B5199EA825005328B2 /* db.json */; };
 		F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63B8199EB863005328B2 /* BLMainViewController.m */; };
 		F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63BB199EB878005328B2 /* BLIndexLevelViewController.m */; };
@@ -494,7 +484,6 @@
 		F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112E88519A8C3D7009F70B4 /* BLInAppManager.m */; };
 		F1269B8619C5F0B600A89099 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1269B8519C5F0B600A89099 /* BLController.m */; };
 		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
-		F19505F11995CBED00A94FD1 /* logoquiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F19505F01995CBED00A94FD1 /* logoquiz.png */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
 		F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */; };
@@ -502,8 +491,6 @@
 		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
 		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
 		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
-		F1AD906F19A003740071E256 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD906D19A003740071E256 /* lamp_off.png */; };
-		F1AD907019A003740071E256 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AD906E19A003740071E256 /* lamp_on.png */; };
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
@@ -535,16 +522,6 @@
 /* Begin PBXFileReference section */
 		37B2646C0043423E8093054B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A8360C6337441A8304F6C2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F10492F9199329FE00605454 /* coin_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_big.png; path = arts/coin_big.png; sourceTree = SOURCE_ROOT; };
-		F10492FA199329FE00605454 /* coin_nonumber_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_nonumber_big.png; path = arts/coin_nonumber_big.png; sourceTree = SOURCE_ROOT; };
-		F10492FB199329FE00605454 /* coin_nonumber_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_nonumber_small.png; path = arts/coin_nonumber_small.png; sourceTree = SOURCE_ROOT; };
-		F10492FC199329FE00605454 /* coin_nostar_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_nostar_big.png; path = arts/coin_nostar_big.png; sourceTree = SOURCE_ROOT; };
-		F10492FD199329FE00605454 /* coin_nostar_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_nostar_small.png; path = arts/coin_nostar_small.png; sourceTree = SOURCE_ROOT; };
-		F10492FE199329FE00605454 /* coin_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_small.png; path = arts/coin_small.png; sourceTree = SOURCE_ROOT; };
-		F10932ED19A0224E0038A636 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb.png; path = arts/bomb.png; sourceTree = SOURCE_ROOT; };
-		F10932EF19A025C90038A636 /* magic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magic.png; path = arts/magic.png; sourceTree = SOURCE_ROOT; };
-		F10932F119A0340B0038A636 /* bulb_special.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bulb_special.png; path = arts/bulb_special.png; sourceTree = SOURCE_ROOT; };
-		F10932F219A0340B0038A636 /* bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bulb.png; path = arts/bulb.png; sourceTree = SOURCE_ROOT; };
 		F10C63B5199EA825005328B2 /* db.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = db.json; path = brasilogos/db.json; sourceTree = "<group>"; };
 		F10C63B7199EB863005328B2 /* BLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainViewController.h; sourceTree = "<group>"; };
 		F10C63B8199EB863005328B2 /* BLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainViewController.m; sourceTree = "<group>"; };
@@ -1033,7 +1010,6 @@
 		F1269B8519C5F0B600A89099 /* BLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
 		F16171D319C7B49400FA9A07 /* BLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransaction.h; sourceTree = "<group>"; };
 		F16171D419C7B49400FA9A07 /* BLTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTransaction.m; sourceTree = "<group>"; };
-		F19505F01995CBED00A94FD1 /* logoquiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoquiz.png; path = arts/logoquiz.png; sourceTree = SOURCE_ROOT; };
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
 		F19505F61995CDB800A94FD1 /* BLStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLStyling.m; sourceTree = "<group>"; };
@@ -1049,8 +1025,6 @@
 		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
 		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
 		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
-		F1AD906D19A003740071E256 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_off.png; path = arts/lamp_off.png; sourceTree = SOURCE_ROOT; };
-		F1AD906E19A003740071E256 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_on.png; path = arts/lamp_on.png; sourceTree = SOURCE_ROOT; };
 		F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAlertOverlayViewController.h; sourceTree = "<group>"; };
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1601,19 +1575,6 @@
 		F19505EF1995CBD300A94FD1 /* arts */ = {
 			isa = PBXGroup;
 			children = (
-				F10932F119A0340B0038A636 /* bulb_special.png */,
-				F10932F219A0340B0038A636 /* bulb.png */,
-				F10932EF19A025C90038A636 /* magic.png */,
-				F10932ED19A0224E0038A636 /* bomb.png */,
-				F1AD906D19A003740071E256 /* lamp_off.png */,
-				F1AD906E19A003740071E256 /* lamp_on.png */,
-				F19505F01995CBED00A94FD1 /* logoquiz.png */,
-				F10492F9199329FE00605454 /* coin_big.png */,
-				F10492FA199329FE00605454 /* coin_nonumber_big.png */,
-				F10492FB199329FE00605454 /* coin_nonumber_small.png */,
-				F10492FC199329FE00605454 /* coin_nostar_big.png */,
-				F10492FD199329FE00605454 /* coin_nostar_small.png */,
-				F10492FE199329FE00605454 /* coin_small.png */,
 			);
 			name = arts;
 			sourceTree = "<group>";
@@ -1866,7 +1827,6 @@
 				F10C6A05199EDF2D005328B2 /* gol_mod.png in Resources */,
 				F10C6AF9199EDF2D005328B2 /* uniao.png in Resources */,
 				F10C69E3199EDF2D005328B2 /* embratel_mod.png in Resources */,
-				F10932EE19A0224E0038A636 /* bomb.png in Resources */,
 				F10C6AF6199EDF2D005328B2 /* tres_coracoes_mod.png in Resources */,
 				F10C6AFD199EDF2D005328B2 /* uniodonto.png in Resources */,
 				F10C69F6199EDF2D005328B2 /* frans_cafe.png in Resources */,
@@ -1875,7 +1835,6 @@
 				F10C6954199EDF2D005328B2 /* agua_de_cheiro.png in Resources */,
 				F10C6A52199EDF2D005328B2 /* lojas_renner_mod.png in Resources */,
 				F10C6A6C199EDF2D005328B2 /* natura_mod.png in Resources */,
-				F1049301199329FE00605454 /* coin_nonumber_small.png in Resources */,
 				F10C6992199EDF2D005328B2 /* brastemp.png in Resources */,
 				F10C69E9199EDF2D005328B2 /* etna_mod.png in Resources */,
 				F10C6ABB199EDF2D005328B2 /* richester.png in Resources */,
@@ -1887,12 +1846,9 @@
 				F10C6A76199EDF2D005328B2 /* nutrella_mod.png in Resources */,
 				F10C699A199EDF2D005328B2 /* cacau_show.png in Resources */,
 				F10C695A199EDF2D005328B2 /* americanas.png in Resources */,
-				F19505F11995CBED00A94FD1 /* logoquiz.png in Resources */,
 				F10C69D0199EDF2D005328B2 /* dafiti.png in Resources */,
 				F10C6A24199EDF2D005328B2 /* ig.png in Resources */,
-				F1049304199329FE00605454 /* coin_small.png in Resources */,
 				F10C6B12199EDF2D005328B2 /* yes_mod.png in Resources */,
-				F1AD907019A003740071E256 /* lamp_on.png in Resources */,
 				F10C69AA199EDF2D005328B2 /* casa_do_pao_de_queijo.png in Resources */,
 				F10C6984199EDF2D005328B2 /* bohemia.png in Resources */,
 				F10C6A41199EDF2D005328B2 /* kopenhagen.png in Resources */,
@@ -1979,12 +1935,10 @@
 				F10C6A6E199EDF2D005328B2 /* net_mod.png in Resources */,
 				F10C6A3A199EDF2D005328B2 /* itau_mod.png in Resources */,
 				F10C6A6F199EDF2D005328B2 /* netshoes.png in Resources */,
-				F10492FF199329FE00605454 /* coin_big.png in Resources */,
 				F10C6A54199EDF2D005328B2 /* lupo_mod.png in Resources */,
 				F10C6960199EDF2D005328B2 /* arisco.png in Resources */,
 				F10C69FF199EDF2D005328B2 /* gina_mod.png in Resources */,
 				F10C6A23199EDF2D005328B2 /* hotel_urbano_mod.png in Resources */,
-				F10932F319A0340B0038A636 /* bulb_special.png in Resources */,
 				F10C6968199EDF2D005328B2 /* azaleia.png in Resources */,
 				F10C6A07199EDF2D005328B2 /* gomes_da_costa_mod.png in Resources */,
 				F10C6A58199EDF2D005328B2 /* marcopolo_mod.png in Resources */,
@@ -2015,11 +1969,9 @@
 				F10C6ABC199EDF2D005328B2 /* richester_mod.png in Resources */,
 				F10C6AA5199EDF2D005328B2 /* quatro_rodas.png in Resources */,
 				F10C6A4E199EDF2D005328B2 /* localiza_mod.png in Resources */,
-				F1AD906F19A003740071E256 /* lamp_off.png in Resources */,
 				F10C69FB199EDF2D005328B2 /* gendai_mod.png in Resources */,
 				F10C6ACD199EDF2D005328B2 /* sebrae.png in Resources */,
 				F10C6A3E199EDF2D005328B2 /* jovem_pan_mod.png in Resources */,
-				F10932F019A025C90038A636 /* magic.png in Resources */,
 				F10C6AA9199EDF2D005328B2 /* raia.png in Resources */,
 				F10C6A4B199EDF2D005328B2 /* leite_de_rosas.png in Resources */,
 				F10C69C2199EDF2D005328B2 /* consul.png in Resources */,
@@ -2072,10 +2024,8 @@
 				F10C6AB4199EDF2D005328B2 /* rei_do_mate_mod.png in Resources */,
 				F10C69F7199EDF2D005328B2 /* frans_cafe_mod.png in Resources */,
 				F10C6AF0199EDF2D005328B2 /* totvs_mod.png in Resources */,
-				F1049300199329FE00605454 /* coin_nonumber_big.png in Resources */,
 				F10C6AAE199EDF2D005328B2 /* redecard_mod.png in Resources */,
 				F10C6AB0199EDF2D005328B2 /* redeglobo_mod.png in Resources */,
-				F10932F419A0340B0038A636 /* bulb.png in Resources */,
 				F10C6AD7199EDF2D005328B2 /* spoleto.png in Resources */,
 				F10C69A0199EDF2D005328B2 /* caio.png in Resources */,
 				F10C6A78199EDF2D005328B2 /* oi_mod.png in Resources */,
@@ -2103,7 +2053,6 @@
 				F10C6AF7199EDF2D005328B2 /* troller.png in Resources */,
 				F10C6A91199EDF2D005328B2 /* pilao.png in Resources */,
 				F10C6A82199EDF2D005328B2 /* pague_menos_mod.png in Resources */,
-				F1049303199329FE00605454 /* coin_nostar_small.png in Resources */,
 				F10C69CE199EDF2D005328B2 /* cvc.png in Resources */,
 				F10C6AD5199EDF2D005328B2 /* sos.png in Resources */,
 				F10C6A89199EDF2D005328B2 /* penalty.png in Resources */,
@@ -2250,7 +2199,6 @@
 				F10C6AB3199EDF2D005328B2 /* rei_do_mate.png in Resources */,
 				F10C69AF199EDF2D005328B2 /* castor_mod.png in Resources */,
 				F10C6A3F199EDF2D005328B2 /* kasinski.png in Resources */,
-				F1049302199329FE00605454 /* coin_nostar_big.png in Resources */,
 				F10C6AD4199EDF2D005328B2 /* sky_mod.png in Resources */,
 				F10C698A199EDF2D005328B2 /* bondfaro.png in Resources */,
 				F10C69C9199EDF2D005328B2 /* coral_mod.png in Resources */,
