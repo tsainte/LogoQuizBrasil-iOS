@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -39,7 +40,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoquiz.png" translatesAutoresizingMaskIntoConstraints="NO" id="MR1-7J-GWK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoquiz" translatesAutoresizingMaskIntoConstraints="NO" id="MR1-7J-GWK">
                                 <rect key="frame" x="41" y="84" width="238" height="151"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="151" id="ABd-nO-GQI"/>
@@ -111,7 +112,7 @@
             </objects>
             <point key="canvasLocation" x="355" y="397"/>
         </scene>
-        <!--About View Controller-->
+        <!--Sobre-->
         <scene sceneID="RYS-lM-saA">
             <objects>
                 <viewController id="4kc-yP-Kaq" customClass="BLAboutViewController" sceneMemberID="viewController">
@@ -122,9 +123,61 @@
                     <view key="view" contentMode="scaleToFill" id="DXG-a1-toF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.6705882353" green="0.76470588240000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gostou de nosso aplicativo? Acha que faltou alguma logo brasileira? Avalie-nos na App Store e deixe seu cometário!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-7u-EVQ">
+                                <rect key="frame" x="10" y="90" width="300" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <color key="textColor" red="0.95566716269841268" green="0.95566716269841268" blue="0.95566716269841268" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma4-DL-4mx">
+                                <rect key="frame" x="60" y="194" width="200" height="38"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Avaliar na App Store">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="evaluateTapped:" destination="4kc-yP-Kaq" eventType="touchUpInside" id="Md8-JV-lCZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-dr-Z50">
+                                <rect key="frame" x="10" y="366" width="300" height="182"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5bp-A4-Oc3"/>
+                                </constraints>
+                                <string key="text">Todas as logomarcas apresentadas são protegidas por leis de copyright/trademark. Acreditamos que o seu uso nesse aplicativo possui caráter informativo e positivo para divulgação das empresas e/ou marcas brasileiras, e podem ser enquadradas nas leis de "fair use" americana. Caso seja representante de uma dessas marcas e deseje a retirada ou a melhora das imagens e/ou dicas, entre em contato conosco! </string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" red="0.95566716269999996" green="0.95566716269999996" blue="0.95566716269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-mC-HUd">
+                                <rect key="frame" x="60" y="255" width="200" height="38"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Enviar E-Mail">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmailTapped:" destination="4kc-yP-Kaq" eventType="touchUpInside" id="mK4-NR-YLY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64471126445093696" green="0.73451967592592593" blue="0.45513257272270335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Kx-Ij-3Wk" firstAttribute="top" secondItem="lI4-dr-Z50" secondAttribute="bottom" constant="20" id="BXe-83-KOa"/>
+                            <constraint firstAttribute="centerX" secondItem="lI4-dr-Z50" secondAttribute="centerX" id="u8Z-6s-4MW"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FsO-GH-ypT"/>
+                    <navigationItem key="navigationItem" title="Sobre" id="FsO-GH-ypT"/>
+                    <connections>
+                        <outlet property="evaluateButton" destination="Ma4-DL-4mx" id="qHj-7b-C6L"/>
+                        <outlet property="sendEmailButton" destination="ocW-mC-HUd" id="pIr-bv-dOo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCo-L0-egv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,7 +295,7 @@
                                 <rect key="frame" x="233" y="2" width="71" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-54-zec">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-54-zec">
                                         <rect key="frame" x="31" y="0.0" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="Hc5-2l-atG"/>
@@ -329,7 +382,7 @@
                                                     <constraint firstAttribute="width" constant="30" id="d5J-w6-6F7"/>
                                                     <constraint firstAttribute="height" constant="30" id="dyt-nP-6iL"/>
                                                 </constraints>
-                                                <state key="normal" image="bulb.png">
+                                                <state key="normal" image="bulb">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -342,7 +395,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="2u4-sQ-xo6"/>
                                                     <constraint firstAttribute="width" constant="30" id="XeG-sv-HNn"/>
                                                 </constraints>
-                                                <state key="normal" image="bulb.png">
+                                                <state key="normal" image="bulb">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -355,7 +408,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="ZHQ-Yo-SJh"/>
                                                     <constraint firstAttribute="width" constant="30" id="h03-cb-NK8"/>
                                                 </constraints>
-                                                <state key="normal" image="bulb_special.png">
+                                                <state key="normal" image="bulb_special">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -368,7 +421,7 @@
                                                     <constraint firstAttribute="width" constant="30" id="hfE-fs-bhG"/>
                                                     <constraint firstAttribute="height" constant="30" id="oVM-Ng-rdT"/>
                                                 </constraints>
-                                                <state key="normal" image="bomb.png">
+                                                <state key="normal" image="bomb">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -381,7 +434,7 @@
                                                     <constraint firstAttribute="width" constant="30" id="0BU-Pt-Ini"/>
                                                     <constraint firstAttribute="height" constant="30" id="mVj-b7-R6l"/>
                                                 </constraints>
-                                                <state key="normal" image="magic.png">
+                                                <state key="normal" image="magic">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -822,7 +875,7 @@
                                 <rect key="frame" x="233" y="2" width="71" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="F8H-yQ-hV8">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small" translatesAutoresizingMaskIntoConstraints="NO" id="F8H-yQ-hV8">
                                         <rect key="frame" x="31" y="0.0" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="55v-3p-KxS"/>
@@ -1491,7 +1544,7 @@
                                 <rect key="frame" x="233" y="2" width="71" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-wz-ITp">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-wz-ITp">
                                         <rect key="frame" x="31" y="0.0" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="Akg-RV-vn4"/>
@@ -1611,15 +1664,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bomb.png" width="60" height="60"/>
-        <image name="bulb.png" width="60" height="60"/>
-        <image name="bulb_special.png" width="60" height="60"/>
+        <image name="bomb" width="30" height="30"/>
+        <image name="bulb" width="30" height="30"/>
+        <image name="bulb_special" width="30" height="30"/>
         <image name="coin_big.png" width="420" height="420"/>
+        <image name="coin_nonumber_small" width="50" height="50"/>
         <image name="coin_nonumber_small.png" width="101" height="101"/>
         <image name="coin_small.png" width="101" height="101"/>
         <image name="locked" width="40" height="40"/>
-        <image name="logoquiz.png" width="2165" height="1370"/>
-        <image name="magic.png" width="512" height="512"/>
+        <image name="logoquiz" width="2165" height="1370"/>
+        <image name="magic" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

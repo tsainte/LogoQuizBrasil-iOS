@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 MobWiz. All rights reserved.
 //
 
-#import "BLAboutViewController.h"
+#import "BLAboutViewController.h"#import "iRate.h"
+#import <iRate/iRate.h>
 
 @interface BLAboutViewController ()
 
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+  [BLStyling roundView:self.evaluateButton];
+  [BLStyling roundView:self.sendEmailButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +38,44 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (IBAction)evaluateTapped:(id)sender {
+
+  [[iRate sharedInstance] openRatingsPageInAppStore];
 }
-*/
+
+- (IBAction)sendEmailTapped:(id)sender {
+
+  NSArray *toRecipents = @[@"ios@mobwiz.com.br"];
+  MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+  mc.mailComposeDelegate = self;
+
+  [mc setToRecipients:toRecipents];
+  [self presentViewController:mc animated:YES completion:NULL];
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+  switch (result)
+  {
+    case MFMailComposeResultCancelled:
+      [self.view makeToast:@"E-Mail cancelado"];
+      break;
+    case MFMailComposeResultSaved:
+      [self.view makeToast:@"E-Mail salvo"];
+      break;
+    case MFMailComposeResultSent:
+      [self.view makeToast:@"E-Mail enviado"];
+      break;
+    case MFMailComposeResultFailed:
+      [self.view makeToast:@"Falha ao enviar"];
+      break;
+    default:
+      break;
+  }
+  // Close the Mail Interface
+  [self dismissViewControllerAnimated:YES completion:NULL];
+}
 
 @end

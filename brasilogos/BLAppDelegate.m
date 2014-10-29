@@ -9,6 +9,7 @@
 #import "BLAppDelegate.h"
 #import <TestFlightSDK/TestFlight.h>
 #import <FlurrySDK/Flurry.h>
+#import <iRate/iRate.h>
 #import "BLInAppManager.h"
 #import "BLJSONDatabase.h"
 @implementation BLAppDelegate
@@ -33,7 +34,16 @@
   dispatch_async(dispatch_get_main_queue(), ^{
     [BLBannerManager shared];
   });
+
+  [self configureIRate];
   return YES;
+}
+
+- (void)configureIRate {
+
+  [iRate sharedInstance].appStoreID = 672062811;
+  [iRate sharedInstance].daysUntilPrompt = 7;
+  [iRate sharedInstance].usesUntilPrompt = 6;
 }
 
 - (void)loadServices {
