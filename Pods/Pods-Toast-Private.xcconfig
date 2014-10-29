@@ -1,5 +1,0 @@
-#include "Pods-Toast.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/Toast" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FlurrySDK" "${PODS_ROOT}/Headers/Google-AdMob-Ads-SDK" "${PODS_ROOT}/Headers/Slash" "${PODS_ROOT}/Headers/TestFlightSDK" "${PODS_ROOT}/Headers/Toast"
-OTHER_LDFLAGS = -ObjC ${PODS_TOAST_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}

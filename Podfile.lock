@@ -1,8 +1,9 @@
 PODS:
-  - FlurrySDK (5.3.0):
+  - FlurrySDK (5.4.0):
     - FlurrySDK/FlurrySDK
-  - FlurrySDK/FlurrySDK (5.3.0)
+  - FlurrySDK/FlurrySDK (5.4.0)
   - Google-Mobile-Ads-SDK (6.12.0)
+  - iRate (1.11.3)
   - Slash (0.1.2):
     - Slash/arc
     - Slash/no-arc
@@ -11,15 +12,17 @@ PODS:
   - TestFlightSDK (3.0.2)
 
 DEPENDENCIES:
-  - FlurrySDK (~> 5.3.0)
+  - FlurrySDK (= 5.4.0)
   - Google-Mobile-Ads-SDK (= 6.12.0)
+  - iRate (= 1.11.3)
   - Slash (= 0.1.2)
-  - TestFlightSDK (~> 3.0.2)
+  - TestFlightSDK (= 3.0.2)
 
 SPEC CHECKSUMS:
-  FlurrySDK: e1142ae33e294f8307bd6d2209cc082e79b66e90
+  FlurrySDK: bed9e5598353f867508d164795a451e3ada92cb6
   Google-Mobile-Ads-SDK: b1b5cfd1b604a8412faa5536586b13a4b640f344
+  iRate: 5e1978bac8b3f3f0296dbeccc0dd7b50e6e50657
   Slash: d98d6ff27ece4297d8d65fb49fc1ce4307a75f46
   TestFlightSDK: 0c24c533748d0d84bfe7a3cb6036fa79124d84ee
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.4
