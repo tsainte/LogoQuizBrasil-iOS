@@ -8,6 +8,7 @@
 
 #import "BLGameManager.h"
 #import "GameCenterManager.h"
+#import "BLAppDelegate.h"
 @implementation BLGameManager
 
 #define COINS_FOR_RIGHT_ANSWER 5
@@ -100,6 +101,9 @@
 //  NSInteger completedLevel = [BLDatabaseManager completedLevel];
 //  NSLog(@"correct: %d, completed: %d", correctLogos, completedLevel);
   GameCenterManager* gcm = [[GameCenterManager alloc] init];
+  
+  BLAppDelegate* appDelegate = (BLAppDelegate*)[UIApplication sharedApplication].delegate;
+  gcm.parent = appDelegate.window.rootViewController;
   [gcm sendAll:[BLDatabaseManager score].correctLogos qtdLogos:[BLDatabaseManager score].correctLogos qtdCompletedLevel:[BLDatabaseManager completedLevel]];
 }
 - (void)isWrongAnswer {
