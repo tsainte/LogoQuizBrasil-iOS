@@ -41,7 +41,7 @@
   
   [super viewWillAppear:animated];
   [self.navigationController setNavigationBarHidden:YES];   //it hides
-    [self authenticateGameCenter];
+  [self authenticateGameCenter];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
