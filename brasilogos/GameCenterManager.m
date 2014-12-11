@@ -378,7 +378,7 @@
     }
     
     for (int i = 0; i < 14; i++){
-        if (points >= 20*i){
+        if (qtdLogos >= kMaximumLogoPerLevel*(i)*0.667){
             [archivements addObject:[NSString stringWithFormat:@"rel_%d",i+1]];
         } else {
             break;
