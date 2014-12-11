@@ -482,6 +482,7 @@
 		F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112979319A11E6600ACE7A2 /* BLBannerManager.m */; };
 		F112E88319A8C378009F70B4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F112E88219A8C378009F70B4 /* StoreKit.framework */; };
 		F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F112E88519A8C3D7009F70B4 /* BLInAppManager.m */; };
+		F1235E211A00917D001284EB /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235E201A00917D001284EB /* GameKit.framework */; };
 		F1269B8619C5F0B600A89099 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1269B8519C5F0B600A89099 /* BLController.m */; };
 		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
@@ -1007,6 +1008,7 @@
 		F112E88219A8C378009F70B4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F112E88419A8C3D7009F70B4 /* BLInAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLInAppManager.h; sourceTree = "<group>"; };
 		F112E88519A8C3D7009F70B4 /* BLInAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLInAppManager.m; sourceTree = "<group>"; };
+		F1235E201A00917D001284EB /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		F1269B8419C5F0B600A89099 /* BLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLController.h; sourceTree = "<group>"; };
 		F1269B8519C5F0B600A89099 /* BLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
 		F16171D319C7B49400FA9A07 /* BLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransaction.h; sourceTree = "<group>"; };
@@ -1057,6 +1059,7 @@
 			files = (
 				F112978E19A0F63900ACE7A2 /* AVFoundation.framework in Frameworks */,
 				F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */,
+				F1235E211A00917D001284EB /* GameKit.framework in Frameworks */,
 				F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */,
 				F112E88319A8C378009F70B4 /* StoreKit.framework in Frameworks */,
 				F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */,
@@ -1604,6 +1607,7 @@
 		F1F8B802198E5D9300578D91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1235E201A00917D001284EB /* GameKit.framework */,
 				F112E88219A8C378009F70B4 /* StoreKit.framework */,
 				F112978D19A0F63900ACE7A2 /* AVFoundation.framework */,
 				F1F8B803198E5D9300578D91 /* Foundation.framework */,
@@ -1752,6 +1756,9 @@
 					F1F8B7FF198E5D9300578D91 = {
 						DevelopmentTeam = QX2M8PE6QE;
 						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
 							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
@@ -1773,8 +1780,6 @@
 			mainGroup = F1F8B7F7198E5D9200578D91;
 			productRefGroup = F1F8B801198E5D9300578D91 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				F1F8B7FF198E5D9300578D91 /* brasilogos */,
