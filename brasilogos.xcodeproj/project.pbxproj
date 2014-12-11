@@ -492,6 +492,7 @@
 		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
 		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
 		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
+		F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */; };
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
@@ -1028,6 +1029,8 @@
 		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
 		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
 		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
+		F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAlertOverlayViewController.h; sourceTree = "<group>"; };
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1622,6 +1625,8 @@
 		F1F8B809198E5D9300578D91 /* brasilogos */ = {
 			isa = PBXGroup;
 			children = (
+				F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */,
+				F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */,
 				F112978019A0F47100ACE7A2 /* sound */,
 				F10C6788199EDF29005328B2 /* final_images */,
 				F10C63C9199ECA0E005328B2 /* database */,
@@ -2330,6 +2335,7 @@
 				F1F8B820198E5D9300578D91 /* BLDetailViewController.m in Sources */,
 				F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */,
 				F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */,
+				F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */,
 				F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */,
 				F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */,
 				F10C63C2199EB8A0005328B2 /* BLLogoViewController.m in Sources */,

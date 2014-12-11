@@ -7,7 +7,7 @@
 //
 
 #import "BLGameManager.h"
-
+#import "GameCenterManager.h"
 @implementation BLGameManager
 
 #define COINS_FOR_RIGHT_ANSWER 5
@@ -68,6 +68,7 @@
   
   [self saveCorrectOnDatabase];
   [self.delegate isCorrectAnswer];
+  [self sendGameCenter];
 }
 
 - (void)saveCorrectOnDatabase {
@@ -93,6 +94,14 @@
   [self saveStatus:status];
 }
 
+- (void)sendGameCenter {
+  
+//  NSInteger correctLogos = [BLDatabaseManager score].correctLogos;
+//  NSInteger completedLevel = [BLDatabaseManager completedLevel];
+//  NSLog(@"correct: %d, completed: %d", correctLogos, completedLevel);
+  GameCenterManager* gcm = [[GameCenterManager alloc] init];
+  [gcm sendAll:[BLDatabaseManager score].correctLogos qtdLogos:[BLDatabaseManager score].correctLogos qtdCompletedLevel:[BLDatabaseManager completedLevel]];
+}
 - (void)isWrongAnswer {
   
   [self.delegate isWrongAnswer];

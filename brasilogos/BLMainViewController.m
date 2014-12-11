@@ -7,9 +7,9 @@
 //
 
 #import "BLMainViewController.h"
-
+#import "GameCenterManager.h"
 @interface BLMainViewController ()
-
+@property NSString* leaderboardIdentifier;
 @end
 
 @implementation BLMainViewController
@@ -30,10 +30,18 @@
   [self roundButtons];
 }
 
+- (void)authenticateGameCenter {
+  
+  GameCenterManager* gcm = [[GameCenterManager alloc] init];
+  gcm.parent = self;
+  [gcm authenticateLocalUser];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
   
   [super viewWillAppear:animated];
   [self.navigationController setNavigationBarHidden:YES];   //it hides
+    [self authenticateGameCenter];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -54,6 +62,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showGameCenter:(id)sender {
+  
+  [self showLeaderboardAndAchievements:YES];
+}
+
+- (void)showLeaderboardAndAchievements:(BOOL)shouldShowLeaderboard{
+  
+  GKGameCenterViewController *gcViewController = [[GKGameCenterViewController alloc] init];
+  
+  gcViewController.gameCenterDelegate = self;
+  
+  if (shouldShowLeaderboard) {
+    gcViewController.viewState = GKGameCenterViewControllerStateLeaderboards;
+    gcViewController.leaderboardIdentifier = _leaderboardIdentifier;
+  }
+  else{
+    gcViewController.viewState = GKGameCenterViewControllerStateAchievements;
+  }
+  
+  [self presentViewController:gcViewController animated:YES completion:nil];
+}
+-(void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
+{
+  [gameCenterViewController dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
@@ -64,5 +97,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end
