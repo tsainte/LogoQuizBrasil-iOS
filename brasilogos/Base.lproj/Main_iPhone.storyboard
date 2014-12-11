@@ -68,7 +68,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="C3s-d8-kJc" kind="push" id="yV1-2I-FY5"/>
+                                    <action selector="showGameCenter:" destination="9gh-5e-G4e" eventType="touchUpInside" id="urg-iU-ar7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqo-dW-ejj">
@@ -182,25 +182,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCo-L0-egv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="395" y="1247"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xcl-4k-pj1">
-            <objects>
-                <viewController id="C3s-d8-kJc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tvp-m2-ZVq"/>
-                        <viewControllerLayoutGuide type="bottom" id="xiF-3i-48j"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Oba-X8-HcG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.6705882353" green="0.76470588240000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="X5c-x3-aJG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oKS-Fp-L6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="822" y="1244"/>
         </scene>
         <!--Níveis-->
         <scene sceneID="QhD-3P-omt">

@@ -1,1 +1,1 @@
-../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.0/GADBannerViewDelegate.h
+../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.2/GADBannerViewDelegate.h

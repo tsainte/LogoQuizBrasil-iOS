@@ -1,1 +1,1 @@
-../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.0/Add-ons/Mediation/GADCustomEventBanner.h
+../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.2/Add-ons/Mediation/GADCustomEventBanner.h

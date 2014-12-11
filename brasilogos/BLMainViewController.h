@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface BLMainViewController : UIViewController
+#import <GameKit/GameKit.h>
+@interface BLMainViewController : UIViewController <GKGameCenterControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *boardButton;
 @property (weak, nonatomic) IBOutlet UIButton *aboutButton;
+- (IBAction)showGameCenter:(id)sender;
+
 @end

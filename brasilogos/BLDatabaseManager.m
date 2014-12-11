@@ -104,4 +104,14 @@
   }
   return countCorrectLogos;
 }
+
++ (NSInteger)completedLevel {
+  
+  NSInteger countCompletedLevel = 0;
+  for (int i = 0; i < [BLJSONDatabase shared].levels.count; i++) {
+    NSInteger correctsPerLevel = [BLDatabaseManager correctLogosForLevel:i+1];
+    if (correctsPerLevel == 16) countCompletedLevel++;
+  }
+  return countCompletedLevel;
+}
 @end

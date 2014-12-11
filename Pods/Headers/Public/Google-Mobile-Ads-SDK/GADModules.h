@@ -1,1 +1,1 @@
-../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.0/GADModules.h
+../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-6.12.2/GADModules.h

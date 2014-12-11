@@ -31,4 +31,6 @@
 + (BLUser*)user;
 
 + (NSInteger)correctLogosForLevel:(NSInteger)level;
++ (NSInteger)completedLevel;
+
 @end
