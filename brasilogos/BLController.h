@@ -14,6 +14,8 @@
 
 + (BOOL)isIphone5;
 
++ (BOOL)isIpad;
+
 + (void)playSound:(NSString*)name type:(NSString*)type;
 
 + (void)showShoppingOnViewController:(UIViewController*)viewController;

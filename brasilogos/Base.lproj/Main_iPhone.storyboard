@@ -173,7 +173,9 @@
                             <constraint firstAttribute="centerX" secondItem="lI4-dr-Z50" secondAttribute="centerX" id="u8Z-6s-4MW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sobre" id="FsO-GH-ypT"/>
+                    <navigationItem key="navigationItem" title="Sobre" id="FsO-GH-ypT">
+                        <barButtonItem key="backBarButtonItem" title=" " id="l9T-Ee-pdZ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="evaluateButton" destination="Ma4-DL-4mx" id="qHj-7b-C6L"/>
                         <outlet property="sendEmailButton" destination="ocW-mC-HUd" id="pIr-bv-dOo"/>
