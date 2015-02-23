@@ -9,15 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "BLGameManager.h"
 
-@interface BLLogoViewController : UIViewController <BLGameManagerDelegate, BLBannerManagerDelegate>
+@interface BLLogoViewController : UIViewController <BLGameManagerDelegate, BLBannerManagerDelegate, UITextFieldDelegate>
 
 @property NSDictionary* logo;
 @property BLGameManager* gameManager;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightViewConstraint;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @property (weak, nonatomic) IBOutlet UIImageView *logoImage;
 @property (weak, nonatomic) IBOutlet UIView *keyboard;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightPanelConstraint;
 @property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *clueOneButton;
@@ -36,5 +38,5 @@
 
 - (IBAction)keyPressed:(UIButton *)sender;
 - (IBAction)shopTapped:(id)sender;
-
+- (IBAction)viewDidTapped:(id)sender;
 @end
