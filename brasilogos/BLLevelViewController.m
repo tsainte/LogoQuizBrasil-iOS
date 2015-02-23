@@ -62,8 +62,8 @@
                                   forIndexPath:indexPath];
   
   NSDictionary* logo = self.logos[indexPath.row];
-  [BLStyling roundView:[cell viewWithTag:2] corner:6];
-  [BLStyling roundView:[cell viewWithTag:3] corner:3];
+  [BLStyling roundView:[cell viewWithTag:2] corner:[BLController isIpad] ? 12 : 6];
+  [BLStyling roundView:[cell viewWithTag:3] corner:[BLController isIpad] ? 6 : 3];
   UIImageView *imageView = (UIImageView*)[cell viewWithTag:1];
   [self configureImage:imageView logo:logo];
   

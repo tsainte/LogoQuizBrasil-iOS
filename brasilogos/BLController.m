@@ -25,6 +25,11 @@
   return ([[UIScreen mainScreen] bounds].size.height == 568);
 }
 
++ (BOOL)isIpad {
+  
+  return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+}
+
 + (void)showShoppingOnViewController:(UIViewController*)viewController {
   
   BLShoppingOverlayViewController* shopVC = [viewController.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
