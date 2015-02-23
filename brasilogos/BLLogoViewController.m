@@ -49,7 +49,7 @@ typedef enum
   [self updateImage];
   [self updateCoins];
   [self configureTextView];
-  
+  self.heightViewConstraint.constant = [[UIScreen mainScreen] bounds].size.height;
 }
 
 - (void)updateIsCorrect {
@@ -89,31 +89,47 @@ typedef enum
 
 - (void)configureTextView {
   
-  // Hide keyboard, but show blinking cursor
-  UIView* dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
-  self.answerTextField.inputView = dummyView;
+//  [self hideTextField];
   BLTextFieldState state = self.isCorrect ? BLTextFieldCorrect : BLTextFieldIdle;
   [self configureTextFieldForState:state];
 }
+
+- (void)hideTextField {
+  
+//   Hide keyboard, but show blinking cursor
+    UIView* dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+    self.answerTextField.inputView = dummyView;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
   
   [super viewWillAppear:YES];
   [self loadBanner];
-  NSLog(@"constraint: %f", self.heightPanelConstraint.constant);
-  self.heightPanelConstraint.constant = [BLController isIphone5] ? 210.0f : 160.0f;
-  [self.view setNeedsUpdateConstraints];
+//  NSLog(@"constraint: %f", self.heightPanelConstraint.constant);
+//  self.heightPanelConstraint.constant = [BLController isIphone5] ? 210.0f : 160.0f;
+//  [self.view setNeedsUpdateConstraints];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+  
+  if (![BLController isIphone5])
+    [self.scrollView setContentOffset:CGPointMake(0, -40) animated:YES];
 }
-*/
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+  
+  if (![BLController isIphone5])
+    [self.scrollView setContentOffset:CGPointMake(0, -64) animated:YES];
+  
+  [self tryAnswer];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  
+  [textField resignFirstResponder];
+  return YES;
+}
+
 - (IBAction)shopTapped:(id)sender {
   
   [BLController showShoppingOnViewController:self];
@@ -401,5 +417,9 @@ typedef enum
 - (void)bannerWillDisappear:(UIView *)banner {
   
   [banner removeFromSuperview];
+}
+- (IBAction)viewDidTapped:(id)sender {
+  
+  [self.answerTextField resignFirstResponder];
 }
 @end
