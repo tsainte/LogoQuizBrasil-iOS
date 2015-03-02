@@ -30,6 +30,7 @@
   });
 
   [self configureIRate];
+  [self preloadKeyboard];
   return YES;
 }
 
@@ -46,6 +47,15 @@
   [Flurry startSession:@"N28FGC2TJ86Q86986897"];
 }
 
+- (void)preloadKeyboard {
+  
+  // Preloads keyboard so there's no lag on initial keyboard appearance.
+  UITextField *lagFreeField = [[UITextField alloc] init];
+  [self.window addSubview:lagFreeField];
+  [lagFreeField becomeFirstResponder];
+  [lagFreeField resignFirstResponder];
+  [lagFreeField removeFromSuperview];
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
   // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

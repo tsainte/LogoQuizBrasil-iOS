@@ -1622,9 +1622,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bomb" width="30" height="30"/>
-        <image name="bulb" width="30" height="30"/>
-        <image name="bulb_special" width="30" height="30"/>
+        <image name="bomb" width="60" height="60"/>
+        <image name="bulb" width="60" height="60"/>
+        <image name="bulb_special" width="60" height="60"/>
         <image name="coin_big.png" width="420" height="420"/>
         <image name="coin_nonumber_small" width="50" height="50"/>
         <image name="coin_nonumber_small.png" width="101" height="101"/>

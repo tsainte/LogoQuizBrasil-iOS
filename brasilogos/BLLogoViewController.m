@@ -13,7 +13,7 @@
 @interface BLLogoViewController ()
 
 @property BOOL isCorrect;
-
+@property CGPoint ipadLandscapeScroll;
 @end
 
 @implementation BLLogoViewController
@@ -49,9 +49,19 @@ typedef enum
   [self updateImage];
   [self updateCoins];
   [self configureTextView];
-  self.heightViewConstraint.constant = [[UIScreen mainScreen] bounds].size.height;
+  [self configureConstraints];
+
 }
 
+- (void)configureConstraints {
+  
+  if ([BLController isIpad]) {
+    self.heightViewConstraint.constant = [[UIScreen mainScreen] bounds].size.height;
+    self.widthViewConstraint.constant = [[UIScreen mainScreen] bounds].size.width;
+  } else {
+      self.heightViewConstraint.constant = [[UIScreen mainScreen] bounds].size.height;
+  }
+}
 - (void)updateIsCorrect {
   
   BLLogoStatus* status = [BLDatabaseManager logoStatus:[self.logo[@"id"] longValue]];
@@ -112,12 +122,20 @@ typedef enum
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
   
+  if ([BLController isIpad] && UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
+      self.ipadLandscapeScroll = CGPointMake(0, self.scrollView.contentSize.height - self.scrollView.bounds.size.height);
+      [self.scrollView setContentOffset:self.ipadLandscapeScroll animated:YES];
+    
+  } else
   if (![BLController isIphone5])
     [self.scrollView setContentOffset:CGPointMake(0, -40) animated:YES];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
   
+  if ([BLController isIpad] && UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
+      [self.scrollView setContentOffset:[self invertPoint:self.ipadLandscapeScroll] animated:YES];
+  } else
   if (![BLController isIphone5])
     [self.scrollView setContentOffset:CGPointMake(0, -64) animated:YES];
   
@@ -130,6 +148,13 @@ typedef enum
   return YES;
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+  if ([BLController isIpad]) {
+//    self.heightViewConstraint.constant = [[UIScreen mainScreen] bounds].size.height;
+    self.widthViewConstraint.constant = [[UIScreen mainScreen] bounds].size.width - 8;
+  }
+}
 - (IBAction)shopTapped:(id)sender {
   
   [BLController showShoppingOnViewController:self];
@@ -261,8 +286,6 @@ typedef enum
     [self showClue:type];
   }
 }
-
-
 
 - (void)showClue:(BLGameHelp)type {
   
@@ -421,5 +444,12 @@ typedef enum
 - (IBAction)viewDidTapped:(id)sender {
   
   [self.answerTextField resignFirstResponder];
+  if ([BLController isIpad] && UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
+    [self.scrollView setContentOffset:[self invertPoint:self.ipadLandscapeScroll] animated:YES];
+  }
+}
+- (CGPoint)invertPoint:(CGPoint)originalPoint {
+  
+  return CGPointMake(originalPoint.x, -originalPoint.y);
 }
 @end
