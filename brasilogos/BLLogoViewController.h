@@ -15,6 +15,7 @@
 @property BLGameManager* gameManager;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightViewConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthViewConstraint;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoImage;
