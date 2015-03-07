@@ -15,7 +15,7 @@
 #define COINS_FOR_CLUE (-10)
 #define COINS_FOR_SLOGAN (-20)
 #define COINS_FOR_BOMB (-50)
-#define COINS_FOR_MEDICINE (-200)
+#define COINS_FOR_MEDICINE (-100)
 
 - (id)initWithLogo:(NSDictionary*)logo delegate:(id<BLGameManagerDelegate>)delegate {
   

@@ -7,7 +7,7 @@
 //
 
 #import "BLBannerManager.h"
-#import <Google-Mobile-Ads-SDK/GADBannerView.h>
+#import <GoogleMobileAds/GADBannerView.h>
 
 #define kAdUnitID @"ca-app-pub-5885864968343915/8824188580"
 @interface BLBannerManager ()
@@ -31,7 +31,11 @@
 - (id)init {
   
   if (self = [super init]) {
-    self.adMobBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    if (![BLController isIpad]) {
+      self.adMobBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    } else {
+      self.adMobBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeLeaderboard];
+    }
     self.isLoaded = NO;
   }
   return self;

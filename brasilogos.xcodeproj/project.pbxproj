@@ -2480,7 +2480,7 @@
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
@@ -2499,7 +2499,7 @@
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <StoreKit/StoreKit.h>
 
 #define kInApp100Coins @"br.com.mobwiz.brasilogos.100coins"
 #define kInApp250Coins @"br.com.mobwiz.brasilogos.250coins"
@@ -16,12 +17,23 @@
 
 typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * products);
 
+@protocol BLInAppManagerDelegate <NSObject>
+
+@optional
+- (void)refreshUI;
+
+@end
+
 @interface BLInAppManager : NSObject <SKPaymentTransactionObserver>
+
+@property id<BLInAppManagerDelegate> delegate;
 
 @property NSArray* productIdentifiers;
 + (BLInAppManager*)shared;
 - (id)initWithProductIdentifiers:(NSArray *)productIdentifiers;
 
 - (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler;
+- (void)buyProduct:(SKProduct *)product;
+- (void)restoreCompletedTransactions;
 
 @end

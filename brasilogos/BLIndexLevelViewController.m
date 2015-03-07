@@ -34,6 +34,7 @@
   
   [super viewDidLoad];
   self.levels = [BLJSONDatabase shared].levels;
+  self.heigthAdBannerConstraint.constant = [[BLDatabaseManager user] boughtRemoveAds] ? 0 : [BLController isIpad] ? 90 : 50;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -42,6 +43,8 @@
   [self loadBanner];
   [self updateCoins];
   [self.tableView reloadData];
+  
+  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 - (void)updateCoins {
@@ -166,5 +169,13 @@
 - (void)bannerWillDisappear:(UIView *)banner {
   
   [banner removeFromSuperview];
+}
+
+#pragma mark - InAppDelegate
+- (void)refreshUI {
+  
+  [self updateCoins];
+    self.heigthAdBannerConstraint.constant = [[BLDatabaseManager user] boughtRemoveAds] ? 0 : [BLController isIpad] ? 90 : 50;
+  [self.view layoutIfNeeded];
 }
 @end

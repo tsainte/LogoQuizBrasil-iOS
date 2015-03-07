@@ -50,7 +50,6 @@ typedef enum
   [self updateCoins];
   [self configureTextView];
   [self configureConstraints];
-
 }
 
 - (void)configureConstraints {
@@ -115,9 +114,12 @@ typedef enum
   
   [super viewWillAppear:YES];
   [self loadBanner];
+  
+  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 //  NSLog(@"constraint: %f", self.heightPanelConstraint.constant);
 //  self.heightPanelConstraint.constant = [BLController isIphone5] ? 210.0f : 160.0f;
 //  [self.view setNeedsUpdateConstraints];
+  
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
@@ -269,7 +271,7 @@ typedef enum
 - (IBAction)magicTapped:(id)sender {
   
   if (![self.gameManager alreadyPurchased:BLGameHelpMedicine]) {
-  [self showAlertWithTitle:@"Mágica" text:@"Você deseja revelar logo por 200 moedas?" action:^{
+  [self showAlertWithTitle:@"Mágica" text:@"Você deseja revelar logo por 100 moedas?" action:^{
     [self medicine];
   }];
   } else {
@@ -451,5 +453,12 @@ typedef enum
 - (CGPoint)invertPoint:(CGPoint)originalPoint {
   
   return CGPointMake(originalPoint.x, -originalPoint.y);
+}
+
+#pragma mark - InAppDelegate
+- (void)refreshUI {
+  
+  [self updateCoins];
+  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 @end
