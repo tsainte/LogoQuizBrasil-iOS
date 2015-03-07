@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BLGameManager.h"
 
-@interface BLLogoViewController : UIViewController <BLGameManagerDelegate, BLBannerManagerDelegate, UITextFieldDelegate>
+@interface BLLogoViewController : UIViewController <BLGameManagerDelegate, BLBannerManagerDelegate, UITextFieldDelegate, BLInAppManagerDelegate>
 
 @property NSDictionary* logo;
 @property BLGameManager* gameManager;

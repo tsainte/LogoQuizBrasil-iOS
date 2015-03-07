@@ -15,6 +15,7 @@
   
   //paint textfield tint color
   [[UITextField appearance] setTintColor:kColorDarkGreen];
+//  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 

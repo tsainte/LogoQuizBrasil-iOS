@@ -10,6 +10,8 @@
 
 @interface BLShoppingOverlayViewController : UIViewController
 
+@property id<BLInAppManagerDelegate> delegate;
+
 @property (weak, nonatomic) IBOutlet UIView *overlay;
 @property (weak, nonatomic) IBOutlet UIView *content;
 

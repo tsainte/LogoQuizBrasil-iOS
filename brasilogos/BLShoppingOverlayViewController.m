@@ -32,6 +32,7 @@
 {
   
   [super viewDidLoad];
+  [BLInAppManager shared].delegate = self.delegate;
   self.view.backgroundColor = [UIColor clearColor];
   self.view.alpha = 0.0f;
   self.fiveProductButtons = @[self.coins100, self.coins250, self.coins750, self.coins2000, self.removeAds];
@@ -103,7 +104,7 @@
 - (void)reloadButtons {
   
   NSString* format1 = @"%@";
-  NSString* format2 = @"%@ (%.0f%% dsc)";
+  NSString* format2 = [BLController isIpad] ? @"%@ (%.0f%% de desconto)" : @"%@ (%.0f%% dsc)";
 
   for (int i = 0; i < self.productKeys.count; i++) {
     NSString* productKey = self.productKeys[i];
@@ -167,21 +168,30 @@
 
 - (IBAction)buy100coins:(id)sender {
   
+  [[BLInAppManager shared] buyProduct:self.products[kInApp100Coins]];
 }
 
 - (IBAction)buy250coins:(id)sender {
+  
+    [[BLInAppManager shared] buyProduct:self.products[kInApp250Coins]];
 }
 
 - (IBAction)buy750coins:(id)sender {
+    [[BLInAppManager shared] buyProduct:self.products[kInApp750Coins]];
 }
 
 - (IBAction)buy2000coins:(id)sender {
+    [[BLInAppManager shared] buyProduct:self.products[kInApp2000Coins]];
 }
 
 - (IBAction)buyRemoveAds:(id)sender {
+  
+    [[BLInAppManager shared] buyProduct:self.products[kInAppNoAds]];
 }
 
 - (IBAction)restoreBuys:(id)sender {
+  
+  [[BLInAppManager shared] restoreCompletedTransactions];
 }
 
 - (void)close {

@@ -148,6 +148,7 @@ NSMutableSet * _purchasedProductIdentifiers;
   
   [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
   [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+  [self.delegate refreshUI];
 }
 
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
@@ -187,6 +188,12 @@ NSMutableSet * _purchasedProductIdentifiers;
     BLWallet* wallet = [BLDatabaseManager wallet];
     [wallet addTransaction:transaction];
     [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
+    [self.delegate refreshUI];
   }
+}
+
+- (void)restoreCompletedTransactions {
+  
+  [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
 @end

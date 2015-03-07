@@ -19,4 +19,5 @@
   #import "BLBannerManager.h"
   #import "BLConstants.h"
   #import "Toast+UIView.h"
+  #import "BLInAppManager.h"
 #endif

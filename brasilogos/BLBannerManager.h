@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Google-Mobile-Ads-SDK/GADBannerViewDelegate.h>
+#import <GoogleMobileAds/GADBannerView.h>
 
 @protocol BLBannerManagerDelegate <NSObject>
 

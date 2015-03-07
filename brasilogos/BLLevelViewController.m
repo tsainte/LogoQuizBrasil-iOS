@@ -31,6 +31,7 @@
   [super viewDidLoad];
   self.title = [NSString stringWithFormat:@"Nível %ld",self.levelID];
 //  self.automaticallyAdjustsScrollViewInsets = NO;
+  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -38,6 +39,8 @@
   [self.collectionView reloadData];
   [self loadBanner];
   [self updateCoins];
+  
+  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 - (void)updateCoins {
@@ -114,5 +117,12 @@
 - (void)bannerWillDisappear:(UIView *)banner {
   
   [banner removeFromSuperview];
+}
+
+#pragma mark - InAppDelegate
+- (void)refreshUI {
+  
+  [self updateCoins];
+  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 @end

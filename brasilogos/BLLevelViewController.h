@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLLevelViewController : UIViewController <UICollectionViewDataSource, BLBannerManagerDelegate>
+@interface BLLevelViewController : UIViewController <UICollectionViewDataSource, BLBannerManagerDelegate, BLInAppManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *adBanner;
 @property NSArray* logos;
