@@ -32,5 +32,6 @@
 
 + (NSInteger)correctLogosForLevel:(NSInteger)level;
 + (NSInteger)completedLevel;
++ (void)migrateIfNeeded;
 
 @end

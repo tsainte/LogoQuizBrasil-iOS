@@ -8,6 +8,7 @@
 
 #import "BLDatabaseManager.h"
 #import "BLJSONDatabase.h"
+#import "BLGameManager.h"
 
 @implementation BLDatabaseManager
 
@@ -43,7 +44,7 @@
   BLWallet* wallet = (BLWallet*)[BLDatabaseManager loadDataFromEntity:kEntityWallet];
   if (!wallet) {
     wallet = [BLWallet new];
-    wallet.coins = [BLDatabaseManager migrateCoinsFromDefaults];
+//    wallet.coins = [BLDatabaseManager migrateCoinsFromDefaults];
     [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
   }
   return wallet;
@@ -54,7 +55,7 @@
   BLScore* score = (BLScore*)[BLDatabaseManager loadDataFromEntity:kEntityScore];
   if (!score) {
     score = [BLScore new];
-    score.correctLogos = [BLDatabaseManager migrateCorrectLogosFromDefaults];
+//    score.correctLogos = [BLDatabaseManager migrateCorrectLogosFromDefaults];
     [BLDatabaseManager saveData:score forEntity:kEntityScore];
   }
   return score;
@@ -114,4 +115,50 @@
   }
   return countCompletedLevel;
 }
+
+#pragma mark - migrate
+
++ (NSArray*)getLogosStatus:(int)level {
+  
+  NSString* levelKey = [NSString stringWithFormat:@"level%d_logoStatus",level];
+  NSArray* logosStatus = [[NSUserDefaults standardUserDefaults] arrayForKey:levelKey];
+//  NSLog(@"%@", [[[NSUserDefaults standardUserDefaults] dictionaryRepresentation] allKeys]);
+  return logosStatus;
+}
+
+
+#define kLogoStatusCorrect @"correct"
+#define kLogoStatusYES @"YES"
+
++ (BOOL)isCorrectLogo:(NSDictionary*)logo {
+  
+  NSString* correct = logo[kLogoStatusCorrect];
+  return [correct isEqualToString:kLogoStatusYES];
+}
+
+
++ (void)migrate {
+  
+  for (int i = 0; i < [BLJSONDatabase shared].levels.count; i++) {
+    NSArray* logosStatus = [BLDatabaseManager getLogosStatus:(i+1)];
+    for (NSDictionary* logo in logosStatus) {
+      if ([BLDatabaseManager isCorrectLogo:logo]) {
+        BLGameManager* gameManager = [[BLGameManager alloc] initWithLogo:logo delegate:nil];
+        [gameManager saveCorrectOnDatabase];
+      }
+    }
+  }
+  [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"migrated"];
+}
+
++ (void)migrateIfNeeded {
+  
+  BOOL isMigrated = [[NSUserDefaults standardUserDefaults] boolForKey:@"migrated"];
+  BOOL hasSomethingToMigrate = [BLDatabaseManager getLogosStatus:1] != nil;
+  if (!isMigrated && hasSomethingToMigrate) {
+    [BLDatabaseManager migrate];
+  }
+}
+
+
 @end

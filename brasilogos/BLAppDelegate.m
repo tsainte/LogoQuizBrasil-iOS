@@ -24,6 +24,7 @@
   [BLInAppManager shared]; // this is to, as soon as possible, activate goods to receive from app store
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     [BLJSONDatabase shared];
+    [BLDatabaseManager migrateIfNeeded];
   });
   dispatch_async(dispatch_get_main_queue(), ^{
     [BLBannerManager shared];

@@ -40,4 +40,5 @@ typedef enum
 
 + (BOOL)canPlayLevel:(NSInteger)levelIndex;
 + (NSInteger)logosToNextLevel:(NSInteger)levelIndex;
+- (void)saveCorrectOnDatabase;
 @end
