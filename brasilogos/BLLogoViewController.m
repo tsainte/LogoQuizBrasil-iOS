@@ -223,6 +223,7 @@ typedef enum
 
 - (IBAction)clueOneTapped:(id)sender {
   
+  [self disableKeyboard];
   if (![self.gameManager alreadyPurchased:BLGameHelpClueOne]) {
     [self showAlertWithTitle:@"Dica 1" text:@"Você deseja revelar primeira dica por 10 moedas?" action:^{
       [self authorizeClue:BLGameHelpClueOne];
@@ -235,6 +236,7 @@ typedef enum
 
 - (IBAction)clueTwoTapped:(id)sender {
   
+  [self disableKeyboard];
   if (![self.gameManager alreadyPurchased:BLGameHelpClueTwo]) {
     [self showAlertWithTitle:@"Dica 2" text:@"Você deseja revelar segunda dica por 10 moedas?" action:^{
       [self authorizeClue:BLGameHelpClueTwo];
@@ -246,6 +248,7 @@ typedef enum
 
 - (IBAction)sloganTapped:(id)sender {
   
+  [self disableKeyboard];
   if (![self.gameManager alreadyPurchased:BLGameHelpSlogan]) {
   [self showAlertWithTitle:@"Slogan" text:@"Você deseja revelar slogan por 20 moedas?" action:^{
     [self authorizeClue:BLGameHelpSlogan];
@@ -445,11 +448,17 @@ typedef enum
 }
 - (IBAction)viewDidTapped:(id)sender {
   
+  [self disableKeyboard];
+}
+
+- (void)disableKeyboard {
+  
   [self.answerTextField resignFirstResponder];
   if ([BLController isIpad] && UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
     [self.scrollView setContentOffset:[self invertPoint:self.ipadLandscapeScroll] animated:YES];
   }
 }
+
 - (CGPoint)invertPoint:(CGPoint)originalPoint {
   
   return CGPointMake(originalPoint.x, -originalPoint.y);
