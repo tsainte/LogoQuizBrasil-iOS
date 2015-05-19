@@ -44,7 +44,13 @@
   [self updateCoins];
   [self.tableView reloadData];
   
-  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
+  BOOL userHasBoughtAds = [[BLDatabaseManager user] boughtRemoveAds];
+  self.adBanner.hidden = userHasBoughtAds;
+  
+  if (!userHasBoughtAds) {
+    NSInteger bottomInset = [BLController isIpad] ? 90 : 50;
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, bottomInset, 0);
+  }
 }
 
 - (void)updateCoins {

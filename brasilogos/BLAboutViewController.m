@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 MobWiz. All rights reserved.
 //
 
-#import "BLAboutViewController.h"#import "iRate.h"
+#import "BLAboutViewController.h"
+#import "iRate.h"
 #import <iRate/iRate.h>
 
 @interface BLAboutViewController ()

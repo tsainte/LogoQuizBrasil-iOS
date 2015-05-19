@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -49,7 +49,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-bG-UN6">
                                 <rect key="frame" x="70" y="362" width="180" height="38"/>
-                                <color key="backgroundColor" red="0.28627450980392155" green="0.52549019607843139" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Jogar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.6705882353" green="0.76470588240000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.6705882352941176" green="0.76470588235294112" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mT4-Rw-fhs" secondAttribute="trailing" constant="70" id="1WY-xb-em8"/>
                             <constraint firstItem="mT4-Rw-fhs" firstAttribute="leading" secondItem="UkY-m8-R5F" secondAttribute="leading" constant="70" id="7Rd-37-4H2"/>
@@ -131,9 +131,13 @@
                                 <color key="textColor" red="0.16260822510822512" green="0.29811507936507942" blue="0.21484634858573737" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma4-DL-4mx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma4-DL-4mx">
                                 <rect key="frame" x="60" y="194" width="200" height="38"/>
                                 <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="XHy-Tu-gEQ"/>
+                                    <constraint firstAttribute="width" constant="200" id="vnx-wg-0B4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <state key="normal" title="Avaliar na App Store">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,19 +147,8 @@
                                     <action selector="evaluateTapped:" destination="4kc-yP-Kaq" eventType="touchUpInside" id="Md8-JV-lCZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-dr-Z50">
-                                <rect key="frame" x="10" y="366" width="300" height="182"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="5bp-A4-Oc3"/>
-                                </constraints>
-                                <string key="text">Todas as logomarcas apresentadas são protegidas por leis de copyright/trademark. Acreditamos que o seu uso nesse aplicativo possui caráter informativo e positivo para divulgação das empresas e/ou marcas brasileiras, e podem ser enquadradas nas leis de "fair use" americana. Caso seja representante de uma dessas marcas e deseje a retirada ou a melhora das imagens e/ou dicas, entre em contato conosco! </string>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                <color key="textColor" red="0.1626082251" green="0.29811507939999998" blue="0.21484634859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-mC-HUd">
-                                <rect key="frame" x="60" y="255" width="200" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-mC-HUd">
+                                <rect key="frame" x="60" y="257" width="200" height="38"/>
                                 <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <state key="normal" title="Enviar E-Mail">
@@ -166,11 +159,29 @@
                                     <action selector="sendEmailTapped:" destination="4kc-yP-Kaq" eventType="touchUpInside" id="mK4-NR-YLY"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kvb-oP-3uv">
+                                <rect key="frame" x="16" y="320" width="288" height="223"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="PS3-iM-7bw"/>
+                                </constraints>
+                                <string key="text">Todas as logomarcas apresentadas são protegidas por leis de copyright/trademark. Acreditamos que o seu uso nesse aplicativo possui caráter informativo e positivo para divulgação das empresas e/ou marcas brasileiras, e podem ser enquadradas nas leis de "fair use" americana. Caso seja representante de uma dessas marcas e deseje a retirada ou a melhora das imagens e/ou dicas, entre em contato conosco! </string>
+                                <color key="textColor" red="0.1626082251" green="0.29811507939999998" blue="0.21484634859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.64471126445093696" green="0.73451967592592593" blue="0.45513257272270335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="8Kx-Ij-3Wk" firstAttribute="top" secondItem="lI4-dr-Z50" secondAttribute="bottom" constant="20" id="BXe-83-KOa"/>
-                            <constraint firstAttribute="centerX" secondItem="lI4-dr-Z50" secondAttribute="centerX" id="u8Z-6s-4MW"/>
+                            <constraint firstItem="ocW-mC-HUd" firstAttribute="top" secondItem="Ma4-DL-4mx" secondAttribute="bottom" constant="25" id="3fF-Lg-3IE"/>
+                            <constraint firstItem="Ma4-DL-4mx" firstAttribute="trailing" secondItem="ocW-mC-HUd" secondAttribute="trailing" id="5oP-hA-k0Z"/>
+                            <constraint firstItem="Ma4-DL-4mx" firstAttribute="top" secondItem="Y5R-RH-AMx" secondAttribute="bottom" constant="130" id="6Uc-C9-2vh"/>
+                            <constraint firstItem="Ma4-DL-4mx" firstAttribute="height" secondItem="ocW-mC-HUd" secondAttribute="height" id="Gxl-v1-8ES"/>
+                            <constraint firstItem="Ma4-DL-4mx" firstAttribute="leading" secondItem="ocW-mC-HUd" secondAttribute="leading" id="LlJ-jL-YKs"/>
+                            <constraint firstItem="kvb-oP-3uv" firstAttribute="top" secondItem="ocW-mC-HUd" secondAttribute="bottom" constant="25" id="bbK-yn-qNS"/>
+                            <constraint firstAttribute="centerX" secondItem="kvb-oP-3uv" secondAttribute="centerX" id="c7G-pc-9aF"/>
+                            <constraint firstItem="8Kx-Ij-3Wk" firstAttribute="top" secondItem="kvb-oP-3uv" secondAttribute="bottom" constant="25" id="cBc-fz-Fw4"/>
+                            <constraint firstAttribute="centerX" secondItem="Ma4-DL-4mx" secondAttribute="centerX" id="uRp-bK-OQS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sobre" id="FsO-GH-ypT">
@@ -198,7 +209,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jgm-dz-Qvw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -219,7 +230,7 @@
                                                     <rect key="frame" x="85" y="55" width="150" height="2"/>
                                                     <color key="tintColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="progressTintColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="trackTintColor" red="0.95294117649999999" green="0.86666666670000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="trackTintColor" red="0.95294117647058818" green="0.8666666666666667" blue="0.58039215686274515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </progressView>
                                                 <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 / 16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLG-Nc-3bg">
                                                     <rect key="frame" x="69" y="65" width="182" height="20"/>
@@ -263,8 +274,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.6705882353" green="0.76470588240000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="cGu-2B-CVK" firstAttribute="top" secondItem="jgm-dz-Qvw" secondAttribute="bottom" id="0EH-Qb-LNY"/>
                             <constraint firstAttribute="trailing" secondItem="jgm-dz-Qvw" secondAttribute="trailing" id="1BX-dz-sj5"/>
-                            <constraint firstItem="bBM-Gz-Tsu" firstAttribute="top" secondItem="jgm-dz-Qvw" secondAttribute="bottom" id="1G6-QB-D5A"/>
                             <constraint firstAttribute="centerX" secondItem="bBM-Gz-Tsu" secondAttribute="centerX" id="2Az-U2-zxE"/>
                             <constraint firstItem="cGu-2B-CVK" firstAttribute="top" secondItem="bBM-Gz-Tsu" secondAttribute="bottom" id="9xg-77-ngf"/>
                             <constraint firstItem="jgm-dz-Qvw" firstAttribute="leading" secondItem="cbu-sq-n82" secondAttribute="leading" id="tlO-n7-i1k"/>

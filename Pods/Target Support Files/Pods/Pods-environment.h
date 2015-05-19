@@ -21,8 +21,8 @@
 // Google-Mobile-Ads-SDK
 #define COCOAPODS_POD_AVAILABLE_Google_Mobile_Ads_SDK
 #define COCOAPODS_VERSION_MAJOR_Google_Mobile_Ads_SDK 7
-#define COCOAPODS_VERSION_MINOR_Google_Mobile_Ads_SDK 0
-#define COCOAPODS_VERSION_PATCH_Google_Mobile_Ads_SDK 0
+#define COCOAPODS_VERSION_MINOR_Google_Mobile_Ads_SDK 2
+#define COCOAPODS_VERSION_PATCH_Google_Mobile_Ads_SDK 2
 
 // Slash
 #define COCOAPODS_POD_AVAILABLE_Slash
@@ -41,12 +41,6 @@
 #define COCOAPODS_VERSION_MAJOR_Slash_no_arc 0
 #define COCOAPODS_VERSION_MINOR_Slash_no_arc 1
 #define COCOAPODS_VERSION_PATCH_Slash_no_arc 2
-
-// TestFlightSDK
-#define COCOAPODS_POD_AVAILABLE_TestFlightSDK
-#define COCOAPODS_VERSION_MAJOR_TestFlightSDK 3
-#define COCOAPODS_VERSION_MINOR_TestFlightSDK 0
-#define COCOAPODS_VERSION_PATCH_TestFlightSDK 2
 
 // iRate
 #define COCOAPODS_POD_AVAILABLE_iRate
