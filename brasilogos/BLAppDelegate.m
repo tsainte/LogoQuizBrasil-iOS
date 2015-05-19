@@ -7,7 +7,6 @@
 //
 
 #import "BLAppDelegate.h"
-#import <TestFlightSDK/TestFlight.h>
 #import <FlurrySDK/Flurry.h>
 #import <iRate/iRate.h>
 #import "BLInAppManager.h"
@@ -44,7 +43,6 @@
 
 - (void)loadServices {
   
-  [TestFlight takeOff:@"3b94d0d3-7d4c-4b6d-b669-4952ca79a191"];
   [Flurry startSession:@"YOUR_FLURRY_ID"];
 }
 

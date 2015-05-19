@@ -4,22 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-FlurrySDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Google-Mobile-Ads-SDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Slash.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-TestFlightSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>35F228EB491F1C55456D5437</key>
+		<key>3CE4E0ABA848B9E947FB1CBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D120EBF707C6864AF0BB254</key>
+		<key>BCA35279A7AB74EE3C150CB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CABA2B787E7ECE55DA77039</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7CB1F052C974CB3D18304096</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C2F9D698F72ADA7CD8006892</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA6AEBE563CB6BC87CB7AC80</key>
+		<key>E91A4BC8E475F1C1CF802166</key>
 		<dict>
 			<key>primary</key>
 			<true/>
