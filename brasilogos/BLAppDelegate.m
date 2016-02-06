@@ -43,7 +43,7 @@
 
 - (void)loadServices {
   
-  [Flurry startSession:@"YOUR_FLURRY_ID"];
+//  [Flurry startSession:@"YOUR_FLURRY_ID"];
 }
 
 - (void)preloadKeyboard {

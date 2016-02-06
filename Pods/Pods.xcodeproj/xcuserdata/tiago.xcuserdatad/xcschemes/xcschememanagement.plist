@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Slash.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-iRate.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Slash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>iRate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3CE4E0ABA848B9E947FB1CBA</key>
+		<key>520C76143821972163395D5B1411A2C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BCA35279A7AB74EE3C150CB3</key>
+		<key>8B090755233C44E8E118A8DA48015C08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E91A4BC8E475F1C1CF802166</key>
+		<key>E99EE4102A11283498712BF3E6BE07F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
