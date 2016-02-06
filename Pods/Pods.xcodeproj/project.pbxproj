@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03063ED927DE24E1A4848DEA84EA7FAE /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB63BC0AA324DE98ACD0A35526DFA7 /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1513E1E4433F4B945B8C7FDF46CF4FEC /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F7076A7723DEDD95AB1B0F62883C /* iRate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		06C812AA260429EB62C0DA18A62807AC /* SLSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5337471D1DC0071C2E8B2DDF6B3A01 /* SLSMarkupParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19E6D1FBD56556EE9DD86F3D061A720D /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = C139D7E2855824938E631FAA1D6AA214 /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		27C1754053FA891B2F2850F514A3C6A4 /* SLSTagLexer.gen.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC46E83AF71E72C3B4FBA73B9C4DB06 /* SLSTagLexer.gen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E30724F2AD3F81AF14BD2A7116C9B17 /* SLSTagParser.gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 422E9B28D56DC7409E107910AC465420 /* SLSTagParser.gen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		362287BBAF3665818E23CE43697CF375 /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7072576B55F2753DD43F715739758 /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		36A7D70465C53E453EC90BD1D5F636ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E13E60B1DB8734C5BC140631ACA95 /* Foundation.framework */; };
 		4839D7B0D2A6C10C59B91FB09B75DA2A /* Slash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4725725F367069CB95E8E5207FE7D5E3 /* Slash-dummy.m */; };
-		51557AFF0BFF12ED20E3180985817336 /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7072576B55F2753DD43F715739758 /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B709CD2F7BC6E02EA9E8B0B9BB391C2 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F7076A7723DEDD95AB1B0F62883C /* iRate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		54F745924D8B2AB5AB487615140CC523 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F648AA2641E8642575CA5CE1A4B46A /* CoreText.framework */; };
 		5841C3C0A29E715F934A0E3BE383F940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E13E60B1DB8734C5BC140631ACA95 /* Foundation.framework */; };
 		598F8F3F0FA295D5EFEDB735667ED875 /* SLSTaggedRange.h in Headers */ = {isa = PBXBuildFile; fileRef = B69552F0437CB9A27C533DBC242BF722 /* SLSTaggedRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6788E907E32E869DDFA9E35CC4A31536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E13E60B1DB8734C5BC140631ACA95 /* Foundation.framework */; };
+		6926A199D47EAE9477B0511B311CB955 /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB63BC0AA324DE98ACD0A35526DFA7 /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7126C3ED28C6C3FEF909946549FB2463 /* SLSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E29A1B85405F5625DE446A021B2C35 /* SLSErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91111B9F026C584203CAAA6DD7E8C856 /* SLSTagParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B11B81E06949C25AA5819664770185D /* SLSTagParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3B1F4EC542E16B9040C88C1AB6454C3 /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = C139D7E2855824938E631FAA1D6AA214 /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A53A2315F1F3902CB3DB0881F88D212D /* iRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68026671B41562FF847D51A16E425146 /* iRate-dummy.m */; };
 		A783AA191C904DC328AD5F8F6599B6AD /* SLSMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C47F76BE2DFC589D799EC99A220F2 /* SLSMarkupParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB913DA6882B1E078CFB1391D948F065 /* SLSTagLexer.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = DE591BB0E1D2937C3B70E27190AAFE9F /* SLSTagLexer.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BD194E278C4727F77914AA56542B2095 /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = 67540AF480958D58EF5A8DF1DBA0B5FD /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C72C77C7C58FEC5C45EE264D7FF8F97A /* SLSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5337471D1DC0071C2E8B2DDF6B3A01 /* SLSMarkupParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E3E64967DF3C9A3D374BC8C6EE447968 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		E4995302D45A4052AD7AE42E932315AD /* SLSTagLexer.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = DE591BB0E1D2937C3B70E27190AAFE9F /* SLSTagLexer.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F94207909B77F7EBB7F69D5502C9EA56 /* iRate.h in Headers */ = {isa = PBXBuildFile; fileRef = A49F41827F97FA0EFD0A3BAA37FE5013 /* iRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -428,11 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4839D7B0D2A6C10C59B91FB09B75DA2A /* Slash-dummy.m in Sources */,
-				C72C77C7C58FEC5C45EE264D7FF8F97A /* SLSMarkupParser.m in Sources */,
-				03063ED927DE24E1A4848DEA84EA7FAE /* SLSTaggedRange.m in Sources */,
-				BB913DA6882B1E078CFB1391D948F065 /* SLSTagLexer.gen.m in Sources */,
-				A3B1F4EC542E16B9040C88C1AB6454C3 /* SLSTagParser.gen.m in Sources */,
-				51557AFF0BFF12ED20E3180985817336 /* SLSTagParser.m in Sources */,
+				06C812AA260429EB62C0DA18A62807AC /* SLSMarkupParser.m in Sources */,
+				6926A199D47EAE9477B0511B311CB955 /* SLSTaggedRange.m in Sources */,
+				E4995302D45A4052AD7AE42E932315AD /* SLSTagLexer.gen.m in Sources */,
+				19E6D1FBD56556EE9DD86F3D061A720D /* SLSTagParser.gen.m in Sources */,
+				362287BBAF3665818E23CE43697CF375 /* SLSTagParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A53A2315F1F3902CB3DB0881F88D212D /* iRate-dummy.m in Sources */,
-				1513E1E4433F4B945B8C7FDF46CF4FEC /* iRate.m in Sources */,
+				4B709CD2F7BC6E02EA9E8B0B9BB391C2 /* iRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
