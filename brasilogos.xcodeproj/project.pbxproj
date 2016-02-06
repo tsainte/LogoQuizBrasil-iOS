@@ -485,6 +485,7 @@
 		F1235E211A00917D001284EB /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235E201A00917D001284EB /* GameKit.framework */; };
 		F1269B8619C5F0B600A89099 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1269B8519C5F0B600A89099 /* BLController.m */; };
 		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
+		F175864D1C666D5A00B54134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175864C1C666D5A00B54134 /* Launch Screen.storyboard */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
 		F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */; };
@@ -1014,6 +1015,7 @@
 		F1269B8519C5F0B600A89099 /* BLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
 		F16171D319C7B49400FA9A07 /* BLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransaction.h; sourceTree = "<group>"; };
 		F16171D419C7B49400FA9A07 /* BLTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTransaction.m; sourceTree = "<group>"; };
+		F175864C1C666D5A00B54134 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "brasilogos/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
 		F19505F61995CDB800A94FD1 /* BLStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLStyling.m; sourceTree = "<group>"; };
@@ -1599,6 +1601,7 @@
 		F1F8B7F7198E5D9200578D91 = {
 			isa = PBXGroup;
 			children = (
+				F175864C1C666D5A00B54134 /* Launch Screen.storyboard */,
 				F10C63B5199EA825005328B2 /* db.json */,
 				F1F8B809198E5D9300578D91 /* brasilogos */,
 				F1F8B82E198E5D9300578D91 /* brasilogosTests */,
@@ -1808,6 +1811,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F175864D1C666D5A00B54134 /* Launch Screen.storyboard in Resources */,
 
 
 
@@ -2513,7 +2517,6 @@
 			baseConfigurationReference = AFD23364DD9F00F3C5EC2972 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -2534,7 +2537,6 @@
 			baseConfigurationReference = BD7A710B8B0AF60AA3508434 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
