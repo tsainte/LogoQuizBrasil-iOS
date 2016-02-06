@@ -168,25 +168,37 @@
 
 - (IBAction)buy100coins:(id)sender {
     
-    [[BLInAppManager shared] buyProduct:self.products[kInApp100Coins]];
+    if (self.products) {
+        [[BLInAppManager shared] buyProduct:self.products[kInApp100Coins]];
+    }
 }
 
 - (IBAction)buy250coins:(id)sender {
     
-    [[BLInAppManager shared] buyProduct:self.products[kInApp250Coins]];
+    if (self.products) {
+        [[BLInAppManager shared] buyProduct:self.products[kInApp250Coins]];
+    }
 }
 
 - (IBAction)buy750coins:(id)sender {
-    [[BLInAppManager shared] buyProduct:self.products[kInApp750Coins]];
+    
+    if (self.products) {
+        [[BLInAppManager shared] buyProduct:self.products[kInApp750Coins]];
+    }
 }
 
 - (IBAction)buy2000coins:(id)sender {
-    [[BLInAppManager shared] buyProduct:self.products[kInApp2000Coins]];
+    
+    if (self.products) {
+        [[BLInAppManager shared] buyProduct:self.products[kInApp2000Coins]];
+    }
 }
 
 - (IBAction)buyRemoveAds:(id)sender {
     
-    [[BLInAppManager shared] buyProduct:self.products[kInAppNoAds]];
+    if (self.products) {
+        [[BLInAppManager shared] buyProduct:self.products[kInAppNoAds]];
+    }
 }
 
 - (IBAction)restoreBuys:(id)sender {
