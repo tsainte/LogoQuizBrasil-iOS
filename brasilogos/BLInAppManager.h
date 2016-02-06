@@ -15,7 +15,7 @@
 #define kInApp2000Coins @"br.com.mobwiz.brasilogos.2000coins"
 #define kInAppNoAds @"br.com.mobwiz.brasilogos.noads"
 
-typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * products);
+typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray *products);
 
 @protocol BLInAppManagerDelegate <NSObject>
 
@@ -28,7 +28,8 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * product
 
 @property id<BLInAppManagerDelegate> delegate;
 
-@property NSArray* productIdentifiers;
+@property NSArray *productIdentifiers;
+
 + (BLInAppManager*)shared;
 - (id)initWithProductIdentifiers:(NSArray *)productIdentifiers;
 

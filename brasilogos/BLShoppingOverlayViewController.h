@@ -30,6 +30,4 @@
 - (IBAction)buyRemoveAds:(id)sender;
 - (IBAction)restoreBuys:(id)sender;
 
-
-
 @end

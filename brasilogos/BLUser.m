@@ -10,22 +10,23 @@
 
 @implementation BLUser
 
-
 #define kCodeKeyBoughtRemoveAds @"boughtRemoveAds"
 #define kCodeKeyFbId @"fbId"
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-  
-  self = [self init];
-  
-  self.boughtRemoveAds = [aDecoder decodeBoolForKey:kCodeKeyBoughtRemoveAds];
-  self.fbId = [aDecoder decodeObjectForKey:kCodeKeyFbId];
-  return self;
+    
+    self = [self init];
+    
+    self.boughtRemoveAds = [aDecoder decodeBoolForKey:kCodeKeyBoughtRemoveAds];
+    self.fbId = [aDecoder decodeObjectForKey:kCodeKeyFbId];
+    
+    return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-  
-  [aCoder encodeBool:self.boughtRemoveAds forKey:kCodeKeyBoughtRemoveAds];
-  [aCoder encodeObject:self.fbId forKey:kCodeKeyFbId];
+    
+    [aCoder encodeBool:self.boughtRemoveAds forKey:kCodeKeyBoughtRemoveAds];
+    [aCoder encodeObject:self.fbId forKey:kCodeKeyFbId];
 }
+
 @end

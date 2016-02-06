@@ -16,9 +16,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *noButton;
 @property (weak, nonatomic) IBOutlet UIButton *yesButton;
 
-@property NSString* titleText;
-@property NSString* text;
-@property (copy)void (^executeAction)(void);
+@property NSString *titleText;
+@property NSString *text;
+@property (copy) void (^executeAction)(void);
 
 - (IBAction)noTapped:(id)sender;
 - (IBAction)yesTapped:(id)sender;

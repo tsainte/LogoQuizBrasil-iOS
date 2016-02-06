@@ -29,7 +29,7 @@ typedef enum
 
 @interface BLGameManager : NSObject
 
-@property NSDictionary* logo;
+@property NSDictionary *logo;
 @property id<BLGameManagerDelegate> delegate;
 
 
@@ -41,4 +41,5 @@ typedef enum
 + (BOOL)canPlayLevel:(NSInteger)levelIndex;
 + (NSInteger)logosToNextLevel:(NSInteger)levelIndex;
 - (void)saveCorrectOnDatabase;
+
 @end

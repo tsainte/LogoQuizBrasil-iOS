@@ -12,22 +12,20 @@
 @implementation BLStyling
 
 + (void)appearances {
-  
-  //paint textfield tint color
-  [[UITextField appearance] setTintColor:kColorDarkGreen];
-//  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    //paint textfield tint color
+    [[UITextField appearance] setTintColor:kColorDarkGreen];
+    //  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
-
 + (void)roundView:(UIView*)view {
-  
-  [[view layer] setCornerRadius:[view frame].size.height / 2];
+    
+    [[view layer] setCornerRadius:[view frame].size.height / 2];
 }
 
 + (void)roundView:(UIView*)view corner:(CGFloat)corner {
-  
-  [[view layer] setCornerRadius:corner];
+    
+    [[view layer] setCornerRadius:corner];
 }
-
 
 @end

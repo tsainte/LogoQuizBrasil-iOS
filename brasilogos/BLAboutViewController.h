@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+
 @interface BLAboutViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *evaluateButton;
@@ -15,4 +16,5 @@
 
 - (IBAction)evaluateTapped:(id)sender;
 - (IBAction)sendEmailTapped:(id)sender;
+
 @end

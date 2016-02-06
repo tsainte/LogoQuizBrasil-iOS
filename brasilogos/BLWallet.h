@@ -12,7 +12,7 @@
 @interface BLWallet : NSObject
 
 @property NSInteger coins;
-@property NSMutableArray* transactions;
+@property NSMutableArray *transactions;
 
 - (void)addTransaction:(BLTransaction*)transaction;
 

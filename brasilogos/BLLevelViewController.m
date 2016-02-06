@@ -16,113 +16,113 @@
 
 @implementation BLLevelViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
     if (self) {
         // Custom initialization
     }
+    
     return self;
 }
 
-- (void)viewDidLoad
-{
-  
-  [super viewDidLoad];
-  self.title = [NSString stringWithFormat:@"Nível %ld",self.levelID];
-//  self.automaticallyAdjustsScrollViewInsets = NO;
-  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    self.title = [NSString stringWithFormat:@"Nível %ld", self.levelID];
+    //  self.automaticallyAdjustsScrollViewInsets = NO;
+    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-  
-  [self.collectionView reloadData];
-  [self loadBanner];
-  [self updateCoins];
-  
-  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
+    
+    [self.collectionView reloadData];
+    [self loadBanner];
+    [self updateCoins];
+    
+    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 - (void)updateCoins {
-  
-  self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
-}
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-  
-  return self.logos.count;
+    
+    return self.logos.count;
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-  
-  UICollectionViewCell *cell = [collectionView
+    
+    UICollectionViewCell *cell = [collectionView
                                   dequeueReusableCellWithReuseIdentifier:@"cell"
                                   forIndexPath:indexPath];
-  
-  NSDictionary* logo = self.logos[indexPath.row];
-  [BLStyling roundView:[cell viewWithTag:2] corner:[BLController isIpad] ? 12 : 6];
-  [BLStyling roundView:[cell viewWithTag:3] corner:[BLController isIpad] ? 6 : 3];
-  UIImageView *imageView = (UIImageView*)[cell viewWithTag:1];
-  [self configureImage:imageView logo:logo];
-  
-  return cell;
+    
+    NSDictionary *logo = self.logos[indexPath.row];
+    [BLStyling roundView:[cell viewWithTag:2] corner:[BLController isIpad] ? 12 : 6];
+    [BLStyling roundView:[cell viewWithTag:3] corner:[BLController isIpad] ? 6 : 3];
+    
+    UIImageView *imageView = (UIImageView* )[cell viewWithTag:1];
+    [self configureImage:imageView logo:logo];
+    
+    return cell;
 }
 
 - (void)configureImage:(UIImageView*)imageView logo:(NSDictionary*)logo {
-  
-  NSString* entity = [NSString stringWithFormat:kEntityLogoStatusID,[logo[@"id"] longValue]];
-  BLLogoStatus* status = (BLLogoStatus*)[BLDatabaseManager loadDataFromEntity:entity];
-  
-  if (status.hasHitTheAnswer) {
-    imageView.image = [UIImage imageNamed:logo[@"imagem"]];
-    [[imageView superview] setAlpha:0.5];
-  } else {
-    imageView.image = [UIImage imageNamed:logo[@"imagemModificada"]];
-    [[imageView superview] setAlpha:1.0];
-  }
+    
+    NSString *entity = [NSString stringWithFormat:kEntityLogoStatusID, [logo[@"id"] longValue]];
+    BLLogoStatus *status = (BLLogoStatus* )[BLDatabaseManager loadDataFromEntity:entity];
+    
+    if (status.hasHitTheAnswer) {
+        imageView.image = [UIImage imageNamed:logo[@"imagem"]];
+        [[imageView superview] setAlpha:0.5];
+    } else {
+        imageView.image = [UIImage imageNamed:logo[@"imagemModificada"]];
+        [[imageView superview] setAlpha:1.0];
+    }
 }
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-  NSIndexPath* indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
-  BLLogoViewController *logoVC = segue.destinationViewController;
-  logoVC.logo = self.logos[indexPath.row];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
+    BLLogoViewController *logoVC = segue.destinationViewController;
+    logoVC.logo = self.logos[indexPath.row];
 }
 
 - (IBAction)shopTapped:(id)sender {
-  
-  [BLController showShoppingOnViewController:self];
+    
+    [BLController showShoppingOnViewController:self];
 }
 
 #pragma mark - BLBannerManagerDelegate
+
 - (void)loadBanner {
-  
-  [[BLBannerManager shared] resetAdView:self];
+    
+    [[BLBannerManager shared] resetAdView:self];
 }
 
 - (void)bannerWillAppear:(UIView *)banner {
-  
-  if (![self.adBanner.subviews containsObject:banner]) {
-    [self.adBanner addSubview:banner];
-  }
+    
+    if (![self.adBanner.subviews containsObject:banner]) {
+        [self.adBanner addSubview:banner];
+    }
 }
 
 - (void)bannerWillDisappear:(UIView *)banner {
-  
-  [banner removeFromSuperview];
+    
+    [banner removeFromSuperview];
 }
 
 #pragma mark - InAppDelegate
+
 - (void)refreshUI {
-  
-  [self updateCoins];
-  self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
+    
+    [self updateCoins];
+    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
+
 @end

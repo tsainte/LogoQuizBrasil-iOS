@@ -11,7 +11,7 @@
 @interface BLLevelViewController : UIViewController <UICollectionViewDataSource, BLBannerManagerDelegate, BLInAppManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *adBanner;
-@property NSArray* logos;
+@property NSArray *logos;
 @property NSInteger levelID;
 @property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

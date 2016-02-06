@@ -13,16 +13,17 @@
 #define kCodeKeyCorrectLogos @"correctLogos"
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-  
-  self = [self init];
-  
-  self.correctLogos = [aDecoder decodeIntegerForKey:kCodeKeyCorrectLogos];
-  
-  return self;
+    
+    self = [self init];
+    
+    self.correctLogos = [aDecoder decodeIntegerForKey:kCodeKeyCorrectLogos];
+    
+    return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-  
-  [aCoder encodeInteger:self.correctLogos forKey:kCodeKeyCorrectLogos];
+    
+    [aCoder encodeInteger:self.correctLogos forKey:kCodeKeyCorrectLogos];
 }
+
 @end
