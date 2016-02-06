@@ -43,7 +43,7 @@
 
 - (void)loadServices {
   
-  [Flurry startSession:@"N28FGC2TJ86Q86986897"];
+//  [Flurry startSession:@"N28FGC2TJ86Q86986897"];
 }
 
 - (void)preloadKeyboard {

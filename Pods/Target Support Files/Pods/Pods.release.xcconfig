@@ -1,8 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.2.2"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FlurrySDK" "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" "${PODS_ROOT}/Headers/Public/Slash" "${PODS_ROOT}/Headers/Public/iRate"
-LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/FlurrySDK/Flurry"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FlurrySDK" -isystem "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" -isystem "${PODS_ROOT}/Headers/Public/Slash" -isystem "${PODS_ROOT}/Headers/Public/iRate"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Flurry_5.4.0" -l"Pods-Slash" -l"Pods-iRate" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreText" -framework "EventKit" -framework "EventKitUI" -framework "Foundation" -framework "GoogleMobileAds" -framework "MediaPlayer" -framework "MessageUI" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "AdSupport" -weak_framework "StoreKit"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
-PODS_ROOT = ${SRCROOT}/Pods
