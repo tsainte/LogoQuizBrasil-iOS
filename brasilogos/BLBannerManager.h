@@ -12,14 +12,13 @@
 @protocol BLBannerManagerDelegate <NSObject>
 
 @required
--(void)bannerWillAppear:(UIView*)banner;
--(void)bannerWillDisappear:(UIView*)banner;
+- (void)bannerWillAppear:(UIView*)banner;
+- (void)bannerWillDisappear:(UIView*)banner;
 
 @optional
--(void)dismissScreen:(UIView*)banner;
+- (void)dismissScreen:(UIView*)banner;
 
 @end
-
 
 @interface BLBannerManager : NSObject <GADBannerViewDelegate>
 
@@ -28,4 +27,5 @@
 + (BLBannerManager *)shared;
 
 - (void)resetAdView:(id<BLBannerManagerDelegate>)viewController;
+
 @end

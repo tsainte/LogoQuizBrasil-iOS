@@ -10,21 +10,25 @@
 #import <GoogleMobileAds/GADBannerView.h>
 
 #define kAdUnitID @"***REMOVED***"
+
 @interface BLBannerManager ()
 
-@property GADBannerView* adMobBannerView;
+@property GADBannerView *adMobBannerView;
 @property BOOL isLoaded;
+
 @end
 
 @implementation BLBannerManager
 
-+(BLBannerManager *)shared {
++ (BLBannerManager *)shared {
+    
   static dispatch_once_t pred;
-  static BLBannerManager *shared;
+  static BLBannerManager * shared;
   // Will only be run once, the first time this is called
   dispatch_once(&pred, ^{
     shared = [[BLBannerManager alloc] init];
   });
+    
   return shared;
 }
 
@@ -38,12 +42,14 @@
     }
     self.isLoaded = NO;
   }
+    
   return self;
 }
 
 - (void)resetAdView:(id<BLBannerManagerDelegate>)viewController {
   
   self.delegate = viewController;
+    
   if (self.isLoaded) {
     
     [self.delegate bannerWillAppear:self.adMobBannerView];
@@ -76,8 +82,10 @@
 
   [self.delegate bannerWillDisappear:banner];
 }
+
 - (void)adViewDidDismissScreen:(GADBannerView *)banner {
   
   [self.delegate bannerWillDisappear:banner];
 }
+
 @end

@@ -14,17 +14,19 @@
 #define kCodeKeyValue @"value"
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-  
-  self = [self init];
-  
-  self.type = [aDecoder decodeObjectForKey:kCodeKeyType];
-  self.value = [aDecoder decodeIntegerForKey:kCodeKeyValue];
-  return self;
+    
+    self = [self init];
+    
+    self.type = [aDecoder decodeObjectForKey:kCodeKeyType];
+    self.value = [aDecoder decodeIntegerForKey:kCodeKeyValue];
+    
+    return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-  
-  [aCoder encodeInteger:self.value forKey:kCodeKeyValue];
-  [aCoder encodeObject:self.type forKey:kCodeKeyType];
+    
+    [aCoder encodeInteger:self.value forKey:kCodeKeyValue];
+    [aCoder encodeObject:self.type forKey:kCodeKeyType];
 }
+
 @end

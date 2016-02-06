@@ -18,7 +18,7 @@
 
 @interface BLTransaction : NSObject
 
-@property NSString* type;
+@property NSString *type;
 @property NSInteger value;
 
 @end

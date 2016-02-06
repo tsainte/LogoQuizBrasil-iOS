@@ -13,34 +13,36 @@
 @implementation BLController
 
 + (void)playSound:(NSString*)name type:(NSString*)type {
-  
-  NSString *soundPath = [[NSBundle mainBundle] pathForResource:name ofType:type];
-  SystemSoundID soundID;
-  AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
-  AudioServicesPlaySystemSound (soundID);
+    
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:name ofType:type];
+    SystemSoundID soundID;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+    AudioServicesPlaySystemSound (soundID);
 }
 
 + (BOOL)isIphone5 {
-  
-  return ([[UIScreen mainScreen] bounds].size.height == 568);
+    
+    return ([[UIScreen mainScreen] bounds].size.height == 568);
 }
 
 + (BOOL)isIpad {
-  
-  return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+    
+    return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
 }
 
 + (void)showShoppingOnViewController:(UIViewController<BLInAppManagerDelegate>*)viewController {
-  
-  BLShoppingOverlayViewController* shopVC = [viewController.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
-  shopVC.delegate = viewController;
-  if (IS_OS_8_OR_LATER) {
-    shopVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
-  } else {
-    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-    rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-  }
-
-  [viewController presentViewController:shopVC animated:NO completion:nil];
+    
+    BLShoppingOverlayViewController *shopVC = [viewController.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
+    shopVC.delegate = viewController;
+    
+    if (IS_OS_8_OR_LATER) {
+        shopVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    } else {
+        UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+        rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    }
+    
+    [viewController presentViewController:shopVC animated:NO completion:nil];
 }
+
 @end

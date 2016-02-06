@@ -1579,6 +1579,16 @@
 			name = sound;
 			sourceTree = "<group>";
 		};
+		F175864B1C665A0D00B54134 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F19505EF1995CBD300A94FD1 /* arts */,
+				F10C6788199EDF29005328B2 /* final_images */,
+				F112978019A0F47100ACE7A2 /* sound */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		F19505EF1995CBD300A94FD1 /* arts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1625,12 +1635,10 @@
 		F1F8B809198E5D9300578D91 /* brasilogos */ = {
 			isa = PBXGroup;
 			children = (
+				F175864B1C665A0D00B54134 /* assets */,
 				F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */,
 				F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */,
-				F112978019A0F47100ACE7A2 /* sound */,
-				F10C6788199EDF29005328B2 /* final_images */,
 				F10C63C9199ECA0E005328B2 /* database */,
-				F19505EF1995CBD300A94FD1 /* arts */,
 				F1F8B812198E5D9300578D91 /* BLAppDelegate.h */,
 				F1F8B813198E5D9300578D91 /* BLAppDelegate.m */,
 				F10C63B7199EB863005328B2 /* BLMainViewController.h */,

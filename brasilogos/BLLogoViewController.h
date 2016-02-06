@@ -11,8 +11,8 @@
 
 @interface BLLogoViewController : UIViewController <BLGameManagerDelegate, BLBannerManagerDelegate, UITextFieldDelegate, BLInAppManagerDelegate>
 
-@property NSDictionary* logo;
-@property BLGameManager* gameManager;
+@property NSDictionary *logo;
+@property BLGameManager *gameManager;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightViewConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthViewConstraint;
@@ -40,4 +40,5 @@
 - (IBAction)keyPressed:(UIButton *)sender;
 - (IBAction)shopTapped:(id)sender;
 - (IBAction)viewDidTapped:(id)sender;
+
 @end

@@ -10,7 +10,7 @@
 
 @interface BLJSONDatabase : NSObject
 
-@property NSArray* levels;
+@property NSArray *levels;
 + (BLJSONDatabase*)shared;
 
 @end

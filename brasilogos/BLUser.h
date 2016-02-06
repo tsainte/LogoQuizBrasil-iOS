@@ -13,6 +13,6 @@
 @interface BLUser : NSObject
 
 @property BOOL boughtRemoveAds;
-@property NSString* fbId;
+@property NSString *fbId;
 
 @end

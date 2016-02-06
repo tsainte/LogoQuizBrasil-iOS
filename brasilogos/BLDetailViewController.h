@@ -17,4 +17,5 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bigVerticalConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *smallVerticalConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *smallHorizontalConstraint;
+
 @end
