@@ -1,0 +1,3 @@
+Nova interface
+Versão para iPad
+Consertado bugs (ex: voltar) para iOS 8

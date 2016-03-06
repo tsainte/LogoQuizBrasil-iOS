@@ -1,0 +1,7 @@
+app_identifier "br.com.mobwiz.brasilogos" # The bundle identifier of your app
+apple_id "ios@mobwiz.com.br" # Your Apple email address
+
+team_id "QX2M8PE6QE"  # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/docs/Appfile.md
