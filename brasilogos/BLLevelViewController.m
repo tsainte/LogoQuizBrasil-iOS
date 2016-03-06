@@ -88,9 +88,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
-    BLLogoViewController *logoVC = segue.destinationViewController;
-    logoVC.logo = self.logos[indexPath.row];
+//    NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
+//    BLLogoViewController *logoVC = segue.destinationViewController;
+//    logoVC.logo = self.logos[indexPath.row];
 }
 
 - (IBAction)shopTapped:(id)sender {
