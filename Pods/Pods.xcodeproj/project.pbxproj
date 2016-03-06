@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06C812AA260429EB62C0DA18A62807AC /* SLSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5337471D1DC0071C2E8B2DDF6B3A01 /* SLSMarkupParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		19E6D1FBD56556EE9DD86F3D061A720D /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = C139D7E2855824938E631FAA1D6AA214 /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		27C1754053FA891B2F2850F514A3C6A4 /* SLSTagLexer.gen.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC46E83AF71E72C3B4FBA73B9C4DB06 /* SLSTagLexer.gen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E30724F2AD3F81AF14BD2A7116C9B17 /* SLSTagParser.gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 422E9B28D56DC7409E107910AC465420 /* SLSTagParser.gen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		362287BBAF3665818E23CE43697CF375 /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D7072576B55F2753DD43F715739758 /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		06C812AA260429EB62C0DA18A62807AC /* SLSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DFFA07618A23F30C9BDAF2730B4A2 /* SLSMarkupParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19E6D1FBD56556EE9DD86F3D061A720D /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4D8C5ACF066854C20234D5B6789D61 /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		27C1754053FA891B2F2850F514A3C6A4 /* SLSTagLexer.gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 221E6A98FBD6233DBA01E0A66AC8CE20 /* SLSTagLexer.gen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E30724F2AD3F81AF14BD2A7116C9B17 /* SLSTagParser.gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A956FF51492D83FAD4878575C465CA /* SLSTagParser.gen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		362287BBAF3665818E23CE43697CF375 /* SLSTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD836305754128FA6E21B4D4702D065 /* SLSTagParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		36A7D70465C53E453EC90BD1D5F636ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E13E60B1DB8734C5BC140631ACA95 /* Foundation.framework */; };
-		4839D7B0D2A6C10C59B91FB09B75DA2A /* Slash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4725725F367069CB95E8E5207FE7D5E3 /* Slash-dummy.m */; };
-		4B709CD2F7BC6E02EA9E8B0B9BB391C2 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0F7076A7723DEDD95AB1B0F62883C /* iRate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4839D7B0D2A6C10C59B91FB09B75DA2A /* Slash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 209F959FB7827AED949054F54D32C3A3 /* Slash-dummy.m */; };
+		4B709CD2F7BC6E02EA9E8B0B9BB391C2 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0D27219BA38434C58A2D65E5D2BF2 /* iRate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		54F745924D8B2AB5AB487615140CC523 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F648AA2641E8642575CA5CE1A4B46A /* CoreText.framework */; };
 		5841C3C0A29E715F934A0E3BE383F940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E13E60B1DB8734C5BC140631ACA95 /* Foundation.framework */; };
-		598F8F3F0FA295D5EFEDB735667ED875 /* SLSTaggedRange.h in Headers */ = {isa = PBXBuildFile; fileRef = B69552F0437CB9A27C533DBC242BF722 /* SLSTaggedRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		598F8F3F0FA295D5EFEDB735667ED875 /* SLSTaggedRange.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0BB04FB7EA004E6B5D4B4F817C892C /* SLSTaggedRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6788E907E32E869DDFA9E35CC4A31536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E13E60B1DB8734C5BC140631ACA95 /* Foundation.framework */; };
-		6926A199D47EAE9477B0511B311CB955 /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB63BC0AA324DE98ACD0A35526DFA7 /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7126C3ED28C6C3FEF909946549FB2463 /* SLSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E29A1B85405F5625DE446A021B2C35 /* SLSErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91111B9F026C584203CAAA6DD7E8C856 /* SLSTagParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B11B81E06949C25AA5819664770185D /* SLSTagParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A53A2315F1F3902CB3DB0881F88D212D /* iRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68026671B41562FF847D51A16E425146 /* iRate-dummy.m */; };
-		A783AA191C904DC328AD5F8F6599B6AD /* SLSMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 758C47F76BE2DFC589D799EC99A220F2 /* SLSMarkupParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD194E278C4727F77914AA56542B2095 /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = 67540AF480958D58EF5A8DF1DBA0B5FD /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6926A199D47EAE9477B0511B311CB955 /* SLSTaggedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44896000E3EBF1B0C20BF58356E24D /* SLSTaggedRange.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7126C3ED28C6C3FEF909946549FB2463 /* SLSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C886C9DAAB0D9343623C363EC8D672 /* SLSErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91111B9F026C584203CAAA6DD7E8C856 /* SLSTagParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E81DE86CB58C03C8352558029E616C /* SLSTagParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A53A2315F1F3902CB3DB0881F88D212D /* iRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B08183EB21717471C1E0367ACEED7BCB /* iRate-dummy.m */; };
+		A783AA191C904DC328AD5F8F6599B6AD /* SLSMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D38053DFAE2B92509B8D0F41CD13A18 /* SLSMarkupParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD194E278C4727F77914AA56542B2095 /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD84671D39AAA73D77A1613FF2BE988 /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3E64967DF3C9A3D374BC8C6EE447968 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
-		E4995302D45A4052AD7AE42E932315AD /* SLSTagLexer.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = DE591BB0E1D2937C3B70E27190AAFE9F /* SLSTagLexer.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F94207909B77F7EBB7F69D5502C9EA56 /* iRate.h in Headers */ = {isa = PBXBuildFile; fileRef = A49F41827F97FA0EFD0A3BAA37FE5013 /* iRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4995302D45A4052AD7AE42E932315AD /* SLSTagLexer.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EFDEE23EB9D44F54B64A0B141AE99B /* SLSTagLexer.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F94207909B77F7EBB7F69D5502C9EA56 /* iRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DBE9DBC88A7409E0D3C4BC6EDC507D /* iRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,43 +48,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04D7072576B55F2753DD43F715739758 /* SLSTagParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTagParser.m; path = Slash/SLSTagParser.m; sourceTree = "<group>"; };
-		0804A66A4893D463BD23CF92D8F27ECC /* iRate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iRate-prefix.pch"; sourceTree = "<group>"; };
-		0B11B81E06949C25AA5819664770185D /* SLSTagParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTagParser.h; path = Slash/SLSTagParser.h; sourceTree = "<group>"; };
 		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		109BB52B3A5E3A5F73A1479AE8301CB6 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.2.2/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		129E13E60B1DB8734C5BC140631ACA95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		13BAE2B3A6387B65D1F4E45F38EDE45D /* Slash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Slash.xcconfig; sourceTree = "<group>"; };
+		209F959FB7827AED949054F54D32C3A3 /* Slash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Slash-dummy.m"; sourceTree = "<group>"; };
+		221E6A98FBD6233DBA01E0A66AC8CE20 /* SLSTagLexer.gen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTagLexer.gen.h; path = Slash/SLSTagLexer.gen.h; sourceTree = "<group>"; };
+		25C886C9DAAB0D9343623C363EC8D672 /* SLSErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSErrors.h; path = Slash/SLSErrors.h; sourceTree = "<group>"; };
 		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		2DFA7FF520A5D7C43BFDCAB85E258A38 /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_5.4.0.a; path = Flurry/libFlurry_5.4.0.a; sourceTree = "<group>"; };
-		367326E17B7102808F0B8D1B21744457 /* Slash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Slash-prefix.pch"; sourceTree = "<group>"; };
+		30DBE9DBC88A7409E0D3C4BC6EDC507D /* iRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iRate.h; path = iRate/iRate.h; sourceTree = "<group>"; };
+		33A956FF51492D83FAD4878575C465CA /* SLSTagParser.gen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTagParser.gen.h; path = Slash/SLSTagParser.gen.h; sourceTree = "<group>"; };
 		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		40E29A1B85405F5625DE446A021B2C35 /* SLSErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSErrors.h; path = Slash/SLSErrors.h; sourceTree = "<group>"; };
-		422E9B28D56DC7409E107910AC465420 /* SLSTagParser.gen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTagParser.gen.h; path = Slash/SLSTagParser.gen.h; sourceTree = "<group>"; };
-		4725725F367069CB95E8E5207FE7D5E3 /* Slash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Slash-dummy.m"; sourceTree = "<group>"; };
+		3D38053DFAE2B92509B8D0F41CD13A18 /* SLSMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSMarkupParser.h; path = Slash/SLSMarkupParser.h; sourceTree = "<group>"; };
+		4B0DFFA07618A23F30C9BDAF2730B4A2 /* SLSMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSMarkupParser.m; path = Slash/SLSMarkupParser.m; sourceTree = "<group>"; };
 		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		610AFDE07662A05E5675ADC03EF7673A /* iRate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iRate.xcconfig; sourceTree = "<group>"; };
+		5096DA99BECCA3CE563F3BE19C6D56CA /* iRate.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = iRate.bundle; path = iRate/iRate.bundle; sourceTree = "<group>"; };
 		616B648CF503FF3E10123B81353AAFC9 /* libSlash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSlash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6484C293E20C0B764769CBDEDE9A0349 /* Slash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Slash-prefix.pch"; sourceTree = "<group>"; };
 		66E64F064A15D18651F8EA7AEE0DAFBD /* libiRate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiRate.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		67540AF480958D58EF5A8DF1DBA0B5FD /* Slash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Slash.h; path = Slash/Slash.h; sourceTree = "<group>"; };
-		68026671B41562FF847D51A16E425146 /* iRate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iRate-dummy.m"; sourceTree = "<group>"; };
+		67EFDEE23EB9D44F54B64A0B141AE99B /* SLSTagLexer.gen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTagLexer.gen.m; path = Slash/SLSTagLexer.gen.m; sourceTree = "<group>"; };
 		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		758C47F76BE2DFC589D799EC99A220F2 /* SLSMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSMarkupParser.h; path = Slash/SLSMarkupParser.h; sourceTree = "<group>"; };
-		7EC30B3BB25EAC38437C70A5F3EB0339 /* Flurry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
+		6D44896000E3EBF1B0C20BF58356E24D /* SLSTaggedRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTaggedRange.m; path = Slash/SLSTaggedRange.m; sourceTree = "<group>"; };
+		6DD836305754128FA6E21B4D4702D065 /* SLSTagParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTagParser.m; path = Slash/SLSTagParser.m; sourceTree = "<group>"; };
 		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		A0AB63BC0AA324DE98ACD0A35526DFA7 /* SLSTaggedRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTaggedRange.m; path = Slash/SLSTaggedRange.m; sourceTree = "<group>"; };
 		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		A49F41827F97FA0EFD0A3BAA37FE5013 /* iRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iRate.h; path = iRate/iRate.h; sourceTree = "<group>"; };
-		B69552F0437CB9A27C533DBC242BF722 /* SLSTaggedRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTaggedRange.h; path = Slash/SLSTaggedRange.h; sourceTree = "<group>"; };
+		A274552A912E2208AB1D36A6B96168C1 /* Slash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Slash.xcconfig; sourceTree = "<group>"; };
+		A3A0D27219BA38434C58A2D65E5D2BF2 /* iRate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iRate.m; path = iRate/iRate.m; sourceTree = "<group>"; };
+		A46BEE6388F02619E5B9FA0812B0BE1C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.2.2/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		A61D1DE4ABD27C62968E073C2A73AE8B /* iRate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iRate.xcconfig; sourceTree = "<group>"; };
+		B08183EB21717471C1E0367ACEED7BCB /* iRate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iRate-dummy.m"; sourceTree = "<group>"; };
+		BA4D8C5ACF066854C20234D5B6789D61 /* SLSTagParser.gen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTagParser.gen.m; path = Slash/SLSTagParser.gen.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB5337471D1DC0071C2E8B2DDF6B3A01 /* SLSMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSMarkupParser.m; path = Slash/SLSMarkupParser.m; sourceTree = "<group>"; };
-		BCC46E83AF71E72C3B4FBA73B9C4DB06 /* SLSTagLexer.gen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTagLexer.gen.h; path = Slash/SLSTagLexer.gen.h; sourceTree = "<group>"; };
+		BC763D5E6273FAB356F1FCF6B64FD696 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		BFD84671D39AAA73D77A1613FF2BE988 /* Slash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Slash.h; path = Slash/Slash.h; sourceTree = "<group>"; };
 		C0F648AA2641E8642575CA5CE1A4B46A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		C139D7E2855824938E631FAA1D6AA214 /* SLSTagParser.gen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTagParser.gen.m; path = Slash/SLSTagParser.gen.m; sourceTree = "<group>"; };
-		C5A0F7076A7723DEDD95AB1B0F62883C /* iRate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iRate.m; path = iRate/iRate.m; sourceTree = "<group>"; };
+		C9E81DE86CB58C03C8352558029E616C /* SLSTagParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTagParser.h; path = Slash/SLSTagParser.h; sourceTree = "<group>"; };
 		D37AFDEC9A7A54C3F7DE35C592335119 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE591BB0E1D2937C3B70E27190AAFE9F /* SLSTagLexer.gen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLSTagLexer.gen.m; path = Slash/SLSTagLexer.gen.m; sourceTree = "<group>"; };
-		F921A4D3D2BB667E5E79ED8C527FAF85 /* iRate.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = iRate.bundle; path = iRate/iRate.bundle; sourceTree = "<group>"; };
+		DC0BB04FB7EA004E6B5D4B4F817C892C /* SLSTaggedRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLSTaggedRange.h; path = Slash/SLSTaggedRange.h; sourceTree = "<group>"; };
+		E97B7DAC81A50B6DB490DE2260ADE2B9 /* iRate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iRate-prefix.pch"; sourceTree = "<group>"; };
+		FB2B52F783E127003A62ADC5B2BADD15 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,42 +124,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		12AF93301316208D8E7D758D481A3CE0 /* Support Files */ = {
+		07E1EC876EE3501538019AC772CA175D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				13BAE2B3A6387B65D1F4E45F38EDE45D /* Slash.xcconfig */,
-				4725725F367069CB95E8E5207FE7D5E3 /* Slash-dummy.m */,
-				367326E17B7102808F0B8D1B21744457 /* Slash-prefix.pch */,
+				A61D1DE4ABD27C62968E073C2A73AE8B /* iRate.xcconfig */,
+				B08183EB21717471C1E0367ACEED7BCB /* iRate-dummy.m */,
+				E97B7DAC81A50B6DB490DE2260ADE2B9 /* iRate-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Slash";
+			path = "../Target Support Files/iRate";
 			sourceTree = "<group>";
 		};
-		2C3DA9E6380CF48093FF259A7AD8AC35 /* arc */ = {
+		0C248BD98DF5D32DBD75086F0C96395C /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				67540AF480958D58EF5A8DF1DBA0B5FD /* Slash.h */,
-				40E29A1B85405F5625DE446A021B2C35 /* SLSErrors.h */,
-				758C47F76BE2DFC589D799EC99A220F2 /* SLSMarkupParser.h */,
-				BB5337471D1DC0071C2E8B2DDF6B3A01 /* SLSMarkupParser.m */,
-				B69552F0437CB9A27C533DBC242BF722 /* SLSTaggedRange.h */,
-				A0AB63BC0AA324DE98ACD0A35526DFA7 /* SLSTaggedRange.m */,
-				BCC46E83AF71E72C3B4FBA73B9C4DB06 /* SLSTagLexer.gen.h */,
-				0B11B81E06949C25AA5819664770185D /* SLSTagParser.h */,
-				422E9B28D56DC7409E107910AC465420 /* SLSTagParser.gen.h */,
+				9C5BA778617F7A0616AB4225DAC1319A /* Frameworks */,
 			);
-			name = arc;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
-		31D189155CDD1EDBCFB2B097B0F00FF3 /* iRate */ = {
+		244745951F00AB0C169140264FF6309D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A49F41827F97FA0EFD0A3BAA37FE5013 /* iRate.h */,
-				C5A0F7076A7723DEDD95AB1B0F62883C /* iRate.m */,
-				D495329A093E1C1CB7A259330EA6B887 /* Resources */,
-				D52593F6CCD3A5ACAC6D2392F8ACBB72 /* Support Files */,
+				A46BEE6388F02619E5B9FA0812B0BE1C /* GoogleMobileAds.framework */,
 			);
-			path = iRate;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37C154EA572E30D83D492E79B69846BE /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				244745951F00AB0C169140264FF6309D /* Frameworks */,
+			);
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
 		3E3E6EF053970E966E4AA1E935BAD06C /* Products */ = {
@@ -172,64 +169,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		432E4E9C4913976861A7A7091937E420 /* Google-Mobile-Ads-SDK */ = {
+		41F623504331E3DEB4735603493B89CD /* Slash */ = {
 			isa = PBXGroup;
 			children = (
-				5CD34066B9D79C844E472B464F22B801 /* Frameworks */,
+				E0C75868B75534CBD763B5D2CCE74439 /* arc */,
+				7C6DE6D683887E311A674440738700AA /* no-arc */,
+				DCA9705E3938A40AD70D67702967E275 /* Support Files */,
 			);
-			path = "Google-Mobile-Ads-SDK";
+			path = Slash;
+			sourceTree = "<group>";
+		};
+		42909E973EEC995A45C343CAB39E7D3B /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				30DBE9DBC88A7409E0D3C4BC6EDC507D /* iRate.h */,
+				A3A0D27219BA38434C58A2D65E5D2BF2 /* iRate.m */,
+				BCECA5E05FF37B09A8939BF080DB8676 /* Resources */,
+				07E1EC876EE3501538019AC772CA175D /* Support Files */,
+			);
+			path = iRate;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				667F62B016352BDC73AB8A368B86A4C5 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4694116F88E5B136D7E68D4C01D20F83 /* no-arc */ = {
-			isa = PBXGroup;
-			children = (
-				DE591BB0E1D2937C3B70E27190AAFE9F /* SLSTagLexer.gen.m */,
-				04D7072576B55F2753DD43F715739758 /* SLSTagParser.m */,
-				C139D7E2855824938E631FAA1D6AA214 /* SLSTagParser.gen.m */,
-			);
-			name = "no-arc";
-			sourceTree = "<group>";
-		};
-		49AB5879B960E0E6142B749445420DCF /* FlurrySDK */ = {
-			isa = PBXGroup;
-			children = (
-				7EC30B3BB25EAC38437C70A5F3EB0339 /* Flurry.h */,
-				6532DF26367462B154A292FB64D586C9 /* Frameworks */,
-			);
-			name = FlurrySDK;
-			sourceTree = "<group>";
-		};
-		5CD34066B9D79C844E472B464F22B801 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				109BB52B3A5E3A5F73A1479AE8301CB6 /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6407F3598A11FFDAB34B0E5AE935F796 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B929AFCE299819306BB87F7284CFB292 /* FlurrySDK */,
-				432E4E9C4913976861A7A7091937E420 /* Google-Mobile-Ads-SDK */,
-				31D189155CDD1EDBCFB2B097B0F00FF3 /* iRate */,
-				EA4C838A71BC24404D98C95EA58AB80C /* Slash */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6532DF26367462B154A292FB64D586C9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2DFA7FF520A5D7C43BFDCAB85E258A38 /* libFlurry_5.4.0.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,15 +207,45 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		6F7B41E7FF246DC30C4033BA597F7ECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD03BC4AF9632BC57E91CB73D6378465 /* Crashlytics */,
+				0C248BD98DF5D32DBD75086F0C96395C /* Fabric */,
+				37C154EA572E30D83D492E79B69846BE /* Google-Mobile-Ads-SDK */,
+				42909E973EEC995A45C343CAB39E7D3B /* iRate */,
+				41F623504331E3DEB4735603493B89CD /* Slash */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C6DE6D683887E311A674440738700AA /* no-arc */ = {
+			isa = PBXGroup;
+			children = (
+				67EFDEE23EB9D44F54B64A0B141AE99B /* SLSTagLexer.gen.m */,
+				6DD836305754128FA6E21B4D4702D065 /* SLSTagParser.m */,
+				BA4D8C5ACF066854C20234D5B6789D61 /* SLSTagParser.gen.m */,
+			);
+			name = "no-arc";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				6407F3598A11FFDAB34B0E5AE935F796 /* Pods */,
+				6F7B41E7FF246DC30C4033BA597F7ECE /* Pods */,
 				3E3E6EF053970E966E4AA1E935BAD06C /* Products */,
 				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9C5BA778617F7A0616AB4225DAC1319A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B52F783E127003A62ADC5B2BADD15 /* Fabric.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
@@ -269,41 +263,55 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		B929AFCE299819306BB87F7284CFB292 /* FlurrySDK */ = {
+		BCECA5E05FF37B09A8939BF080DB8676 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				49AB5879B960E0E6142B749445420DCF /* FlurrySDK */,
-			);
-			path = FlurrySDK;
-			sourceTree = "<group>";
-		};
-		D495329A093E1C1CB7A259330EA6B887 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F921A4D3D2BB667E5E79ED8C527FAF85 /* iRate.bundle */,
+				5096DA99BECCA3CE563F3BE19C6D56CA /* iRate.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		D52593F6CCD3A5ACAC6D2392F8ACBB72 /* Support Files */ = {
+		C906F090C3310E43639939F5123CEB13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				610AFDE07662A05E5675ADC03EF7673A /* iRate.xcconfig */,
-				68026671B41562FF847D51A16E425146 /* iRate-dummy.m */,
-				0804A66A4893D463BD23CF92D8F27ECC /* iRate-prefix.pch */,
+				BC763D5E6273FAB356F1FCF6B64FD696 /* Crashlytics.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/iRate";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EA4C838A71BC24404D98C95EA58AB80C /* Slash */ = {
+		CD03BC4AF9632BC57E91CB73D6378465 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				2C3DA9E6380CF48093FF259A7AD8AC35 /* arc */,
-				4694116F88E5B136D7E68D4C01D20F83 /* no-arc */,
-				12AF93301316208D8E7D758D481A3CE0 /* Support Files */,
+				C906F090C3310E43639939F5123CEB13 /* Frameworks */,
 			);
-			path = Slash;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		DCA9705E3938A40AD70D67702967E275 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A274552A912E2208AB1D36A6B96168C1 /* Slash.xcconfig */,
+				209F959FB7827AED949054F54D32C3A3 /* Slash-dummy.m */,
+				6484C293E20C0B764769CBDEDE9A0349 /* Slash-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Slash";
+			sourceTree = "<group>";
+		};
+		E0C75868B75534CBD763B5D2CCE74439 /* arc */ = {
+			isa = PBXGroup;
+			children = (
+				BFD84671D39AAA73D77A1613FF2BE988 /* Slash.h */,
+				25C886C9DAAB0D9343623C363EC8D672 /* SLSErrors.h */,
+				3D38053DFAE2B92509B8D0F41CD13A18 /* SLSMarkupParser.h */,
+				4B0DFFA07618A23F30C9BDAF2730B4A2 /* SLSMarkupParser.m */,
+				DC0BB04FB7EA004E6B5D4B4F817C892C /* SLSTaggedRange.h */,
+				6D44896000E3EBF1B0C20BF58356E24D /* SLSTaggedRange.m */,
+				221E6A98FBD6233DBA01E0A66AC8CE20 /* SLSTagLexer.gen.h */,
+				C9E81DE86CB58C03C8352558029E616C /* SLSTagParser.h */,
+				33A956FF51492D83FAD4878575C465CA /* SLSTagParser.gen.h */,
+			);
+			name = arc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,64 +471,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		052A17875CB827423D627183396CEB60 /* Release */ = {
+		1E17DEC84BB812040C7C55CC701BA73C /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6256CFAF2B9D0253C7A758741526C42E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			baseConfigurationReference = A274552A912E2208AB1D36A6B96168C1 /* Slash.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7ECCF67E77073924FA52E66F63EB84C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 610AFDE07662A05E5675ADC03EF7673A /* iRate.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/iRate/iRate-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "Target Support Files/Slash/Slash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -532,7 +489,42 @@
 			};
 			name = Release;
 		};
-		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
+		569F2EADC7EC678E2252C1C8B9CC41DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61D1DE4ABD27C62968E073C2A73AE8B /* iRate.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iRate/iRate-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6C75CD71AC426C8D947CDF30A86A2517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -564,38 +556,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		B59FAB52BE7BBDEFBA67FBF3AA51F1BE /* Release */ = {
+		EAD7EDB697FE3EC3550B7AE34D888DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13BAE2B3A6387B65D1F4E45F38EDE45D /* Slash.xcconfig */;
+			baseConfigurationReference = A274552A912E2208AB1D36A6B96168C1 /* Slash.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Slash/Slash-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		B7BF098AB03F2420C42208DF6D01F27A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13BAE2B3A6387B65D1F4E45F38EDE45D /* Slash.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Slash/Slash-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -607,14 +581,14 @@
 			};
 			name = Debug;
 		};
-		BD6CF0840642ABB36A4652032C7EC389 /* Debug */ = {
+		F8C886AA2F8D06369B361E9CDAF47E75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -622,15 +596,49 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		F21257B077FBC22CAAE1AF8C5EB13D94 /* Debug */ = {
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 610AFDE07662A05E5675ADC03EF7673A /* iRate.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD40CDCAC9A57CA708EF1AB887216168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61D1DE4ABD27C62968E073C2A73AE8B /* iRate.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/iRate/iRate-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -648,8 +656,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
-				052A17875CB827423D627183396CEB60 /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -657,8 +665,8 @@
 		506AD95E0F8E92F149B3475CEA1DF2AF /* Build configuration list for PBXNativeTarget "Slash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7BF098AB03F2420C42208DF6D01F27A /* Debug */,
-				B59FAB52BE7BBDEFBA67FBF3AA51F1BE /* Release */,
+				EAD7EDB697FE3EC3550B7AE34D888DC5 /* Debug */,
+				1E17DEC84BB812040C7C55CC701BA73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -666,8 +674,8 @@
 		AF6F0ABA6B9F4708116599C2A4FF1A82 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD6CF0840642ABB36A4652032C7EC389 /* Debug */,
-				6256CFAF2B9D0253C7A758741526C42E /* Release */,
+				6C75CD71AC426C8D947CDF30A86A2517 /* Debug */,
+				F8C886AA2F8D06369B361E9CDAF47E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -675,8 +683,8 @@
 		EF41AD739A2B1AB6D00F631720006F71 /* Build configuration list for PBXNativeTarget "iRate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F21257B077FBC22CAAE1AF8C5EB13D94 /* Debug */,
-				7ECCF67E77073924FA52E66F63EB84C7 /* Release */,
+				FD40CDCAC9A57CA708EF1AB887216168 /* Debug */,
+				569F2EADC7EC678E2252C1C8B9CC41DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

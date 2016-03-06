@@ -1762,6 +1762,7 @@
 				F601F87A0D3741A4B3840CF6 /* Copy Pods Resources */,
 				4F070209738F1C6DA0661545 /* Embed Pods Frameworks */,
 				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
+				44CE497D1C8CF3B200AF38D7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2321,6 +2322,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		44CE497D1C8CF3B200AF38D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ec5efe51f609825d79487cb10744bb30708a36ab 94daeec529cf5779974bcf12e14a8f937f515cee67f9b5da1b7a92b3781386e5";
+		};
 		4F070209738F1C6DA0661545 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2502,7 +2516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2535,7 +2549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2553,7 +2567,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "";
@@ -2573,7 +2587,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "";
