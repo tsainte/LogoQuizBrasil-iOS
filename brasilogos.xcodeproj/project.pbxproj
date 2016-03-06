@@ -487,6 +487,8 @@
 		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
 		F175864D1C666D5A00B54134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175864C1C666D5A00B54134 /* Launch Screen.storyboard */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
+		F1A0B6D91C675DD600D55D0D /* BLLogoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0B6D81C675DD600D55D0D /* BLLogoPageViewController.m */; };
+		F1A0B6DC1C675FAA00D55D0D /* BLLogosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
 		F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */; };
 		F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9062199FBCFA0071E256 /* BLScore.m */; };
@@ -503,7 +505,6 @@
 		F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8B813198E5D9300578D91 /* BLAppDelegate.m */; };
 		F1F8B817198E5D9300578D91 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F8B815198E5D9300578D91 /* Main_iPhone.storyboard */; };
 		F1F8B81A198E5D9300578D91 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F8B818198E5D9300578D91 /* Main_iPad.storyboard */; };
-		F1F8B820198E5D9300578D91 /* BLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8B81F198E5D9300578D91 /* BLDetailViewController.m */; };
 		F1F8B822198E5D9300578D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F8B821198E5D9300578D91 /* Images.xcassets */; };
 		F1F8B829198E5D9300578D91 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B828198E5D9300578D91 /* XCTest.framework */; };
 		F1F8B82A198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
@@ -1019,6 +1020,10 @@
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
 		F19505F61995CDB800A94FD1 /* BLStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLStyling.m; sourceTree = "<group>"; };
+		F1A0B6D71C675DD600D55D0D /* BLLogoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogoPageViewController.h; sourceTree = "<group>"; };
+		F1A0B6D81C675DD600D55D0D /* BLLogoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogoPageViewController.m; sourceTree = "<group>"; };
+		F1A0B6DA1C675FAA00D55D0D /* BLLogosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogosListViewController.h; sourceTree = "<group>"; };
+		F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogosListViewController.m; sourceTree = "<group>"; };
 		F1AD905B199FB6EA0071E256 /* BLLogoStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogoStatus.h; sourceTree = "<group>"; };
 		F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogoStatus.m; sourceTree = "<group>"; };
 		F1AD905E199FB7BD0071E256 /* BLDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDatabaseManager.h; sourceTree = "<group>"; };
@@ -1047,8 +1052,6 @@
 		F1F8B813198E5D9300578D91 /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
 		F1F8B816198E5D9300578D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		F1F8B819198E5D9300578D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		F1F8B81E198E5D9300578D91 /* BLDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDetailViewController.h; sourceTree = "<group>"; };
-		F1F8B81F198E5D9300578D91 /* BLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLDetailViewController.m; sourceTree = "<group>"; };
 		F1F8B821198E5D9300578D91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F1F8B827198E5D9300578D91 /* brasilogosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brasilogosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8B828198E5D9300578D91 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -1598,6 +1601,60 @@
 			name = arts;
 			sourceTree = "<group>";
 		};
+		F1A0B6D51C675CFD00D55D0D /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F1A0B6DD1C675FB200D55D0D /* LogoGame */,
+				F10C63B7199EB863005328B2 /* BLMainViewController.h */,
+				F10C63B8199EB863005328B2 /* BLMainViewController.m */,
+				F10C63BA199EB878005328B2 /* BLIndexLevelViewController.h */,
+				F10C63BB199EB878005328B2 /* BLIndexLevelViewController.m */,
+				F10C63BD199EB88D005328B2 /* BLLevelViewController.h */,
+				F10C63BE199EB88D005328B2 /* BLLevelViewController.m */,
+				F10C63C3199EB8B8005328B2 /* BLAboutViewController.h */,
+				F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */,
+				F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */,
+				F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */,
+				F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */,
+				F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */,
+			);
+			name = navigation;
+			sourceTree = "<group>";
+		};
+		F1A0B6D61C675D1000D55D0D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F112977D19A0DB4100ACE7A2 /* Toast+UIView.h */,
+				F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */,
+				F112979219A11E6600ACE7A2 /* BLBannerManager.h */,
+				F112979319A11E6600ACE7A2 /* BLBannerManager.m */,
+				F112E88419A8C3D7009F70B4 /* BLInAppManager.h */,
+				F112E88519A8C3D7009F70B4 /* BLInAppManager.m */,
+				F1269B8419C5F0B600A89099 /* BLController.h */,
+				F1269B8519C5F0B600A89099 /* BLController.m */,
+				F1AD906A199FD35D0071E256 /* BLGameManager.h */,
+				F1AD906B199FD35D0071E256 /* BLGameManager.m */,
+				F19505F51995CDB800A94FD1 /* BLStyling.h */,
+				F19505F61995CDB800A94FD1 /* BLStyling.m */,
+				F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */,
+				F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F1A0B6DD1C675FB200D55D0D /* LogoGame */ = {
+			isa = PBXGroup;
+			children = (
+				F1A0B6D71C675DD600D55D0D /* BLLogoPageViewController.h */,
+				F1A0B6D81C675DD600D55D0D /* BLLogoPageViewController.m */,
+				F1A0B6DA1C675FAA00D55D0D /* BLLogosListViewController.h */,
+				F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */,
+				F10C63C0199EB8A0005328B2 /* BLLogoViewController.h */,
+				F10C63C1199EB8A0005328B2 /* BLLogoViewController.m */,
+			);
+			name = LogoGame;
+			sourceTree = "<group>";
+		};
 		F1F8B7F7198E5D9200578D91 = {
 			isa = PBXGroup;
 			children = (
@@ -1639,44 +1696,16 @@
 			isa = PBXGroup;
 			children = (
 				F175864B1C665A0D00B54134 /* assets */,
-				F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */,
-				F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */,
+				F1A0B6D61C675D1000D55D0D /* Helpers */,
 				F10C63C9199ECA0E005328B2 /* database */,
+				F1A0B6D51C675CFD00D55D0D /* navigation */,
 				F1F8B812198E5D9300578D91 /* BLAppDelegate.h */,
 				F1F8B813198E5D9300578D91 /* BLAppDelegate.m */,
-				F10C63B7199EB863005328B2 /* BLMainViewController.h */,
-				F10C63B8199EB863005328B2 /* BLMainViewController.m */,
-				F1269B8419C5F0B600A89099 /* BLController.h */,
-				F1269B8519C5F0B600A89099 /* BLController.m */,
-				F19505F51995CDB800A94FD1 /* BLStyling.h */,
-				F19505F61995CDB800A94FD1 /* BLStyling.m */,
 				F1F8B815198E5D9300578D91 /* Main_iPhone.storyboard */,
 				F1F8B818198E5D9300578D91 /* Main_iPad.storyboard */,
-				F1F8B81E198E5D9300578D91 /* BLDetailViewController.h */,
-				F1F8B81F198E5D9300578D91 /* BLDetailViewController.m */,
 				F1F8B821198E5D9300578D91 /* Images.xcassets */,
 				F1F8B80A198E5D9300578D91 /* Supporting Files */,
 				F19505F21995CD9600A94FD1 /* BLConstants.h */,
-				F10C63C0199EB8A0005328B2 /* BLLogoViewController.h */,
-				F10C63C1199EB8A0005328B2 /* BLLogoViewController.m */,
-				F10C63BA199EB878005328B2 /* BLIndexLevelViewController.h */,
-				F10C63BB199EB878005328B2 /* BLIndexLevelViewController.m */,
-				F10C63BD199EB88D005328B2 /* BLLevelViewController.h */,
-				F10C63BE199EB88D005328B2 /* BLLevelViewController.m */,
-				F10C63C3199EB8B8005328B2 /* BLAboutViewController.h */,
-				F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */,
-				F1AD906A199FD35D0071E256 /* BLGameManager.h */,
-				F1AD906B199FD35D0071E256 /* BLGameManager.m */,
-				F112977D19A0DB4100ACE7A2 /* Toast+UIView.h */,
-				F112977E19A0DB4700ACE7A2 /* Toast+UIView.m */,
-				F112978F19A10DD100ACE7A2 /* BLShoppingOverlayViewController.h */,
-				F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */,
-				F112979219A11E6600ACE7A2 /* BLBannerManager.h */,
-				F112979319A11E6600ACE7A2 /* BLBannerManager.m */,
-				F112E88419A8C3D7009F70B4 /* BLInAppManager.h */,
-				F112E88519A8C3D7009F70B4 /* BLInAppManager.m */,
-				F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */,
-				F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */,
 			);
 			path = brasilogos;
 			sourceTree = "<group>";
@@ -2365,6 +2394,8 @@
 				F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */,
 				F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */,
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
+				F1A0B6DC1C675FAA00D55D0D /* BLLogosListViewController.m in Sources */,
+				F1A0B6D91C675DD600D55D0D /* BLLogoPageViewController.m in Sources */,
 				F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */,
 				F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */,
 				F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */,
@@ -2375,7 +2406,6 @@
 				F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */,
 				F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */,
 				F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */,
-				F1F8B820198E5D9300578D91 /* BLDetailViewController.m in Sources */,
 				F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */,
 				F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */,
 				F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */,
