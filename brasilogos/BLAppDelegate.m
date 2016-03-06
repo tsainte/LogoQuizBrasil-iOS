@@ -7,10 +7,11 @@
 //
 
 #import "BLAppDelegate.h"
-#import <FlurrySDK/Flurry.h>
 #import <iRate/iRate.h>
 #import "BLInAppManager.h"
 #import "BLJSONDatabase.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation BLAppDelegate
 
@@ -31,6 +32,9 @@
     
     [self configureIRate];
     [self preloadKeyboard];
+    
+    [Fabric with:@[[Crashlytics class]]];
+
     
     return YES;
 }

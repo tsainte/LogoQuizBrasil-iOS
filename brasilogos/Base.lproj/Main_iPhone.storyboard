@@ -217,7 +217,7 @@
                                         <rect key="frame" x="0.0" y="22" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ToO-wJ-7MP" id="2Kd-b8-bVz">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nível x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39P-aL-hKH">
@@ -252,7 +252,7 @@
                                         <rect key="frame" x="0.0" y="122" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jZS-kY-FL8" id="3en-vu-B9U">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1219,7 +1219,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
-                            <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hi2-lg-ZmD" userLabel="Content">
+                            <view alpha="0.94999998807907104" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hi2-lg-ZmD" userLabel="Content">
                                 <rect key="frame" x="30" y="182" width="260" height="166"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDy-47-LpP" userLabel="Titulo">
@@ -1234,7 +1234,7 @@
                                         <color key="textColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2b-Ga-WNP">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2b-Ga-WNP">
                                         <rect key="frame" x="0.0" y="106" width="260" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOc-P0-tZB">
