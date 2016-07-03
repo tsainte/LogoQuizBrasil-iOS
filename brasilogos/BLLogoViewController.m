@@ -54,7 +54,6 @@ typedef enum
     [self updateIsCorrect];
     [self roundThings];
     [self updateImage];
-    [self updateCoins];
     [self configureTextView];
     [self configureConstraints];
 }
@@ -81,15 +80,6 @@ typedef enum
     [BLStyling roundView:[self.view viewWithTag:2] corner:8];
     [BLStyling roundView:[self.view viewWithTag:3] corner:12];
     [BLStyling roundView:self.answerTextField corner:8];
-    [self roundKeys];
-}
-
-- (void)roundKeys {
-    
-    for (UIView *key in self.keyboard.subviews) {
-        
-        [BLStyling roundView:key corner:6];
-    }
 }
 
 - (void)updateImage {
@@ -97,11 +87,6 @@ typedef enum
     NSString *imageName = self.isCorrect ? self.logo[@"imagem"] : self.logo[@"imagemModificada"];
     
     self.logoImage.image = [UIImage imageNamed:imageName];
-}
-
-- (void)updateCoins {
-    
-    self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
 }
 
 - (void)configureTextView {
@@ -159,38 +144,7 @@ typedef enum
     }
 }
 
-- (IBAction)shopTapped:(id)sender {
-    
-    [BLController showShoppingOnViewController:self];
-}
-
 #pragma mark - Keyboard methods
-
-- (IBAction)keyPressed:(UIButton *)key {
-    
-    if (self.isCorrect) {
-        return;
-    }
-    
-    [self configureTextFieldForState:BLTextFieldIdle];
-    
-    switch (key.tag) {
-        case kKeyLetter:
-            [self putKey:key.titleLabel.text];
-            break;
-        case kKeyBackspace:
-            [self removeLastKey];
-            break;
-        case kKeySpace:
-            [self putKey:@" "];
-            break;
-        case kKeyEnter:
-            [self tryAnswer];
-            break;
-        default:
-            break;
-    }
-}
 
 - (void)putKey:(NSString*)letter {
     
@@ -222,7 +176,7 @@ typedef enum
     
     [self updateIsCorrect];
     [self updateImage];
-    [self updateCoins];
+    [self.parentDelegate refreshUI];
 }
 
 #pragma mark - actions
@@ -264,18 +218,6 @@ typedef enum
         }];
     } else {
         [self authorizeClue:BLGameHelpSlogan];
-    }
-    
-}
-
-- (IBAction)bombTapped:(id)sender {
-    
-    if (![self.gameManager alreadyPurchased:BLGameHelpBomb]) {
-        [self showAlertWithTitle:@"Bomba" text:@"Você deseja usar bomba por 50 moedas?" action:^{
-            [self bomb];
-        }];
-    } else {
-        [self bomb];
     }
     
 }
@@ -338,42 +280,6 @@ typedef enum
     }
     
     return clue;
-}
-
-#pragma mark - Bomb
-
-- (void)bomb {
-    
-    BOOL authorized = [self.gameManager authorizeHelp:BLGameHelpBomb];
-    
-    if (authorized) {
-        [self hideLetters];
-        [self updateElements];
-    }
-}
-
-- (void)hideLetters {
-    
-    NSString *answer = [self.logo[@"nome"] lowercaseString];
-    
-    for (UIButton *key in self.keyboard.subviews) {
-        if (key.tag == kKeyLetter) {
-            
-            NSString *letter = [key.titleLabel.text lowercaseString];
-            BOOL hasLetter = [answer rangeOfString:letter].location != NSNotFound;
-            
-            if (!hasLetter) {
-                [self hideLetter:key];
-            }
-        }
-    }
-}
-
-- (void)hideLetter:(UIButton*)letter {
-    
-    [UIView animateWithDuration:0.5 animations:^{
-        letter.alpha = 0;
-    }];
 }
 
 #pragma mark - Medicine
@@ -465,14 +371,6 @@ typedef enum
 - (CGPoint)invertPoint:(CGPoint)originalPoint {
     
     return CGPointMake(originalPoint.x, -originalPoint.y);
-}
-
-#pragma mark - InAppDelegate
-
-- (void)refreshUI {
-    
-    [self updateCoins];
-//    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 @end

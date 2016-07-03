@@ -8,6 +8,5 @@ target 'brasilogos' do
     pod 'Firebase'
     pod 'Firebase/Core'
     pod 'Firebase/AdMob'
-    pod 'Slash', '0.1.2'
-    pod 'iRate', '1.11.3'
+    pod 'Slash'
 end

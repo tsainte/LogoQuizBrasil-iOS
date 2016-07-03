@@ -194,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCo-L0-egv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395" y="1247"/>
+            <point key="canvasLocation" x="355" y="1118"/>
         </scene>
         <!--Níveis-->
         <scene sceneID="QhD-3P-omt">
@@ -335,27 +335,28 @@
             </objects>
             <point key="canvasLocation" x="890" y="397"/>
         </scene>
-        <!--Logos List View Controller-->
+        <!--Logo-->
         <scene sceneID="8zm-MT-CVc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akc-SU-Cjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController wantsFullScreenLayout="YES" id="fQ9-xz-xz3" customClass="BLLogosListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZFC-Om-PYs"/>
                         <viewControllerLayoutGuide type="bottom" id="D1Y-iA-Moz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GtC-SE-QyP">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRZ-3g-j58">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
                                 <connections>
                                     <segue destination="SMa-Aw-tbG" kind="embed" id="DlR-ee-10w"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2o-m2-wVW">
-                                <rect key="frame" x="0.0" y="454" width="320" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="410" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XtM-dE-9x1"/>
                                 </constraints>
@@ -373,13 +374,54 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" id="Qhh-JE-rlc"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Logo" id="Qhh-JE-rlc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Zse-tq-Jul">
+                            <view key="customView" contentMode="scaleToFill" id="1ET-P9-4Yf">
+                                <rect key="frame" x="233" y="2" width="71" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small" translatesAutoresizingMaskIntoConstraints="NO" id="TNX-Eh-JUb">
+                                        <rect key="frame" x="31" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="AkY-xN-53w"/>
+                                            <constraint firstAttribute="width" constant="40" id="nZ0-jO-KQC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMt-R3-9cF">
+                                        <rect key="frame" x="39" y="9" width="25" height="21"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TNX-Eh-JUb" secondAttribute="trailing" id="ZMc-ND-QYG"/>
+                                    <constraint firstItem="TNX-Eh-JUb" firstAttribute="centerY" secondItem="1ET-P9-4Yf" secondAttribute="centerY" id="vpO-ms-3Ex"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YnW-0M-2vd" appends="YES" id="gmo-Ha-MfG"/>
+                                </connections>
+                            </view>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="adBanner" destination="L2o-m2-wVW" id="EFb-Gb-Zhv"/>
+                        <outlet property="coinsLabel" destination="yMt-R3-9cF" id="pOJ-gz-uNk"/>
                         <outlet property="container" destination="YRZ-3g-j58" id="Y2o-nh-vTO"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="akc-SU-Cjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YnW-0M-2vd">
+                    <connections>
+                        <action selector="shopTapped:" destination="fQ9-xz-xz3" id="kTF-p5-II2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1798" y="397"/>
         </scene>
@@ -567,7 +609,6 @@
                         <outlet property="bombButton" destination="IBg-Zf-p2v" id="XZ7-kb-VCc"/>
                         <outlet property="clueOneButton" destination="UvH-sa-PVh" id="nV5-9K-oO2"/>
                         <outlet property="clueTwoButton" destination="GV6-hZ-daH" id="Z0U-7Y-1xR"/>
-                        <outlet property="coinsLabel" destination="8s7-zd-NW0" id="C5I-59-Nfq"/>
                         <outlet property="heightViewConstraint" destination="tHA-Ax-Xd6" id="3H6-6c-ozl"/>
                         <outlet property="logoImage" destination="cUB-Vb-al7" id="zl2-Xg-wJW"/>
                         <outlet property="magicButton" destination="5wA-SL-odt" id="2pd-En-tMl"/>
@@ -1248,6 +1289,33 @@
                         <action selector="shopTapped:" destination="cAa-Ry-LOV" id="ap4-LB-Uel"/>
                     </connections>
                 </tapGestureRecognizer>
+                <view contentMode="scaleToFill" id="WTw-hH-nHU">
+                    <rect key="frame" x="0.0" y="0.0" width="71" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_nonumber_small" translatesAutoresizingMaskIntoConstraints="NO" id="YMi-gD-7ac">
+                            <rect key="frame" x="31" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="aSc-Mh-YmS"/>
+                                <constraint firstAttribute="height" constant="40" id="wI4-yl-HfX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-dx-9z3">
+                            <rect key="frame" x="39" y="10" width="25" height="21"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YMi-gD-7ac" secondAttribute="trailing" id="1Yh-3L-keE"/>
+                        <constraint firstAttribute="centerY" secondItem="YMi-gD-7ac" secondAttribute="centerY" id="eJk-SL-6fz"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="1338" y="397"/>
         </scene>

@@ -7,8 +7,6 @@
 //
 
 #import "BLAboutViewController.h"
-#import "iRate.h"
-#import <iRate/iRate.h>
 
 @interface BLAboutViewController ()
 
@@ -37,7 +35,21 @@
 
 - (IBAction)evaluateTapped:(id)sender {
     
-    [[iRate sharedInstance] openRatingsPageInAppStore];
+    NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+    NSString *appID = [infoDict objectForKey:@"AppId"];
+
+    SKStoreProductViewController *storeProductViewController = [[SKStoreProductViewController alloc] init];
+
+    if (storeProductViewController != nil && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        [storeProductViewController loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier: appID}
+                                              completionBlock:nil];
+        [self presentViewController:storeProductViewController animated:YES completion:nil];
+    } else {
+
+        NSString *urlString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@", appID];
+        NSURL *url = [[NSURL alloc] initWithString:urlString];
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 - (IBAction)sendEmailTapped:(id)sender {
