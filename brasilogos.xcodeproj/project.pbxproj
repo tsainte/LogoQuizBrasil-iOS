@@ -487,7 +487,6 @@
 		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
 		F175864D1C666D5A00B54134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175864C1C666D5A00B54134 /* Launch Screen.storyboard */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
-		F1A0B6D91C675DD600D55D0D /* BLLogoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0B6D81C675DD600D55D0D /* BLLogoPageViewController.m */; };
 		F1A0B6DC1C675FAA00D55D0D /* BLLogosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
 		F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */; };
@@ -1020,8 +1019,6 @@
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
 		F19505F61995CDB800A94FD1 /* BLStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLStyling.m; sourceTree = "<group>"; };
-		F1A0B6D71C675DD600D55D0D /* BLLogoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogoPageViewController.h; sourceTree = "<group>"; };
-		F1A0B6D81C675DD600D55D0D /* BLLogoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogoPageViewController.m; sourceTree = "<group>"; };
 		F1A0B6DA1C675FAA00D55D0D /* BLLogosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogosListViewController.h; sourceTree = "<group>"; };
 		F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogosListViewController.m; sourceTree = "<group>"; };
 		F1AD905B199FB6EA0071E256 /* BLLogoStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogoStatus.h; sourceTree = "<group>"; };
@@ -1645,8 +1642,6 @@
 		F1A0B6DD1C675FB200D55D0D /* LogoGame */ = {
 			isa = PBXGroup;
 			children = (
-				F1A0B6D71C675DD600D55D0D /* BLLogoPageViewController.h */,
-				F1A0B6D81C675DD600D55D0D /* BLLogoPageViewController.m */,
 				F1A0B6DA1C675FAA00D55D0D /* BLLogosListViewController.h */,
 				F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */,
 				F10C63C0199EB8A0005328B2 /* BLLogoViewController.h */,
@@ -2409,7 +2404,6 @@
 				F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */,
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
 				F1A0B6DC1C675FAA00D55D0D /* BLLogosListViewController.m in Sources */,
-				F1A0B6D91C675DD600D55D0D /* BLLogoPageViewController.m in Sources */,
 				F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */,
 				F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */,
 				F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */,

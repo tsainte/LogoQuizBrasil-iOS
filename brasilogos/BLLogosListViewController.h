@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLLogosListViewController : UIViewController
+@interface BLLogosListViewController : UIViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource, BLBannerManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIView *container;
+@property (weak, nonatomic) IBOutlet UIView *adBanner;
+
+@property NSArray *logos;
+@property NSInteger current;
 
 @end
