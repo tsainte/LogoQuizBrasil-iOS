@@ -12,6 +12,7 @@
 #import "BLJSONDatabase.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+#import <Firebase/Firebase.h>
 
 @implementation BLAppDelegate
 
@@ -34,7 +35,7 @@
     [self preloadKeyboard];
     
     [Fabric with:@[[Crashlytics class]]];
-
+    [FIRApp configure];
     
     return YES;
 }

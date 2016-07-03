@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-brasilogos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +22,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>520C76143821972163395D5B1411A2C4</key>
+		<key>4BB380C9727466912E720442D35D57B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +32,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E99EE4102A11283498712BF3E6BE07F6</key>
+		<key>F7DADA0ADF90D1142E5F4B058C834D09</key>
 		<dict>
 			<key>primary</key>
 			<true/>

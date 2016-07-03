@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D30482F8ADD24DFB9BAAAFC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B2646C0043423E8093054B /* libPods.a */; };
+		C6F24CEEF31483DF9E784780 /* libPods-brasilogos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */; };
 		F10C63B6199EA825005328B2 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = F10C63B5199EA825005328B2 /* db.json */; };
 		F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63B8199EB863005328B2 /* BLMainViewController.m */; };
 		F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63BB199EB878005328B2 /* BLIndexLevelViewController.m */; };
@@ -485,6 +485,7 @@
 		F1235E211A00917D001284EB /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1235E201A00917D001284EB /* GameKit.framework */; };
 		F1269B8619C5F0B600A89099 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1269B8519C5F0B600A89099 /* BLController.m */; };
 		F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F16171D419C7B49400FA9A07 /* BLTransaction.m */; };
+		F16968EA1D2929DC0086EF89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16968E91D2929DC0086EF89 /* GoogleService-Info.plist */; };
 		F175864D1C666D5A00B54134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175864C1C666D5A00B54134 /* Launch Screen.storyboard */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1A0B6DC1C675FAA00D55D0D /* BLLogosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */; };
@@ -523,9 +524,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		37B2646C0043423E8093054B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFD23364DD9F00F3C5EC2972 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		BD7A710B8B0AF60AA3508434 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1719167C13704E4C5B2D64A3 /* Pods-brasilogos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasilogos.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos.release.xcconfig"; sourceTree = "<group>"; };
+		30F2EF3A2CC56244DB29C5B7 /* Pods-brasilogos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasilogos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos.debug.xcconfig"; sourceTree = "<group>"; };
+		A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brasilogos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10C63B5199EA825005328B2 /* db.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = db.json; path = brasilogos/db.json; sourceTree = "<group>"; };
 		F10C63B7199EB863005328B2 /* BLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainViewController.h; sourceTree = "<group>"; };
 		F10C63B8199EB863005328B2 /* BLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainViewController.m; sourceTree = "<group>"; };
@@ -1015,6 +1016,7 @@
 		F1269B8519C5F0B600A89099 /* BLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
 		F16171D319C7B49400FA9A07 /* BLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransaction.h; sourceTree = "<group>"; };
 		F16171D419C7B49400FA9A07 /* BLTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTransaction.m; sourceTree = "<group>"; };
+		F16968E91D2929DC0086EF89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F175864C1C666D5A00B54134 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "brasilogos/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F19505F21995CD9600A94FD1 /* BLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConstants.h; sourceTree = "<group>"; };
 		F19505F51995CDB800A94FD1 /* BLStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLStyling.h; sourceTree = "<group>"; };
@@ -1068,7 +1070,7 @@
 				F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */,
 				F112E88319A8C378009F70B4 /* StoreKit.framework in Frameworks */,
 				F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */,
-				D30482F8ADD24DFB9BAAAFC6 /* libPods.a in Frameworks */,
+				C6F24CEEF31483DF9E784780 /* libPods-brasilogos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1085,6 +1087,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98CC9D57650D42D98D4B5DE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30F2EF3A2CC56244DB29C5B7 /* Pods-brasilogos.debug.xcconfig */,
+				1719167C13704E4C5B2D64A3 /* Pods-brasilogos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F10C63C9199ECA0E005328B2 /* database */ = {
 			isa = PBXGroup;
 			children = (
@@ -1659,7 +1670,7 @@
 				F1F8B82E198E5D9300578D91 /* brasilogosTests */,
 				F1F8B802198E5D9300578D91 /* Frameworks */,
 				F1F8B801198E5D9300578D91 /* Products */,
-				F63DED3C862B39D60FD897EB /* Pods */,
+				98CC9D57650D42D98D4B5DE5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1682,7 +1693,7 @@
 				F1F8B805198E5D9300578D91 /* CoreGraphics.framework */,
 				F1F8B807198E5D9300578D91 /* UIKit.framework */,
 				F1F8B828198E5D9300578D91 /* XCTest.framework */,
-				37B2646C0043423E8093054B /* libPods.a */,
+				A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1690,6 +1701,7 @@
 		F1F8B809198E5D9300578D91 /* brasilogos */ = {
 			isa = PBXGroup;
 			children = (
+				F16968E91D2929DC0086EF89 /* GoogleService-Info.plist */,
 				F175864B1C665A0D00B54134 /* assets */,
 				F1A0B6D61C675D1000D55D0D /* Helpers */,
 				F10C63C9199ECA0E005328B2 /* database */,
@@ -1734,15 +1746,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F63DED3C862B39D60FD897EB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AFD23364DD9F00F3C5EC2972 /* Pods.debug.xcconfig */,
-				BD7A710B8B0AF60AA3508434 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1750,14 +1753,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F8B838198E5D9300578D91 /* Build configuration list for PBXNativeTarget "brasilogos" */;
 			buildPhases = (
-				FD9B1AF2389A46DCAA41E040 /* Check Pods Manifest.lock */,
+				567CAA2EA351EFE02E69D0F8 /* [CP] Check Pods Manifest.lock */,
 				F1F8B7FC198E5D9300578D91 /* Sources */,
 				F1F8B7FD198E5D9300578D91 /* Frameworks */,
 				F1F8B7FE198E5D9300578D91 /* Resources */,
-				F601F87A0D3741A4B3840CF6 /* Copy Pods Resources */,
-				4F070209738F1C6DA0661545 /* Embed Pods Frameworks */,
 				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
 				44CE497D1C8CF3B200AF38D7 /* ShellScript */,
+				E6678F98DA1EB906DBCE6F52 /* [CP] Embed Pods Frameworks */,
+				702903DFEF805590649D8A03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1901,6 +1904,7 @@
 
 
 
+				F16968EA1D2929DC0086EF89 /* GoogleService-Info.plist in Resources */,
 
 
 				F1F8B81A198E5D9300578D91 /* Main_iPad.storyboard in Resources */,
@@ -2330,49 +2334,49 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" ec5efe51f609825d79487cb10744bb30708a36ab 94daeec529cf5779974bcf12e14a8f937f515cee67f9b5da1b7a92b3781386e5";
 		};
-		4F070209738F1C6DA0661545 /* Embed Pods Frameworks */ = {
+		567CAA2EA351EFE02E69D0F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F601F87A0D3741A4B3840CF6 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD9B1AF2389A46DCAA41E040 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		702903DFEF805590649D8A03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6678F98DA1EB906DBCE6F52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */ = {
@@ -2552,7 +2556,7 @@
 		};
 		F1F8B839198E5D9300578D91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFD23364DD9F00F3C5EC2972 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 30F2EF3A2CC56244DB29C5B7 /* Pods-brasilogos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2572,7 +2576,7 @@
 		};
 		F1F8B83A198E5D9300578D91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD7A710B8B0AF60AA3508434 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 1719167C13704E4C5B2D64A3 /* Pods-brasilogos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
