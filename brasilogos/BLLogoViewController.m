@@ -45,6 +45,9 @@ typedef enum
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     
     self.gameManager = [[BLGameManager alloc] initWithLogo:self.logo delegate:self];
     
@@ -113,18 +116,6 @@ typedef enum
     //   Hide keyboard, but show blinking cursor
     UIView *dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
     self.answerTextField.inputView = dummyView;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:YES];
-    [self loadBanner];
-    
-    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
-    //  NSLog(@"constraint: %f", self.heightPanelConstraint.constant);
-    //  self.heightPanelConstraint.constant = [BLController isIphone5] ? 210.0f : 160.0f;
-    //  [self.view setNeedsUpdateConstraints];
-    
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
@@ -457,25 +448,6 @@ typedef enum
     }
 }
 
-#pragma mark - BLBannerManagerDelegate
-
-- (void)loadBanner {
-    
-    [[BLBannerManager shared] resetAdView:self];
-}
-
-- (void)bannerWillAppear:(UIView *)banner {
-    
-    if (![self.adBanner.subviews containsObject:banner]) {
-        [self.adBanner addSubview:banner];
-    }
-}
-
-- (void)bannerWillDisappear:(UIView *)banner {
-    
-    [banner removeFromSuperview];
-}
-
 - (IBAction)viewDidTapped:(id)sender {
     
     [self disableKeyboard];
@@ -500,7 +472,7 @@ typedef enum
 - (void)refreshUI {
     
     [self updateCoins];
-    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
+//    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 @end

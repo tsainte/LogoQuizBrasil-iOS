@@ -28,7 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *sloganButton;
 @property (weak, nonatomic) IBOutlet UIButton *bombButton;
 @property (weak, nonatomic) IBOutlet UIButton *magicButton;
-@property (weak, nonatomic) IBOutlet UIView *adBanner;
 
 - (IBAction)clueOneTapped:(id)sender;
 - (IBAction)clueTwoTapped:(id)sender;

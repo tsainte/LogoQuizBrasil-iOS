@@ -7,7 +7,7 @@
 //
 
 #import "BLLevelViewController.h"
-#import "BLLogoViewController.h"
+#import "BLLogosListViewController.h"
 #import "BLShoppingOverlayViewController.h"
 
 @interface BLLevelViewController ()
@@ -88,9 +88,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-//    NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
-//    BLLogoViewController *logoVC = segue.destinationViewController;
-//    logoVC.logo = self.logos[indexPath.row];
+    NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
+    BLLogosListViewController *logosVC = segue.destinationViewController;
+    logosVC.logos = self.logos;
+    logosVC.current = indexPath.row;
 }
 
 - (IBAction)shopTapped:(id)sender {
