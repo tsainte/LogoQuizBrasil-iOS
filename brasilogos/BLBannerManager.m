@@ -66,6 +66,9 @@
   self.adMobBannerView.adUnitID = kAdUnitID;
   
   GADRequest *request = [GADRequest request];
+    #ifdef DEBUG
+    request.testDevices = @[ kGADSimulatorID ];
+    #endif
   [self.adMobBannerView loadRequest:request];
   [((UIViewController*)_delegate).view addSubview:self.adMobBannerView];
   self.isLoaded = YES;

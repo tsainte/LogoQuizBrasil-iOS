@@ -7,7 +7,6 @@
 //
 
 #import "BLAppDelegate.h"
-#import <iRate/iRate.h>
 #import "BLInAppManager.h"
 #import "BLJSONDatabase.h"
 #import <Fabric/Fabric.h>
@@ -31,7 +30,7 @@
         [BLBannerManager shared];
     });
     
-    [self configureIRate];
+//    [self configureIRate];
     [self preloadKeyboard];
     
     [Fabric with:@[[Crashlytics class]]];
@@ -40,12 +39,12 @@
     return YES;
 }
 
-- (void)configureIRate {
-    
-    [iRate sharedInstance].appStoreID = 672062811;
-    [iRate sharedInstance].daysUntilPrompt = 7;
-    [iRate sharedInstance].usesUntilPrompt = 6;
-}
+//- (void)configureIRate {
+//    
+//    [iRate sharedInstance].appStoreID = 672062811;
+//    [iRate sharedInstance].daysUntilPrompt = 7;
+//    [iRate sharedInstance].usesUntilPrompt = 6;
+//}
 
 - (void)loadServices {
     

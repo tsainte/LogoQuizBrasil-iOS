@@ -52,7 +52,11 @@ platform :ios do
     # frameit
   end
 
-  # You can define as many lanes as you want
+  lane :provisioning do
+    match(type: "development")
+    match(type: "adhoc")
+    match(type: "appstore")
+  end
 
   after_all do |lane|
     # This block is called, only if the executed lane was successful

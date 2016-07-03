@@ -8,12 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol BLLogosListViewControllerDelegate <NSObject>
+
+- (void)refreshUI;
+
+@end
+
 @interface BLLogosListViewController : UIViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource, BLBannerManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *container;
 @property (weak, nonatomic) IBOutlet UIView *adBanner;
+@property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
 
 @property NSArray *logos;
 @property NSInteger current;
+
+- (IBAction)shopTapped:(id)sender;
 
 @end

@@ -21,7 +21,7 @@
     
     [super viewDidLoad];
     [self loadBanner];
-    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
+    [self refreshUI];
     
     [self configurePageView];
 }
@@ -69,6 +69,7 @@
 - (BLLogoViewController*)logoVCByIndex:(NSInteger)index {
     
     BLLogoViewController *logoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BLLogoViewController"];
+    logoVC.parentDelegate = self;
     logoVC.logo = self.logos[index];
     
     return logoVC;
@@ -93,5 +94,22 @@
     [banner removeFromSuperview];
 }
 
+- (IBAction)shopTapped:(id)sender {
+    
+    [BLController showShoppingOnViewController:self];
+}
+
+#pragma mark - refresh
+
+- (void)refreshUI {
+    
+    [self updateCoins];
+    self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
+}
+
+- (void)updateCoins {
+    
+    self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
+}
 
 @end
