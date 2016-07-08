@@ -62,11 +62,15 @@ NSMutableSet * _purchasedProductIdentifiers;
 
 - (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler {
     
-    _completionHandler = [completionHandler copy];
-    
-    _productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:_productIdentifiers];
-    _productsRequest.delegate = self;
-    [_productsRequest start];
+    if (self.products) {
+        completionHandler(YES, self.products);
+    } else {
+        _completionHandler = [completionHandler copy];
+        
+        _productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:_productIdentifiers];
+        _productsRequest.delegate = self;
+        [_productsRequest start];
+    }
     
 }
 
@@ -77,16 +81,16 @@ NSMutableSet * _purchasedProductIdentifiers;
     NSLog(@"Loaded list of products...");
     _productsRequest = nil;
     
-    NSArray *skProducts = response.products;
+    self.products = response.products;
     
-    for (SKProduct *skProduct in skProducts) {
+    for (SKProduct *skProduct in self.products) {
         NSLog(@"Found product: %@ %@ %0.2f",
               skProduct.productIdentifier,
               skProduct.localizedTitle,
               skProduct.price.floatValue);
     }
     
-    _completionHandler(YES, skProducts);
+    _completionHandler(YES, self.products);
     _completionHandler = nil;
     
 }

@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     [BLStyling roundView:self.evaluateButton];
     [BLStyling roundView:self.sendEmailButton];
 }
