@@ -40,6 +40,7 @@
     self.productKeys = @[kInApp100Coins, kInApp250Coins, kInApp750Coins, kInApp2000Coins, kInAppNoAds];
     [self roundViews];
     
+    
     [self loadProductsFromAppStore];
 }
 
@@ -54,15 +55,12 @@
 }
 
 - (void)loadProductsFromAppStore {
-    
-    self.products = nil;
-    //start refreshing
+        
     [[BLInAppManager shared] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
         if (success) {
             [self mountProductDictionary:products];
             [self reloadButtons];
         }
-        //    [self.refreshControl endRefreshing];
     }];
 }
 

@@ -29,6 +29,7 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray *products
 @property id<BLInAppManagerDelegate> delegate;
 
 @property NSArray *productIdentifiers;
+@property NSArray *products;
 
 + (BLInAppManager*)shared;
 - (id)initWithProductIdentifiers:(NSArray *)productIdentifiers;
