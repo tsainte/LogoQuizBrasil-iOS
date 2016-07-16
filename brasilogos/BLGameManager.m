@@ -9,6 +9,7 @@
 #import "BLGameManager.h"
 #import "GameCenterManager.h"
 #import "BLAppDelegate.h"
+#import "BLFirebaseAnalytics.h"
 
 @implementation BLGameManager
 
@@ -36,7 +37,7 @@
     if ([answers containsObject:playerAnswer]) {
         [self isCorrectAnswer];
     } else {
-        [self isWrongAnswer];
+        [self isWrongAnswer:playerAnswer];
     }
 }
 
@@ -112,8 +113,9 @@
     [gcm sendAll:[BLDatabaseManager score].correctLogos qtdLogos:[BLDatabaseManager score].correctLogos qtdCompletedLevel:[BLDatabaseManager completedLevel]];
 }
 
-- (void)isWrongAnswer {
+- (void)isWrongAnswer:(NSString*)answer {
     
+    [BLFirebaseAnalytics logWrongAnswer:answer forLogo:self.logo];
     [self.delegate isWrongAnswer];
 }
 
@@ -227,6 +229,8 @@
     BLWallet *wallet = [BLDatabaseManager wallet];
     [wallet addTransaction:transaction];
     [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
+    
+    [BLFirebaseAnalytics logItemConsumed:transaction.type forLogo:self.logo];
 }
 
 - (BLTransaction*)makeTransactionHelp:(BLGameHelp)help {

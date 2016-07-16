@@ -4,20 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>brasilogos.xcscheme</key>
+		<key>Pods-brasilogos.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Slash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F1F8B7FF198E5D9300578D91</key>
+		<key>08685A8E38A26D8500C21C1B28F660AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1F8B826198E5D9300578D91</key>
+		<key>C9141B31224C65AB6002491A354811F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
