@@ -17,9 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-#ifndef DEBUG
+//#ifndef DEBUG
     [self loadServices];
-#endif
+//#endif
     [BLStyling appearances];
     [BLInAppManager shared]; // this is to, as soon as possible, activate goods to receive from app store
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

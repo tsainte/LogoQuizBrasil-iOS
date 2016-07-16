@@ -134,8 +134,9 @@
                                 <rect key="frame" x="4" y="0.0" width="760" height="934"/>
                                 <color key="backgroundColor" red="0.6705882353" green="0.76470588240000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="77a-Ic-scp">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="cell" id="77a-Ic-scp">
                                         <rect key="frame" x="0.0" y="86" width="760" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="77a-Ic-scp" id="kUO-Ej-xFq">
@@ -192,6 +193,7 @@
                                                 <constraint firstItem="xy0-gN-czn" firstAttribute="top" secondItem="kUO-Ej-xFq" secondAttribute="topMargin" constant="56" id="r9j-KO-mgf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <segue destination="Hug-tu-s9W" kind="push" id="BxN-xj-eh4"/>
                                         </connections>

@@ -376,6 +376,7 @@
                                 <rect key="frame" x="0.0" y="410" width="320" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Hhl-QT-WfX"/>
                                     <constraint firstAttribute="height" constant="50" id="XtM-dE-9x1"/>
                                 </constraints>
                             </view>
@@ -384,8 +385,7 @@
                         <constraints>
                             <constraint firstItem="L2o-m2-wVW" firstAttribute="top" secondItem="YRZ-3g-j58" secondAttribute="bottom" id="0Sg-x2-8ZA"/>
                             <constraint firstItem="D1Y-iA-Moz" firstAttribute="top" secondItem="L2o-m2-wVW" secondAttribute="bottom" id="18s-W5-8n2"/>
-                            <constraint firstAttribute="trailing" secondItem="L2o-m2-wVW" secondAttribute="trailing" id="9mv-X4-Lcv"/>
-                            <constraint firstItem="L2o-m2-wVW" firstAttribute="leading" secondItem="GtC-SE-QyP" secondAttribute="leading" id="Al2-qd-y0G"/>
+                            <constraint firstItem="L2o-m2-wVW" firstAttribute="centerX" secondItem="GtC-SE-QyP" secondAttribute="centerX" id="FMO-5N-d5J"/>
                             <constraint firstItem="YRZ-3g-j58" firstAttribute="top" secondItem="ZFC-Om-PYs" secondAttribute="bottom" id="G6X-fG-yls"/>
                             <constraint firstAttribute="trailing" secondItem="YRZ-3g-j58" secondAttribute="trailing" id="RBr-W7-SoC"/>
                             <constraint firstItem="YRZ-3g-j58" firstAttribute="leading" secondItem="GtC-SE-QyP" secondAttribute="leading" id="hrq-QZ-xwS"/>
@@ -1052,6 +1052,9 @@
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9W8-Dr-FrI">
                                 <rect key="frame" x="10" y="65" width="300" height="388"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LTo-hF-BhF"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="10" id="Y38-Zs-JZW">
                                     <size key="itemSize" width="60" height="45"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -1257,11 +1260,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.6705882353" green="0.76470588240000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="9W8-Dr-FrI" secondAttribute="trailing" constant="10" id="Dad-As-fWz"/>
                             <constraint firstItem="fNP-xN-Q4q" firstAttribute="top" secondItem="1Yx-aF-fVL" secondAttribute="bottom" id="M8F-Ab-sxf"/>
+                            <constraint firstItem="9W8-Dr-FrI" firstAttribute="centerX" secondItem="fW8-r1-Wd2" secondAttribute="centerX" id="Q6A-Bs-fhl"/>
                             <constraint firstAttribute="centerX" secondItem="1Yx-aF-fVL" secondAttribute="centerX" id="SOV-Z0-BPd"/>
                             <constraint firstItem="1Yx-aF-fVL" firstAttribute="top" secondItem="9W8-Dr-FrI" secondAttribute="bottom" constant="1" id="YK5-ts-DF8"/>
-                            <constraint firstItem="9W8-Dr-FrI" firstAttribute="leading" secondItem="fW8-r1-Wd2" secondAttribute="leading" constant="10" id="c9q-uv-GKF"/>
                             <constraint firstItem="9W8-Dr-FrI" firstAttribute="top" secondItem="VgL-tU-F7W" secondAttribute="bottom" constant="65" id="xP6-NV-ncM"/>
                         </constraints>
                     </view>
