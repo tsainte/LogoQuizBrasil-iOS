@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44F774501D3AA4A700734F90 /* BLFirebaseAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7744F1D3AA4A700734F90 /* BLFirebaseAnalytics.m */; };
 		C6F24CEEF31483DF9E784780 /* libPods-brasilogos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */; };
 		F10C63B6199EA825005328B2 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = F10C63B5199EA825005328B2 /* db.json */; };
 		F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63B8199EB863005328B2 /* BLMainViewController.m */; };
@@ -526,6 +527,8 @@
 /* Begin PBXFileReference section */
 		1719167C13704E4C5B2D64A3 /* Pods-brasilogos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasilogos.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos.release.xcconfig"; sourceTree = "<group>"; };
 		30F2EF3A2CC56244DB29C5B7 /* Pods-brasilogos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasilogos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos.debug.xcconfig"; sourceTree = "<group>"; };
+		44F7744E1D3AA4A700734F90 /* BLFirebaseAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLFirebaseAnalytics.h; sourceTree = "<group>"; };
+		44F7744F1D3AA4A700734F90 /* BLFirebaseAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFirebaseAnalytics.m; sourceTree = "<group>"; };
 		A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brasilogos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10C63B5199EA825005328B2 /* db.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = db.json; path = brasilogos/db.json; sourceTree = "<group>"; };
 		F10C63B7199EB863005328B2 /* BLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainViewController.h; sourceTree = "<group>"; };
@@ -1646,6 +1649,8 @@
 				F19505F61995CDB800A94FD1 /* BLStyling.m */,
 				F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */,
 				F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */,
+				44F7744E1D3AA4A700734F90 /* BLFirebaseAnalytics.h */,
+				44F7744F1D3AA4A700734F90 /* BLFirebaseAnalytics.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -2421,6 +2426,7 @@
 				F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */,
 				F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */,
 				F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */,
+				44F774501D3AA4A700734F90 /* BLFirebaseAnalytics.m in Sources */,
 				F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */,
 				F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */,
 				F10C63C2199EB8A0005328B2 /* BLLogoViewController.m in Sources */,

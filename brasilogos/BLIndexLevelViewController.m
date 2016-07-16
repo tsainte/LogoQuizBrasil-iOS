@@ -78,6 +78,7 @@
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    cell.layoutMargins = UIEdgeInsetsZero;
     
     UILabel *level = (UILabel* )[cell viewWithTag:1];
     UIProgressView *progress = (UIProgressView* )[cell viewWithTag:2];
@@ -105,6 +106,8 @@
         score.hidden = YES;
         locker.hidden = NO;
     }
+    
+
     
     return cell;
 }

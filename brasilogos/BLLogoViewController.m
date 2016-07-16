@@ -120,7 +120,8 @@ typedef enum
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     
     if ([BLController isIpad] && UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
-        [self.scrollView setContentOffset:[self invertPoint:self.ipadLandscapeScroll] animated:YES];
+//        [self.scrollView setContentOffset:[self invertPoint:self.ipadLandscapeScroll] animated:YES];
+        [self.scrollView setContentSize:CGSizeMake(0, 0)];
     } else {
         if (![BLController isIphone5]) {
             [self.scrollView setContentOffset:CGPointMake(0, -64) animated:YES];
@@ -169,7 +170,12 @@ typedef enum
 - (void)tryAnswer {
     
     [self.answerTextField resignFirstResponder];
-    [self.gameManager tryAnswer:self.answerTextField.text];
+    
+    NSString *answer = self.answerTextField.text;
+    
+    if (![answer isEqualToString:@""]) {
+        [self.gameManager tryAnswer:answer];
+    }
 }
 
 - (void)updateElements {
@@ -192,7 +198,6 @@ typedef enum
     } else {
         [self authorizeClue:BLGameHelpClueOne];
     }
-    
 }
 
 - (IBAction)clueTwoTapped:(id)sender {

@@ -34,9 +34,6 @@
     [self preloadKeyboard];
     [self preloadPrices];
     
-    [Fabric with:@[[Crashlytics class]]];
-    [FIRApp configure];
-    
     return YES;
 }
 
@@ -50,6 +47,8 @@
 - (void)loadServices {
     
     //  [Flurry startSession:@"N28FGC2TJ86Q86986897"];
+    [Fabric with:@[[Crashlytics class]]];
+    [FIRApp configure];
 }
 
 - (void)preloadKeyboard {
