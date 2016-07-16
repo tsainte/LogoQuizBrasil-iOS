@@ -111,8 +111,8 @@ typedef enum
         
     } else {
         
-        if (![BLController isIphone5]) {
-            [self.scrollView setContentOffset:CGPointMake(0, -40) animated:YES];
+        if ([[UIScreen mainScreen] bounds].size.height < 500) {
+            [self.scrollView setContentOffset:CGPointMake(0, 24) animated:YES];
         }
     }
 }
@@ -123,8 +123,8 @@ typedef enum
 //        [self.scrollView setContentOffset:[self invertPoint:self.ipadLandscapeScroll] animated:YES];
         [self.scrollView setContentSize:CGSizeMake(0, 0)];
     } else {
-        if (![BLController isIphone5]) {
-            [self.scrollView setContentOffset:CGPointMake(0, -64) animated:YES];
+        if ([[UIScreen mainScreen] bounds].size.height < 500) {
+            [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
         }
     }
     [self tryAnswer];

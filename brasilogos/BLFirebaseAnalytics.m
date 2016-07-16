@@ -20,12 +20,9 @@
     [self logEventWithName:@"user_consumed_item" parameters:@{@"logo_id" : logo[@"id"], @"logo_name" : logo[@"nome"], @"item" : item}];
 }
 
-+ (void)logEventWithName:(NSString*)name parameters:(nullable NSDictionary<NSString *,NSObject *> *)parameters {
++ (void)logEventWithName:(NSString*)name parameters:(nullable NSDictionary<NSString *, NSObject *> *)parameters {
     
-#ifndef DEBUG
-    NSLog(@"asdf");
     [FIRAnalytics logEventWithName:name parameters:parameters];
-#endif
 }
 
 @end
