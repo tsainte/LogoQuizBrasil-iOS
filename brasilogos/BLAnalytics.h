@@ -18,8 +18,8 @@
 
 + (nonnull id)sharedInstance;
 
+- (void)logCorrectAnswer:(nonnull NSString*)correctAnswer forLogo:(nonnull NSDictionary*)logo;
 - (void)logWrongAnswer:(nonnull NSString*)wrongAnswer forLogo:(nonnull NSDictionary*)logo;
-
 - (void)logItemConsumed:(nonnull NSString*)item forLogo:(nonnull NSDictionary*)logo;
 
 @end

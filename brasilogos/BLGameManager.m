@@ -35,7 +35,7 @@
     playerAnswer = [self getDiacriticString:playerAnswer];
     
     if ([answers containsObject:playerAnswer]) {
-        [self isCorrectAnswer];
+        [self isCorrectAnswer:playerAnswer];
     } else {
         [self isWrongAnswer:playerAnswer];
     }
@@ -71,11 +71,12 @@
     return [[string lowercaseString] stringByFoldingWithOptions:NSDiacriticInsensitiveSearch locale:[NSLocale currentLocale]];
 }
 
-- (void)isCorrectAnswer {
+- (void)isCorrectAnswer:(NSString*)answer {
     
     [self saveCorrectOnDatabase];
     [self.delegate isCorrectAnswer];
     [self sendGameCenter];
+    [[BLAnalytics sharedInstance] logCorrectAnswer:answer forLogo:self.logo];
 }
 
 - (void)saveCorrectOnDatabase {
