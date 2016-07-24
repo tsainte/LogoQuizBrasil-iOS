@@ -11,13 +11,15 @@
 
 @interface BLInAppManager()  <SKProductsRequestDelegate>
 
+@property (nonatomic, strong) RequestProductsCompletionHandler completionHandler;
+
 @end
 
 @implementation BLInAppManager
 
 SKProductsRequest * _productsRequest;
 
-RequestProductsCompletionHandler _completionHandler;
+
 
 NSMutableSet * _purchasedProductIdentifiers;
 
@@ -65,7 +67,7 @@ NSMutableSet * _purchasedProductIdentifiers;
     if (self.products) {
         completionHandler(YES, self.products);
     } else {
-        _completionHandler = [completionHandler copy];
+        self.completionHandler = [completionHandler copy];
         
         _productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:_productIdentifiers];
         _productsRequest.delegate = self;
@@ -90,8 +92,11 @@ NSMutableSet * _purchasedProductIdentifiers;
               skProduct.price.floatValue);
     }
     
-    _completionHandler(YES, self.products);
-    _completionHandler = nil;
+    
+    if (self.completionHandler) {
+        self.completionHandler(YES, self.products);
+        self.completionHandler = nil;
+    }
     
 }
 
@@ -100,9 +105,10 @@ NSMutableSet * _purchasedProductIdentifiers;
     NSLog(@"Failed to load list of products.");
     _productsRequest = nil;
     
-    _completionHandler(NO, nil);
-    _completionHandler = nil;
-    
+    if (self.completionHandler) {
+        self.completionHandler(NO, nil);
+        self.completionHandler = nil;
+    }
 }
 
 - (NSString *)priceAsString:(SKProduct*)product {
