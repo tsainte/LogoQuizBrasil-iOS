@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Flurry-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-brasilogos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08685A8E38A26D8500C21C1B28F660AF</key>
+		<key>8EC923D3E3AB28B8E1B4C9D3B875B4F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9141B31224C65AB6002491A354811F5</key>
+		<key>B698F87BD5424D583C728318BFC6CA63</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D079C0B8D193CBDF60F39822F384E43F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

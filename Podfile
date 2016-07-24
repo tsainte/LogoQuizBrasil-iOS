@@ -8,5 +8,6 @@ target 'brasilogos' do
     pod 'Firebase'
     pod 'Firebase/Core'
     pod 'Firebase/AdMob'
+    pod 'Flurry-iOS-SDK/FlurrySDK'
     pod 'Slash'
 end

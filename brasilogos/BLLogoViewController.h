@@ -28,7 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *bombButton;
 @property (weak, nonatomic) IBOutlet UIButton *magicButton;
 
-@property (strong, nonatomic) id<BLLogosListViewControllerDelegate> parentDelegate;
+@property (strong, nonatomic) UIViewController<BLLogosListViewControllerDelegate> *parentDelegate;
 
 - (IBAction)clueOneTapped:(id)sender;
 - (IBAction)clueTwoTapped:(id)sender;

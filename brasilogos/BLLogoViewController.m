@@ -247,6 +247,8 @@ typedef enum
     if (success) {
         [self updateElements];
         [self showClue:type];
+    } else {
+        [BLController showShoppingOnViewController:self.parentDelegate];
     }
 }
 
@@ -296,6 +298,8 @@ typedef enum
     if (authorized) {
         [self updateElements];
         [self configureTextFieldForState:BLTextFieldCorrect];
+    } else {
+        [BLController showShoppingOnViewController:self.parentDelegate];
     }
 }
 

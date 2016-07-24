@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '08685A8E38A26D8500C21C1B28F660AF'
+               BlueprintIdentifier = 'B698F87BD5424D583C728318BFC6CA63'
                BlueprintName = 'Slash'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSlash.a'>

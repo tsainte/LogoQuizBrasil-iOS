@@ -9,6 +9,7 @@
 #import "BLAppDelegate.h"
 #import "BLInAppManager.h"
 #import "BLJSONDatabase.h"
+#import "Flurry.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <Firebase/Firebase.h>
@@ -46,7 +47,7 @@
 
 - (void)loadServices {
     
-    //  [Flurry startSession:@"YOUR_FLURRY_ID"];
+    [Flurry startSession:@"YOUR_FLURRY_ID"];
     [Fabric with:@[[Crashlytics class]]];
     [FIRApp configure];
 }

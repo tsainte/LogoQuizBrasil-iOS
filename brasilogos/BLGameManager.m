@@ -115,7 +115,7 @@
 
 - (void)isWrongAnswer:(NSString*)answer {
     
-    [BLFirebaseAnalytics logWrongAnswer:answer forLogo:self.logo];
+    [[BLAnalytics sharedInstance] logWrongAnswer:answer forLogo:self.logo];
     [self.delegate isWrongAnswer];
 }
 
@@ -230,7 +230,7 @@
     [wallet addTransaction:transaction];
     [BLDatabaseManager saveData:wallet forEntity:kEntityWallet];
     
-    [BLFirebaseAnalytics logItemConsumed:transaction.type forLogo:self.logo];
+    [[BLAnalytics sharedInstance] logItemConsumed:transaction.type forLogo:self.logo];
 }
 
 - (BLTransaction*)makeTransactionHelp:(BLGameHelp)help {

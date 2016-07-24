@@ -8,11 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <Firebase/Firebase.h>
+#import "BLAnalytics.h"
 
-@interface BLFirebaseAnalytics : NSObject
-
-+ (void)logWrongAnswer:(NSString*)wrongAnswer forLogo:(NSDictionary*)logo;
-
-+ (void)logItemConsumed:(NSString*)item forLogo:(NSDictionary*)logo;
+@interface BLFirebaseAnalytics : NSObject <BLAnalyticsProtocol>
 
 @end
