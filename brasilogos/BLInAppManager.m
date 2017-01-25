@@ -18,9 +18,6 @@
 @implementation BLInAppManager
 
 SKProductsRequest * _productsRequest;
-
-
-
 NSMutableSet * _purchasedProductIdentifiers;
 
 + (BLInAppManager *)shared {
