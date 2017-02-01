@@ -9,7 +9,7 @@
 #import "BLBannerManager.h"
 #import <GoogleMobileAds/GADBannerView.h>
 
-#define kAdUnitID @"ca-app-pub-7439855607564376/6123435249"
+#define kAdUnitID @"YOUR_AD_UNIT_BANNER_ID"
 
 @interface BLBannerManager ()
 
