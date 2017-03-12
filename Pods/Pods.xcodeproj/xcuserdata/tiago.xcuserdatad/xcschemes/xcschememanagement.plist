@@ -4,15 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Flurry-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-brasilogos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Slash.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -22,7 +36,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6D18AF95EF5210AAA41B1D82477EAB04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B718107D2ADDAE48AC542E4120DBE01E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C9141B31224C65AB6002491A354811F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D86B637AE8768363A1D971F9C8C487E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E1BBB76ADBF2EF4EF2CE5DF6BBC77296</key>
 		<dict>
 			<key>primary</key>
 			<true/>
