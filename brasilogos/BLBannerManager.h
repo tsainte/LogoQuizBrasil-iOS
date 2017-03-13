@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GoogleMobileAds/GADBannerView.h>
+@import GoogleMobileAds;
 
 @protocol BLBannerManagerDelegate <NSObject>
 
@@ -20,11 +20,13 @@
 
 @end
 
-@interface BLBannerManager : NSObject <GADBannerViewDelegate>
+@interface BLBannerManager : NSObject <GADBannerViewDelegate, GADInterstitialDelegate>
 
 @property id<BLBannerManagerDelegate> delegate;
 
 + (BLBannerManager *)shared;
+
+- (void)showInterstitialOnViewController:(UIViewController*)viewController;
 
 - (void)resetAdView:(id<BLBannerManagerDelegate>)viewController;
 
