@@ -145,30 +145,33 @@
 }
 
 
-- (void) authenticateLocalUser
-{
-  GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
-  
-  localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error){
-    if (viewController != nil) {
-      [self.parent presentViewController:viewController animated:YES completion:nil];
-    }
-    else{
-      if ([GKLocalPlayer localPlayer].authenticated) {
-        
-        // Get the default leaderboard identifier.
-        [[GKLocalPlayer localPlayer] loadDefaultLeaderboardIdentifierWithCompletionHandler:^(NSString *leaderboardIdentifier, NSError *error) {
-          
-          if (error != nil) {
-            NSLog(@"%@", [error localizedDescription]);
-          }
-//          else{
-//            _leaderboardIdentifier = leaderboardIdentifier;
-//          }
-        }];
-      }
-    }
-  };
+- (void) authenticateLocalUserWithCompletionHandler:(void(^)(bool success))completion {
+
+    GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
+    localPlayer.authenticateHandler = ^(UIViewController *viewController, NSError *error){
+        if (viewController != nil) {
+            [self.parent presentViewController:viewController animated:YES completion:nil];
+        }
+        else{
+            if ([GKLocalPlayer localPlayer].authenticated) {
+                
+                // Get the default leaderboard identifier.
+                [[GKLocalPlayer localPlayer] loadDefaultLeaderboardIdentifierWithCompletionHandler:^(NSString *leaderboardIdentifier, NSError *error) {
+                    
+                    if (error != nil) {
+                        NSLog(@"%@", [error localizedDescription]);
+                    }
+                    //          else{
+                    //            _leaderboardIdentifier = leaderboardIdentifier;
+                    //          }
+                    
+                    completion(YES);
+                }];
+            } else {
+                completion(NO);
+            }
+        }
+    };
 }
 
 - (void) reloadHighScoresForCategory: (NSString*) category

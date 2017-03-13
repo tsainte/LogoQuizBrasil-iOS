@@ -36,16 +36,13 @@
 
 - (void)authenticateGameCenter {
     
-    GameCenterManager *gcm = [[GameCenterManager alloc] init];
-    gcm.parent = self;
-    [gcm authenticateLocalUser];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES];   //it hides
-    [self authenticateGameCenter];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -63,7 +60,16 @@
 
 - (IBAction)showGameCenter:(id)sender {
     
-    [self showLeaderboardAndAchievements:YES];
+    GameCenterManager *gcm = [[GameCenterManager alloc] init];
+    gcm.parent = self;
+    [gcm authenticateLocalUserWithCompletionHandler:^(bool success) {
+        if (success) {
+            [self showLeaderboardAndAchievements:YES];
+        } else {
+            //alert
+            NSLog(@"oops");
+        }
+    }];
 }
 
 - (void)showLeaderboardAndAchievements:(BOOL)shouldShowLeaderboard {
