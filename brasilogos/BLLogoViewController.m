@@ -58,6 +58,13 @@ typedef enum
     [self configureConstraints];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    if (![[BLDatabaseManager user] boughtRemoveAds]) {
+        [[BLBannerManager shared] showInterstitialOnViewController:self];
+    }
+}
+
 - (void)configureConstraints {
     
     if ([BLController isIpad]) {

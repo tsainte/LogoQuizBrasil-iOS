@@ -7,14 +7,19 @@
 //
 
 #import "BLBannerManager.h"
-#import <GoogleMobileAds/GADBannerView.h>
+
 
 #define kAdUnitID @"YOUR_AD_UNIT_BANNER_ID"
 
 @interface BLBannerManager ()
 
-@property GADBannerView *adMobBannerView;
-@property BOOL isLoaded;
+@property (nonatomic, strong) GADBannerView *adMobBannerView;
+@property (nonatomic, strong) GADInterstitial *interstitial;
+
+@property NSInteger lastInterstitialTimestamp;
+@property NSInteger interstitialCount;
+
+@property BOOL bannerIsLoaded;
 
 @end
 
@@ -22,73 +27,122 @@
 
 + (BLBannerManager *)shared {
     
-  static dispatch_once_t pred;
-  static BLBannerManager * shared;
-  // Will only be run once, the first time this is called
-  dispatch_once(&pred, ^{
-    shared = [[BLBannerManager alloc] init];
-  });
+    static dispatch_once_t pred;
+    static BLBannerManager * shared;
+    // Will only be run once, the first time this is called
+    dispatch_once(&pred, ^{
+        shared = [[BLBannerManager alloc] init];
+    });
     
-  return shared;
+    return shared;
 }
 
 - (id)init {
-  
-  if (self = [super init]) {
-    if (![BLController isIpad]) {
-      self.adMobBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-    } else {
-      self.adMobBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeLeaderboard];
-    }
-    self.isLoaded = NO;
-  }
     
-  return self;
+    if (self = [super init]) {
+        
+        self.lastInterstitialTimestamp = [[NSDate date] timeIntervalSince1970];
+        self.interstitialCount = 0;
+        
+        [self initInterstitial];
+        [self initBannerView];
+    }
+    
+    return self;
+}
+
+#pragma mark - Interstitial
+
+- (void)initInterstitial {
+    
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:kAdUnitID];
+    self.interstitial.delegate = self;
+    [self.interstitial loadRequest:[self newRequest]];
+}
+
+- (void)showInterstitialOnViewController:(UIViewController*)viewController {
+    
+    if (self.interstitial.isReady && [self shouldShowInterstitital]) {
+        [self.interstitial presentFromRootViewController:viewController];
+    }
+}
+
+- (void)interstitialDidDismissScreen:(GADInterstitial *)ad {
+    
+    self.interstitialCount += 1;
+    self.lastInterstitialTimestamp = [[NSDate date] timeIntervalSince1970];
+    
+    [self initInterstitial];
+}
+
+- (BOOL)shouldShowInterstitital {
+    
+    NSInteger now = [[NSDate date] timeIntervalSince1970];
+    NSInteger intervalSinceLastIntestitial = now - self.lastInterstitialTimestamp;
+    
+    return self.interstitialCount < 5 && intervalSinceLastIntestitial >= 120;
+}
+
+#pragma mark - Banner
+
+- (void)initBannerView {
+    
+    if (![BLController isIpad]) {
+        self.adMobBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    } else {
+        self.adMobBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeLeaderboard];
+    }
+    self.bannerIsLoaded = NO;
 }
 
 - (void)resetAdView:(id<BLBannerManagerDelegate>)viewController {
-  
-  self.delegate = viewController;
     
-  if (self.isLoaded) {
+    self.delegate = viewController;
     
-    [self.delegate bannerWillAppear:self.adMobBannerView];
-  } else {
-    
-    [self loadAdMob];
-  }
+    if (self.bannerIsLoaded) {
+        
+        [self.delegate bannerWillAppear:self.adMobBannerView];
+    } else {
+        
+        [self loadBanner];
+    }
 }
 
-- (void)loadAdMob {
-  
-  self.adMobBannerView.delegate = self;
-  self.adMobBannerView.rootViewController = ((UIViewController*)_delegate);
-  self.adMobBannerView.adUnitID = kAdUnitID;
-  
-  GADRequest *request = [GADRequest request];
-//    #ifdef DEBUG
-//    request.testDevices = @[ kGADSimulatorID ];
-//    #endif
-  [self.adMobBannerView loadRequest:request];
-  [((UIViewController*)_delegate).view addSubview:self.adMobBannerView];
-  self.isLoaded = YES;
+- (void)loadBanner {
+    
+    self.adMobBannerView.delegate = self;
+    self.adMobBannerView.rootViewController = ((UIViewController*)_delegate);
+    self.adMobBannerView.adUnitID = kAdUnitID;
+    
+    [self.adMobBannerView loadRequest:[self newRequest]];
+    
+    [((UIViewController*)_delegate).view addSubview:self.adMobBannerView];
+    self.bannerIsLoaded = YES;
 }
 
-#pragma mark - AdMob Banner
+- (GADRequest*)newRequest {
+    
+    GADRequest *request = [GADRequest request];
+    request.testDevices = @[ kGADSimulatorID ];
+    
+    return request;
+}
+
+#pragma mark - AdMob Banner delegate
 
 - (void)adViewDidReceiveAd:(GADBannerView *)banner {
-
-  [self.delegate bannerWillAppear:banner];
+    
+    [self.delegate bannerWillAppear:banner];
 }
 
 - (void)adView:(GADBannerView *)banner didFailToReceiveAdWithError:(GADRequestError *)error {
-
-  [self.delegate bannerWillDisappear:banner];
+    
+    [self.delegate bannerWillDisappear:banner];
 }
 
 - (void)adViewDidDismissScreen:(GADBannerView *)banner {
-  
-  [self.delegate bannerWillDisappear:banner];
+    
+    [self.delegate bannerWillDisappear:banner];
 }
 
 @end
