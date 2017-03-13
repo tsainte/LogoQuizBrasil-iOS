@@ -9,7 +9,8 @@
 #import "BLBannerManager.h"
 
 
-#define kAdUnitID @"YOUR_AD_UNIT_BANNER_ID"
+#define kAdUnitBannerID @"YOUR_AD_UNIT_BANNER_ID"
+#define kAdUnitInterstitialID @"YOUR_AD_UNIT_INTERSTITIAL_ID"
 
 @interface BLBannerManager ()
 
@@ -55,7 +56,7 @@
 
 - (void)initInterstitial {
     
-    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:kAdUnitID];
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:kAdUnitInterstitialID];
     self.interstitial.delegate = self;
     [self.interstitial loadRequest:[self newRequest]];
 }
@@ -112,7 +113,7 @@
     
     self.adMobBannerView.delegate = self;
     self.adMobBannerView.rootViewController = ((UIViewController*)_delegate);
-    self.adMobBannerView.adUnitID = kAdUnitID;
+    self.adMobBannerView.adUnitID = kAdUnitBannerID;
     
     [self.adMobBannerView loadRequest:[self newRequest]];
     
