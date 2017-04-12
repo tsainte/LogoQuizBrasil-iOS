@@ -18,7 +18,7 @@
 		F10C63C2199EB8A0005328B2 /* BLLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63C1199EB8A0005328B2 /* BLLogoViewController.m */; };
 		F10C63C5199EB8B8005328B2 /* BLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63C4199EB8B8005328B2 /* BLAboutViewController.m */; };
 		F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F10C63C7199EC812005328B2 /* BLJSONDatabase.m */; };
-		F10C6950199EDF2D005328B2 /* 51.png in Resources */ = {isa = PBXBuildFile; fileRef = F10C6789199EDF29005328B2 /* 51.png */; };
+
 
 
 
@@ -1142,7 +1142,7 @@
 		F10C6788199EDF29005328B2 /* final_images */ = {
 			isa = PBXGroup;
 			children = (
-				F10C6789199EDF29005328B2 /* 51.png */,
+
 
 
 
@@ -1874,7 +1874,7 @@
 
 
 
-				F10C6950199EDF2D005328B2 /* 51.png in Resources */,
+
 
 
 
