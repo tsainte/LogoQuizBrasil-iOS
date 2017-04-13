@@ -81,7 +81,7 @@
     NSInteger now = [[NSDate date] timeIntervalSince1970];
     NSInteger intervalSinceLastIntestitial = now - self.lastInterstitialTimestamp;
     
-    return self.interstitialCount < 5 && intervalSinceLastIntestitial >= 120;
+    return self.interstitialCount < 5 && intervalSinceLastIntestitial >= 90;
 }
 
 #pragma mark - Banner
