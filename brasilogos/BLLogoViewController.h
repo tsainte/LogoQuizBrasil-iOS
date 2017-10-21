@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 MobWiz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "BLGameManager.h"
 #import "BLLogosListViewController.h"
 
@@ -33,10 +32,7 @@
 - (IBAction)clueOneTapped:(id)sender;
 - (IBAction)clueTwoTapped:(id)sender;
 - (IBAction)sloganTapped:(id)sender;
-- (IBAction)bombTapped:(id)sender;
 - (IBAction)magicTapped:(id)sender;
-
-- (IBAction)shopTapped:(id)sender;
 - (IBAction)viewDidTapped:(id)sender;
 
 @end

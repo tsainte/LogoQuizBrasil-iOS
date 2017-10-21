@@ -107,9 +107,4 @@
     self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
-- (void)updateCoins {
-    
-    self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
-}
-
 @end

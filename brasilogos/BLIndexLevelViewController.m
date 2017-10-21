@@ -20,17 +20,6 @@
 
 @implementation BLIndexLevelViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
-    if (self) {
-        // Custom initialization
-    }
-    
-    return self;
-}
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -52,11 +41,6 @@
         NSInteger bottomInset = [BLController isIpad] ? 90 : 50;
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, bottomInset, 0);
     }
-}
-
-- (void)updateCoins {
-    
-    self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -154,11 +138,6 @@
     NSValue *value = [NSValue valueWithCGPoint:point];
     
     return value;
-}
-
-- (IBAction)shopTapped:(id)sender {
-    
-    [BLController showShoppingOnViewController:self];
 }
 
 #pragma mark - BLBannerManagerDelegate

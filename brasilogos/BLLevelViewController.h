@@ -6,14 +6,13 @@
 //  Copyright (c) 2014 MobWiz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BLBaseViewController.h"
 
-@interface BLLevelViewController : UIViewController <UICollectionViewDataSource, BLBannerManagerDelegate, BLInAppManagerDelegate>
+@interface BLLevelViewController : BLBaseViewController <UICollectionViewDataSource, BLBannerManagerDelegate, BLInAppManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *adBanner;
 @property NSArray *logos;
 @property NSInteger levelID;
-@property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

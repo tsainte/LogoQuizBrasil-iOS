@@ -492,6 +492,7 @@
 		F175864D1C666D5A00B54134 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F175864C1C666D5A00B54134 /* Launch Screen.storyboard */; };
 		F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = F19505F61995CDB800A94FD1 /* BLStyling.m */; };
 		F1A0B6DC1C675FAA00D55D0D /* BLLogosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */; };
+		F1A343B51F9178BA0046EA5A /* BLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A343B41F9178BA0046EA5A /* BLBaseViewController.m */; };
 		F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */; };
 		F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD905F199FB7BD0071E256 /* BLDatabaseManager.m */; };
 		F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9062199FBCFA0071E256 /* BLScore.m */; };
@@ -1032,6 +1033,8 @@
 		F19505F61995CDB800A94FD1 /* BLStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLStyling.m; sourceTree = "<group>"; };
 		F1A0B6DA1C675FAA00D55D0D /* BLLogosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogosListViewController.h; sourceTree = "<group>"; };
 		F1A0B6DB1C675FAA00D55D0D /* BLLogosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogosListViewController.m; sourceTree = "<group>"; };
+		F1A343B31F9178BA0046EA5A /* BLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLBaseViewController.h; sourceTree = "<group>"; };
+		F1A343B41F9178BA0046EA5A /* BLBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLBaseViewController.m; sourceTree = "<group>"; };
 		F1AD905B199FB6EA0071E256 /* BLLogoStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogoStatus.h; sourceTree = "<group>"; };
 		F1AD905C199FB6EA0071E256 /* BLLogoStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogoStatus.m; sourceTree = "<group>"; };
 		F1AD905E199FB7BD0071E256 /* BLDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDatabaseManager.h; sourceTree = "<group>"; };
@@ -1647,6 +1650,8 @@
 				F112979019A10DD100ACE7A2 /* BLShoppingOverlayViewController.m */,
 				F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */,
 				F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */,
+				F1A343B31F9178BA0046EA5A /* BLBaseViewController.h */,
+				F1A343B41F9178BA0046EA5A /* BLBaseViewController.m */,
 			);
 			name = navigation;
 			sourceTree = "<group>";
@@ -2444,6 +2449,7 @@
 				F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */,
 				F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */,
 				F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */,
+				F1A343B51F9178BA0046EA5A /* BLBaseViewController.m in Sources */,
 				446CCBDF1D45081C00602313 /* BLFlurryAnalytics.m in Sources */,
 				F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */,
 				44F774501D3AA4A700734F90 /* BLFirebaseAnalytics.m in Sources */,
@@ -2602,7 +2608,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "";
@@ -2623,7 +2629,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "";

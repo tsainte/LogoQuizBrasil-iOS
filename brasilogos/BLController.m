@@ -30,13 +30,7 @@
     BLShoppingOverlayViewController *shopVC = [viewController.storyboard instantiateViewControllerWithIdentifier:@"BLShoppingOverlayViewController"];
     shopVC.delegate = viewController;
     
-    if (IS_OS_8_OR_LATER) {
-        shopVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
-    } else {
-        UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-        rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    }
-    
+    shopVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
     [viewController presentViewController:shopVC animated:NO completion:nil];
 }
 

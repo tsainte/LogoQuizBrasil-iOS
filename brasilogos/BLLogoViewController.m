@@ -19,28 +19,12 @@
 
 @implementation BLLogoViewController
 
-#define kKeyLetter 0
-#define kKeyBackspace 100
-#define kKeySpace 101
-#define kKeyEnter 102
-
 typedef enum
 {
     BLTextFieldIdle,
     BLTextFieldCorrect,
     BLTextFieldWrong
 } BLTextFieldState;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
-    if (self) {
-        // Custom initialization
-    }
-    
-    return self;
-}
 
 - (void)viewDidLoad {
     
@@ -127,7 +111,6 @@ typedef enum
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     
     if ([BLController isIpad] && UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
-//        [self.scrollView setContentOffset:[self invertPoint:self.ipadLandscapeScroll] animated:YES];
         [self.scrollView setContentSize:CGSizeMake(0, 0)];
     } else {
         if ([[UIScreen mainScreen] bounds].size.height < 500) {
@@ -147,7 +130,6 @@ typedef enum
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
     
     if ([BLController isIpad]) {
-        //    self.heightViewConstraint.constant = [[UIScreen mainScreen] bounds].size.height;
         self.widthViewConstraint.constant = [[UIScreen mainScreen] bounds].size.width - 8;
     }
 }
@@ -335,12 +317,7 @@ typedef enum
     alert.text = text;
     alert.executeAction = executeAction;
     
-    if (IS_OS_8_OR_LATER) {
-        alert.modalPresentationStyle = UIModalPresentationOverFullScreen;
-    } else {
-        UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-        rootViewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    }
+    alert.modalPresentationStyle = UIModalPresentationOverFullScreen;
     
     [self presentViewController:alert animated:NO completion:nil];
 }

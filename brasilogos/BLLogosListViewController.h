@@ -6,7 +6,7 @@
 //  Copyright © 2016 MobWiz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BLBaseViewController.h"
 
 @protocol BLLogosListViewControllerDelegate <NSObject>
 
@@ -14,7 +14,7 @@
 
 @end
 
-@interface BLLogosListViewController : UIViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource, BLBannerManagerDelegate>
+@interface BLLogosListViewController : BLBaseViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource, BLBannerManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *container;
 @property (weak, nonatomic) IBOutlet UIView *adBanner;
@@ -22,7 +22,5 @@
 
 @property NSArray *logos;
 @property NSInteger current;
-
-- (IBAction)shopTapped:(id)sender;
 
 @end

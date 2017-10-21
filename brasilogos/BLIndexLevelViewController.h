@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLBaseViewController.h"
 
-@interface BLIndexLevelViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, BLBannerManagerDelegate, BLInAppManagerDelegate>
+@interface BLIndexLevelViewController : BLBaseViewController <UITableViewDataSource, UITableViewDelegate, BLBannerManagerDelegate, BLInAppManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *adBanner;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UILabel *coinsLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heigthAdBannerConstraint;
 
 @end

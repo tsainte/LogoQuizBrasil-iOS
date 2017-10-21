@@ -31,22 +31,16 @@
     
     [super viewDidLoad];
     self.title = [NSString stringWithFormat:@"Nível %ld", self.levelID];
-    //  self.automaticallyAdjustsScrollViewInsets = NO;
     self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    [super viewWillAppear:animated];
     [self.collectionView reloadData];
     [self loadBanner];
-    [self updateCoins];
     
     self.adBanner.hidden = [[BLDatabaseManager user] boughtRemoveAds];
-}
-
-- (void)updateCoins {
-    
-    self.coinsLabel.text = [@([[BLDatabaseManager wallet] coins]) description];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -92,11 +86,6 @@
     BLLogosListViewController *logosVC = segue.destinationViewController;
     logosVC.logos = self.logos;
     logosVC.current = indexPath.row;
-}
-
-- (IBAction)shopTapped:(id)sender {
-    
-    [BLController showShoppingOnViewController:self];
 }
 
 #pragma mark - BLBannerManagerDelegate

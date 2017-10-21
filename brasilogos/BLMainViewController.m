@@ -31,24 +31,21 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:kColorYellow}];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     [self roundButtons];
-}
-
-- (void)authenticateGameCenter {
-    
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];   //it hides
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO];    // it shows
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)roundButtons {
