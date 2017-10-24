@@ -54,12 +54,16 @@
 
 - (IBAction)sendEmailTapped:(id)sender {
     
-    NSArray *toRecipents = @[@"ios@mobwiz.com.br"];
-    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-    mc.mailComposeDelegate = self;
-    
-    [mc setToRecipients:toRecipents];
-    [self presentViewController:mc animated:YES completion:NULL];
+    if ([MFMailComposeViewController canSendMail]) {
+        NSArray *toRecipents = @[@"ios@mobwiz.com.br"];
+        MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+        mc.mailComposeDelegate = self;
+        
+        [mc setToRecipients:toRecipents];
+        [self presentViewController:mc animated:YES completion:NULL];
+    } else {
+        [self.view makeToast:@"Oops, parece que seu email não está configurado nesse aparelho! 😱"];
+    }
 }
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {

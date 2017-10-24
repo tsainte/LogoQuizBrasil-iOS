@@ -132,19 +132,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gostou de nosso aplicativo? Acha que faltou alguma logo brasileira? Avalie-nos na App Store e deixe seu cometário!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-7u-EVQ">
-                                <rect key="frame" x="10" y="90" width="300" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gostou de nosso aplicativo? Acha que faltou alguma logo brasileira? Avalie-nos na App Store e deixe seu cometário!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-7u-EVQ">
+                                <rect key="frame" x="16" y="88" width="343" height="58.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <color key="textColor" red="0.16260822510822512" green="0.29811507936507942" blue="0.21484634858573737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma4-DL-4mx">
-                                <rect key="frame" x="87.5" y="194" width="200" height="38"/>
+                                <rect key="frame" x="87.5" y="170.5" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="XHy-Tu-gEQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="XHy-Tu-gEQ"/>
                                     <constraint firstAttribute="width" constant="200" id="vnx-wg-0B4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
@@ -157,7 +156,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-mC-HUd">
-                                <rect key="frame" x="87.5" y="257" width="200" height="38"/>
+                                <rect key="frame" x="87.5" y="226.5" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <state key="normal" title="Enviar E-Mail">
@@ -169,11 +168,8 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kvb-oP-3uv">
-                                <rect key="frame" x="43.5" y="320" width="288" height="322"/>
+                                <rect key="frame" x="16" y="290.5" width="343" height="351.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="288" id="PS3-iM-7bw"/>
-                                </constraints>
                                 <string key="text">Todas as logomarcas apresentadas são protegidas por leis de copyright/trademark. Acreditamos que o seu uso nesse aplicativo possui caráter informativo e positivo para divulgação das empresas e/ou marcas brasileiras, e podem ser enquadradas nas leis de "fair use" americana. Caso seja representante de uma dessas marcas e deseje a retirada ou a melhora das imagens e/ou dicas, entre em contato conosco! </string>
                                 <color key="textColor" red="0.1626082251" green="0.29811507939999998" blue="0.21484634859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
@@ -182,15 +178,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.64471126445093696" green="0.73451967592592593" blue="0.45513257272270335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ocW-mC-HUd" firstAttribute="top" secondItem="Ma4-DL-4mx" secondAttribute="bottom" constant="25" id="3fF-Lg-3IE"/>
+                            <constraint firstItem="kvb-oP-3uv" firstAttribute="trailing" secondItem="TC9-7u-EVQ" secondAttribute="trailing" id="3e5-qO-QtK"/>
+                            <constraint firstItem="ocW-mC-HUd" firstAttribute="top" secondItem="Ma4-DL-4mx" secondAttribute="bottom" constant="16" id="3fF-Lg-3IE"/>
                             <constraint firstItem="Ma4-DL-4mx" firstAttribute="trailing" secondItem="ocW-mC-HUd" secondAttribute="trailing" id="5oP-hA-k0Z"/>
-                            <constraint firstItem="Ma4-DL-4mx" firstAttribute="top" secondItem="Y5R-RH-AMx" secondAttribute="bottom" constant="130" id="6Uc-C9-2vh"/>
                             <constraint firstItem="Ma4-DL-4mx" firstAttribute="height" secondItem="ocW-mC-HUd" secondAttribute="height" id="Gxl-v1-8ES"/>
+                            <constraint firstItem="kvb-oP-3uv" firstAttribute="leading" secondItem="TC9-7u-EVQ" secondAttribute="leading" id="LWH-dK-1qd"/>
                             <constraint firstItem="Ma4-DL-4mx" firstAttribute="leading" secondItem="ocW-mC-HUd" secondAttribute="leading" id="LlJ-jL-YKs"/>
-                            <constraint firstItem="kvb-oP-3uv" firstAttribute="top" secondItem="ocW-mC-HUd" secondAttribute="bottom" constant="25" id="bbK-yn-qNS"/>
+                            <constraint firstAttribute="trailing" secondItem="TC9-7u-EVQ" secondAttribute="trailing" constant="16" id="PhJ-Zy-w6P"/>
+                            <constraint firstItem="TC9-7u-EVQ" firstAttribute="top" secondItem="Y5R-RH-AMx" secondAttribute="bottom" constant="24" id="Zda-zg-iDz"/>
+                            <constraint firstItem="kvb-oP-3uv" firstAttribute="top" secondItem="ocW-mC-HUd" secondAttribute="bottom" constant="24" id="bbK-yn-qNS"/>
+                            <constraint firstItem="Ma4-DL-4mx" firstAttribute="top" secondItem="TC9-7u-EVQ" secondAttribute="bottom" constant="24" id="c0w-Sz-ZrA"/>
                             <constraint firstAttribute="centerX" secondItem="kvb-oP-3uv" secondAttribute="centerX" id="c7G-pc-9aF"/>
                             <constraint firstItem="8Kx-Ij-3Wk" firstAttribute="top" secondItem="kvb-oP-3uv" secondAttribute="bottom" constant="25" id="cBc-fz-Fw4"/>
                             <constraint firstAttribute="centerX" secondItem="Ma4-DL-4mx" secondAttribute="centerX" id="uRp-bK-OQS"/>
+                            <constraint firstItem="TC9-7u-EVQ" firstAttribute="leading" secondItem="DXG-a1-toF" secondAttribute="leading" constant="16" id="zzD-32-xoI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sobre" id="FsO-GH-ypT">
