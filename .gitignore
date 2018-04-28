@@ -60,3 +60,11 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Logo Quiz
+#
+# Remove content and secrets
+
+brasilogos/final_images
+brasilogos/db.json
+brasilogos/GoogleService-Info.plist
