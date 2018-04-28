@@ -17,7 +17,7 @@
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
 //#ifndef DEBUG
     [self loadServices];
 //#endif
@@ -30,30 +30,30 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [BLBannerManager shared];
     });
-    
+
 //    [self configureIRate];
     [self preloadKeyboard];
     [self preloadPrices];
-    
+
     return YES;
 }
 
 //- (void)configureIRate {
-//    
+//
 //    [iRate sharedInstance].appStoreID = 672062811;
 //    [iRate sharedInstance].daysUntilPrompt = 7;
 //    [iRate sharedInstance].usesUntilPrompt = 6;
 //}
 
 - (void)loadServices {
-    
+
     [Flurry startSession:@"YOUR_FLURRY_ID"];
     [Fabric with:@[[Crashlytics class]]];
     [FIRApp configure];
 }
 
 - (void)preloadKeyboard {
-    
+
     // Preloads keyboard so there's no lag on initial keyboard appearance.
     UITextField *lagFreeField = [[UITextField alloc] init];
     [self.window addSubview:lagFreeField];
@@ -63,7 +63,7 @@
 }
 
 - (void)preloadPrices {
-    
+
     [[BLInAppManager shared] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
         // :)
     }];
