@@ -628,7 +628,7 @@
                                         <rect key="frame" x="20" y="46" width="220" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="IuS-Bp-fDg">
                                                 <rect key="frame" x="10" y="5" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -666,7 +666,7 @@
                                         <rect key="frame" x="20" y="104" width="220" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uf1-i4-TRn">
                                                 <rect key="frame" x="10" y="5" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -704,7 +704,7 @@
                                         <rect key="frame" x="20" y="162" width="220" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="L9o-Ge-BkK">
                                                 <rect key="frame" x="10" y="5" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -742,7 +742,7 @@
                                         <rect key="frame" x="20" y="220" width="220" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="MyX-sJ-yja">
                                                 <rect key="frame" x="10" y="5" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -780,7 +780,7 @@
                                         <rect key="frame" x="20" y="278" width="220" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coin_nonumber_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="PXY-gZ-P3i">
                                                 <rect key="frame" x="10" y="5" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1274,7 +1274,7 @@
         <image name="bulb" width="60" height="60"/>
         <image name="bulb_special" width="60" height="60"/>
         <image name="coin_nonumber_small" width="50" height="50"/>
-
+        <image name="coin_nonumber_small.png" width="101" height="101"/>
         <image name="locked" width="40" height="40"/>
         <image name="logoquiz" width="2165" height="1370"/>
         <image name="magic" width="256" height="256"/>
