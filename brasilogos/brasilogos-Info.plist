@@ -47,8 +47,6 @@
 	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main_iPhone</string>
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main_iPad</string>
 	<key>UIRequiredDeviceCapabilities</key>

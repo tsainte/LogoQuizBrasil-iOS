@@ -18,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    self.window = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
 //#ifndef DEBUG
     [self loadServices];
 //#endif
@@ -31,19 +32,17 @@
         [BLBannerManager shared];
     });
 
-//    [self configureIRate];
     [self preloadKeyboard];
     [self preloadPrices];
 
+    [self startCoordinator];
     return YES;
 }
+- (void)startCoordinator {
 
-//- (void)configureIRate {
-//
-//    [iRate sharedInstance].appStoreID = 672062811;
-//    [iRate sharedInstance].daysUntilPrompt = 7;
-//    [iRate sharedInstance].usesUntilPrompt = 6;
-//}
+    self.coordinator = [[ApplicationCoordinator alloc] initWithWindow: self.window];
+    [self.coordinator start];
+}
 
 - (void)loadServices {
 
@@ -52,6 +51,7 @@
     [FIRApp configure];
 }
 
+// TODO: Verify if still need this method
 - (void)preloadKeyboard {
 
     // Preloads keyboard so there's no lag on initial keyboard appearance.

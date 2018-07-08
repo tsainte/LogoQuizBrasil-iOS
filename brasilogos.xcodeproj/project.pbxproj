@@ -44,8 +44,17 @@
 		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
 		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
 		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
+		F1CA0A5220F22D810051CC1C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5120F22D810051CC1C /* MenuViewController.swift */; };
+		F1CA0A5520F22D9F0051CC1C /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5420F22D9F0051CC1C /* MenuViewModel.swift */; };
+		F1CA0A5920F22E700051CC1C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5820F22E700051CC1C /* ApplicationCoordinator.swift */; };
+		F1CA0A5C20F22EA70051CC1C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5B20F22EA70051CC1C /* Coordinator.swift */; };
+		F1CA0A5E20F2C5250051CC1C /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5D20F2C5250051CC1C /* AboutCoordinator.swift */; };
+		F1CA0A6120F2C6070051CC1C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A6020F2C6070051CC1C /* AboutViewController.swift */; };
+		F1CA0A6320F2C6F70051CC1C /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A6220F2C6F70051CC1C /* AboutViewModel.swift */; };
 		F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */; };
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
+		F1EF70B320F2399700D909AF /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF70B220F2399700D909AF /* MenuCoordinator.swift */; };
+		F1EF70B620F23D0600D909AF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF70B520F23D0600D909AF /* UIView+Extension.swift */; };
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
 		F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B807198E5D9300578D91 /* UIKit.framework */; };
@@ -137,10 +146,20 @@
 		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
 		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
 		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
+		F1CA0A5020F22D800051CC1C /* brasilogos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "brasilogos-Bridging-Header.h"; path = "brasilogos/brasilogos-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1CA0A5120F22D810051CC1C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = UI/Menu/MenuViewController.swift; sourceTree = "<group>"; };
+		F1CA0A5420F22D9F0051CC1C /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = UI/Menu/MenuViewModel.swift; sourceTree = "<group>"; };
+		F1CA0A5820F22E700051CC1C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApplicationCoordinator.swift; path = Business/Coordinators/ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		F1CA0A5B20F22EA70051CC1C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Protocols/Coordinator.swift; sourceTree = "<group>"; };
+		F1CA0A5D20F2C5250051CC1C /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutCoordinator.swift; path = Business/Coordinators/AboutCoordinator.swift; sourceTree = "<group>"; };
+		F1CA0A6020F2C6070051CC1C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = UI/About/AboutViewController.swift; sourceTree = "<group>"; };
+		F1CA0A6220F2C6F70051CC1C /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewModel.swift; path = UI/About/AboutViewModel.swift; sourceTree = "<group>"; };
 		F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAlertOverlayViewController.h; sourceTree = "<group>"; };
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
+		F1EF70B220F2399700D909AF /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCoordinator.swift; path = Business/Coordinators/MenuCoordinator.swift; sourceTree = "<group>"; };
+		F1EF70B520F23D0600D909AF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Extensions/UIView+Extension.swift"; sourceTree = "<group>"; };
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8B803198E5D9300578D91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1F8B805198E5D9300578D91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -211,7 +230,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F10C63C9199ECA0E005328B2 /* database */ = {
+		F10C63C9199ECA0E005328B2 /* Database */ = {
 			isa = PBXGroup;
 			children = (
 				F10C63C6199EC812005328B2 /* BLJSONDatabase.h */,
@@ -229,7 +248,7 @@
 				F16171D319C7B49400FA9A07 /* BLTransaction.h */,
 				F16171D419C7B49400FA9A07 /* BLTransaction.m */,
 			);
-			name = database;
+			name = Database;
 			sourceTree = "<group>";
 		};
 		F10C6788199EDF29005328B2 /* final_images */ = {
@@ -250,6 +269,15 @@
 				F112978619A0F53C00ACE7A2 /* RVBCLICK.WAV */,
 			);
 			name = sound;
+			sourceTree = "<group>";
+		};
+		F138FC8D20F22BDD00187F32 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA0A5F20F2C5EB0051CC1C /* About */,
+				F1CA0A5320F22D870051CC1C /* Menu */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		F175864B1C665A0D00B54134 /* assets */ = {
@@ -324,9 +352,63 @@
 			name = LogoGame;
 			sourceTree = "<group>";
 		};
+		F1CA0A5320F22D870051CC1C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA0A5120F22D810051CC1C /* MenuViewController.swift */,
+				F1CA0A5420F22D9F0051CC1C /* MenuViewModel.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F1CA0A5620F22E1E0051CC1C /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA0A5720F22E250051CC1C /* Coordinators */,
+				F10C63C9199ECA0E005328B2 /* Database */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		F1CA0A5720F22E250051CC1C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA0A5820F22E700051CC1C /* ApplicationCoordinator.swift */,
+				F1EF70B220F2399700D909AF /* MenuCoordinator.swift */,
+				F1CA0A5D20F2C5250051CC1C /* AboutCoordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		F1CA0A5A20F22E840051CC1C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA0A5B20F22EA70051CC1C /* Coordinator.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F1CA0A5F20F2C5EB0051CC1C /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F1CA0A6020F2C6070051CC1C /* AboutViewController.swift */,
+				F1CA0A6220F2C6F70051CC1C /* AboutViewModel.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		F1EF70B420F23CE900D909AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF70B520F23D0600D909AF /* UIView+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		F1F8B7F7198E5D9200578D91 = {
 			isa = PBXGroup;
 			children = (
+				F1CA0A5020F22D800051CC1C /* brasilogos-Bridging-Header.h */,
 				F175864C1C666D5A00B54134 /* Launch Screen.storyboard */,
 				F10C63B5199EA825005328B2 /* db.json */,
 				F1F8B809198E5D9300578D91 /* brasilogos */,
@@ -364,10 +446,13 @@
 		F1F8B809198E5D9300578D91 /* brasilogos */ = {
 			isa = PBXGroup;
 			children = (
+				F1EF70B420F23CE900D909AF /* Extensions */,
+				F1CA0A5A20F22E840051CC1C /* Protocols */,
+				F1CA0A5620F22E1E0051CC1C /* Business */,
+				F138FC8D20F22BDD00187F32 /* UI */,
 				F16968E91D2929DC0086EF89 /* GoogleService-Info.plist */,
 				F175864B1C665A0D00B54134 /* assets */,
 				F1A0B6D61C675D1000D55D0D /* Helpers */,
-				F10C63C9199ECA0E005328B2 /* database */,
 				F1A0B6D51C675CFD00D55D0D /* navigation */,
 				F1F8B812198E5D9300578D91 /* BLAppDelegate.h */,
 				F1F8B813198E5D9300578D91 /* BLAppDelegate.m */,
@@ -464,6 +549,7 @@
 				TargetAttributes = {
 					F1F8B7FF198E5D9300578D91 = {
 						DevelopmentTeam = QX2M8PE6QE;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
@@ -619,27 +705,36 @@
 				F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */,
 				F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */,
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
+				F1EF70B320F2399700D909AF /* MenuCoordinator.swift in Sources */,
 				F1A0B6DC1C675FAA00D55D0D /* BLLogosListViewController.m in Sources */,
 				F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */,
 				F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */,
+				F1CA0A5220F22D810051CC1C /* MenuViewController.swift in Sources */,
 				446CCBDC1D45070D00602313 /* BLAnalytics.m in Sources */,
 				F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */,
 				F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */,
+				F1CA0A6320F2C6F70051CC1C /* AboutViewModel.swift in Sources */,
 				F1AD9066199FBD530071E256 /* BLUser.m in Sources */,
 				F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */,
+				F1CA0A5E20F2C5250051CC1C /* AboutCoordinator.swift in Sources */,
+				F1CA0A5C20F22EA70051CC1C /* Coordinator.swift in Sources */,
 				F1F8B810198E5D9300578D91 /* main.m in Sources */,
 				F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */,
 				F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */,
 				F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */,
 				F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */,
 				F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */,
+				F1EF70B620F23D0600D909AF /* UIView+Extension.swift in Sources */,
 				F1A343B51F9178BA0046EA5A /* BLBaseViewController.m in Sources */,
 				446CCBDF1D45081C00602313 /* BLFlurryAnalytics.m in Sources */,
 				F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */,
 				44F774501D3AA4A700734F90 /* BLFirebaseAnalytics.m in Sources */,
+				F1CA0A6120F2C6070051CC1C /* AboutViewController.swift in Sources */,
 				F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */,
 				F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */,
 				F10C63C2199EB8A0005328B2 /* BLLogoViewController.m in Sources */,
+				F1CA0A5520F22D9F0051CC1C /* MenuViewModel.swift in Sources */,
+				F1CA0A5920F22E700051CC1C /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +880,7 @@
 			baseConfigurationReference = 30F2EF3A2CC56244DB29C5B7 /* Pods-brasilogos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -794,10 +890,14 @@
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "fabeb8eb-0d46-495b-b717-c1b8846f7fd9";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development br.com.mobwiz.brasilogos";
+				SWIFT_OBJC_BRIDGING_HEADER = "brasilogos/brasilogos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -808,6 +908,7 @@
 			baseConfigurationReference = 1719167C13704E4C5B2D64A3 /* Pods-brasilogos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -817,10 +918,13 @@
 				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
 				INFOPLIST_FILE = "brasilogos/brasilogos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = brasilogos;
 				PROVISIONING_PROFILE = "c9926b7f-3441-4d15-b968-e30501a17fb7";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore br.com.mobwiz.brasilogos";
+				SWIFT_OBJC_BRIDGING_HEADER = "brasilogos/brasilogos-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -829,6 +933,7 @@
 		F1F8B83C198E5D9300578D91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -852,6 +957,7 @@
 		F1F8B83D198E5D9300578D91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
