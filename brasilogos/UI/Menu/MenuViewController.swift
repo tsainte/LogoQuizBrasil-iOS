@@ -11,23 +11,9 @@ class MenuViewController: UIViewController {
 
     var viewModel: MenuViewModelType!
     
-    @IBOutlet weak var playButton: UIButton! {
-        didSet {
-            playButton.round()
-        }
-    }
-
-    @IBOutlet weak var boardButton: UIButton! {
-        didSet {
-            boardButton.round()
-        }
-    }
-
-    @IBOutlet weak var aboutButton: UIButton! {
-        didSet {
-            aboutButton.round()
-        }
-    }
+    @IBOutlet weak var playButton: CustomUIButton!
+    @IBOutlet weak var boardButton: CustomUIButton!
+    @IBOutlet weak var aboutButton: CustomUIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()

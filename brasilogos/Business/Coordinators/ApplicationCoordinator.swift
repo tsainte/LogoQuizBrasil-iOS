@@ -11,7 +11,7 @@ import UIKit
 class ApplicationCoordinator: NSObject {
 
     let window: UIWindow
-    let storyboard = UIStoryboard(name: "Main_iPhone", bundle: nil)
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     var childCoordinator: MenuCoordinator?
 
     @objc init(window: UIWindow) {

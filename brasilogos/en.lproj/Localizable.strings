@@ -1,0 +1,7 @@
+/* About Screen */
+"AboutViewModel:label:TOP" = "Do you love our app? Or maybe you think we missed any particular brazilian brand? Let us know on App Store by reviewing it! ";
+"AboutViewModel:label:BOTTOM" = "All the brands presented in the game are protected by copyright/trademark laws. We believe their usage has the purpose of educate and being informative in a positive way, helping on the advertisement of brazilian brands and products. Their usage is in accordance of the american \"fair use\" law. If you are representant of any of those brands and express a wish of removal or improvement of any image / clues, please get in touch!";
+
+/* About coordinator */
+"AboutCoordinator:Email:SUBJECT" = "Feedback: Logo Quiz Brasil iOS";
+"AboutCoordinator:Email:NOT_CONFIGURED" = "Oops, it seems your email is not configured on this device! 😱";

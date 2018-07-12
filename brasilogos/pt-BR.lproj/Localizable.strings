@@ -1,0 +1,7 @@
+/* About Screen */
+"AboutViewModel:label:TOP" = "Gostou de nosso aplicativo? Acha que faltou alguma logo brasileira? Avalie-nos na App Store e deixe seu comentário!";
+"AboutViewModel:label:BOTTOM" = "Todas as logomarcas apresentadas são protegidas por leis de copyright/trademark. Acreditamos que o seu uso nesse aplicativo possui caráter informativo e positivo para divulgação das empresas e/ou marcas brasileiras, e podem ser enquadradas nas leis de \"fair use\" americana. Caso seja representante de uma dessas marcas e deseje a retirada ou a melhora das imagens e/ou dicas, entre em contato conosco!";
+
+/* About coordinator */
+"AboutCoordinator:Email:SUBJECT" = "Feedback: Logo Quiz Brasil iOS";
+"AboutCoordinator:Email:NOT_CONFIGURED" = "Oops, parece que seu email não está configurado nesse aparelho! 😱";

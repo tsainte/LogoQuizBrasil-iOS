@@ -9,7 +9,10 @@
 import UIKit
 
 typealias AboutViewModelType = AboutViewModelBindings & AboutViewModelActions
-protocol AboutViewModelBindings {}
+protocol AboutViewModelBindings {
+    var labelTop: String { get }
+    var labelBottom: String { get }
+}
 protocol AboutViewModelActions {
     func evaluateTapped()
     func sendEmailTapped()
@@ -27,13 +30,21 @@ class AboutViewModel: NSObject {
     }
 }
 
-extension AboutViewModel: AboutViewModelBindings { }
+extension AboutViewModel: AboutViewModelBindings {
+    var labelTop: String {
+        return NSLocalizedString("AboutViewModel:label:TOP", comment: "nil")
+    }
+    
+    var labelBottom: String {
+        return NSLocalizedString("AboutViewModel:label:BOTTOM", comment: "nil")
+    }
+}
 extension AboutViewModel: AboutViewModelActions {
     func evaluateTapped() {
-
+        coordinatorDelegate?.goToEvaluate()
     }
 
     func sendEmailTapped() {
-
+        coordinatorDelegate?.goToEmail()
     }
 }

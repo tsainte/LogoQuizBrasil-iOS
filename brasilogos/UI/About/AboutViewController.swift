@@ -10,17 +10,19 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-    @IBOutlet weak var evaluateButton: UIButton! {
-        didSet {
-            evaluateButton.round()
-        }
-    }
-    @IBOutlet weak var sendEmailButton: UIButton! {
-        didSet {
-            sendEmailButton.round()
-        }
-    }
+    @IBOutlet weak var evaluateButton: CustomUIButton!
+    @IBOutlet weak var sendEmailButton: CustomUIButton!
 
+    @IBOutlet weak var labelTop: UILabel! {
+        didSet {
+            labelTop.text = viewModel.labelTop
+        }
+    }
+    @IBOutlet weak var labelBottom: UITextView! {
+        didSet {
+           labelBottom.text = viewModel.labelBottom
+        }
+    }
     var viewModel: AboutViewModelType!
 
     override func viewDidLoad() {
