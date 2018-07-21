@@ -10,7 +10,11 @@ import Foundation
 
 typealias MenuViewModelType = MenuViewModelBindings & MenuViewModelActions
 
-protocol MenuViewModelBindings { }
+protocol MenuViewModelBindings {
+    var playButton: String { get }
+    var boardButton: String { get }
+    var aboutButton: String { get }
+}
 protocol MenuViewModelActions {
     func playDidTapped()
     func boardDidTapped()
@@ -19,7 +23,7 @@ protocol MenuViewModelActions {
 
 protocol MenuViewModelDelegate: class { }
 
-class MenuViewModel {
+class MenuViewModel: ViewModel {
 
     weak var viewModelDelegate: MenuViewModelDelegate?
     weak var coordinatorDelegate: MenuCoordinatorDelegate?
@@ -30,7 +34,21 @@ class MenuViewModel {
     }
 }
 
-extension MenuViewModel: MenuViewModelBindings { }
+extension MenuViewModel: MenuViewModelBindings {
+    var playButton: String {
+        return NSLocalizedString("MenuViewModel:button:PLAY", comment: "")
+    }
+    
+    var boardButton: String {
+        return NSLocalizedString("MenuViewModel:button:BOARD", comment: "")
+    }
+    
+    var aboutButton: String {
+        return NSLocalizedString("MenuViewModel:button:ABOUT", comment: "")
+    }
+    
+    
+}
 extension MenuViewModel: MenuViewModelActions {
     func playDidTapped() {
         coordinatorDelegate?.goToPlay()

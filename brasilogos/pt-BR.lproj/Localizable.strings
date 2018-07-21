@@ -5,3 +5,12 @@
 /* About coordinator */
 "AboutCoordinator:Email:SUBJECT" = "Feedback: Logo Quiz Brasil iOS";
 "AboutCoordinator:Email:NOT_CONFIGURED" = "Oops, parece que seu email não está configurado nesse aparelho! 😱";
+
+/* Menu View Model */
+"MenuViewModel:button:PLAY" = "Jogar";
+"MenuViewModel:button:BOARD" = "Placar";
+"MenuViewModel:button:ABOUT" = "Sobre";
+
+/* About View Model */
+"AboutViewModel:button:EVALUATE" = "Comente na App Store";
+"AboutViewModel:button:SEND_EMAIL" = "Entre em contato";

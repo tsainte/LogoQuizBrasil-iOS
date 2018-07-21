@@ -219,7 +219,7 @@
         <!--Níveis-->
         <scene sceneID="QhD-3P-omt">
             <objects>
-                <viewController id="ghL-Pg-MWb" customClass="BLIndexLevelViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelListViewController" id="ghL-Pg-MWb" customClass="LevelListViewController" customModule="brasilogos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L8r-CC-7dG"/>
                         <viewControllerLayoutGuide type="bottom" id="cGu-2B-CVK"/>
@@ -297,10 +297,6 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="ghL-Pg-MWb" id="p3i-SJ-JTj"/>
-                                    <outlet property="delegate" destination="ghL-Pg-MWb" id="Sgu-17-sGM"/>
-                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBM-Gz-Tsu" userLabel="AdBanner">
                                 <rect key="frame" x="27.5" y="617" width="320" height="50"/>
@@ -324,9 +320,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Níveis" id="0xy-sF-Knf"/>
                     <connections>
-                        <outlet property="adBanner" destination="bBM-Gz-Tsu" id="Uk2-kC-Pee"/>
-                        <outlet property="heigthAdBannerConstraint" destination="lcS-O9-JQ3" id="rR1-LO-HC7"/>
-                        <outlet property="tableView" destination="jgm-dz-Qvw" id="I3P-sK-RNs"/>
+                        <outlet property="tableView" destination="jgm-dz-Qvw" id="fHk-47-VgY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIb-M8-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>

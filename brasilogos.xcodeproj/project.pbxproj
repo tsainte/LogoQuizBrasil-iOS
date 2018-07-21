@@ -58,6 +58,14 @@
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
 		F1E75DDF20F5545A00884845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E75DDE20F5545900884845 /* Main.storyboard */; };
 		F1EF70B320F2399700D909AF /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF70B220F2399700D909AF /* MenuCoordinator.swift */; };
+		F1F4CC7020FA91C100750EB6 /* LevelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC6F20FA91C100750EB6 /* LevelListViewController.swift */; };
+		F1F4CC7220FA91DB00750EB6 /* LevelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7120FA91DB00750EB6 /* LevelListViewModel.swift */; };
+		F1F4CC7420FA925700750EB6 /* LevelListTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7320FA925700750EB6 /* LevelListTableViewManager.swift */; };
+		F1F4CC7720FA96B800750EB6 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7620FA96B800750EB6 /* Level.swift */; };
+		F1F4CC7920FA96EF00750EB6 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7820FA96EF00750EB6 /* Logo.swift */; };
+		F1F4CC7B20FA973A00750EB6 /* LogoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7A20FA973A00750EB6 /* LogoStorage.swift */; };
+		F1F4CC7D20FA98C200750EB6 /* LevelListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7C20FA98C200750EB6 /* LevelListCoordinator.swift */; };
+		F1F4CC7F20FA9C1300750EB6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7E20FA9C1300750EB6 /* ViewModel.swift */; };
 		F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
 		F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B807198E5D9300578D91 /* UIKit.framework */; };
@@ -166,6 +174,14 @@
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
 		F1E75DDE20F5545900884845 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = brasilogos/Main.storyboard; sourceTree = "<group>"; };
 		F1EF70B220F2399700D909AF /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCoordinator.swift; path = Business/Coordinators/MenuCoordinator.swift; sourceTree = "<group>"; };
+		F1F4CC6F20FA91C100750EB6 /* LevelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelListViewController.swift; path = UI/LevelList/LevelListViewController.swift; sourceTree = "<group>"; };
+		F1F4CC7120FA91DB00750EB6 /* LevelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelListViewModel.swift; path = UI/LevelList/LevelListViewModel.swift; sourceTree = "<group>"; };
+		F1F4CC7320FA925700750EB6 /* LevelListTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelListTableViewManager.swift; path = UI/LevelList/LevelListTableViewManager.swift; sourceTree = "<group>"; };
+		F1F4CC7620FA96B800750EB6 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Level.swift; path = Business/Model/Level.swift; sourceTree = "<group>"; };
+		F1F4CC7820FA96EF00750EB6 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Logo.swift; path = Business/Model/Logo.swift; sourceTree = "<group>"; };
+		F1F4CC7A20FA973A00750EB6 /* LogoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogoStorage.swift; path = Business/Model/LogoStorage.swift; sourceTree = "<group>"; };
+		F1F4CC7C20FA98C200750EB6 /* LevelListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelListCoordinator.swift; path = Business/Coordinators/LevelListCoordinator.swift; sourceTree = "<group>"; };
+		F1F4CC7E20FA9C1300750EB6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = Protocols/ViewModel.swift; sourceTree = "<group>"; };
 		F1F8B800198E5D9300578D91 /* brasilogos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brasilogos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8B803198E5D9300578D91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1F8B805198E5D9300578D91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -286,6 +302,7 @@
 		F138FC8D20F22BDD00187F32 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F1F4CC6E20FA918100750EB6 /* LevelList */,
 				F106AD1D20F54C54009E9A77 /* Views */,
 				F1CA0A5F20F2C5EB0051CC1C /* About */,
 				F1CA0A5320F22D870051CC1C /* Menu */,
@@ -375,6 +392,7 @@
 		F1CA0A5620F22E1E0051CC1C /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				F1F4CC7520FA968F00750EB6 /* Model */,
 				F1CA0A5720F22E250051CC1C /* Coordinators */,
 				F10C63C9199ECA0E005328B2 /* Database */,
 			);
@@ -387,6 +405,7 @@
 				F1CA0A5820F22E700051CC1C /* ApplicationCoordinator.swift */,
 				F1EF70B220F2399700D909AF /* MenuCoordinator.swift */,
 				F1CA0A5D20F2C5250051CC1C /* AboutCoordinator.swift */,
+				F1F4CC7C20FA98C200750EB6 /* LevelListCoordinator.swift */,
 			);
 			name = Coordinators;
 			sourceTree = "<group>";
@@ -396,6 +415,7 @@
 			children = (
 				F1CA0A5B20F22EA70051CC1C /* Coordinator.swift */,
 				F1CA0A6720F3FB4C0051CC1C /* Toaster.swift */,
+				F1F4CC7E20FA9C1300750EB6 /* ViewModel.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -422,6 +442,26 @@
 			children = (
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F1F4CC6E20FA918100750EB6 /* LevelList */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4CC6F20FA91C100750EB6 /* LevelListViewController.swift */,
+				F1F4CC7120FA91DB00750EB6 /* LevelListViewModel.swift */,
+				F1F4CC7320FA925700750EB6 /* LevelListTableViewManager.swift */,
+			);
+			name = LevelList;
+			sourceTree = "<group>";
+		};
+		F1F4CC7520FA968F00750EB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4CC7620FA96B800750EB6 /* Level.swift */,
+				F1F4CC7820FA96EF00750EB6 /* Logo.swift */,
+				F1F4CC7A20FA973A00750EB6 /* LogoStorage.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		F1F8B7F7198E5D9200578D91 = {
@@ -721,6 +761,7 @@
 				F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */,
 				F1269B8619C5F0B600A89099 /* BLController.m in Sources */,
 				F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */,
+				F1F4CC7220FA91DB00750EB6 /* LevelListViewModel.swift in Sources */,
 				F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */,
 				F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */,
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
@@ -742,16 +783,23 @@
 				F1F8B810198E5D9300578D91 /* main.m in Sources */,
 				F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */,
 				F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */,
+				F1F4CC7920FA96EF00750EB6 /* Logo.swift in Sources */,
 				F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */,
 				F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */,
+				F1F4CC7F20FA9C1300750EB6 /* ViewModel.swift in Sources */,
 				F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */,
 				F1A343B51F9178BA0046EA5A /* BLBaseViewController.m in Sources */,
+				F1F4CC7B20FA973A00750EB6 /* LogoStorage.swift in Sources */,
 				446CCBDF1D45081C00602313 /* BLFlurryAnalytics.m in Sources */,
 				F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */,
+				F1F4CC7420FA925700750EB6 /* LevelListTableViewManager.swift in Sources */,
 				44F774501D3AA4A700734F90 /* BLFirebaseAnalytics.m in Sources */,
 				F1CA0A6120F2C6070051CC1C /* AboutViewController.swift in Sources */,
+				F1F4CC7D20FA98C200750EB6 /* LevelListCoordinator.swift in Sources */,
 				F1AD905D199FB6EA0071E256 /* BLLogoStatus.m in Sources */,
 				F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */,
+				F1F4CC7020FA91C100750EB6 /* LevelListViewController.swift in Sources */,
+				F1F4CC7720FA96B800750EB6 /* Level.swift in Sources */,
 				F10C63C2199EB8A0005328B2 /* BLLogoViewController.m in Sources */,
 				F1CA0A6620F3F4340051CC1C /* EmailHandler.swift in Sources */,
 				F1CA0A5520F22D9F0051CC1C /* MenuViewModel.swift in Sources */,

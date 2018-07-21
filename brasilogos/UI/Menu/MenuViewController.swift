@@ -11,9 +11,21 @@ class MenuViewController: UIViewController {
 
     var viewModel: MenuViewModelType!
     
-    @IBOutlet weak var playButton: CustomUIButton!
-    @IBOutlet weak var boardButton: CustomUIButton!
-    @IBOutlet weak var aboutButton: CustomUIButton!
+    @IBOutlet weak var playButton: CustomUIButton! {
+        didSet {
+            playButton.setTitle(viewModel.playButton, for: .normal)
+        }
+    }
+    @IBOutlet weak var boardButton: CustomUIButton! {
+        didSet {
+            boardButton.setTitle(viewModel.boardButton, for: .normal)
+        }
+    }
+    @IBOutlet weak var aboutButton: CustomUIButton! {
+        didSet {
+            aboutButton.setTitle(viewModel.aboutButton, for: .normal)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

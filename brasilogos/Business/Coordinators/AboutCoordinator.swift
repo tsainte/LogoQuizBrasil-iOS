@@ -33,14 +33,12 @@ class AboutCoordinator {
 
 }
 
-extension AboutCoordinator: Coordinator {
-
+extension AboutCoordinator: ViewCoordinator {
     func start() {
         let viewModel = AboutViewModel(viewModelDelegate: aboutVC, coordinatorDelegate: self)
         aboutVC.viewModel = viewModel
-        (window.rootViewController as? UINavigationController)?.pushViewController(aboutVC, animated: true)
+        push(to: aboutVC)
     }
-
 }
 
 extension AboutCoordinator: AboutCoordinatorDelegate {

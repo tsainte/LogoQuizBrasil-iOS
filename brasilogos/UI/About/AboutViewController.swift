@@ -10,8 +10,18 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-    @IBOutlet weak var evaluateButton: CustomUIButton!
-    @IBOutlet weak var sendEmailButton: CustomUIButton!
+    @IBOutlet weak var evaluateButton: CustomUIButton! {
+        didSet {
+            evaluateButton.setTitle(viewModel.evaluateButton,
+                                    for: .normal)
+        }
+    }
+    @IBOutlet weak var sendEmailButton: CustomUIButton! {
+        didSet {
+            sendEmailButton.setTitle(viewModel.sendEmailButton,
+                                     for: .normal)
+        }
+    }
 
     @IBOutlet weak var labelTop: UILabel! {
         didSet {

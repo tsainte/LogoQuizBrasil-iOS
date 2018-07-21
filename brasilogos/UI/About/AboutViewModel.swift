@@ -12,6 +12,8 @@ typealias AboutViewModelType = AboutViewModelBindings & AboutViewModelActions
 protocol AboutViewModelBindings {
     var labelTop: String { get }
     var labelBottom: String { get }
+    var evaluateButton: String { get }
+    var sendEmailButton: String { get }
 }
 protocol AboutViewModelActions {
     func evaluateTapped()
@@ -19,7 +21,7 @@ protocol AboutViewModelActions {
 }
 protocol AboutViewModelDelegate: class { }
 
-class AboutViewModel: NSObject {
+class AboutViewModel: ViewModel {
 
     weak var viewModelDelegate: AboutViewModelDelegate?
     weak var coordinatorDelegate: AboutCoordinatorDelegate?
@@ -32,11 +34,19 @@ class AboutViewModel: NSObject {
 
 extension AboutViewModel: AboutViewModelBindings {
     var labelTop: String {
-        return NSLocalizedString("AboutViewModel:label:TOP", comment: "nil")
+        return NSLocalizedString("AboutViewModel:label:TOP", comment: "")
     }
     
     var labelBottom: String {
-        return NSLocalizedString("AboutViewModel:label:BOTTOM", comment: "nil")
+        return NSLocalizedString("AboutViewModel:label:BOTTOM", comment: "")
+    }
+    
+    var evaluateButton: String {
+        return NSLocalizedString("AboutViewModel:button:EVALUATE", comment: "")
+    }
+    
+    var sendEmailButton: String {
+        return NSLocalizedString("AboutViewModel:button:SEND_EMAIL", comment: "")
     }
 }
 extension AboutViewModel: AboutViewModelActions {

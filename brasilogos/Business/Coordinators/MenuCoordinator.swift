@@ -19,7 +19,7 @@ class MenuCoordinator: NSObject {
     let storyboard: UIStoryboard
     let window: UIWindow
     var childCoordinators: [String: Coordinator] = [:]
-
+    
     init(storyboard: UIStoryboard, window: UIWindow) {
         self.storyboard = storyboard
         self.window = window
@@ -48,7 +48,9 @@ extension MenuCoordinator: Coordinator {
 // MARK: Navigation from view model
 extension MenuCoordinator: MenuCoordinatorDelegate {
     func goToPlay() {
-        
+        let levelListCoordinator = LevelListCoordinator(storyboard: storyboard, window: window)
+        childCoordinators["levelList"] = levelListCoordinator
+        levelListCoordinator.start()
     }
 
     func goToBoard() {
