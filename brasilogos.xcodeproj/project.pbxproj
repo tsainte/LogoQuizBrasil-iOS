@@ -58,6 +58,8 @@
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
 		F1E75DDF20F5545A00884845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E75DDE20F5545900884845 /* Main.storyboard */; };
 		F1EF70B320F2399700D909AF /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF70B220F2399700D909AF /* MenuCoordinator.swift */; };
+		F1EF7CC52105351F00FB61FC /* brasilogosUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF7CC42105351F00FB61FC /* brasilogosUnitTests.swift */; };
+		F1EF7CD32105355C00FB61FC /* brasilogosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF7CD22105355C00FB61FC /* brasilogosUITests.swift */; };
 		F1F4CC7020FA91C100750EB6 /* LevelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC6F20FA91C100750EB6 /* LevelListViewController.swift */; };
 		F1F4CC7220FA91DB00750EB6 /* LevelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7120FA91DB00750EB6 /* LevelListViewModel.swift */; };
 		F1F4CC7420FA925700750EB6 /* LevelListTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4CC7320FA925700750EB6 /* LevelListTableViewManager.swift */; };
@@ -73,15 +75,17 @@
 		F1F8B810198E5D9300578D91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8B80F198E5D9300578D91 /* main.m */; };
 		F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8B813198E5D9300578D91 /* BLAppDelegate.m */; };
 		F1F8B822198E5D9300578D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F8B821198E5D9300578D91 /* Images.xcassets */; };
-		F1F8B829198E5D9300578D91 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B828198E5D9300578D91 /* XCTest.framework */; };
-		F1F8B82A198E5D9300578D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B803198E5D9300578D91 /* Foundation.framework */; };
-		F1F8B82B198E5D9300578D91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B807198E5D9300578D91 /* UIKit.framework */; };
-		F1F8B833198E5D9300578D91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1F8B831198E5D9300578D91 /* InfoPlist.strings */; };
-		F1F8B835198E5D9300578D91 /* brasilogosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8B834198E5D9300578D91 /* brasilogosTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F1F8B82C198E5D9300578D91 /* PBXContainerItemProxy */ = {
+		F1EF7CC72105351F00FB61FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1F8B7F8198E5D9200578D91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1F8B7FF198E5D9300578D91;
+			remoteInfo = brasilogos;
+		};
+		F1EF7CD52105355C00FB61FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F1F8B7F8198E5D9200578D91 /* Project object */;
 			proxyType = 1;
@@ -102,7 +106,6 @@
 		44F7744F1D3AA4A700734F90 /* BLFirebaseAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFirebaseAnalytics.m; sourceTree = "<group>"; };
 		F106AD1E20F54C68009E9A77 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomUIButton.swift; path = UI/Views/CustomUIButton.swift; sourceTree = "<group>"; };
 		F106AD2020F5500C009E9A77 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		F106AD2120F5500C009E9A77 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F106AD2520F550A7009E9A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = brasilogos/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F106AD2620F550A9009E9A77 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "brasilogos/pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F10C63B5199EA825005328B2 /* db.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = db.json; path = brasilogos/db.json; sourceTree = "<group>"; };
@@ -174,6 +177,12 @@
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
 		F1E75DDE20F5545900884845 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = brasilogos/Main.storyboard; sourceTree = "<group>"; };
 		F1EF70B220F2399700D909AF /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCoordinator.swift; path = Business/Coordinators/MenuCoordinator.swift; sourceTree = "<group>"; };
+		F1EF7CC22105351F00FB61FC /* brasilogosUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brasilogosUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EF7CC42105351F00FB61FC /* brasilogosUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brasilogosUnitTests.swift; sourceTree = "<group>"; };
+		F1EF7CC62105351F00FB61FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EF7CD02105355C00FB61FC /* brasilogosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brasilogosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EF7CD22105355C00FB61FC /* brasilogosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brasilogosUITests.swift; sourceTree = "<group>"; };
+		F1EF7CD42105355C00FB61FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F4CC6F20FA91C100750EB6 /* LevelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelListViewController.swift; path = UI/LevelList/LevelListViewController.swift; sourceTree = "<group>"; };
 		F1F4CC7120FA91DB00750EB6 /* LevelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelListViewModel.swift; path = UI/LevelList/LevelListViewModel.swift; sourceTree = "<group>"; };
 		F1F4CC7320FA925700750EB6 /* LevelListTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelListTableViewManager.swift; path = UI/LevelList/LevelListTableViewManager.swift; sourceTree = "<group>"; };
@@ -193,14 +202,24 @@
 		F1F8B812198E5D9300578D91 /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
 		F1F8B813198E5D9300578D91 /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
 		F1F8B821198E5D9300578D91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F1F8B827198E5D9300578D91 /* brasilogosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brasilogosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8B828198E5D9300578D91 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F1F8B830198E5D9300578D91 /* brasilogosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "brasilogosTests-Info.plist"; sourceTree = "<group>"; };
-		F1F8B832198E5D9300578D91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F1F8B834198E5D9300578D91 /* brasilogosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = brasilogosTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F1EF7CBF2105351F00FB61FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EF7CCD2105355C00FB61FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1F8B7FD198E5D9300578D91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,16 +231,6 @@
 				F112E88319A8C378009F70B4 /* StoreKit.framework in Frameworks */,
 				F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */,
 				5CA6FACC800CA7A739CCED8E /* libPods-brasilogos.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1F8B824198E5D9300578D91 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1F8B829198E5D9300578D91 /* XCTest.framework in Frameworks */,
-				F1F8B82B198E5D9300578D91 /* UIKit.framework in Frameworks */,
-				F1F8B82A198E5D9300578D91 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +453,24 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		F1EF7CC32105351F00FB61FC /* brasilogosUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF7CC42105351F00FB61FC /* brasilogosUnitTests.swift */,
+				F1EF7CC62105351F00FB61FC /* Info.plist */,
+			);
+			path = brasilogosUnitTests;
+			sourceTree = "<group>";
+		};
+		F1EF7CD12105355C00FB61FC /* brasilogosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF7CD22105355C00FB61FC /* brasilogosUITests.swift */,
+				F1EF7CD42105355C00FB61FC /* Info.plist */,
+			);
+			path = brasilogosUITests;
+			sourceTree = "<group>";
+		};
 		F1F4CC6E20FA918100750EB6 /* LevelList */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,7 +500,8 @@
 				F175864C1C666D5A00B54134 /* Launch Screen.storyboard */,
 				F10C63B5199EA825005328B2 /* db.json */,
 				F1F8B809198E5D9300578D91 /* brasilogos */,
-				F1F8B82E198E5D9300578D91 /* brasilogosTests */,
+				F1EF7CC32105351F00FB61FC /* brasilogosUnitTests */,
+				F1EF7CD12105355C00FB61FC /* brasilogosUITests */,
 				F1F8B802198E5D9300578D91 /* Frameworks */,
 				F1F8B801198E5D9300578D91 /* Products */,
 				98CC9D57650D42D98D4B5DE5 /* Pods */,
@@ -484,7 +512,8 @@
 			isa = PBXGroup;
 			children = (
 				F1F8B800198E5D9300578D91 /* brasilogos.app */,
-				F1F8B827198E5D9300578D91 /* brasilogosTests.xctest */,
+				F1EF7CC22105351F00FB61FC /* brasilogosUnitTests.xctest */,
+				F1EF7CD02105355C00FB61FC /* brasilogosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -536,27 +565,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F1F8B82E198E5D9300578D91 /* brasilogosTests */ = {
-			isa = PBXGroup;
-			children = (
-				F1F8B834198E5D9300578D91 /* brasilogosTests.m */,
-				F1F8B82F198E5D9300578D91 /* Supporting Files */,
-			);
-			path = brasilogosTests;
-			sourceTree = "<group>";
-		};
-		F1F8B82F198E5D9300578D91 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F1F8B830198E5D9300578D91 /* brasilogosTests-Info.plist */,
-				F1F8B831198E5D9300578D91 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F1EF7CC12105351F00FB61FC /* brasilogosUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1EF7CC92105351F00FB61FC /* Build configuration list for PBXNativeTarget "brasilogosUnitTests" */;
+			buildPhases = (
+				F1EF7CBE2105351F00FB61FC /* Sources */,
+				F1EF7CBF2105351F00FB61FC /* Frameworks */,
+				F1EF7CC02105351F00FB61FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1EF7CC82105351F00FB61FC /* PBXTargetDependency */,
+			);
+			name = brasilogosUnitTests;
+			productName = brasilogosUnitTests;
+			productReference = F1EF7CC22105351F00FB61FC /* brasilogosUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1EF7CCF2105355C00FB61FC /* brasilogosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1EF7CD72105355C00FB61FC /* Build configuration list for PBXNativeTarget "brasilogosUITests" */;
+			buildPhases = (
+				F1EF7CCC2105355C00FB61FC /* Sources */,
+				F1EF7CCD2105355C00FB61FC /* Frameworks */,
+				F1EF7CCE2105355C00FB61FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1EF7CD62105355C00FB61FC /* PBXTargetDependency */,
+			);
+			name = brasilogosUITests;
+			productName = brasilogosUITests;
+			productReference = F1EF7CD02105355C00FB61FC /* brasilogosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F1F8B7FF198E5D9300578D91 /* brasilogos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F8B838198E5D9300578D91 /* Build configuration list for PBXNativeTarget "brasilogos" */;
@@ -579,24 +626,6 @@
 			productReference = F1F8B800198E5D9300578D91 /* brasilogos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F1F8B826198E5D9300578D91 /* brasilogosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F1F8B83B198E5D9300578D91 /* Build configuration list for PBXNativeTarget "brasilogosTests" */;
-			buildPhases = (
-				F1F8B823198E5D9300578D91 /* Sources */,
-				F1F8B824198E5D9300578D91 /* Frameworks */,
-				F1F8B825198E5D9300578D91 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F1F8B82D198E5D9300578D91 /* PBXTargetDependency */,
-			);
-			name = brasilogosTests;
-			productName = brasilogosTests;
-			productReference = F1F8B827198E5D9300578D91 /* brasilogosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -604,9 +633,20 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BL;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = MobWiz;
 				TargetAttributes = {
+					F1EF7CC12105351F00FB61FC = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1F8B7FF198E5D9300578D91;
+					};
+					F1EF7CCF2105355C00FB61FC = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1F8B7FF198E5D9300578D91;
+					};
 					F1F8B7FF198E5D9300578D91 = {
 						DevelopmentTeam = QX2M8PE6QE;
 						LastSwiftMigration = 1000;
@@ -619,9 +659,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					F1F8B826198E5D9300578D91 = {
-						TestTargetID = F1F8B7FF198E5D9300578D91;
 					};
 				};
 			};
@@ -639,12 +676,27 @@
 			projectRoot = "";
 			targets = (
 				F1F8B7FF198E5D9300578D91 /* brasilogos */,
-				F1F8B826198E5D9300578D91 /* brasilogosTests */,
+				F1EF7CC12105351F00FB61FC /* brasilogosUnitTests */,
+				F1EF7CCF2105355C00FB61FC /* brasilogosUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F1EF7CC02105351F00FB61FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EF7CCE2105355C00FB61FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1F8B7FE198E5D9300578D91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -662,14 +714,6 @@
 				F112978819A0F53C00ACE7A2 /* fail.mp3 in Resources */,
 				F1F8B80E198E5D9300578D91 /* InfoPlist.strings in Resources */,
 				F112978919A0F53C00ACE7A2 /* fbbutton.mp3 in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1F8B825198E5D9300578D91 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1F8B833198E5D9300578D91 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +807,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F1EF7CBE2105351F00FB61FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EF7CC52105351F00FB61FC /* brasilogosUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EF7CCC2105355C00FB61FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EF7CD32105355C00FB61FC /* brasilogosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1F8B7FC198E5D9300578D91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -816,21 +876,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1F8B823198E5D9300578D91 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1F8B835198E5D9300578D91 /* brasilogosTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F1F8B82D198E5D9300578D91 /* PBXTargetDependency */ = {
+		F1EF7CC82105351F00FB61FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F1F8B7FF198E5D9300578D91 /* brasilogos */;
-			targetProxy = F1F8B82C198E5D9300578D91 /* PBXContainerItemProxy */;
+			targetProxy = F1EF7CC72105351F00FB61FC /* PBXContainerItemProxy */;
+		};
+		F1EF7CD62105355C00FB61FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1F8B7FF198E5D9300578D91 /* brasilogos */;
+			targetProxy = F1EF7CD52105355C00FB61FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -853,18 +910,157 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F1F8B831198E5D9300578D91 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1F8B832198E5D9300578D91 /* en */,
-				F106AD2120F5500C009E9A77 /* pt-BR */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F1EF7CCA2105351F00FB61FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = brasilogosUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mobwiz.brasilogosUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
+			};
+			name = Debug;
+		};
+		F1EF7CCB2105351F00FB61FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = brasilogosUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mobwiz.brasilogosUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
+			};
+			name = Release;
+		};
+		F1EF7CD82105355C00FB61FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = brasilogosUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mobwiz.brasilogosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c9926b7f-3441-4d15-b968-e30501a17fb7";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = brasilogos;
+			};
+			name = Debug;
+		};
+		F1EF7CD92105355C00FB61FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = brasilogosUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mobwiz.brasilogosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c9926b7f-3441-4d15-b968-e30501a17fb7";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = brasilogos;
+			};
+			name = Release;
+		};
 		F1F8B836198E5D9300578D91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1005,53 +1201,27 @@
 			};
 			name = Release;
 		};
-		F1F8B83C198E5D9300578D91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "brasilogosTests/brasilogosTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F1F8B83D198E5D9300578D91 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "brasilogos/brasilogos-Prefix.pch";
-				INFOPLIST_FILE = "brasilogosTests/brasilogosTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.mobwiz.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F1EF7CC92105351F00FB61FC /* Build configuration list for PBXNativeTarget "brasilogosUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EF7CCA2105351F00FB61FC /* Debug */,
+				F1EF7CCB2105351F00FB61FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1EF7CD72105355C00FB61FC /* Build configuration list for PBXNativeTarget "brasilogosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EF7CD82105355C00FB61FC /* Debug */,
+				F1EF7CD92105355C00FB61FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F1F8B7FB198E5D9200578D91 /* Build configuration list for PBXProject "brasilogos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1066,15 +1236,6 @@
 			buildConfigurations = (
 				F1F8B839198E5D9300578D91 /* Debug */,
 				F1F8B83A198E5D9300578D91 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F1F8B83B198E5D9300578D91 /* Build configuration list for PBXNativeTarget "brasilogosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1F8B83C198E5D9300578D91 /* Debug */,
-				F1F8B83D198E5D9300578D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
