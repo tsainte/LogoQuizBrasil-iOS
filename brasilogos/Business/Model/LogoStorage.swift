@@ -10,7 +10,7 @@ import Foundation
 
 struct LogoStorage {
     let levels: [Level] = levelGenerator()
-    
+
     //TODO: implement parser
     static func levelGenerator() -> [Level] {
         var levels: [Level] = []

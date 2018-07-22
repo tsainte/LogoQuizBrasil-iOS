@@ -33,7 +33,9 @@ class EmailHandler: NSObject {
 }
 
 extension EmailHandler: MFMailComposeViewControllerDelegate {
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult,
+                               error: Error?) {
         switch result {
         case .sent:
             toaster?.toast(message: "Email enviado")

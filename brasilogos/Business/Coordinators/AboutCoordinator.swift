@@ -25,7 +25,8 @@ class AboutCoordinator {
     init(storyboard: UIStoryboard, window: UIWindow) {
         self.storyboard = storyboard
         self.window = window
-        guard let aboutVC = storyboard.instantiateViewController(withIdentifier: "AboutViewController") as? AboutViewController else {
+        guard let aboutVC = storyboard.instantiateViewController(withIdentifier: "AboutViewController")
+            as? AboutViewController else {
             fatalError("Can't instantiate AboutViewController")
         }
         self.aboutVC = aboutVC
@@ -69,4 +70,3 @@ extension AboutCoordinator: Toaster {
         aboutVC.view.makeToast(message)
     }
 }
-

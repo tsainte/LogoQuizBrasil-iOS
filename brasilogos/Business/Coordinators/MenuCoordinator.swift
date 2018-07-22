@@ -19,7 +19,7 @@ class MenuCoordinator: NSObject {
     let storyboard: UIStoryboard
     let window: UIWindow
     var childCoordinators: [String: Coordinator] = [:]
-    
+
     init(storyboard: UIStoryboard, window: UIWindow) {
         self.storyboard = storyboard
         self.window = window
@@ -28,10 +28,12 @@ class MenuCoordinator: NSObject {
 
 extension MenuCoordinator: Coordinator {
     func start() {
-        guard let navigationVC = storyboard.instantiateViewController(withIdentifier: "NavigationController") as? UINavigationController else {
+        guard let navigationVC = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+            as? UINavigationController else {
             fatalError("Can't instantiate navigation controller from storyboard")
         }
-        guard let menuVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else {
+        guard let menuVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController")
+            as? MenuViewController else {
             fatalError("Can't instantiate menu view controller")
         }
 

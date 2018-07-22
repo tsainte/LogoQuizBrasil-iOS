@@ -10,7 +10,7 @@ import UIKit
 class MenuViewController: UIViewController {
 
     var viewModel: MenuViewModelType!
-    
+
     @IBOutlet weak var playButton: CustomUIButton! {
         didSet {
             playButton.setTitle(viewModel.playButton, for: .normal)

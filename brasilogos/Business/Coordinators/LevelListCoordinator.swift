@@ -9,16 +9,17 @@
 import UIKit
 
 class LevelListCoordinator: NSObject {
-    
+
     let storyboard: UIStoryboard
     let window: UIWindow
     let levelListVC: LevelListViewController
     let logoStorage = LogoStorage()
-    
+
     init(storyboard: UIStoryboard, window: UIWindow) {
         self.storyboard = storyboard
         self.window = window
-        guard let levelListVC = storyboard.instantiateViewController(withIdentifier: "LevelListViewController") as? LevelListViewController else {
+        guard let levelListVC = storyboard.instantiateViewController(withIdentifier: "LevelListViewController")
+            as? LevelListViewController else {
             fatalError("Can't instantiate LevelListViewController")
         }
         self.levelListVC = levelListVC

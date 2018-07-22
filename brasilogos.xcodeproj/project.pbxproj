@@ -10,7 +10,7 @@
 		446CCBDC1D45070D00602313 /* BLAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CCBDB1D45070D00602313 /* BLAnalytics.m */; };
 		446CCBDF1D45081C00602313 /* BLFlurryAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CCBDE1D45081C00602313 /* BLFlurryAnalytics.m */; };
 		44F774501D3AA4A700734F90 /* BLFirebaseAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7744F1D3AA4A700734F90 /* BLFirebaseAnalytics.m */; };
-		C6F24CEEF31483DF9E784780 /* libPods-brasilogos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */; };
+		5CA6FACC800CA7A739CCED8E /* libPods-brasilogos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1965C534B08CFA16223406B2 /* libPods-brasilogos.a */; };
 		F106AD1F20F54C68009E9A77 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F106AD1E20F54C68009E9A77 /* CustomUIButton.swift */; };
 		F106AD2420F550A0009E9A77 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F106AD2220F550A0009E9A77 /* Localizable.strings */; };
 		F10C63B6199EA825005328B2 /* db.json in Resources */ = {isa = PBXBuildFile; fileRef = F10C63B5199EA825005328B2 /* db.json */; };
@@ -92,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		1719167C13704E4C5B2D64A3 /* Pods-brasilogos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasilogos.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos.release.xcconfig"; sourceTree = "<group>"; };
+		1965C534B08CFA16223406B2 /* libPods-brasilogos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brasilogos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F2EF3A2CC56244DB29C5B7 /* Pods-brasilogos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasilogos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos.debug.xcconfig"; sourceTree = "<group>"; };
 		446CCBDA1D45070D00602313 /* BLAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAnalytics.h; sourceTree = "<group>"; };
 		446CCBDB1D45070D00602313 /* BLAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAnalytics.m; sourceTree = "<group>"; };
@@ -99,7 +100,6 @@
 		446CCBDE1D45081C00602313 /* BLFlurryAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFlurryAnalytics.m; sourceTree = "<group>"; };
 		44F7744E1D3AA4A700734F90 /* BLFirebaseAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLFirebaseAnalytics.h; sourceTree = "<group>"; };
 		44F7744F1D3AA4A700734F90 /* BLFirebaseAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFirebaseAnalytics.m; sourceTree = "<group>"; };
-		A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-brasilogos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F106AD1E20F54C68009E9A77 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomUIButton.swift; path = UI/Views/CustomUIButton.swift; sourceTree = "<group>"; };
 		F106AD2020F5500C009E9A77 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F106AD2120F5500C009E9A77 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 				F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */,
 				F112E88319A8C378009F70B4 /* StoreKit.framework in Frameworks */,
 				F1F8B804198E5D9300578D91 /* Foundation.framework in Frameworks */,
-				C6F24CEEF31483DF9E784780 /* libPods-brasilogos.a in Frameworks */,
+				5CA6FACC800CA7A739CCED8E /* libPods-brasilogos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +499,7 @@
 				F1F8B805198E5D9300578D91 /* CoreGraphics.framework */,
 				F1F8B807198E5D9300578D91 /* UIKit.framework */,
 				F1F8B828198E5D9300578D91 /* XCTest.framework */,
-				A44F5E317B4B03DE43791A44 /* libPods-brasilogos.a */,
+				1965C534B08CFA16223406B2 /* libPods-brasilogos.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -687,7 +687,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" ec5efe51f609825d79487cb10744bb30708a36ab 94daeec529cf5779974bcf12e14a8f937f515cee67f9b5da1b7a92b3781386e5";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ec5efe51f609825d79487cb10744bb30708a36ab 94daeec529cf5779974bcf12e14a8f937f515cee67f9b5da1b7a92b3781386e5\n";
 		};
 		567CAA2EA351EFE02E69D0F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -728,9 +728,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-brasilogos/Pods-brasilogos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Slash/Slash.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Slash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

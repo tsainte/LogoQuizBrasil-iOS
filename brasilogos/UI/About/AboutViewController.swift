@@ -42,7 +42,7 @@ class AboutViewController: UIViewController {
     @IBAction func evaluateTapped() {
         viewModel.evaluateTapped()
     }
-    
+
     @IBAction func sendEmailTapped() {
         viewModel.sendEmailTapped()
     }

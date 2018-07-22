@@ -36,15 +36,15 @@ extension AboutViewModel: AboutViewModelBindings {
     var labelTop: String {
         return NSLocalizedString("AboutViewModel:label:TOP", comment: "")
     }
-    
+
     var labelBottom: String {
         return NSLocalizedString("AboutViewModel:label:BOTTOM", comment: "")
     }
-    
+
     var evaluateButton: String {
         return NSLocalizedString("AboutViewModel:button:EVALUATE", comment: "")
     }
-    
+
     var sendEmailButton: String {
         return NSLocalizedString("AboutViewModel:button:SEND_EMAIL", comment: "")
     }

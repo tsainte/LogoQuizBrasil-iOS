@@ -38,16 +38,15 @@ extension MenuViewModel: MenuViewModelBindings {
     var playButton: String {
         return NSLocalizedString("MenuViewModel:button:PLAY", comment: "")
     }
-    
+
     var boardButton: String {
         return NSLocalizedString("MenuViewModel:button:BOARD", comment: "")
     }
-    
+
     var aboutButton: String {
         return NSLocalizedString("MenuViewModel:button:ABOUT", comment: "")
     }
-    
-    
+
 }
 extension MenuViewModel: MenuViewModelActions {
     func playDidTapped() {

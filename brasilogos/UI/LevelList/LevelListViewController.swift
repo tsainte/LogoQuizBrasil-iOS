@@ -9,7 +9,7 @@
 import UIKit
 
 class LevelListViewController: UIViewController {
-    
+
     var viewModel: LevelListViewModelType!
     var tableViewManager: LevelListTableViewManager!
     @IBOutlet weak var tableView: UITableView!

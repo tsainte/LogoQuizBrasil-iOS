@@ -17,7 +17,7 @@ class CustomUIButton: UIButton {
             self.layer.cornerRadius = cornerRadius
         }
     }
-    
+
     @IBInspectable
     var rounded: Bool = false {
         didSet {

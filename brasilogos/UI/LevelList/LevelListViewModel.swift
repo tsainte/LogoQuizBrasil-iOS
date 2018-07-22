@@ -23,7 +23,7 @@ protocol LevelListDataProvider: class {
 protocol LevelListActions {}
 
 class LevelListViewModel: ViewModel {
-    
+
     weak var delegate: LevelListViewController?
     let levelDataModels: [LevelDataModel]
     init(delegate: LevelListViewController, levels: [Level]) {
@@ -36,7 +36,7 @@ extension LevelListViewModel: LevelListDataProvider {
     var numberOfRows: Int {
         return levelDataModels.count
     }
-    
+
     func displayModel(for index: Int) -> LevelDataModel {
         return levelDataModels[index]
     }

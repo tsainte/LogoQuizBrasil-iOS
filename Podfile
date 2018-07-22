@@ -10,4 +10,5 @@ target 'brasilogos' do
     pod 'Firebase/AdMob'
     pod 'Flurry-iOS-SDK/FlurrySDK'
     pod 'Slash'
+    pod 'SwiftLint'
 end
