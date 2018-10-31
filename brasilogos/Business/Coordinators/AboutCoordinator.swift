@@ -47,9 +47,9 @@ extension AboutCoordinator: AboutCoordinatorDelegate {
         guard let appID = Bundle.main.infoDictionary?["AppId"],
             let url = URL(string: "itms-apps://itunes.apple.com/app/id\(appID)")
             else {
-            return
+                return
         }
-        UIApplication.shared.openURL(url)
+        UIApplication.shared.open(url)
     }
 
     func goToEmail() {

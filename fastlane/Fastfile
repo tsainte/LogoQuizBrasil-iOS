@@ -23,8 +23,8 @@ default_platform :ios
 platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    cocoapods
-    
+    # cocoapods
+
   end
 
   desc "Runs all the tests"
@@ -44,7 +44,7 @@ platform :ios do
   end
 
   desc "Deploy a new version to the App Store"
-  lane :appstore do
+  lane :production do
     match(type: "appstore")
     # snapshot
     gym(scheme: "brasilogos") # Build your app - more options available
@@ -53,9 +53,9 @@ platform :ios do
   end
 
   lane :provisioning do
-    match(type: "development")
-    match(type: "adhoc")
-    match(type: "appstore")
+    match(type: "development", git_url: ENV['MW_CERT_GIT_URL'])
+    match(type: "adhoc", git_url: ENV['MW_CERT_GIT_URL'])
+    match(type: "appstore", git_url: ENV['MW_CERT_GIT_URL'])
   end
 
   after_all do |lane|

@@ -13,16 +13,16 @@ PODS:
   - FirebaseAnalytics (4.0.4):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.9):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseInstanceID (2.0.5)
   - Flurry-iOS-SDK/FlurrySDK (8.3.0)
   - Google-Mobile-Ads-SDK (7.24.1)
   - GoogleToolboxForMac/Defines (2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -42,6 +42,21 @@ DEPENDENCIES:
   - Slash
   - SwiftLint
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - Flurry-iOS-SDK
+    - Google-Mobile-Ads-SDK
+    - GoogleToolboxForMac
+    - nanopb
+    - Slash
+    - SwiftLint
+
 SPEC CHECKSUMS:
   Crashlytics: 64aad5dd97249dd3ff94b979fea140144590cdd3
   Fabric: e6be012366472553807dada21243c5ab8d904151
@@ -56,6 +71,6 @@ SPEC CHECKSUMS:
   Slash: 7184f2a98e13ad62303037db3a706c88e98b197e
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
 
-PODFILE CHECKSUM: e99e5d1121b372c48832a38886f8d53fc9d5ef69
+PODFILE CHECKSUM: f2ad16b08daba51709d0c4ea7eb18131f5dc5a84
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
