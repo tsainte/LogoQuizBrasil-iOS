@@ -8,11 +8,12 @@
 
 import UIKit
 
+//TODO: Consider convert to struct once we finish migration to swift
 class ApplicationCoordinator: NSObject {
 
     let window: UIWindow
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    var childCoordinator: MenuCoordinator?
+    var childCoordinator: Coordinator?
 
     @objc init(window: UIWindow) {
         self.window = window

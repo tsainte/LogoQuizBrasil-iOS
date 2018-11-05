@@ -8,21 +8,33 @@
 
 import UIKit
 
-protocol MenuCoordinatorDelegate: class {
+protocol MenuCoordinatorDelegate {
     func goToPlay()
     func goToBoard()
     func goToAbout()
 }
 
-class MenuCoordinator: NSObject {
+
+
+struct MenuCoordinator {
 
     let storyboard: UIStoryboard
     let window: UIWindow
-    var childCoordinators: [String: Coordinator] = [:]
+    let childCoordinators: [String: Coordinator]
+
+    struct Coordinators {
+        static let levelList = "LevelListCoordinator"
+        static let about = "About"
+    }
 
     init(storyboard: UIStoryboard, window: UIWindow) {
         self.storyboard = storyboard
         self.window = window
+
+        childCoordinators = [
+            Coordinators.levelList : LevelListCoordinator(storyboard: storyboard, window: window),
+            Coordinators.about : AboutCoordinator(storyboard: storyboard, window: window)
+        ]
     }
 }
 
@@ -50,9 +62,8 @@ extension MenuCoordinator: Coordinator {
 // MARK: Navigation from view model
 extension MenuCoordinator: MenuCoordinatorDelegate {
     func goToPlay() {
-        let levelListCoordinator = LevelListCoordinator(storyboard: storyboard, window: window)
-        childCoordinators["levelList"] = levelListCoordinator
-        levelListCoordinator.start()
+        let coordinator = childCoordinators[Coordinators.levelList]
+        coordinator?.start()
     }
 
     func goToBoard() {
@@ -60,8 +71,7 @@ extension MenuCoordinator: MenuCoordinatorDelegate {
     }
 
     func goToAbout() {
-        let aboutCoordinator = AboutCoordinator(storyboard: storyboard, window: window)
-        childCoordinators["about"] = aboutCoordinator
-        aboutCoordinator.start()
+        let coordinator = childCoordinators[Coordinators.about]
+        coordinator?.start()
     }
 }

@@ -55,6 +55,7 @@
 		F1CA0A6620F3F4340051CC1C /* EmailHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A6520F3F4340051CC1C /* EmailHandler.swift */; };
 		F1CA0A6820F3FB4C0051CC1C /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A6720F3FB4C0051CC1C /* Toaster.swift */; };
 		F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */; };
+		F1D86B72218CA641001B394F /* LogoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D86B71218CA641001B394F /* LogoParser.swift */; };
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
 		F1E75DDF20F5545A00884845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E75DDE20F5545900884845 /* Main.storyboard */; };
 		F1EF70B320F2399700D909AF /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF70B220F2399700D909AF /* MenuCoordinator.swift */; };
@@ -173,6 +174,7 @@
 		F1CA0A6720F3FB4C0051CC1C /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Toaster.swift; path = Protocols/Toaster.swift; sourceTree = "<group>"; };
 		F1CD24E81A392DBE00DD6A8B /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		F1D86B71218CA641001B394F /* LogoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogoParser.swift; path = Business/Model/LogoParser.swift; sourceTree = "<group>"; };
 		F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAlertOverlayViewController.h; sourceTree = "<group>"; };
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
 		F1E75DDE20F5545900884845 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = brasilogos/Main.storyboard; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 				F1F4CC7620FA96B800750EB6 /* Level.swift */,
 				F1F4CC7820FA96EF00750EB6 /* Logo.swift */,
 				F1F4CC7A20FA973A00750EB6 /* LogoStorage.swift */,
+				F1D86B71218CA641001B394F /* LogoParser.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -787,6 +790,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */,
+				F1D86B72218CA641001B394F /* LogoParser.swift in Sources */,
 				F1269B8619C5F0B600A89099 /* BLController.m in Sources */,
 				F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */,
 				F1F4CC7220FA91DB00750EB6 /* LevelListViewModel.swift in Sources */,

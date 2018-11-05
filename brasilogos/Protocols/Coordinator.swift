@@ -20,6 +20,8 @@ protocol ViewCoordinator: Coordinator {
 
 extension ViewCoordinator {
     func push(to viewController: UIViewController) {
-        (window.rootViewController as? UINavigationController)?.pushViewController(viewController, animated: true)
+        if let navigationController = window.rootViewController as? UINavigationController {
+            navigationController.pushViewController(viewController, animated: true)
+        }
     }
 }

@@ -14,12 +14,13 @@ class EmailHandler: NSObject {
     let message: String
     let recipients: [String]
 
-    weak var toaster: Toaster?
+    let toaster: Toaster
 
     init(subject: String, message: String, recipients: [String], toaster: Toaster) {
         self.subject = subject
         self.message = message
         self.recipients = recipients
+        self.toaster = toaster
     }
 
     func mailComposer() -> MFMailComposeViewController {
@@ -38,13 +39,13 @@ extension EmailHandler: MFMailComposeViewControllerDelegate {
                                error: Error?) {
         switch result {
         case .sent:
-            toaster?.toast(message: "Email enviado")
+            toaster.toast(message: "Email enviado")
         case .saved:
-            toaster?.toast(message: "Email salvo")
+            toaster.toast(message: "Email salvo")
         case .failed:
-            toaster?.toast(message: "Oops, email não pode ser enviado")
+            toaster.toast(message: "Oops, email não pode ser enviado")
         case .cancelled:
-            toaster?.toast(message: "Email cancelado")
+            toaster.toast(message: "Email cancelado")
         }
         controller.dismiss(animated: true, completion: nil)
     }

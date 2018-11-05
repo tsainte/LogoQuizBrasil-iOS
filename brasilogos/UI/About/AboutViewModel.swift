@@ -24,7 +24,7 @@ protocol AboutViewModelDelegate: class { }
 class AboutViewModel: ViewModel {
 
     weak var viewModelDelegate: AboutViewModelDelegate?
-    weak var coordinatorDelegate: AboutCoordinatorDelegate?
+    let coordinatorDelegate: AboutCoordinatorDelegate
     init(viewModelDelegate: AboutViewModelDelegate,
          coordinatorDelegate: AboutCoordinatorDelegate) {
         self.viewModelDelegate = viewModelDelegate
@@ -51,10 +51,10 @@ extension AboutViewModel: AboutViewModelBindings {
 }
 extension AboutViewModel: AboutViewModelActions {
     func evaluateTapped() {
-        coordinatorDelegate?.goToEvaluate()
+        coordinatorDelegate.goToEvaluate()
     }
 
     func sendEmailTapped() {
-        coordinatorDelegate?.goToEmail()
+        coordinatorDelegate.goToEmail()
     }
 }

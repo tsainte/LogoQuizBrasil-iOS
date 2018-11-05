@@ -9,5 +9,6 @@
 import Foundation
 
 struct Level {
+    let levelNumber: Int
     let logos: [Logo]
 }

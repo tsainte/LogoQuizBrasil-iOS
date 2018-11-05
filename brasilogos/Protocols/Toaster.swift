@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol Toaster: class {
+protocol Toaster {
     func toast(message: String)
 }

@@ -9,14 +9,17 @@
 import Foundation
 
 struct LogoStorage {
-    let levels: [Level] = levelGenerator()
+    let fileURL: URL
+    let levels: [Level]
 
-    //TODO: implement parser
-    static func levelGenerator() -> [Level] {
-        var levels: [Level] = []
-        for _ in 0..<16 {
-            levels.append(Level(logos: [Logo()]))
-        }
-        return levels
+    init(fileURL: URL) throws {
+        self.fileURL = fileURL
+        let data = try Data(contentsOf: fileURL)
+        levels = try LogoStorage.loadLevels(with: data)
+    }
+
+    static func loadLevels(with data: Data) throws -> [Level] {
+        let logoParser = LogoParser(data: data)
+        return try logoParser.parse()
     }
 }

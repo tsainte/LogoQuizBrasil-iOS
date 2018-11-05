@@ -15,6 +15,7 @@ protocol MenuViewModelBindings {
     var boardButton: String { get }
     var aboutButton: String { get }
 }
+
 protocol MenuViewModelActions {
     func playDidTapped()
     func boardDidTapped()
@@ -26,7 +27,7 @@ protocol MenuViewModelDelegate: class { }
 class MenuViewModel: ViewModel {
 
     weak var viewModelDelegate: MenuViewModelDelegate?
-    weak var coordinatorDelegate: MenuCoordinatorDelegate?
+    let coordinatorDelegate: MenuCoordinatorDelegate
 
     init(viewModelDelegate: MenuViewModelDelegate, coordinatorDelegate: MenuCoordinatorDelegate) {
         self.viewModelDelegate = viewModelDelegate
@@ -50,14 +51,14 @@ extension MenuViewModel: MenuViewModelBindings {
 }
 extension MenuViewModel: MenuViewModelActions {
     func playDidTapped() {
-        coordinatorDelegate?.goToPlay()
+        coordinatorDelegate.goToPlay()
     }
 
     func boardDidTapped() {
-        coordinatorDelegate?.goToBoard()
+        coordinatorDelegate.goToBoard()
     }
 
     func aboutDidTapped() {
-        coordinatorDelegate?.goToAbout()
+        coordinatorDelegate.goToAbout()
     }
 }

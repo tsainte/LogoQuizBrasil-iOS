@@ -9,18 +9,17 @@
 import UIKit
 import MessageUI
 
-protocol AboutCoordinatorDelegate: class {
+protocol AboutCoordinatorDelegate {
     func goToEvaluate()
     func goToEmail()
 }
 
-class AboutCoordinator {
+struct AboutCoordinator {
 
     let storyboard: UIStoryboard
     let window: UIWindow
 
     let aboutVC: AboutViewController
-    var emailHandler: EmailHandler!
 
     init(storyboard: UIStoryboard, window: UIWindow) {
         self.storyboard = storyboard
@@ -54,7 +53,7 @@ extension AboutCoordinator: AboutCoordinatorDelegate {
 
     func goToEmail() {
         if MFMailComposeViewController.canSendMail() {
-            emailHandler = EmailHandler(subject: NSLocalizedString("AboutCoordinator:Email:SUBJECT", comment: ""),
+            let emailHandler = EmailHandler(subject: NSLocalizedString("AboutCoordinator:Email:SUBJECT", comment: ""),
                                         message: "",
                                         recipients: ["ios@mobwiz.com.br"],
                                         toaster: self)
