@@ -8,38 +8,72 @@
 
 import Foundation
 
-struct LevelDataModel {
+struct LevelCellDisplayModel {
+    let levelName: String
+    let correctLogosDescription: String
+    let correctLogosPercentage: Float
+    let isEnabled: Bool
+
     init(level: Level) {
+        let correctLogos = BLDatabaseManager.correctLogos(forLevel: level.levelNumber)
+        let totalLogos = LogoParser.logosPerLevel
+
+        levelName = "Nível \(level.levelNumber)"
+        correctLogosDescription = "\(correctLogos) / \(totalLogos)"
+        correctLogosPercentage = Float(correctLogos / totalLogos)
+        isEnabled = BLGameManager.canPlayLevel(level.levelNumber)
     }
 }
 
 typealias LevelListViewModelType = LevelListDataProvider & LevelListActions
 
-protocol LevelListDataProvider: class {
+protocol LevelListDataProvider {
     var numberOfRows: Int { get }
-    func displayModel(for index: Int) -> LevelDataModel
+    func displayModel(for index: Int) -> LevelCellDisplayModel
 }
 
-protocol LevelListActions {}
+protocol LevelListActions {
+    func userDidTapped(index: Int)
+}
+
+protocol LevelListViewModelDelegate: class {
+    func showMessage(_ message: String)
+}
 
 class LevelListViewModel: ViewModel {
 
-    weak var delegate: LevelListViewController?
-    let levelDataModels: [LevelDataModel]
-    init(delegate: LevelListViewController, levels: [Level]) {
-        self.delegate = delegate
-        levelDataModels = levels.map { LevelDataModel(level: $0) }
+    weak var viewDelegate: LevelListViewModelDelegate?
+    let levelCellDisplayModels: [LevelCellDisplayModel]
+    let coordinator: LevelListCoordinatorDelegate
+
+    init(delegate: LevelListViewModelDelegate,
+         coordinator: LevelListCoordinatorDelegate,
+         levels: [Level]) {
+        self.viewDelegate = delegate
+        self.coordinator = coordinator
+        levelCellDisplayModels = levels.map { LevelCellDisplayModel(level: $0) }
     }
 }
 
 extension LevelListViewModel: LevelListDataProvider {
     var numberOfRows: Int {
-        return levelDataModels.count
+        return levelCellDisplayModels.count
     }
 
-    func displayModel(for index: Int) -> LevelDataModel {
-        return levelDataModels[index]
+    func displayModel(for index: Int) -> LevelCellDisplayModel {
+        return levelCellDisplayModels[index]
     }
 }
 
-extension LevelListViewModel: LevelListActions {}
+extension LevelListViewModel: LevelListActions {
+    func userDidTapped(index: Int) {
+        let level = index + 1
+        let levelEnabled = BLGameManager.canPlayLevel(level)
+
+        if levelEnabled {
+            coordinator.goToLevel(level)
+        } else {
+            viewDelegate?.showMessage("oops")
+        }
+    }
+}

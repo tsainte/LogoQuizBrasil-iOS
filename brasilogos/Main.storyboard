@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +26,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="397"/>
+            <point key="canvasLocation" x="-294.39999999999998" y="357.12143928035982"/>
         </scene>
         <!-- -->
         <scene sceneID="iyO-M9-HX3">
@@ -120,12 +120,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKr-Oz-DpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="PKO-Gg-fqV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="355" y="397"/>
+            <point key="canvasLocation" x="568" y="357.12143928035982"/>
         </scene>
-        <!--Sobre-->
+        <!--About-->
         <scene sceneID="RYS-lM-saA">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" id="4kc-yP-Kaq" customClass="AboutViewController" customModule="brasilogos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" id="4kc-yP-Kaq" userLabel="About" customClass="AboutViewController" customModule="brasilogos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y5R-RH-AMx"/>
                         <viewControllerLayoutGuide type="bottom" id="8Kx-Ij-3Wk"/>
@@ -214,12 +214,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCo-L0-egv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="1374"/>
+            <point key="canvasLocation" x="568" y="1235.9820089955024"/>
         </scene>
-        <!--Níveis-->
+        <!--Level List-->
         <scene sceneID="QhD-3P-omt">
             <objects>
-                <viewController storyboardIdentifier="LevelListViewController" id="ghL-Pg-MWb" customClass="LevelListViewController" customModule="brasilogos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelListViewController" id="ghL-Pg-MWb" userLabel="Level List" customClass="LevelListViewController" customModule="brasilogos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L8r-CC-7dG"/>
                         <viewControllerLayoutGuide type="bottom" id="cGu-2B-CVK"/>
@@ -234,7 +234,7 @@
                                 <color key="separatorColor" red="0.28627450980000002" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="cell" id="ToO-wJ-7MP">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="LevelTableViewCell" id="ToO-wJ-7MP" customClass="LevelTableViewCell" customModule="brasilogos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ToO-wJ-7MP" id="2Kd-b8-bVz">
@@ -284,17 +284,11 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
-                                            <segue destination="cAa-Ry-LOV" kind="push" id="pMp-KV-N2x"/>
+                                            <outlet property="levelLocker" destination="5ET-x7-Wnh" id="DvF-zX-pmp"/>
+                                            <outlet property="levelName" destination="39P-aL-hKH" id="fX8-tn-fQW"/>
+                                            <outlet property="levelProgress" destination="pX7-UU-gUi" id="7Fy-hb-xeK"/>
+                                            <outlet property="levelScore" destination="JLG-Nc-3bg" id="mf0-RG-gUS"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jZS-kY-FL8">
-                                        <rect key="frame" x="0.0" y="122" width="375" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jZS-kY-FL8" id="3en-vu-B9U">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -320,12 +314,12 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Níveis" id="0xy-sF-Knf"/>
                     <connections>
-                        <outlet property="tableView" destination="jgm-dz-Qvw" id="fHk-47-VgY"/>
+                        <outlet property="tableView" destination="jgm-dz-Qvw" id="eL2-iV-jag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIb-M8-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="397"/>
+            <point key="canvasLocation" x="1424" y="357.12143928035982"/>
         </scene>
         <!--Logo-->
         <scene sceneID="8zm-MT-CVc">
@@ -380,7 +374,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1798" y="397"/>
+            <point key="canvasLocation" x="2876.8000000000002" y="357.12143928035982"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="m9B-Ea-I7Z">
@@ -388,7 +382,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="SMa-Aw-tbG" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdS-If-K5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798" y="1102.5"/>
+            <point key="canvasLocation" x="2876.8000000000002" y="991.75412293853083"/>
         </scene>
         <!--Logo-->
         <scene sceneID="kzJ-cZ-2dQ">
@@ -603,7 +597,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2310" y="397"/>
+            <point key="canvasLocation" x="3696" y="357.12143928035982"/>
         </scene>
         <!--Shopping Overlay View Controller-->
         <scene sceneID="bEo-jk-mGP">
@@ -909,7 +903,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1349" y="-277"/>
+            <point key="canvasLocation" x="2140" y="-350"/>
         </scene>
         <!--Alert Overlay View Controller-->
         <scene sceneID="QwW-Pz-3jt">
@@ -1015,12 +1009,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXH-ww-0xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1707" y="-277"/>
+            <point key="canvasLocation" x="2809" y="-350"/>
         </scene>
-        <!--Nível x-->
+        <!--Level-->
         <scene sceneID="xug-HT-OGP">
             <objects>
-                <viewController storyboardIdentifier="BLLevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cAa-Ry-LOV" customClass="BLLevelViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cAa-Ry-LOV" userLabel="Level" customClass="LevelViewController" customModule="brasilogos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VgL-tU-F7W"/>
                         <viewControllerLayoutGuide type="bottom" id="fNP-xN-Q4q"/>
@@ -1042,17 +1036,17 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="UZL-nw-LJX">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LogoCollectionViewCell" id="UZL-nw-LJX" customClass="LogoCollectionViewCell" customModule="brasilogos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-fZ-lbF">
+                                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-fZ-lbF" userLabel="OuterView">
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
                                                     <subviews>
-                                                        <view clipsSubviews="YES" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyq-51-yhx">
+                                                        <view clipsSubviews="YES" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyq-51-yhx" userLabel="InnerView">
                                                             <rect key="frame" x="3" y="3" width="54" height="39"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j0e-Xz-bbQ">
@@ -1085,6 +1079,9 @@
                                             <constraint firstItem="gzc-fZ-lbF" firstAttribute="top" secondItem="UZL-nw-LJX" secondAttribute="top" id="5Bk-c6-1c1"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="innerView" destination="vyq-51-yhx" id="RVT-nc-pbp"/>
+                                            <outlet property="logoImage" destination="j0e-Xz-bbQ" id="mvY-eV-q3P"/>
+                                            <outlet property="outerView" destination="gzc-fZ-lbF" id="8UI-wt-Vxx"/>
                                             <segue destination="fQ9-xz-xz3" kind="push" id="7Ga-Or-8OT"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1209,9 +1206,6 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="cAa-Ry-LOV" id="d5V-Ip-Yn3"/>
-                                </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-aF-fVL" userLabel="AdBanner">
                                 <rect key="frame" x="27.5" y="617" width="320" height="50"/>
@@ -1236,8 +1230,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="INm-Fu-iYV"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="adBanner" destination="1Yx-aF-fVL" id="WZb-NG-Rs0"/>
-                        <outlet property="collectionView" destination="9W8-Dr-FrI" id="JFW-1d-kma"/>
+                        <outlet property="collectionView" destination="9W8-Dr-FrI" id="7DI-cC-pD7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqp-kh-JTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1270,17 +1263,17 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1338" y="397"/>
+            <point key="canvasLocation" x="2140.8000000000002" y="357.12143928035982"/>
         </scene>
     </scenes>
     <resources>
         <image name="bomb" width="60" height="60"/>
-        <image name="bulb" width="60" height="60"/>
-        <image name="bulb_special" width="60" height="60"/>
-        <image name="coin_nonumber_small" width="50" height="50"/>
+        <image name="bulb" width="120" height="120"/>
+        <image name="bulb_special" width="120" height="120"/>
+        <image name="coin_nonumber_small" width="101" height="101"/>
         <image name="coin_nonumber_small.png" width="101" height="101"/>
         <image name="locked" width="40" height="40"/>
-        <image name="logoquiz" width="2165" height="1370"/>
-        <image name="magic" width="256" height="256"/>
+        <image name="logoquiz" width="519.5999755859375" height="328.79998779296875"/>
+        <image name="magic" width="512" height="512"/>
     </resources>
 </document>

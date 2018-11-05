@@ -57,6 +57,13 @@
 		F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CD24E91A392DBE00DD6A8B /* GameCenterManager.m */; };
 		F1D86B72218CA641001B394F /* LogoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D86B71218CA641001B394F /* LogoParser.swift */; };
 		F1DCDEB619CDA8D40038441C /* BLAlertOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */; };
+		F1E71B7B21908A6F0033C441 /* LevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71B7A21908A6F0033C441 /* LevelTableViewCell.swift */; };
+		F1E71B7D2190A12A0033C441 /* LevelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71B7C2190A12A0033C441 /* LevelCoordinator.swift */; };
+		F1E71B7F2190A13D0033C441 /* ShoppingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71B7E2190A13D0033C441 /* ShoppingCoordinator.swift */; };
+		F1E71B822190A4AD0033C441 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71B812190A4AD0033C441 /* LevelViewController.swift */; };
+		F1E71B842190A4D00033C441 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71B832190A4D00033C441 /* LevelViewModel.swift */; };
+		F1E71B862190ACAE0033C441 /* LevelCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71B852190ACAE0033C441 /* LevelCollectionViewManager.swift */; };
+		F1E71B882190ADD80033C441 /* LogoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E71B872190ADD80033C441 /* LogoCollectionViewCell.swift */; };
 		F1E75DDF20F5545A00884845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E75DDE20F5545900884845 /* Main.storyboard */; };
 		F1EF70B320F2399700D909AF /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF70B220F2399700D909AF /* MenuCoordinator.swift */; };
 		F1EF7CC52105351F00FB61FC /* brasilogosUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF7CC42105351F00FB61FC /* brasilogosUnitTests.swift */; };
@@ -177,6 +184,13 @@
 		F1D86B71218CA641001B394F /* LogoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogoParser.swift; path = Business/Model/LogoParser.swift; sourceTree = "<group>"; };
 		F1DCDEB419CDA8D40038441C /* BLAlertOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAlertOverlayViewController.h; sourceTree = "<group>"; };
 		F1DCDEB519CDA8D40038441C /* BLAlertOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertOverlayViewController.m; sourceTree = "<group>"; };
+		F1E71B7A21908A6F0033C441 /* LevelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelTableViewCell.swift; path = UI/Views/LevelTableViewCell.swift; sourceTree = "<group>"; };
+		F1E71B7C2190A12A0033C441 /* LevelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelCoordinator.swift; path = Business/Coordinators/LevelCoordinator.swift; sourceTree = "<group>"; };
+		F1E71B7E2190A13D0033C441 /* ShoppingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShoppingCoordinator.swift; path = Business/Coordinators/ShoppingCoordinator.swift; sourceTree = "<group>"; };
+		F1E71B812190A4AD0033C441 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelViewController.swift; path = UI/Level/LevelViewController.swift; sourceTree = "<group>"; };
+		F1E71B832190A4D00033C441 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelViewModel.swift; path = UI/Level/LevelViewModel.swift; sourceTree = "<group>"; };
+		F1E71B852190ACAE0033C441 /* LevelCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelCollectionViewManager.swift; path = UI/Level/LevelCollectionViewManager.swift; sourceTree = "<group>"; };
+		F1E71B872190ADD80033C441 /* LogoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogoCollectionViewCell.swift; path = UI/Views/LogoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1E75DDE20F5545900884845 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = brasilogos/Main.storyboard; sourceTree = "<group>"; };
 		F1EF70B220F2399700D909AF /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCoordinator.swift; path = Business/Coordinators/MenuCoordinator.swift; sourceTree = "<group>"; };
 		F1EF7CC22105351F00FB61FC /* brasilogosUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brasilogosUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				F106AD1E20F54C68009E9A77 /* CustomUIButton.swift */,
+				F1E71B7A21908A6F0033C441 /* LevelTableViewCell.swift */,
+				F1E71B872190ADD80033C441 /* LogoCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -313,6 +329,7 @@
 		F138FC8D20F22BDD00187F32 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F1E71B802190A48C0033C441 /* Level */,
 				F1F4CC6E20FA918100750EB6 /* LevelList */,
 				F106AD1D20F54C54009E9A77 /* Views */,
 				F1CA0A5F20F2C5EB0051CC1C /* About */,
@@ -417,6 +434,8 @@
 				F1EF70B220F2399700D909AF /* MenuCoordinator.swift */,
 				F1CA0A5D20F2C5250051CC1C /* AboutCoordinator.swift */,
 				F1F4CC7C20FA98C200750EB6 /* LevelListCoordinator.swift */,
+				F1E71B7C2190A12A0033C441 /* LevelCoordinator.swift */,
+				F1E71B7E2190A13D0033C441 /* ShoppingCoordinator.swift */,
 			);
 			name = Coordinators;
 			sourceTree = "<group>";
@@ -446,6 +465,16 @@
 				F1CA0A6520F3F4340051CC1C /* EmailHandler.swift */,
 			);
 			name = Handlers;
+			sourceTree = "<group>";
+		};
+		F1E71B802190A48C0033C441 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				F1E71B812190A4AD0033C441 /* LevelViewController.swift */,
+				F1E71B832190A4D00033C441 /* LevelViewModel.swift */,
+				F1E71B852190ACAE0033C441 /* LevelCollectionViewManager.swift */,
+			);
+			name = Level;
 			sourceTree = "<group>";
 		};
 		F1EF70B420F23CE900D909AF /* Extensions */ = {
@@ -789,6 +818,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E71B7F2190A13D0033C441 /* ShoppingCoordinator.swift in Sources */,
 				F112979419A11E6600ACE7A2 /* BLBannerManager.m in Sources */,
 				F1D86B72218CA641001B394F /* LogoParser.swift in Sources */,
 				F1269B8619C5F0B600A89099 /* BLController.m in Sources */,
@@ -803,17 +833,22 @@
 				F1AD9060199FB7BD0071E256 /* BLDatabaseManager.m in Sources */,
 				F10C63C8199EC812005328B2 /* BLJSONDatabase.m in Sources */,
 				F1CA0A5220F22D810051CC1C /* MenuViewController.swift in Sources */,
+				F1E71B7B21908A6F0033C441 /* LevelTableViewCell.swift in Sources */,
+				F1E71B7D2190A12A0033C441 /* LevelCoordinator.swift in Sources */,
 				446CCBDC1D45070D00602313 /* BLAnalytics.m in Sources */,
+				F1E71B822190A4AD0033C441 /* LevelViewController.swift in Sources */,
 				F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */,
 				F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */,
 				F1CA0A6320F2C6F70051CC1C /* AboutViewModel.swift in Sources */,
 				F1AD9066199FBD530071E256 /* BLUser.m in Sources */,
+				F1E71B842190A4D00033C441 /* LevelViewModel.swift in Sources */,
 				F10C63B9199EB863005328B2 /* BLMainViewController.m in Sources */,
 				F1CA0A5E20F2C5250051CC1C /* AboutCoordinator.swift in Sources */,
 				F106AD1F20F54C68009E9A77 /* CustomUIButton.swift in Sources */,
 				F1CA0A5C20F22EA70051CC1C /* Coordinator.swift in Sources */,
 				F1F8B810198E5D9300578D91 /* main.m in Sources */,
 				F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */,
+				F1E71B862190ACAE0033C441 /* LevelCollectionViewManager.swift in Sources */,
 				F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */,
 				F1F4CC7920FA96EF00750EB6 /* Logo.swift in Sources */,
 				F1AD9063199FBCFA0071E256 /* BLScore.m in Sources */,
@@ -824,6 +859,7 @@
 				F1F4CC7B20FA973A00750EB6 /* LogoStorage.swift in Sources */,
 				446CCBDF1D45081C00602313 /* BLFlurryAnalytics.m in Sources */,
 				F1CD24EA1A392DBE00DD6A8B /* GameCenterManager.m in Sources */,
+				F1E71B882190ADD80033C441 /* LogoCollectionViewCell.swift in Sources */,
 				F1F4CC7420FA925700750EB6 /* LevelListTableViewManager.swift in Sources */,
 				44F774501D3AA4A700734F90 /* BLFirebaseAnalytics.m in Sources */,
 				F1CA0A6120F2C6070051CC1C /* AboutViewController.swift in Sources */,

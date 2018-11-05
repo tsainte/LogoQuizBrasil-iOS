@@ -14,8 +14,6 @@ protocol MenuCoordinatorDelegate {
     func goToAbout()
 }
 
-
-
 struct MenuCoordinator {
 
     let storyboard: UIStoryboard

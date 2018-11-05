@@ -30,7 +30,7 @@ struct LogoParser {
         for i in 1...allLogos.count {
             logos.append(allLogos[i-1])
             if i % logosPerLevel == 0 {
-                let levelNumber = i/logosPerLevel + 1
+                let levelNumber = i/logosPerLevel
                 let newLevel = Level(levelNumber: levelNumber, logos: logos)
                 levels.append(newLevel)
                 logos = []

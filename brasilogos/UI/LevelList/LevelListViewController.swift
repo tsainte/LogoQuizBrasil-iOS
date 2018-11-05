@@ -17,6 +17,14 @@ class LevelListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableViewManager = LevelListTableViewManager(tableView: tableView, viewModel: viewModel)
+        tableViewManager = LevelListTableViewManager(tableView: tableView,
+                                                     dataProvider: viewModel as LevelListDataProvider,
+                                                     actions: viewModel as LevelListActions)
+    }
+}
+
+extension LevelListViewController: LevelListViewModelDelegate {
+    func showMessage(_ message: String) {
+        view.makeToast(message)
     }
 }

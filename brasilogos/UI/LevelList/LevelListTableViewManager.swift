@@ -11,29 +11,40 @@ import UIKit
 class LevelListTableViewManager: NSObject {
 
     let tableView: UITableView
-    weak var dataProvider: LevelListDataProvider?
-    var viewModel: LevelListDataProvider
+    var dataProvider: LevelListDataProvider
+    var actions: LevelListActions
 
-    init(tableView: UITableView, viewModel: LevelListDataProvider) {
+    init(tableView: UITableView, dataProvider: LevelListDataProvider, actions: LevelListActions) {
         self.tableView = tableView
-        self.viewModel = viewModel
+        self.dataProvider = dataProvider
+        self.actions = actions
         super.init()
 
         tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
 extension LevelListTableViewManager: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfRows
+        return dataProvider.numberOfRows
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let displayModel = viewModel.displayModel(for: indexPath.row)
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(indexPath.row)"
+        let displayModel = dataProvider.displayModel(for: indexPath.row)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "LevelTableViewCell")
+            as? LevelTableViewCell else {
+            fatalError("Can't dequeue LevelTableViewCell")
+        }
+        cell.configure(with: displayModel)
 
         return cell
+    }
+}
+
+extension LevelListTableViewManager: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        actions.userDidTapped(index: indexPath.row)
     }
 }
