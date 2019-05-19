@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoquiz" translatesAutoresizingMaskIntoConstraints="NO" id="MR1-7J-GWK">
-                                <rect key="frame" x="68.5" y="40" width="238" height="151"/>
+                                <rect key="frame" x="68.5" y="40" width="238" height="151.00000000000023"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="151" id="ABd-nO-GQI"/>
                                     <constraint firstAttribute="width" constant="238" id="maQ-8h-vqJ"/>
@@ -1268,12 +1268,12 @@
     </scenes>
     <resources>
         <image name="bomb" width="60" height="60"/>
-        <image name="bulb" width="120" height="120"/>
-        <image name="bulb_special" width="120" height="120"/>
-        <image name="coin_nonumber_small" width="101" height="101"/>
+        <image name="bulb" width="60" height="60"/>
+        <image name="bulb_special" width="60" height="60"/>
+        <image name="coin_nonumber_small" width="50.5" height="50.5"/>
         <image name="coin_nonumber_small.png" width="101" height="101"/>
         <image name="locked" width="40" height="40"/>
-        <image name="logoquiz" width="519.5999755859375" height="328.79998779296875"/>
-        <image name="magic" width="512" height="512"/>
+        <image name="logoquiz" width="2165" height="1370"/>
+        <image name="magic" width="256" height="256"/>
     </resources>
 </document>

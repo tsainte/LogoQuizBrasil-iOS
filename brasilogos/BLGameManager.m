@@ -8,7 +8,6 @@
 
 #import "BLGameManager.h"
 #import "GameCenterManager.h"
-#import "BLAppDelegate.h"
 #import "BLFirebaseAnalytics.h"
 
 @implementation BLGameManager
@@ -108,10 +107,12 @@
     //  NSInteger completedLevel = [BLDatabaseManager completedLevel];
     //  NSLog(@"correct: %d, completed: %d", correctLogos, completedLevel);
     GameCenterManager *gcm = [[GameCenterManager alloc] init];
-    
-    BLAppDelegate *appDelegate = (BLAppDelegate* )[UIApplication sharedApplication].delegate;
-    gcm.parent = appDelegate.window.rootViewController;
-    [gcm sendAll:[BLDatabaseManager score].correctLogos qtdLogos:[BLDatabaseManager score].correctLogos qtdCompletedLevel:[BLDatabaseManager completedLevel]];
+
+    //TODO: Migrate after swift removal of app delegate
+
+//    BLAppDelegate *appDelegate = (BLAppDelegate* )[UIApplication sharedApplication].delegate;
+//    gcm.parent = appDelegate.window.rootViewController;
+//    [gcm sendAll:[BLDatabaseManager score].correctLogos qtdLogos:[BLDatabaseManager score].correctLogos qtdCompletedLevel:[BLDatabaseManager completedLevel]];
 }
 
 - (void)isWrongAnswer:(NSString*)answer {

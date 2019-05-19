@@ -45,6 +45,7 @@
 		F1AD9066199FBD530071E256 /* BLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9065199FBD530071E256 /* BLUser.m */; };
 		F1AD9069199FCBD20071E256 /* BLWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9068199FCBD20071E256 /* BLWallet.m */; };
 		F1AD906C199FD35D0071E256 /* BLGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD906B199FD35D0071E256 /* BLGameManager.m */; };
+		F1B837B422916A22008EFAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B837B322916A22008EFAF8 /* AppDelegate.swift */; };
 		F1CA0A5220F22D810051CC1C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5120F22D810051CC1C /* MenuViewController.swift */; };
 		F1CA0A5520F22D9F0051CC1C /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5420F22D9F0051CC1C /* MenuViewModel.swift */; };
 		F1CA0A5920F22E700051CC1C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA0A5820F22E700051CC1C /* ApplicationCoordinator.swift */; };
@@ -80,8 +81,6 @@
 		F1F8B806198E5D9300578D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B805198E5D9300578D91 /* CoreGraphics.framework */; };
 		F1F8B808198E5D9300578D91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F8B807198E5D9300578D91 /* UIKit.framework */; };
 		F1F8B80E198E5D9300578D91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1F8B80C198E5D9300578D91 /* InfoPlist.strings */; };
-		F1F8B810198E5D9300578D91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8B80F198E5D9300578D91 /* main.m */; };
-		F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8B813198E5D9300578D91 /* BLAppDelegate.m */; };
 		F1F8B822198E5D9300578D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F8B821198E5D9300578D91 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +168,7 @@
 		F1AD9068199FCBD20071E256 /* BLWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWallet.m; sourceTree = "<group>"; };
 		F1AD906A199FD35D0071E256 /* BLGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGameManager.h; sourceTree = "<group>"; };
 		F1AD906B199FD35D0071E256 /* BLGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGameManager.m; sourceTree = "<group>"; };
+		F1B837B322916A22008EFAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CA0A5020F22D800051CC1C /* brasilogos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "brasilogos-Bridging-Header.h"; path = "brasilogos/brasilogos-Bridging-Header.h"; sourceTree = "<group>"; };
 		F1CA0A5120F22D810051CC1C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = UI/Menu/MenuViewController.swift; sourceTree = "<group>"; };
 		F1CA0A5420F22D9F0051CC1C /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = UI/Menu/MenuViewModel.swift; sourceTree = "<group>"; };
@@ -213,10 +213,7 @@
 		F1F8B807198E5D9300578D91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1F8B80B198E5D9300578D91 /* brasilogos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "brasilogos-Info.plist"; sourceTree = "<group>"; };
 		F1F8B80D198E5D9300578D91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F1F8B80F198E5D9300578D91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1F8B811198E5D9300578D91 /* brasilogos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "brasilogos-Prefix.pch"; sourceTree = "<group>"; };
-		F1F8B812198E5D9300578D91 /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
-		F1F8B813198E5D9300578D91 /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
 		F1F8B821198E5D9300578D91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F1F8B828198E5D9300578D91 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -577,11 +574,10 @@
 				F175864B1C665A0D00B54134 /* assets */,
 				F1A0B6D61C675D1000D55D0D /* Helpers */,
 				F1A0B6D51C675CFD00D55D0D /* navigation */,
-				F1F8B812198E5D9300578D91 /* BLAppDelegate.h */,
-				F1F8B813198E5D9300578D91 /* BLAppDelegate.m */,
 				F1F8B821198E5D9300578D91 /* Images.xcassets */,
 				F1F8B80A198E5D9300578D91 /* Supporting Files */,
 				F19505F21995CD9600A94FD1 /* BLConstants.h */,
+				F1B837B322916A22008EFAF8 /* AppDelegate.swift */,
 			);
 			path = brasilogos;
 			sourceTree = "<group>";
@@ -591,7 +587,6 @@
 			children = (
 				F1F8B80B198E5D9300578D91 /* brasilogos-Info.plist */,
 				F1F8B80C198E5D9300578D91 /* InfoPlist.strings */,
-				F1F8B80F198E5D9300578D91 /* main.m */,
 				F1F8B811198E5D9300578D91 /* brasilogos-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -669,11 +664,13 @@
 				TargetAttributes = {
 					F1EF7CC12105351F00FB61FC = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F1F8B7FF198E5D9300578D91;
 					};
 					F1EF7CCF2105355C00FB61FC = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						TestTargetID = F1F8B7FF198E5D9300578D91;
 					};
@@ -697,6 +694,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				"pt-BR",
 			);
@@ -824,7 +822,6 @@
 				F1269B8619C5F0B600A89099 /* BLController.m in Sources */,
 				F19505F71995CDB800A94FD1 /* BLStyling.m in Sources */,
 				F1F4CC7220FA91DB00750EB6 /* LevelListViewModel.swift in Sources */,
-				F1F8B814198E5D9300578D91 /* BLAppDelegate.m in Sources */,
 				F112E88619A8C3D7009F70B4 /* BLInAppManager.m in Sources */,
 				F10C63BF199EB88D005328B2 /* BLLevelViewController.m in Sources */,
 				F1EF70B320F2399700D909AF /* MenuCoordinator.swift in Sources */,
@@ -838,6 +835,7 @@
 				446CCBDC1D45070D00602313 /* BLAnalytics.m in Sources */,
 				F1E71B822190A4AD0033C441 /* LevelViewController.swift in Sources */,
 				F112977F19A0DB4700ACE7A2 /* Toast+UIView.m in Sources */,
+				F1B837B422916A22008EFAF8 /* AppDelegate.swift in Sources */,
 				F112979119A10DD100ACE7A2 /* BLShoppingOverlayViewController.m in Sources */,
 				F1CA0A6320F2C6F70051CC1C /* AboutViewModel.swift in Sources */,
 				F1AD9066199FBD530071E256 /* BLUser.m in Sources */,
@@ -846,7 +844,6 @@
 				F1CA0A5E20F2C5250051CC1C /* AboutCoordinator.swift in Sources */,
 				F106AD1F20F54C68009E9A77 /* CustomUIButton.swift in Sources */,
 				F1CA0A5C20F22EA70051CC1C /* Coordinator.swift in Sources */,
-				F1F8B810198E5D9300578D91 /* main.m in Sources */,
 				F16171D519C7B49400FA9A07 /* BLTransaction.m in Sources */,
 				F1E71B862190ACAE0033C441 /* LevelCollectionViewManager.swift in Sources */,
 				F10C63BC199EB878005328B2 /* BLIndexLevelViewController.m in Sources */,
@@ -943,7 +940,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
 			};
@@ -980,7 +977,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mobwiz.brasilogosUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brasilogos.app/brasilogos";
 			};
@@ -1019,7 +1016,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = brasilogos;
 			};
@@ -1058,7 +1055,7 @@
 				PROVISIONING_PROFILE = "c9926b7f-3441-4d15-b968-e30501a17fb7";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = brasilogos;
 			};
@@ -1188,7 +1185,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "match Development br.com.mobwiz.brasilogos";
 				SWIFT_OBJC_BRIDGING_HEADER = "brasilogos/brasilogos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1215,7 +1212,7 @@
 				PROVISIONING_PROFILE = "c9926b7f-3441-4d15-b968-e30501a17fb7";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore br.com.mobwiz.brasilogos";
 				SWIFT_OBJC_BRIDGING_HEADER = "brasilogos/brasilogos-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
